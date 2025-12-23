@@ -3,12 +3,30 @@
     "name": "Ubivox.dk",
     "url": "https://ubivox.dk/",
     "description": "Send nyhedsbreve nemt og sikkert",
-    "alternatives": ["MailChimp", "Campaign Monitor", "Klaviyo"]
+    "alternatives": [
+      "MailChimp",
+      "Campaign Monitor",
+      "Klaviyo"
+    ]
   },
   {
     "name": "fmcgProducts PIM",
     "url": "https://www.fmcgsolutions.dk",
     "description": "PIM-system til stamdata med syndikering til GS1, Tradesolution EPD, Dabas og Matinfo samt andre systemer internt og eksternt",
-    "alternatives": ["GS1Trade Sync", "Syndigo", "Inriver"]
+    "alternatives": [
+      "GS1Trade Sync",
+      "Syndigo",
+      "Inriver"
+    ]
+  },
+  {
+    "name": "Mercura CPQ",
+    "url": "https://mercura.io",
+    "description": "Configure-Price-Quote-platform til konfiguration, prisberegning og tilbud på komplekse produkter.",
+    "alternatives": [
+      "Tacton",
+      "Salesforce CPQ",
+      "Experlogix"
+    ]
   }
 ]
