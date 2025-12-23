@@ -4,5 +4,17 @@
     "url": "https://ubivox.dk/",
     "description": "Send nyhedsbreve nemt og sikkert",
     "alternatives": ["MailChimp", "Campaign Monitor", "Klaviyo"]
+  },
+  {
+    "name": "AesirX Consent Management Platform",
+    "url": "https://aesirx.io/solutions/consent-management-platform",
+    "description": "En første-part samtykkeplatform med fokus på egen datakontrol og overholdelse af databeskyttelsesloven og cookiebekendtgørelsen.",
+    "alternatives": ["Usercentrics", "OneTrust", "CookieYes"]
+  },
+  {
+    "name": "AesirX Analytics",
+    "url": "https://aesirx.io/solutions/analytics",
+    "description": "Første-part analytics og tag management platform med brugerrejse indsig og UTM sporing.",
+    "alternatives": ["Google Analytics", "Adobe Analytics", "Google Tag Manager"]
   }
 ]
