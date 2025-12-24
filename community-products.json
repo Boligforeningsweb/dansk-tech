@@ -3,18 +3,50 @@
     "name": "Ubivox.dk",
     "url": "https://ubivox.dk/",
     "description": "Send nyhedsbreve nemt og sikkert",
-    "alternatives": ["MailChimp", "Campaign Monitor", "Klaviyo"]
+    "alternatives": [
+      "MailChimp",
+      "Campaign Monitor",
+      "Klaviyo"
+    ]
+  },
+  {
+    "name": "fmcgProducts PIM",
+    "url": "https://www.fmcgsolutions.dk",
+    "description": "PIM-system til stamdata med syndikering til GS1, Tradesolution EPD, Dabas og Matinfo samt andre systemer internt og eksternt",
+    "alternatives": [
+      "GS1Trade Sync",
+      "Syndigo",
+      "Inriver"
+    ]
+  },
+  {
+    "name": "Mercura CPQ",
+    "url": "https://mercura.io",
+    "description": "Configure-Price-Quote-platform til konfiguration, prisberegning og tilbud på komplekse produkter.",
+    "alternatives": [
+      "Tacton",
+      "Salesforce CPQ",
+      "Experlogix"
+    ]
   },
   {
     "name": "AesirX Consent Management Platform",
     "url": "https://aesirx.io/solutions/consent-management-platform",
     "description": "En første-part samtykkeplatform med fokus på egen datakontrol og overholdelse af databeskyttelsesloven og cookiebekendtgørelsen.",
-    "alternatives": ["Usercentrics", "OneTrust", "CookieYes"]
+    "alternatives": [
+      "Usercentrics",
+      "OneTrust",
+      "CookieYes"
+    ]
   },
   {
     "name": "AesirX Analytics",
     "url": "https://aesirx.io/solutions/analytics",
     "description": "Første-part analytics og tag management platform med brugerrejse indsig og UTM sporing.",
-    "alternatives": ["Google Analytics", "Adobe Analytics", "Google Tag Manager"]
+    "alternatives": [
+      "Google Analytics",
+      "Adobe Analytics",
+      "Google Tag Manager"
+    ]
   }
 ]
