@@ -28,5 +28,15 @@
       "Salesforce CPQ",
       "Experlogix"
     ]
+  },
+  {
+    "name": "Campaign Builder",
+    "url": "https://www.campaignbuilder.io/",
+    "description": "All-in-one platform til at bygge, lancere og administrere kampagner på tværs af kanaler med catalog ads, HTML5 ads, popups, forms, workflows og SMS marketing",
+    "alternatives": [
+      "Marpipe",
+      "Kitchn",
+      "Bannerwise"
+    ]
   }
 ]
