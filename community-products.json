@@ -56,5 +56,15 @@
     "alternatives": [
       "Sharepoint"
     ]
+  },
+  {
+    "name": "WebContent",
+    "url": "https://webcontent.app",
+    "description": "WebContent er en platform til at søge, skabe, og udføre alt indenfor UGC ads.",
+    "alternatives": [
+      "Influee",
+      "Billo",
+      "Insense"
+    ]
   }
 ]
