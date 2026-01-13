@@ -43,11 +43,6 @@
     "name": "NextSign.dk",
     "url": "https://www.nextsign.dk/",
     "description": "Digital underskriftsløsning for virksomheder og organisationer",
-    "alternatives": [
-      "DocuSign",
-      "Addo Sign",
-      "Scrive",
-      "Penneo"
-    ]
+    "alternatives": ["DocuSign", "Scrive"]
   }
 ]
