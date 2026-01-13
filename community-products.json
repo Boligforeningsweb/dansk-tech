@@ -14,7 +14,7 @@
     "url": "https://www.fmcgsolutions.dk",
     "description": "PIM-system til stamdata med syndikering til GS1, Tradesolution EPD, Dabas og Matinfo samt andre systemer internt og eksternt",
     "alternatives": [
-      "GS1Trade Sync",
+      "GS1",
       "Syndigo",
       "Inriver"
     ]
