@@ -1,5 +1,15 @@
 [
   {
+    "name": "Adamatics Platform (AdaLab)",
+    "url": "https://adamatics.com/platform/",
+    "description": "En dansk platform til data science, analytics og AI, der samler notebooks, dataadgang og deployment i ét kontrolleret miljø indenfor virksomheders egen netværk og kontrol. Kan deployes hos alle cloud providers der understøtter Kubernetes, såsom Scaleway, Upcloud, samt on-prem til kritisk infrastruktur.",
+    "alternatives": [
+      "Posit",
+      "PowerBI",
+      "Sagemaker"
+    ]
+  },
+  {
     "name": "Ubivox.dk",
     "url": "https://ubivox.dk/",
     "description": "Send nyhedsbreve nemt og sikkert",
@@ -58,6 +68,16 @@
     ]
   },
   {
+    "name": "NordicScreen",
+    "url": "https://nordicscreen.com",
+    "description": "Digital signage-platform til styring af skærme og indhold med cloud-baseret CMS. Bruges til planlægning, afspilning og distribution af visuelt content på tværs af lokationer.",
+    "alternatives": [
+      "SignageLive",
+      "Appspace",
+      "Screencloud"
+    ]
+  },
+  {
     "name": "WebContent",
     "url": "https://webcontent.app",
     "description": "WebContent er en platform til at søge, skabe, og udføre alt indenfor UGC ads.",
@@ -89,13 +109,13 @@
     ]
   },
   {
-    "name": "Adamatics Platform (AdaLab)",
-    "url": "https://adamatics.com/platform/",
-    "description": "En dansk platform til data science, analytics og AI, der samler notebooks, dataadgang og deployment i ét kontrolleret miljø indenfor virksomheders egen netværk og kontrol. Kan deployes hos alle cloud providers der understøtter Kubernetes, såsom Scaleway, Upcloud, samt on-prem til kritisk infrastruktur.",
+    "name": "SMTP.dk",
+    "url": "https://smtp.dk/",
+    "description": "Sikker levering af transaktions emails",
     "alternatives": [
-      "Posit",
-      "PowerBI",
-      "Sagemaker"
+      "Mailgun",
+      "Sendgrid",
+      "Amazon SES"
     ]
   }
 ]

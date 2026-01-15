@@ -726,7 +726,7 @@
         <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">
           Er du selv udvikler og kender lige præcis dét stykke software fra Danmark som mangler på listen? Så kan du sende os en pull request og foreslå til listen af produkter fra eksterne bidragydere. Herunder kan du se dem der har bidraget indtil videre.
         </p>
-        <div id="contributors" class="mt-10 flex items-center justify-center gap-x-4">
+        <div id="contributors" class="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
         </div>
       </div>
     </div>
