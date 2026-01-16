@@ -131,3 +131,9 @@
   "alternatives": ["Miscrosoft Purview", "BigID","Varonis"]
   }
 ]
+{
+  "name": "Holdsport.dk",
+  "url": "https://holdsport.dk",
+  "description": "Software til kontingentopkrævning, kommunikation og medlemsadministration online.",
+  "alternatives": ["Spond", "Clubdesk"]
+}
