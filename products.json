@@ -9,8 +9,14 @@
     "name": "Alunta.com",
     "url": "https://alunta.com",
     "description": "Abonnementer, betalinger og fakturering",
-    "alternatives": ["Stripe", "Paddle", "Recurly"],
+    "alternatives": ["Stripe", "Paddle", "Recurly", "Yonium", "Chargebee"],
     "image": "images/alunta.png"
+  },
+  {
+    "name": "Boligforeningsweb",
+    "url": "https://boligforeningsweb.dk",
+    "description": "Software til administration af boligforeninger",
+    "alternatives": ["Condo Control", "Buildium", "DoorLoop"]
   },
   {
     "name": "Campaign Builder",
@@ -56,7 +62,7 @@
     "name": "Fenerum.com",
     "url": "https://fenerum.com",
     "description": "SaaS finances",
-    "alternatives": ["Yonium", "Chargebee", "Upodi"],
+    "alternatives": ["Yonium", "Chargebee"],
     "image": "images/fenerum.png"
   },
   {
@@ -78,6 +84,12 @@
     "description": "Customer support og helpdesk",
     "alternatives": ["Zendesk", "Intercom", "Freshdesk"],
     "image": "images/herodesk.png"
+  },
+  {
+    "name": "IDguard.dk",
+    "url": "https://idguard.dk",
+    "description": "Aldersverifikation og identitetsbekræftelse",
+    "alternatives": ["Veriff", "Yoti", "AgeChecker.Net"]
   },
   {
     "name": "Holdsport.dk",
@@ -130,6 +142,12 @@
     "description": "Performance management og dashboards",
     "alternatives": ["Tableau", "Power BI", "Klipfolio"],
     "image": "images/plecto.png"
+  },
+  {
+    "name": "Resos.com",
+    "url": "https://resos.com",
+    "description": "Reservations- og bookingssystem til restauranter",
+    "alternatives": ["Tock", "OpenTable", "Resy", "Facebook"]
   },
   {
     "name": "SEO.ai",
