@@ -443,5 +443,15 @@
          "Juro"
       ],
       "image": "images/contractbook.svg"
+   },
+   {
+      "name": "The Room Display",
+      "url": "https://www.theroomdisplay.com",
+      "description": "Digital optaget/ledig-skilt til møderum. Engangskøb - slip for abonnement. Virker med iPad",
+      "alternatives": [
+         "Joan",
+         "Meeting Room 365",
+         "Envoy"
+      ]
    }
 ]
