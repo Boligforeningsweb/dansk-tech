@@ -333,6 +333,17 @@
       ]
    },
    {
+      "name": "Umbraco",
+      "url": "https://umbraco.com/",
+      "description": "Verdens meste udbredte Open Source .NET CMS. Stort økosystem af gratis og betalte extensions. ",
+      "alternatives": [
+         "Optimizely / EPIserver",
+         "Sitecore",
+         "Kentico",
+         "Drupal"
+      ]
+   },
+   {
       "name": "Updatemate.ai",
       "url": "https://updatemate.ai",
       "description": "Automatisering og integrationer",
