@@ -507,5 +507,16 @@
          "Rollbar",
          "Azure Application Insights"
       ]
+   },{
+      "name":"Heysender",
+      "url":"https://www.heysender.com",
+      "description":"Email API. Tag kontrol over dine transaktionelle emails.",
+      "alternatives":[
+         "Mailgun",
+         "Postmark",
+         "MailerSend",
+         "Twilio SendGrid"
+      ],
+      "image": "images/heysender.png"
    }
 ]
