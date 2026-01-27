@@ -23,6 +23,28 @@
       "image": "images/alunta.png"
    },
    {
+   "name": "Avallone",
+   "url": "https://avallone.com",
+   "description": "Automatisere KYC-compliance",
+   "alternatives": [
+         "Spektr",
+         "Swift",
+         "Encompass",
+         "KYC Genie",
+         "smartKYC",
+         "Moody's KYC",
+         "LexisNexis Risk Solutions",
+         "Appian Connected KYC",
+         "Sumsub",
+         "IDnow",
+         "ComplyCube",
+         "Shufti Pro",
+         "SEON",
+         "Persona",
+         "Ontra"
+      ]
+   },
+   {
       "name": "Boligforeningsweb",
       "url": "https://boligforeningsweb.dk",
       "description": "Software til administration af boligforeninger",
