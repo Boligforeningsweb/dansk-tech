@@ -507,5 +507,16 @@
          "Rollbar",
          "Azure Application Insights"
       ]
+   },
+   {
+      "name": "LønRadar",
+      "url": "https://loenradar.dk",
+      "description": "Løn-benchmarking platform og lønberegner",
+      "alternatives": [
+         "Glassdoor",
+         "Levels.fyi",
+         "PayScale",
+         "Salary.com"
+      ]
    }
 ]
