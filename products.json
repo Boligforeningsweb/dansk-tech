@@ -507,5 +507,17 @@
          "Rollbar",
          "Azure Application Insights"
       ]
-   }
+   },{
+      "name":"Heyloyalty",
+      "url":"https://www.heyloyalty.com",
+      "description":"Marketing automation platform. Heyloyalty fokuserer på kundeloyalitet. Saml dine data og personalisér kommunikationen og få gæster og kunder, der kommer tilbage",
+      "alternatives":[
+         "Klaviyo",
+         "Mailchimp",
+         "Customer.io",
+         "Active Campaign",
+         "Sleeknote"
+      ],
+      "image": "images/heyloyalty.png"
+  }
 ]
