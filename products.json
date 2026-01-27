@@ -507,5 +507,15 @@
          "Rollbar",
          "Azure Application Insights"
       ]
+   },{
+      "name": "Kontolink",
+      "url": "https://kontolink.com",
+      "description": "Kontolink er en dansk platform der via adgang til bankdata (PSD2) og diverse bilagskilder (som f.eks. email) automatiserer bogføringen for små og mellemstore virksomheder.",
+      "alternatives": [
+         "Dext",
+         "Kick.co",
+         "Finally.com",
+         "Expensify"
+      ]
    }
 ]
