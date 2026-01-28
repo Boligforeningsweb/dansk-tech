@@ -258,6 +258,17 @@
       "image": "images/plecto.png"
    },
    {
+      "name": "Prowi",
+      "url": "https://prowi.io",
+      "description": "Commission Management Platform. Provision i realtid. Prowi viser sælgere deres provision i realtid via mobilappen. Dealen lukkes, de ser med det samme, hvad de har tjent. Feedback-loop. Gamification. Et salgsteam der faktisk drives af deres kompensationsplan.",
+      "alternatives": [
+         "Xactly",
+         "CaptivateIQ",
+         "Quotapath"
+      ],
+      "image": "images/prowi.jpg"
+   },
+   {
       "name": "proprty.ai",
       "url": "https://www.proprty.ai",
       "description": "Tilstandsvurderinger, vedligeholdelsesplaner og CO₂-reduktion",
