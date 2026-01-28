@@ -162,6 +162,19 @@
       ]
    },
    {
+      "name": "GatewayAPI",
+      "url": "https://gatewayapi.com",
+      "description": "GatewayAPI er en førende CPaaS leverandør af skalerbare besked- og kommunikationsløsninger, der hjælper virksomheder med at komme i kontakt med deres målgrupper via SMS, RCS og e-mail",
+      "alternatives": [
+         "Sinch",
+         "Twilio",
+         "Infobip",
+         "Vonage",
+         "Messente"
+      ],
+      "image": "images/gatewayapi.svg"
+   },
+   {
       "name": "Iteras",
       "url": "https://iteras.com",
       "description": "Abonnementsstyringsplatform til fakturering, betalinger og kundeabonnementer med selvbetjeningsportaler og integration til nordiske betalingsudbydere",
