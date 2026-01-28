@@ -507,5 +507,15 @@
          "Rollbar",
          "Azure Application Insights"
       ]
+   },
+   {
+      "name": "DevCompendium",
+      "url": "https://www.devcompendium.com/",
+      "description": "Gem prompts, commands, code snippets og del dem med dit team eller offentligheden.",
+      "alternatives": [
+         "GitHub Gists",
+         "PromptBase",
+         "Cacher",
+      ]
    }
 ]
