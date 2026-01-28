@@ -507,5 +507,21 @@
          "Rollbar",
          "Azure Application Insights"
       ]
+   },{
+      "name": "Yulsn Marketing Cloud",
+      "url": "https://yulsn.com",
+      "description": "Yulsn Marketing Cloud er til email marketing, marketing automation og loyalitetsprogrammer. Især til virksomheder, der sender rigtig mange mails, har høje krav om tilpasning til egne processer, og gerne vil automatisere meget.",
+      "alternatives": [
+         "Marketo",
+         "Bloomreach",
+         "Hubspot",
+	      "Salesforce",
+         "Klaviyo",
+         "ActiveCampaign",
+         "ConvertKit",
+         "Kit",
+         "Campaign Monitor",
+         "Mailchimp"
+      ]
    }
 ]
