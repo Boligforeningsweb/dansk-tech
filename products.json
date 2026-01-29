@@ -597,5 +597,15 @@
          "Sleeknote"
       ],
       "image": "images/heyloyalty.png"
+  },{
+      "name": "Connie",
+      "url": "https://www.getconnie.com",
+      "description": "Dokumentværktøj til kreative. Opret, send og underskriv dokumenter nemt, og sørg for, at dine produktioner og projekter kører gnidningsfrit.",
+      "alternatives": [
+         "DocuSign",
+         "Adobe Acrobat Sign",
+         "PandaDoc"
+      ],
+      "image": "images/connie.png"
   }
 ]
