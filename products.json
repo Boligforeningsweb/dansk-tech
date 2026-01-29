@@ -219,6 +219,17 @@
       ]
    },
    {
+      "name": "Kala",
+      "url": "https://kala.app",
+      "description": "Bedre styring af din forretning med overblik over tid, medarbejdere, projekter - med integreret kvalitetssikring og forbindelse til populære ERP systemer og lønprogrammer",
+      "alternatives": [
+         "Harvest",
+         "ClickUp",
+         "Toggl",
+         "Clockify"
+      ]
+   },
+   {
       "name": "Morningscore.io",
       "url": "https://morningscore.io",
       "description": "SEO + GEO tracking",
