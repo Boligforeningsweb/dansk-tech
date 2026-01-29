@@ -619,5 +619,14 @@
          "Frate Returns"
       ],
       "image": "images/returnflows.png"
+  },{
+      "name":"Pcrypt",
+      "url":"https://pcrypt.com/",
+      "description":"Pcrypt er en sikker password manager med fokus på privatliv og kryptering. Alle adgangskoder krypteres lokalt på brugerens enhed, før data sendes eller gemmes, så følsomme oplysninger aldrig deles i klartekst. Pcrypt understøtter deling af adgangskoder mellem brugere og teams uden at afsløre selve adgangskoden. Løsningen kan anvendes som cloud-tjeneste eller installeres on-prem, og kernekomponenterne er open source.",
+      "alternatives":[
+         "LastPass",
+         "1Password",
+         "Bitwarden"
+      ]
   }
 ]
