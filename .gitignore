@@ -1,0 +1,61 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# macOS
+Icon\r
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# PHP / Composer
+vendor/
+composer.phar
+composer.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs and temporary files
+logs/
+*.log
+*.log.*
+tmp/
+temp/
+cache/
+.cache/
+
+# Build / distribution
+dist/
+build/
+public/build/
+coverage/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Archives and backups
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.bak
+*~
+
+# PHPUnit
+phpunit.xml
+*.phpunit.result.cache
+

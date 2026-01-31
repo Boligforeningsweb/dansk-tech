@@ -230,7 +230,7 @@
             </div>
             <!-- Zetland logo -->
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="zetland.png" alt="Zetland" class="h-full w-auto max-w-[40px] object-contain transition-all duration-300" />
+              <img src="zetland.png" alt="Zetland" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
             </div>
           </div>
         </div>
