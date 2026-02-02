@@ -23,6 +23,18 @@
       "image": "images/alunta.png"
    },
    {
+      "name": "Arrigoo CDP",
+      "url": "https://arrigoo.io",
+      "description": "Europæisk hosted Customer Data Platform til at indsamle, konsolidere og distribuere profildata på tværs af systemer og segmentere på baggrund af adfærd og egenskaber.",
+      "alternatives": [
+         "Microsoft Insight",
+         "Segment",
+         "Bloomreach",
+         "Adobe CDP",
+         "Tealium"
+      ]
+   },
+   {
       "name": "Boligforeningsweb",
       "url": "https://boligforeningsweb.dk",
       "description": "Software til administration af boligforeninger",
