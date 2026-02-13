@@ -146,6 +146,20 @@
       "image": "images/favio-ai.jpg"
    },
    {
+      "name": "Flare.link",
+      "url": "https://flare.link",
+      "description": "Flare er en one-stop-shop til videooptagelse, redigering, deling og embedding af video med 4K-optagelse, tilpasselig player, analytics og API-adgang.",
+      "alternatives": [
+         "Loom",
+         "Wistia",
+         "Screen Studio",
+         "Vidyard",
+         "Vidalytics",
+         "Tella"
+      ],
+      "image": "images/flare.png"
+   },
+   {
       "name": "Fenerum.com",
       "url": "https://fenerum.com",
       "description": "SaaS finances",
