@@ -741,5 +741,18 @@
          "Genesis",
          "Cisco"
       ]
+   },
+   {
+      "name": "Dixa",
+      "url": "https://www.dixa.com",
+      "image": "images/dixa.png",
+      "description": "Agentic AI-platform til moderne kundeservice",
+      "alternatives": [
+         "Zendesk", 
+         "Intercom", 
+         "Freshdesk",
+         "Salesforce Service Cloud",
+         "HubSpot Service Hub"
+      ]
    }
 ]
