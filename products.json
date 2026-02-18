@@ -755,5 +755,18 @@
          "Salesforce Service Cloud",
          "HubSpot Service Hub"
       ]
+   },
+   {
+      "name": "SHUP",
+      "url": "https://www.shup.dk",
+      "image": "images/shup.png",
+      "description": "Simpel hosted e-commerce platform.",
+      "alternatives": [
+         "WooCommerce", 
+         "Shopify", 
+         "Wix eCommerce",
+         "Squarespace",
+         "BigCommerce"
+      ]
    }
 ]
