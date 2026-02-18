@@ -757,18 +757,9 @@
       ]
    },
    {
-      "name": "Plapre Nano",
-      "url": "https://huggingface.co/syvai/plapre-nano",
-      "description": "Open source dansk tekst-til-tale-model med talerkonditionering og stemmekloning. Genererer 24kHz lyd fra dansk tekst via autoregressiv lydtoken-prædiktion.",
-      "alternatives": [
-         "OpenAI TTS",
-         "ElevenLabs"
-      ]
-   },
-   {
-      "name": "Plapre Pico",
-      "url": "https://huggingface.co/syvai/plapre-pico",
-      "description": "Kompakt open source dansk tekst-til-tale-model (118M parametre) med stemmekloning. Kan køre lokalt og on-prem — ingen data forlader din infrastruktur.",
+      "name": "Plapre",
+      "url": "https://github.com/syv-ai/plapre",
+      "description": "Open source dansk tekst-til-tale med stemmekloning. Genererer 24kHz lyd fra dansk tekst og kan køres lokalt og on-prem — ingen data forlader din infrastruktur.",
       "alternatives": [
          "OpenAI TTS",
          "ElevenLabs"
