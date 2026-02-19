@@ -336,7 +336,7 @@
                   <span class="inline-flex items-center rounded-full bg-blue-600 px-2 py-0.5 text-xs font-medium text-white flex-shrink-0">Original</span>
                   <?php endif; ?>
                 </div>
-                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2">
+                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2" title="<?php echo htmlspecialchars($description); ?>">
                   <?php echo $description; ?>
                 </p>
                 <?php if (!empty($alternativesText)): ?>
