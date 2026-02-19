@@ -768,5 +768,14 @@
          "Squarespace",
          "BigCommerce"
       ]
+   },
+	{
+      "name": "Plapre",
+      "url": "https://github.com/syv-ai/plapre",
+      "description": "Open source dansk tekst-til-tale med stemmekloning. Genererer 24kHz lyd fra dansk tekst og kan køres lokalt og on-prem — ingen data forlader din infrastruktur.",
+      "alternatives": [
+         "OpenAI TTS",
+         "ElevenLabs"
+      ]
    }
 ]
