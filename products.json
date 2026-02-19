@@ -788,5 +788,16 @@
          "OpenAI TTS",
          "ElevenLabs"
       ]
+   },
+   {
+      "name": "PawNote",
+      "url": "https://pawnote.dk",
+      "description": "Bookingsystem og klinik-CRM udviklet specifikt til dyreterapeuter og mindre dyreklinikker.",
+      "alternatives": [
+         "Acuity Scheduling",
+         "Calendly",
+         "Time To Pet",
+         "ezyVet"
+      ]
    }
 ]
