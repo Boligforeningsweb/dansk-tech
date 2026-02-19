@@ -250,6 +250,17 @@
       "image": "images/iteras.png"
    },
    {
+      "name": "Jarvis",
+      "url": "https://odagroup.dk/pharma",
+      "description": "AI-companion til frontline-teams i pharma der udvider eksisterende CRM-systemer med intelligent møde-forberedelse, debriefs, indsigter, prioritering og opfølgning.",
+      "alternatives": [
+         "Veeva CRM",
+         "Salesforce Life Sciences",
+         "IQVIA OCE"
+      ],
+      "image": "images/jarvis.png"
+   },
+   {
       "name": "Holdsport.dk",
       "url": "https://holdsport.dk",
       "description": "Software til kontingentopkrævning, kommunikation og medlemsadministration online.",
