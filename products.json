@@ -377,6 +377,17 @@
       "image": "images/proprty-ai.png"
    },
    {
+      "name": "Quickpay",
+      "url": "https://www.quickpay.net",
+      "description": "Betalingsløsning",
+      "alternatives": [
+         "Stripe",
+         "Shopify Payments",
+         "Bambora"
+      ],
+      "image": "images/quickpay.png"
+   },
+   {
       "name": "Resos.com",
       "url": "https://resos.com",
       "description": "Reservations- og bookingssystem til restauranter",
