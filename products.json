@@ -61,6 +61,22 @@
       ]
    },
    {
+      "name": "BOARD OFFICE",
+      "url": "https://www.board-office.dk",
+      "description": "Dansk platform til bestyrelsesarbejde med mødeadministration, sikker dokumentdeling og avancerede værktøjer og AI-integration til governance og samarbejde",
+      "alternatives": [
+         "Admincontrol",
+         "Diligent Boards",
+         "BoardEffect",
+         "OnBoard",
+         "iBabs",
+         "Sherpany",
+         "Azues Convene",
+         "Boardable"
+      ],
+      "image": "images/boardoffice.png"
+   },
+   {
       "name": "Boligforeningsweb",
       "url": "https://boligforeningsweb.dk",
       "description": "Software til administration af boligforeninger",
