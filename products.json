@@ -888,5 +888,16 @@
     "alternatives": [
       "LinkedIn"
     ]
-  }
+  },
+   {
+      "name": "ProjectFlow",
+      "url": "https://fortesprojectflow.dk",
+      "description": "Projekt- og porteføljestyringssystem. Ressourcestyring. Tidsregistrering.",
+      "alternatives": [
+         "Microsoft Project",
+         "Planview",
+         "Wrike",
+         "PPM Express"
+      ]
+   }
 ]
