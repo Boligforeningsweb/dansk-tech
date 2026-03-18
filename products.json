@@ -869,11 +869,11 @@
    }
 		]
 	},
-   {
+{
     "name": "freelio.dk",
     "url": "https://freelio.dk",
-    "description": "Dansk alternativ til LinkedIn. Professionelt netværk hvor mennesker dyrker forbindelser, bygger karriere og møder virksomheder og rekrutteringsbureauer.",
+    "description": "Dansk alternativ til LinkedIn. Karriereværktøj. Rekrutteringsværktøj. Brandingværktøj. Meet-ups & Events.",
     "alternatives": [
       "LinkedIn"
-    	]
+    ]
   },
