@@ -146,4 +146,13 @@
       "Clubdesk"
     ]
   }
-]
+    ]
+  },
+  {
+      "name": "freelio.dk",
+      "url": "https://freelio.dk",
+      "description": "Dansk alternativ til LinkedIn. Karriereværktøj. Rekrutteringsværktøj. Brandingværktøj. Meet-ups & Events.",
+      "alternatives": [
+        "LinkedIn"
+            ]
+    }
