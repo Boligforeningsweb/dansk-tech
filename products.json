@@ -934,5 +934,14 @@
          "1&1",
          "GoDaddy"
       ]
+   },
+   {
+      "name": "minforening",
+      "url": "https://minforening.dk",
+      "description": "MinForening gratis app og foreningssystem gør det nemt at være leder, kasserer, træner, instruktør, koordinator, medlem, forælder, familie, husstand og frivillig i en forening.",
+      "alternatives": [
+         "Winkas",
+         "Conventus"
+      ]
    }
 ]
