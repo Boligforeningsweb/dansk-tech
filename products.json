@@ -370,6 +370,18 @@
       ]
    },
    {
+      "name": "Netsite",
+      "url": "https://www.netsite.dk/",
+      "description": "Domæne, DNS, email- og webhotel-hosting i Danmark med dansk support.",
+      "alternatives": [
+         "Simply.com",
+         "one.com",
+         "GoDaddy",
+         "Namecheap",
+         "Cloudflare"
+      ]
+   },
+   {
       "name": "NordicScreen",
       "url": "https://nordicscreen.com",
       "description": "Digital signage-platform til styring af skærme og indhold med cloud-baseret CMS. Bruges til planlægning, afspilning og distribution af visuelt content på tværs af lokationer.",
