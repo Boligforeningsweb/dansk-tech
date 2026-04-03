@@ -989,5 +989,15 @@
          "redactable.com",
          "PDF24.org"
       ]
+   },
+   {
+      "name": "regrettable.eu",
+      "url": "https://regrettable.eu",
+      "description": "Drop-in fortrydelsesknap til EU-webshops. Gør det nemt at overholde EU-direktiv 2023/2673 med en letvægts-widget, automatiske bekræftelsesmails med leveringssporing og 10 års revisionslog.",
+      "alternatives": [
+         "Rescindly",
+         "Trusted Shops",
+         "Shopware Withdrawal Plugin"
+      ]
    }
 ]
