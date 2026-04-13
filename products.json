@@ -1010,5 +1010,13 @@
          "ZoomInfo",
          "OpenCorporates"
       ]
+   },
+   {
+      "name": "Chainbox",
+      "url": "https://chainbox.dk",
+      "description": "Chainbox understøtter B2B-virksomheder med værktøjer til håndtering af produktdata, online salg og indholdsstyring",
+      "alternatives": [
+         "Shopify B2B, Commercetools, Sana Commerce"
+      ]
    }
 ]
