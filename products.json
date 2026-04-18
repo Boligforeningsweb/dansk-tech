@@ -239,6 +239,18 @@
       ]
    },
    {
+      "name": "Foundbase",
+      "url": "https://www.foundbase.dk",
+      "description": "Foundbase er en alt-i-en platform til startups og mindre virksomheder",
+      "alternatives": [
+         "Salesforce",
+         "ClickUp",
+         "Pipedrive",
+         "Penneo"
+      ],
+      "image": "images/foundbase.png"
+   },
+   {
       "name": "GrowPanel.io",
       "url": "https://growpanel.io",
       "description": "Subscription analytics platform",
