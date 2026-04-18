@@ -350,6 +350,12 @@
       ]
    },
    {
+     "name": "Mikrobageri.dk",
+     "url": "https://mikrobageri.dk",
+     "description": "Et simpelt bestillingssystem til mikrobagerier med online bestilling, bagekalender og overblik over bagningen",
+     "alternatives": ["WooCommerce", "Shopify", "GloriaFood"]
+   },
+   {
       "name": "Morningscore.io",
       "url": "https://morningscore.io",
       "description": "SEO + GEO tracking",
