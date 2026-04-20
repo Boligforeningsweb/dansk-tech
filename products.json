@@ -1044,5 +1044,14 @@
       "alternatives": [
          "Wix, Loveable, Wordpress"
       ]
+   },
+   {
+      "name": "Shipmondo",
+      "url": "https://shipmondo.com/dk/",
+      "description": "Nem og hurtig fragthåndtering",
+      "alternatives": [
+         "Sendcloud",
+         "Shippo"
+      ]
    }
 ]
