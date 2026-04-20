@@ -1050,8 +1050,10 @@
       "url": "https://shipmondo.com/dk/",
       "description": "Nem og hurtig fragthåndtering",
       "alternatives": [
-         "Sendcloud",
-         "Shippo"
+         "Shippo",
+         "Shipstation",
+         "AfterShip",
+         "Easyship"
       ]
    }
 ]
