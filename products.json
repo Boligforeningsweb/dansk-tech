@@ -1064,5 +1064,17 @@
          "AfterShip",
          "Easyship"
       ]
+   },
+   {
+      "name": ".legal",
+      "url": "https://www.dotlegal.com",
+      "description": "Dansk GRC-platform der samler compliance-arbejdet med GDPR, NIS2, AI Act, ISO 27001 og DORA i én løsning. Indeholder moduler til databeskyttelse, informationssikkerhed, kontrakthåndtering, leverandørstyring og framework-skabeloner med AI-features.",
+      "alternatives": [
+         "OneTrust",
+         "Vanta",
+         "Drata",
+         "Secureframe",
+         "ISMS.online"
+      ]
    }
 ]
