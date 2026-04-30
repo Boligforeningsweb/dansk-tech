@@ -1076,5 +1076,16 @@
          "Secureframe",
          "ISMS.online"
       ]
+   },
+   {
+      "name": "VerifyID.dk",
+      "url": "https://verifyid.dk",
+      "description": "Aldersverifikation og ID-scanner til både fysiske butikker og online. Skræddersyede MitID-flows og specialister i MitID-integration til e-handel, login og compliance.",
+      "alternatives": [
+         "Beweiser",
+         "Veriff",
+         "Yoti",
+         "Onfido"
+      ]
    }
 ]
