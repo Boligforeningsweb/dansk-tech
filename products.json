@@ -1087,5 +1087,11 @@
          "Yoti",
          "Onfido"
       ]
+   },
+   {
+      "name": "SendRCS.dk",
+      "url": "https://sendrcs.dk",
+      "description": "Professionel RCS messaging platform til virksomheder. Send rich messages med billeder, knapper og karruseller via RCS Business Messaging.",
+      "alternatives": ["Twilio", "Sinch", "MessageBird", "Infobip"]
    }
 ]
