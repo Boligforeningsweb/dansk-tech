@@ -152,6 +152,17 @@
       "image": "images/clearhaus.png"
    },
    {
+      "name": "danadresse.dk",
+      "url": "https://danadresse.dk",
+      "description": "Dansk adresse-API og drop-in erstatning for DAWA (Danmarks Adressers Web API), der lukker 17. august 2026. Leverer adressesøgning, autocomplete, adressevask (datavask), reverse geocoding og replikering 1:1-kompatibelt med DAWA — skift blot baseURL og tilføj en API-nøgle, så kører den eksisterende integration videre uden kodeændringer. Landsdækkende adressedata fra Datafordeleren (DAR/BBR).",
+      "alternatives": [
+         "Google Maps Geocoding API",
+         "Mapbox",
+         "Loqate",
+         "Smarty"
+      ]
+   },
+   {
       "name": "dataandmore.com",
       "url": "https://dataandmore.com/",
       "description": "Identifikation og sletning af GDPR og sikkerhedsinformation til compliance og risiko i ustrukturerede data. ",
