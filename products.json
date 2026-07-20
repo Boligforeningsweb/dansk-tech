@@ -1093,5 +1093,16 @@
       "url": "https://sendrcs.dk",
       "description": "Professionel RCS messaging platform til virksomheder. Send rich messages med billeder, knapper og karruseller via RCS Business Messaging.",
       "alternatives": ["Twilio", "Sinch", "MessageBird", "Infobip"]
+   },
+   {
+      "name": "Nummeropslag.dk",
+      "url": "https://nummeropslag.dk",
+      "description": "Dansk nummeropslag, opkalds-ID og spamopkalds-beskyttelse med data fra CVR og danske teleudbydere. Findes både som app og som partner-API til at slå ukendte numre op, identificere virksomheder og blokere spam- og svindelopkald.",
+      "alternatives": [
+         "Truecaller",
+         "Hiya",
+         "Whoscall",
+         "Twilio Lookup"
+      ]
    }
 ]
