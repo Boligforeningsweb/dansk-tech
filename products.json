@@ -769,6 +769,18 @@
       ]
    },
    {
+      "name": "Lynbro Cookie Consent",
+      "url": "https://wordpress.org/plugins/lynbro-cookie-consent/",
+      "description": "Gratis, flersproget cookie-samtykkebanner til WordPress med Google Consent Mode v2. GDPR/ePrivacy-compliant uden sidevisningsgrænse, med fuld kontrol over cookie-kategorier, auto-scanning og samtykke-log — udviklet i Danmark af Lynbro.",
+      "alternatives": [
+         "CookieYes",
+         "Complianz",
+         "Usercentrics",
+         "OneTrust",
+         "Osano"
+      ]
+   },
+   {
       "name": "LønRadar",
       "url": "https://loenradar.dk",
       "description": "Løn-benchmarking platform og lønberegner",
