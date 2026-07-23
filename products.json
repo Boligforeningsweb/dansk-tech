@@ -497,6 +497,16 @@
       ]
    },
    {
+      "name": "Soge.dk",
+      "url": "https://soge.dk",
+      "description": "Dansk søgemaskine og API til køretøjsdata – slå enhver bil op via nummerplade eller stelnummer med data fra det officielle DMR-register (specifikationer, syn og historik).",
+      "alternatives": [
+         "carVertical",
+         "Carfax",
+         "AutoDNA"
+      ]
+   },
+   {
       "name": "SEO.ai",
       "url": "https://seo.ai",
       "description": "Automatisering af indholdsproduktion",
