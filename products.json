@@ -38,13 +38,13 @@
       "url": "https://alviss.io",
       "description": "En dansk platform til Marketing Science der hjælper virksomheder med at identificere, simulere, prædiktere og optimere effecten af deres forskellige salgsgenererende aktiviteter som media, kommunikation or priser.",
       "alternatives": [
-         "Google Analytics",
-         "Keen",
-         "LiftLab",
-         "Recast",
-         "Cassandra",
-         "Mutinex",
-         "MASS Analytics"
+        "Google Analytics",
+        "Keen",
+        "LiftLab",
+        "Recast",
+        "Cassandra",
+        "Mutinex",
+        "MASS Analytics"
       ]
    },
    {
@@ -126,11 +126,7 @@
       "name": "Neuphlo",
       "url": "https://neuphlo.com",
       "description": "Projektstyring med indbygget testmanagement,vidensdeling og chatkanaler. Neuphlo kan tilgås via mcp server og har integration til GitHub, GitLab, Addo Sign",
-      "alternatives": [
-         "Jira og Xray",
-         "Linear",
-         "ALM"
-      ]
+      "alternatives": ["Jira og Xray", "Linear", "ALM"]
    },
    {
       "name": "Clerk.io",
@@ -386,14 +382,10 @@
       ]
    },
    {
-      "name": "Mikrobageri.dk",
-      "url": "https://mikrobageri.dk",
-      "description": "Et simpelt bestillingssystem til mikrobagerier med online bestilling, bagekalender og overblik over bagningen",
-      "alternatives": [
-         "WooCommerce",
-         "Shopify",
-         "GloriaFood"
-      ]
+     "name": "Mikrobageri.dk",
+     "url": "https://mikrobageri.dk",
+     "description": "Et simpelt bestillingssystem til mikrobagerier med online bestilling, bagekalender og overblik over bagningen",
+     "alternatives": ["WooCommerce", "Shopify", "GloriaFood"]
    },
    {
       "name": "Morningscore.io",
@@ -912,9 +904,7 @@
       "name": "CVR Intel",
       "url": "https://cvrintel.dk",
       "description": "Virksomhedsdata, AI og leads samlet ét sted",
-      "alternatives": [
-         "Bisnode/Dun & Bradstreet"
-      ]
+      "alternatives": ["Bisnode/Dun & Bradstreet"]
    },
    {
       "name": "Zylinc.com",
@@ -988,39 +978,14 @@
       "name": "Coherta",
       "url": "https://www.coherta.com/da",
       "description": "Coherta er en B2B platform til virksomheds- og kontaktdata, der samler, beriger og deduplikerer data til leadgenerering, segmentering og CRM-synkronisering (fx outreach, pipeline og rapportering).",
-      "alternatives": [
-         "Bisnode/Dun & Bradstreet",
-         "ZoomInfo",
-         "Clearbit",
-         "Lusha",
-         "Apollo.io",
-         "UpLead",
-         "Lead411",
-         "Snov.io",
-         "Hunter.io",
-         "Adapt.io",
-         "LeadIQ",
-         "DiscoverOrg",
-         "InsideView",
-         "LeadGenius",
-         "LeadFuze",
-         "LeadSift",
-         "Leadspace",
-         "LimeLeads"
-      ]
+      "alternatives": ["Bisnode/Dun & Bradstreet", "ZoomInfo", "Clearbit", "Lusha", "Apollo.io", "UpLead", "Lead411", "Snov.io", "Hunter.io", "Adapt.io", "LeadIQ", "DiscoverOrg", "InsideView", "LeadGenius", "LeadFuze", "LeadSift", "Leadspace", "LimeLeads"]
    },
    {
       "name": "Meili Robots",
       "url": "https://meilirobots.com/",
       "description": "Universelt flådestyringssystem til mobile robotter, orkestrer dine robotter på én platform uanset type, mærke eller model. Bruges på tværs af forskellige industrisegmenter.",
       "alternatives": [
-         "InOrbit",
-         "Synaos",
-         "Naise",
-         "Formant",
-         "Open-RMF",
-         "Siemens SiMove",
-         "MHP"
+         "InOrbit", "Synaos", "Naise", "Formant", "Open-RMF", "Siemens SiMove", "MHP"
       ]
    },
    {
@@ -1093,7 +1058,7 @@
          "Rescindly",
          "Trusted Shops",
          "Shopware Withdrawal Plugin"
-      ]
+     ]
    },
    {
       "name": "companydata.dk",
@@ -1160,12 +1125,7 @@
       "name": "SendRCS.dk",
       "url": "https://sendrcs.dk",
       "description": "Professionel RCS messaging platform til virksomheder. Send rich messages med billeder, knapper og karruseller via RCS Business Messaging.",
-      "alternatives": [
-         "Twilio",
-         "Sinch",
-         "MessageBird",
-         "Infobip"
-      ]
+      "alternatives": ["Twilio", "Sinch", "MessageBird", "Infobip"]
    },
    {
       "name": "Nummeropslag.dk",
@@ -1182,10 +1142,6 @@
       "name": "PennaPay",
       "url": "https://pennapay.com",
       "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
-      "alternatives": [
-         "QuickBooks",
-         "FreshBooks",
-         "Wave"
-      ]
+      "alternatives": ["QuickBooks", "FreshBooks", "Wave"]
    }
 ]
