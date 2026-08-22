@@ -1137,5 +1137,11 @@
          "Whoscall",
          "Twilio Lookup"
       ]
+   },
+   {
+      "name": "PennaPay",
+      "url": "https://pennapay.com",
+      "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
+      "alternatives": ["QuickBooks", "FreshBooks", "Wave"]
    }
 ]
