@@ -1143,12 +1143,12 @@
       "url": "https://pennapay.com",
       "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
       "alternatives": ["QuickBooks", "FreshBooks", "Wave"]
-   }
-],
-"name": "Licensly",
-     "url": "https://www.licensly.dk/",
-     "name": "Licensly",
-     "url": "https://www.licensly.dk/",
-     "description": "Gratis, uafhængigt dansk værktøj til at sammenligne alle 10 Microsoft 365-licenser på 60 funktioner og regne prisen ud pr. bruger i DKK, EUR eller USD. Ingen oprettelse, ingen salg.",
-     "alternatives": ["M365Maps", "Microsoft 365 plan comparison"]
- }
+ 
+     },
+     {
+        "name": "Licensly",
+        "url": "https://www.licensly.dk/",
+        "description": "Gratis, uafhængigt dansk værktøj til at sammenligne alle 10 Microsoft 365-licenser på 60 funktioner og regne prisen ud pr. bruger i DKK, EUR eller USD. Ingen oprettelse, ingen salg.",
+        "alternatives": ["M365Maps", "Microsoft 365 plan comparison"]
+     }
+  ]
