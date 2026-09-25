@@ -271,6 +271,16 @@
       "image": "images/foundbase.png"
    },
    {
+      "name": "fremforge",
+      "url": "https://frem.sh",
+      "description": "EU suveræn CI/CD med Git inkluderet.",
+      "alternatives": [
+         "GitHub",
+         "Gitlab",
+         "bitbucket"
+      ]
+   },
+   {
       "name": "GrowPanel.io",
       "url": "https://growpanel.io",
       "description": "Subscription analytics platform",
