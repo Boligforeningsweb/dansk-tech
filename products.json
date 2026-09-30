@@ -570,6 +570,19 @@
       ]
    },
    {
+      "name": "Tiimo (tiimoapp.com)",
+      "url": "https://www.tiimoapp.com",
+      "description": "Visuel dagsplanlægger med AI til opgaver, deadlines og fokus på arbejde og i hverdagen – udviklet med afsæt i neurodivergente behov, herunder ADHD og autisme, og relevant for alle, der ønsker støtte til planlægning. Kåret af Apple til iPhone App of the Year 2025.",
+      "alternatives": [
+         "Todoist",
+         "TickTick",
+         "Structured",
+         "Motion",
+         "Sunsama",
+         "Akiflow"
+      ]
+   },
+   {
       "name": "Timelog.com",
       "url": "https://timelog.com",
       "description": "Tidsregistrering, ressourcestyring og fakturering",
