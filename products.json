@@ -282,6 +282,16 @@
       "image": "images/growpanel.png"
    },
    {
+      "name": "Henosia.com",
+      "url": "https://www.henosia.com",
+      "description": "Byg produktionsklare interne apps med AI, også uden at kunne kode.",
+      "alternatives": [
+         "Lovable",
+         "Retool",
+         "Replit"
+      ]
+   },
+   {
       "name": "Herodesk.io",
       "url": "https://herodesk.io",
       "description": "Customer support og helpdesk",
