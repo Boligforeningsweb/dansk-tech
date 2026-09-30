@@ -32,6 +32,13 @@ function person_role(array $person) {
   return $role;
 }
 
+// URL med indholds-hash, så filen kan caches længe og alligevel opdateres ved deploy
+function asset_url($file) {
+  $path = APP_ROOT . '/' . $file;
+  $version = file_exists($path) ? substr(md5_file($path), 0, 10) : '0';
+  return '/' . $file . '?v=' . $version;
+}
+
 function redirect($location, $status = 301) {
   header('Location: ' . $location, true, $status);
   exit;

@@ -1,0 +1,24 @@
+name: CSS
+
+# Tjekker at assets/app.css er bygget ud fra de nyeste PHP-skabeloner.
+# Fejler den: kør ./tools/tailwind/build.sh og commit assets/app.css.
+on:
+  pull_request:
+    paths:
+      - '**.php'
+      - 'tools/tailwind/**'
+      - 'assets/app.css'
+
+jobs:
+  tailwind:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./tools/tailwind/build.sh
+      - name: assets/app.css er opdateret
+        run: |
+          if ! git diff --quiet assets/app.css; then
+            echo "::error file=assets/app.css::assets/app.css er ikke opdateret. Kør ./tools/tailwind/build.sh og commit resultatet."
+            git diff --stat assets/app.css
+            exit 1
+          fi

@@ -143,6 +143,12 @@ Som bidragyder skal du kun redigere én fil:
 php -S localhost:8000 tools/dev-router.php
 ```
 
+CSS'en bygges med Tailwind (v3.4, standalone-CLI, kræver ikke Node). Kør dette efter ændringer i PHP-skabelonerne og commit `assets/app.css` – en GitHub Action tjekker, at filen er opdateret:
+
+```bash
+./tools/tailwind/build.sh
+```
+
 `index.php` er en router: `pages/` indeholder siderne, `partials/` de fælles dele (head, footer, produktkort), `lib/` hjælpefunktioner og `data/people.json` iværksætterne på forsiden. Ukendte URL'er giver en rigtig 404.
 
 ---

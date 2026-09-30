@@ -32,7 +32,6 @@ $ogImageAlt = $ogImageAlt ?? $title;
   <link rel="manifest" href="/site.webmanifest">
 
   <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://cdn.tailwindcss.com">
   <link rel="preconnect" href="https://www.google.com">
   <link rel="dns-prefetch" href="https://api.github.com">
 
@@ -58,12 +57,7 @@ $ogImageAlt = $ogImageAlt ?? $title;
   <meta name="twitter:image" content="<?php echo e($ogImage); ?>">
   <meta name="twitter:image:alt" content="<?php echo e($ogImageAlt); ?>">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
+  <link rel="stylesheet" href="<?php echo e(asset_url('assets/app.css')); ?>">
 <?php if (!empty($schema)): ?>
 
   <!-- Schema.org JSON-LD -->
