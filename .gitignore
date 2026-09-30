@@ -59,3 +59,6 @@ Desktop.ini
 phpunit.xml
 *.phpunit.result.cache
 
+
+# Tailwind standalone-CLI (hentes af tools/tailwind/build.sh)
+tools/tailwind/.bin/
