@@ -206,6 +206,19 @@
       "image": "images/e-conomic.png"
    },
    {
+      "name": "Ethnote",
+      "url": "https://ethnote.dk",
+      "description": "Dansk platform til kvalitativ dataanalyse og kodning.",
+      "alternatives": [
+         "Nvivo",
+         "Atlas.ti",
+         "MaxQDA",
+         "Dedoose",
+         "Dovetail"
+      ],
+      "image": "images/ethnote_logo_light.svg"
+   },
+   {
       "name": "Rilanto Reviews",
       "url": "https://rilanto.com",
       "description": "Dansk platform til kundeanmeldelser. Rilanto er udviklet og hostet i Danmark, og er et supplement til eksisterende review-sites.",
