@@ -1,0 +1,100 @@
+{
+  "backers": [
+    {
+      "name": "Lasse Schou Holbøll",
+      "image": "/images/lasse-schou.png",
+      "role": "Stifter af GrowPanel, Soundvenue, Mouseflow og PageVitals"
+    },
+    {
+      "name": "Mogens Møller",
+      "image": "/images/mogens-moller.png",
+      "role": "Stifter af Sleeknote og medejer af Drip.com"
+    },
+    {
+      "name": "Hans-Kristian Bjerregaard",
+      "image": "/images/hans-kristian.png",
+      "role": "Stifter af Clerk.io"
+    },
+    {
+      "name": "Anders Eiler",
+      "image": "/images/anders-eiler.png",
+      "role": "Stifter af Herodesk og Meebox"
+    },
+    {
+      "name": "Karsten Madsen",
+      "image": "/images/karsten-madsen.png",
+      "role": "Stifter af Morningscore og Morningtrain"
+    },
+    {
+      "name": "Steffen Hedebrandt",
+      "image": "/images/steffen-hedebrandt.jpg",
+      "role": "Medstifter af DreamData.io"
+    },
+    {
+      "name": "Pelle Nielsen",
+      "image": "/images/pelle-timelog.png",
+      "role": "Adm. direktør i Timelog"
+    },
+    {
+      "name": "Søren Lund",
+      "image": "/images/soren-lund.png",
+      "role": "Stifter af Timelog"
+    },
+    {
+      "name": "Bo Møller",
+      "image": "/images/bo-moller.png",
+      "role": "Stifter af bl.a. Easypractice, Twentyfour, Boligforeningsweb, PingPuffin og Alunta"
+    },
+    {
+      "name": "Oliver Lindebod",
+      "image": "/images/oliver-lindebod.png",
+      "role": "Stifter af bl.a. Boligforeningsweb, Alunta og PingPuffin"
+    },
+    {
+      "name": "Emil Højbjerg",
+      "image": "/images/emil-hoejbjerg.png",
+      "role": "Stifter af bl.a. Boligforeningsweb, EasyPractice, Alunta og PingPuffin"
+    },
+    {
+      "name": "Martin Thorborg",
+      "image": "/images/martin-thorborg.jpg",
+      "role": "Stifter af bl.a. Dinero, SPAMFighter, Amino og Jubii"
+    },
+    {
+      "name": "Jeff Blaavand",
+      "image": "/images/jeff-blaavand.jpg",
+      "role": "CMO i Plecto"
+    },
+    {
+      "name": "Daniel Højris Bæk",
+      "image": "/images/daniel.jpg",
+      "role": "Stifter af bl.a. SEO.ai og Nodes"
+    }
+  ],
+  "founders": [
+    {
+      "name": "Bo Møller",
+      "image": "/images/bo-moller.png",
+      "role": "Stifter af bl.a. Easypractice, Twentyfour, Boligforeningsweb, PingPuffin og Alunta"
+    },
+    {
+      "name": "Oliver Lindebod",
+      "image": "/images/oliver-lindebod.png",
+      "role": "Stifter af bl.a. Boligforeningsweb, Alunta og PingPuffin"
+    },
+    {
+      "name": "Emil Højbjerg",
+      "image": "/images/emil-hoejbjerg.png",
+      "role": "Stifter af bl.a. Boligforeningsweb, EasyPractice, Alunta og PingPuffin"
+    },
+    {
+      "name": "Jonas Kaas Kristensen",
+      "image": "/images/jonas.jpg",
+      "role": "Freelance udvikler og administrator på dansktechstack.dk sammen med Bo Møller.",
+      "link": {
+        "text": "Freelance udvikler",
+        "url": "https://midear.dk"
+      }
+    }
+  ]
+}

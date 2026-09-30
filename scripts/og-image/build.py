@@ -53,10 +53,9 @@ def is_identicon(path):
 
 
 def backers():
-    # Iværksætterne fra "Tusind tak"-sektionen i index.php
-    html = (ROOT / "index.php").read_text()
-    section = html.split('id="iværksættere"')[1].split("</ul>")[0]
-    return [ROOT / src for src in re.findall(r'<img src="([^"]+)"', section)]
+    # Iværksætterne fra "Tusind tak"-sektionen på forsiden
+    people = json.loads((ROOT / "data" / "people.json").read_text())
+    return [ROOT / p["image"].lstrip("/") for p in people["backers"]]
 
 
 def contributors():

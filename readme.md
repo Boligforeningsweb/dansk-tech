@@ -34,7 +34,7 @@ Vi er glade for bidrag!
 
 **Vigtigt:** Du kan tilføje produkter til den samlede liste ved at redigere filen `products.json`. Produkter i denne fil vises automatisk i den alfabetisk sorterede liste på siden.
 
-Du skal **ikke** redigere `original-products.json` (dette fil markerer de oprindelige produkter) eller `index.php` - det håndteres internt af projektet.
+Du skal **ikke** redigere `original-products.json` (denne fil markerer de oprindelige produkter) eller sitets kode (`index.php`, `pages/`, `partials/`, `lib/`, `data/`) - det håndteres internt af projektet.
 
 ### Tilføj et produkt til listen
 
@@ -134,6 +134,16 @@ Som bidragyder skal du kun redigere én fil:
 
 **Må ikke redigeres:**
 - **`original-products.json`** - Marker de oprindelige produkter. Kun projektets maintainers må ændre denne fil.
+
+---
+
+## 🛠️ Kør sitet lokalt (kun maintainers)
+
+```bash
+php -S localhost:8000 tools/dev-router.php
+```
+
+`index.php` er en router: `pages/` indeholder siderne, `partials/` de fælles dele (head, footer, produktkort), `lib/` hjælpefunktioner og `data/people.json` iværksætterne på forsiden. Ukendte URL'er giver en rigtig 404.
 
 ---
 
