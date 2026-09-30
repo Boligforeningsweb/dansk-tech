@@ -1160,6 +1160,12 @@
       ]
    },
    {
+      "name": "Kallax.io",
+      "url": "https://kallax.io",
+      "description": "Brætspilsbegivenheder og organisering af samlinger til nørder, organisationer og virksomheder. Bygget af danskere, europæiske servere.",
+      "alternatives": ["BoardGameGeek", "GeekGroup", "Meetup"]
+   },
+   {
       "name": "PennaPay",
       "url": "https://pennapay.com",
       "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
