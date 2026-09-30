@@ -1,1232 +1,1281 @@
 [
-   {
-      "name": "Adamatics Platform (AdaLab)",
-      "url": "https://adamatics.com/platform/",
-      "description": "En dansk platform til data science, analytics og AI, der samler notebooks, dataadgang og deployment i ét kontrolleret miljø indenfor virksomheders egen netværk og kontrol. Kan deployes hos alle cloud providers der understøtter Kubernetes, såsom Scaleway, Upcloud, samt on-prem til kritisk infrastruktur.",
-      "alternatives": [
-         "Posit",
-         "PowerBI",
-         "Sagemaker"
-      ]
-   },
-   {
-      "name": "Admin By Request",
-      "url": "https://www.adminbyrequest.com",
-      "description": "Endpoint Privilege Management med just-in-time administratorrettigheder, godkendelsesflows og audit logs til Windows, macOS og Linux.",
-      "alternatives": [
-         "BeyondTrust",
-         "CyberArk",
-         "Delinea",
-         "AutoElevate"
-      ]
-   },
-   {
-      "name": "Alunta.com",
-      "url": "https://alunta.com",
-      "description": "Abonnementer, betalinger og fakturering",
-      "alternatives": [
-         "Stripe",
-         "Paddle",
-         "Recurly",
-         "Yonium",
-         "Chargebee"
-      ],
-      "image": "images/alunta.png"
-   },
-   {
-      "name": "Alviss AI",
-      "url": "https://alviss.io",
-      "description": "En dansk platform til Marketing Science der hjælper virksomheder med at identificere, simulere, prædiktere og optimere effecten af deres forskellige salgsgenererende aktiviteter som media, kommunikation or priser.",
-      "alternatives": [
-        "Google Analytics",
-        "Keen",
-        "LiftLab",
-        "Recast",
-        "Cassandra",
-        "Mutinex",
-        "MASS Analytics"
-      ]
-   },
-   {
-      "name": "Arrigoo CDP",
-      "url": "https://arrigoo.io",
-      "description": "Europæisk hosted Customer Data Platform til at indsamle, konsolidere og distribuere profildata på tværs af systemer og segmentere på baggrund af adfærd og egenskaber.",
-      "alternatives": [
-         "Microsoft Insight",
-         "Segment",
-         "Bloomreach",
-         "Adobe CDP",
-         "Tealium"
-      ],
-      "image": "images/arrigoo.png"
-   },
-   {
-      "name": "Bastio AI Security",
-      "url": "https://www.bastio.com",
-      "description": "Dansk AI-sikkerhedsgateway der beskytter LLM-applikationer med real-time threat detection. Drop-in proxy til OpenAI, Anthropic, Google m.fl. med prompt injection-beskyttelse, automatisk PII-masking, jailbreak-detektion, og fuld observability. Inkluderer også AI agent security og cost optimization via intelligent caching.",
-      "alternatives": [
-         "Lakera",
-         "Lasso Security",
-         "CalypsoAI",
-         "Prompt.security"
-      ],
-      "image": "images/bastio-ai-security.jpg"
-   },
-   {
-      "name": "Behandlerdata",
-      "url": "https://behandlerdata.dk",
-      "description": "Overenskomstpriser for behandlere - Behandlerdata.dk samler, normaliserer og udstiller takster, så I kan slå op på sekunder eller integrere direkte via API",
-      "alternatives": [
-         "OnlineTherapy",
-         "BetterHelp",
-         "International Therapist Directory",
-         "Location Independent Therapists",
-         "GoodTherapy",
-         "TherapyDen"
-      ]
-   },
-   {
-      "name": "BOARD OFFICE",
-      "url": "https://www.board-office.dk",
-      "description": "Dansk platform til bestyrelsesarbejde med mødeadministration, sikker dokumentdeling og avancerede værktøjer og AI-integration til governance og samarbejde",
-      "alternatives": [
-         "Admincontrol",
-         "Diligent Boards",
-         "BoardEffect",
-         "OnBoard",
-         "iBabs",
-         "Sherpany",
-         "Azues Convene",
-         "Boardable"
-      ],
-      "image": "images/boardoffice.png"
-   },
-   {
-      "name": "Boligforeningsweb",
-      "url": "https://boligforeningsweb.dk",
-      "description": "Software til administration af boligforeninger",
-      "alternatives": [
-         "Condo Control",
-         "Buildium",
-         "DoorLoop",
-         "Facebook"
-      ]
-   },
-   {
-      "name": "Campaign Builder",
-      "url": "https://www.campaignbuilder.io/",
-      "description": "All-in-one platform til at bygge, lancere og administrere kampagner på tværs af kanaler med catalog ads, HTML5 ads, popups, forms, workflows og SMS marketing",
-      "alternatives": [
-         "Marpipe",
-         "Kitchn",
-         "Bannerwise"
-      ]
-   },
-   {
-      "name": "Neuphlo",
-      "url": "https://neuphlo.com",
-      "description": "Projektstyring med indbygget testmanagement,vidensdeling og chatkanaler. Neuphlo kan tilgås via mcp server og har integration til GitHub, GitLab, Addo Sign",
-      "alternatives": ["Jira og Xray", "Linear", "ALM"]
-   },
-   {
-      "name": "Clerk.io",
-      "url": "https://clerk.io",
-      "description": "Personalisering og anbefalinger",
-      "alternatives": [
-         "Dynamic Yield",
-         "Klevu",
-         "AlgShopify Paymentsolia"
-      ],
-      "image": "images/clerk.png"
-   },
-   {
-      "name": "Clearhaus A/S",
-      "url": "https://www.clearhaus.com",
-      "description": "Dansk betalingsindløser der tilbyder sikker kortbetaling, risikostyring og compliance for e-handel.",
-      "alternatives": [
-         "Stripe",
-         "Adyen",
-         "Bambora",
-         "Shopify Payments"
-      ],
-      "image": "images/clearhaus.png"
-   },
-   {
-      "name": "danadresse.dk",
-      "url": "https://danadresse.dk",
-      "description": "Dansk adresse-API og drop-in erstatning for DAWA (Danmarks Adressers Web API), der lukker 17. august 2026. Leverer adressesøgning, autocomplete, adressevask (datavask), reverse geocoding og replikering 1:1-kompatibelt med DAWA — skift blot baseURL og tilføj en API-nøgle, så kører den eksisterende integration videre uden kodeændringer. Landsdækkende adressedata fra Datafordeleren (DAR/BBR).",
-      "alternatives": [
-         "Google Maps Geocoding API",
-         "Mapbox",
-         "Loqate",
-         "Smarty"
-      ]
-   },
-   {
-      "name": "dataandmore.com",
-      "url": "https://dataandmore.com/",
-      "description": "Identifikation og sletning af GDPR og sikkerhedsinformation til compliance og risiko i ustrukturerede data. ",
-      "alternatives": [
-         "Miscrosoft Purview",
-         "BigID",
-         "Varonis"
-      ]
-   },
-   {
-      "name": "Dinero.dk",
-      "url": "https://dinero.dk",
-      "description": "Regnskab og bogholderi",
-      "alternatives": [
-         "Xero",
-         "QuickBooks",
-         "Sage"
-      ],
-      "image": "images/dinero.png"
-   },
-   {
-      "name": "Dreamdata.io",
-      "url": "https://dreamdata.io",
-      "description": "B2B revenue attribution",
-      "alternatives": [
-         "Bizible",
-         "Attribution",
-         "Ruler Analytics"
-      ],
-      "image": "images/dreamdata.png"
-   },
-   {
-      "name": "E-conomic.dk",
-      "url": "https://e-conomic.dk",
-      "description": "Regnskab og bogholderi",
-      "alternatives": [
-         "Xero",
-         "QuickBooks",
-         "Sage"
-      ],
-      "image": "images/e-conomic.png"
-   },
-   {
-      "name": "Ethnote",
-      "url": "https://ethnote.dk",
-      "description": "Dansk platform til kvalitativ dataanalyse og kodning.",
-      "alternatives": [
-         "Nvivo",
-         "Atlas.ti",
-         "MaxQDA",
-         "Dedoose",
-         "Dovetail"
-      ],
-      "image": "images/ethnote_logo_light.svg"
-   },
-   {
-      "name": "Rilanto Reviews",
-      "url": "https://rilanto.com",
-      "description": "Dansk platform til kundeanmeldelser. Rilanto er udviklet og hostet i Danmark, og er et supplement til eksisterende review-sites.",
-      "alternatives": [
-         "Trustpilot.com"
-      ],
-      "image": "images/rilanto.jpg"
-   },
-   {
-      "name": "Flare.link",
-      "url": "https://flare.link",
-      "description": "Flare er en one-stop-shop til videooptagelse, redigering, deling og embedding af video med 4K-optagelse, tilpasselig player, analytics og API-adgang.",
-      "alternatives": [
-         "Loom",
-         "Wistia",
-         "Screen Studio",
-         "Vidyard",
-         "Vidalytics",
-         "Tella"
-      ],
-      "image": "images/flare.png"
-   },
-   {
-      "name": "Fenerum.com",
-      "url": "https://fenerum.com",
-      "description": "SaaS finances",
-      "alternatives": [
-         "Yonium",
-         "Chargebee"
-      ],
-      "image": "images/fenerum.png"
-   },
-   {
-      "name": "fmcgProducts PIM",
-      "url": "https://www.fmcgsolutions.dk",
-      "description": "PIM-system til stamdata med syndikering til GS1, Tradesolution EPD, Dabas og Matinfo samt andre systemer internt og eksternt",
-      "alternatives": [
-         "GS1",
-         "Syndigo",
-         "Inriver"
-      ]
-   },
-   {
-      "name": "Foundbase",
-      "url": "https://www.foundbase.dk",
-      "description": "Foundbase er en alt-i-en platform til startups og mindre virksomheder",
-      "alternatives": [
-         "Salesforce",
-         "ClickUp",
-         "Pipedrive",
-         "Penneo"
-      ],
-      "image": "images/foundbase.png"
-   },
-   {
-      "name": "fremforge",
-      "url": "https://frem.sh",
-      "description": "EU suveræn CI/CD med Git inkluderet.",
-      "alternatives": [
-         "GitHub",
-         "Gitlab",
-         "bitbucket"
-      ]
-   },
-   {
-      "name": "GrowPanel.io",
-      "url": "https://growpanel.io",
-      "description": "Subscription analytics platform",
-      "alternatives": [
-         "ChartMogul",
-         "Baremetrics",
-         "ProfitWell"
-      ],
-      "image": "images/growpanel.png"
-   },
-   {
-      "name": "Henosia.com",
-      "url": "https://www.henosia.com",
-      "description": "Byg produktionsklare interne apps med AI, også uden at kunne kode.",
-      "alternatives": [
-         "Lovable",
-         "Retool",
-         "Replit"
-      ]
-   },
-   {
-      "name": "Herodesk.io",
-      "url": "https://herodesk.io",
-      "description": "Customer support og helpdesk",
-      "alternatives": [
-         "Zendesk",
-         "Intercom",
-         "Freshdesk"
-      ],
-      "image": "images/herodesk.png"
-   },
-   {
-      "name": "IDguard.dk",
-      "url": "https://idguard.dk",
-      "description": "Aldersverifikation og identitetsbekræftelse",
-      "alternatives": [
-         "Veriff",
-         "Yoti",
-         "AgeChecker.Net"
-      ]
-   },
-   {
-      "name": "inMobile",
-      "url": "https://www.inmobile.com",
-      "description": "SMS, RCS og E-mail - få dit budskab ud og til de rigtige modtagere",
-      "alternatives": [
-         "Twilio",
-         "Sinch",
-         "Infobip",
-         "Vonage",
-         "Messente"
-      ]
-   },
-   {
-      "name": "GatewayAPI",
-      "url": "https://gatewayapi.com",
-      "description": "Global CPaaS-platform | SMS, RCS & Email",
-      "alternatives": [
-         "Sinch",
-         "Twilio",
-         "Infobip",
-         "Vonage",
-         "Messente"
-      ],
-      "image": "images/gatewayapi.svg"
-   },
-   {
-      "name": "Iteras",
-      "url": "https://iteras.com",
-      "description": "Abonnementsstyringsplatform til fakturering, betalinger og kundeabonnementer med selvbetjeningsportaler og integration til nordiske betalingsudbydere",
-      "alternatives": [
-         "Zuora",
-         "Chargebee",
-         "Recurly",
-         "Aria",
-         "Chargify"
-      ],
-      "image": "images/iteras.png"
-   },
-   {
-      "name": "Jarvis",
-      "url": "https://odagroup.dk/pharma",
-      "description": "AI-companion til frontline-teams i pharma der udvider eksisterende CRM-systemer med intelligent møde-forberedelse, debriefs, indsigter, prioritering og opfølgning.",
-      "alternatives": [
-         "Veeva CRM",
-         "Salesforce Life Sciences",
-         "IQVIA OCE"
-      ],
-      "image": "images/jarvis.png"
-   },
-   {
-      "name": "Holdsport.dk",
-      "url": "https://holdsport.dk",
-      "description": "Software til kontingentopkrævning, kommunikation og medlemsadministration online.",
-      "alternatives": [
-         "Spond",
-         "Clubdesk"
-      ]
-   },
-   {
-      "name": "Mercura CPQ",
-      "url": "https://mercura.io",
-      "description": "Configure-Price-Quote-platform til konfiguration, prisberegning og tilbud på komplekse produkter.",
-      "alternatives": [
-         "Tacton",
-         "Salesforce CPQ",
-         "Experlogix"
-      ]
-   },
-   {
-      "name": "Kala",
-      "url": "https://kala.app",
-      "description": "Bedre styring af din forretning med overblik over tid, medarbejdere, projekter - med integreret kvalitetssikring og forbindelse til populære ERP systemer og lønprogrammer",
-      "alternatives": [
-         "Harvest",
-         "ClickUp",
-         "Toggl",
-         "Clockify"
-      ]
-   },
-   {
-     "name": "Mikrobageri.dk",
-     "url": "https://mikrobageri.dk",
-     "description": "Et simpelt bestillingssystem til mikrobagerier med online bestilling, bagekalender og overblik over bagningen",
-     "alternatives": ["WooCommerce", "Shopify", "GloriaFood"]
-   },
-   {
-      "name": "Morningscore.io",
-      "url": "https://morningscore.io",
-      "description": "SEO + GEO tracking",
-      "alternatives": [
-         "Ahrefs",
-         "SEMrush",
-         "Moz"
-      ],
-      "image": "images/morningscore.png"
-   },
-   {
-      "name": "NextSign.dk",
-      "url": "https://www.nextsign.dk/",
-      "description": "Digital underskriftsløsning for virksomheder og organisationer",
-      "alternatives": [
-         "DocuSign",
-         "Scrive"
-      ]
-   },
-   {
-      "name": "Netsite",
-      "url": "https://www.netsite.dk/",
-      "description": "Domæne, DNS, email- og webhotel-hosting i Danmark med dansk support.",
-      "alternatives": [
-         "Simply.com",
-         "one.com",
-         "GoDaddy",
-         "Namecheap",
-         "Cloudflare"
-      ]
-   },
-   {
-      "name": "NordicScreen",
-      "url": "https://nordicscreen.com",
-      "description": "Digital signage-platform til styring af skærme og indhold med cloud-baseret CMS. Bruges til planlægning, afspilning og distribution af visuelt content på tværs af lokationer.",
-      "alternatives": [
-         "SignageLive",
-         "Appspace",
-         "Screencloud"
-      ]
-   },
-   {
-      "name": "PageVitals.com",
-      "url": "https://pagevitals.com",
-      "description": "Performance monitoring",
-      "alternatives": [
-         "New Relic",
-         "Datadog",
-         "Dynatrace"
-      ],
-      "image": "images/pagevitals.png"
-   },
-   {
-      "name": "PingPuffin.com",
-      "url": "https://pingpuffin.com",
-      "description": "Uptime monitoring og alerts",
-      "alternatives": [
-         "Pingdom",
-         "UptimeRobot",
-         "StatusCake",
-         "DownDetector"
-      ],
-      "image": "images/pingpuffin.png"
-   },
-   {
-      "name": "Plecto.com",
-      "url": "https://plecto.com",
-      "description": "Performance management og dashboards",
-      "alternatives": [
-         "Tableau",
-         "Power BI",
-         "Klipfolio"
-      ],
-      "image": "images/plecto.png"
-   },
-   {
-      "name": "Prowi",
-      "url": "https://prowi.io",
-      "description": "Commission Management Platform. Provision i realtid. Prowi viser sælgere deres provision i realtid via mobilappen. Dealen lukkes, de ser med det samme, hvad de har tjent. Feedback-loop. Gamification. Et salgsteam der faktisk drives af deres kompensationsplan.",
-      "alternatives": [
-         "Xactly",
-         "CaptivateIQ",
-         "Quotapath"
-      ],
-      "image": "images/prowi.jpg"
-   },
-   {
-      "name": "proprty.ai",
-      "url": "https://www.proprty.ai",
-      "description": "Tilstandsvurderinger, vedligeholdelsesplaner og CO₂-reduktion",
-      "alternatives": [
-         "OptiML",
-         "Property Inspect",
-         "Microsoft 365"
-      ],
-      "image": "images/proprty-ai.png"
-   },
-   {
-      "name": "Quickpay",
-      "url": "https://www.quickpay.net",
-      "description": "Betalingsløsning",
-      "alternatives": [
-         "Stripe",
-         "Shopify Payments",
-         "Bambora"
-      ],
-      "image": "images/quickpay.png"
-   },
-   {
-      "name": "Resos.com",
-      "url": "https://resos.com",
-      "description": "Reservations- og bookingssystem til restauranter",
-      "alternatives": [
-         "Tock",
-         "OpenTable",
-         "Resy",
-         "SevenRooms"
-      ]
-   },
-   {
-      "name": "Soge.dk",
-      "url": "https://soge.dk",
-      "description": "Dansk søgemaskine og API til køretøjsdata – slå enhver bil op via nummerplade eller stelnummer med data fra det officielle DMR-register (specifikationer, syn og historik).",
-      "alternatives": [
-         "carVertical",
-         "Carfax",
-         "AutoDNA"
-      ]
-   },
-   {
-      "name": "SEO.ai",
-      "url": "https://seo.ai",
-      "description": "Automatisering af indholdsproduktion",
-      "alternatives": [
-         "Jasper",
-         "Copy.ai",
-         "Writesonic"
-      ],
-      "image": "images/seoai.jpg"
-   },
-   {
-      "name": "Sleeknote.com",
-      "url": "https://sleeknote.com",
-      "description": "Email marketing og popups",
-      "alternatives": [
-         "Mailchimp",
-         "Klaviyo",
-         "ConvertKit"
-      ],
-      "image": "images/sleeknote.png"
-   },
-   {
-      "name": "SMTP.dk",
-      "url": "https://smtp.dk/",
-      "description": "Sikker levering af transaktions emails",
-      "alternatives": [
-         "Mailgun",
-         "Sendgrid",
-         "Amazon SES"
-      ]
-   },
-   {
-      "name": "Sumoshop",
-      "url": "https://www.sumoshop.dk",
-      "description": "E-commerce platform, der tilbyder hostede webshopløsninger",
-      "alternatives": [
-         "Shopify",
-         "Magento",
-         "WooCommerce"
-      ]
-   },
-   {
-      "name": "Tiimo (tiimoapp.com)",
-      "url": "https://www.tiimoapp.com",
-      "description": "Visuel dagsplanlægger med AI til opgaver, deadlines og fokus på arbejde og i hverdagen – udviklet med afsæt i neurodivergente behov, herunder ADHD og autisme, og relevant for alle, der ønsker støtte til planlægning. Kåret af Apple til iPhone App of the Year 2025.",
-      "alternatives": [
-         "Todoist",
-         "TickTick",
-         "Structured",
-         "Motion",
-         "Sunsama",
-         "Akiflow"
-      ]
-   },
-   {
-      "name": "Timelog.com",
-      "url": "https://timelog.com",
-      "description": "Tidsregistrering, ressourcestyring og fakturering",
-      "alternatives": [
-         "Toggl",
-         "Harvest",
-         "Clockify"
-      ],
-      "image": "images/timelog.png"
-   },
-   {
-      "name": "Hourtick.com",
-      "url": "https://hourtick.com",
-      "description": "Tidsregistrering, tasks og teamchat til mennesker og AI-agenter — uden per-seat-pris",
-      "alternatives": [
-         "Toggl",
-         "Harvest",
-         "Clockify"
-      ],
-      "image": "images/hourtick.png"
-   },
-   {
-      "name": "Ubivox.dk",
-      "url": "https://ubivox.dk/",
-      "description": "Send nyhedsbreve nemt og sikkert",
-      "alternatives": [
-         "MailChimp",
-         "Campaign Monitor",
-         "Klaviyo"
-      ]
-   },
-   {
-      "name": "Umbraco",
-      "url": "https://umbraco.com/",
-      "description": "Verdens meste udbredte Open Source .NET CMS. Stort økosystem af gratis og betalte extensions. ",
-      "alternatives": [
-         "Optimizely / EPIserver",
-         "Kentico",
-         "Drupal"
-      ]
-   },
-   {
-      "name": "Updatemate.ai",
-      "url": "https://updatemate.ai",
-      "description": "Automatisering og integrationer",
-      "alternatives": [
-         "Zapier",
-         "Make",
-         "n8n"
-      ],
-      "image": "images/updatemate.jpg"
-   },
-   {
-      "name": "WebContent",
-      "url": "https://webcontent.app",
-      "description": "WebContent er en platform til at søge, skabe, og udføre alt indenfor UGC ads.",
-      "alternatives": [
-         "Influee",
-         "Billo",
-         "Insense"
-      ]
-   },
-   {
-      "name": "Webhook.site",
-      "url": "https://webhook.site",
-      "description": "Hjælper apps til at snakke sammen og bygge workflows",
-      "alternatives": [
-         "Zapier",
-         "N8n",
-         "Pipedream",
-         "Requestbin"
-      ]
-   },
-   {
-      "name": "Weply",
-      "url": "https://www.weply.chat/da",
-      "description": "Weply er en 24/7 lead genererende live chat løsning.",
-      "alternatives": [
-         "Intercom",
-         "Tawk.to",
-         "Chatbase"
-      ]
-   },
-   {
-      "name": "Workfeed",
-      "url": "https://workfeed.io",
-      "description": "Arbejdstidsstyring og HR-system til planlægning, tidsregistrering og medarbejderadministration",
-      "alternatives": [
-         "Deputy",
-         "Homebase",
-         "HROne"
-      ]
-   },
-   {
-      "name": "Ziik",
-      "url": "https://ziik.io",
-      "description": "Ziik nytænker intranettet, med en all-in-one kommunikations- og informationdelingsplatform, der sikrer bedre engagement for medarbejdere",
-      "alternatives": [
-         "Sharepoint"
-      ]
-   },
-   {
-      "name": "ePay Payment Solutions",
-      "url": "https://epay.dk",
-      "description": "Vi gør det nemt at komme i gang med online betaling - uanset din virksomheds størrelse. Prøv nu og lav din første testbetaling på blot få minutter",
-      "alternatives": [
-         "Stripe",
-         "Adyen",
-         "PayPal",
-         "payoneer"
-      ]
-   },
-   {
-      "name": "Uniqkey",
-      "url": "https://www.uniqkey.eu/",
-      "description": "Adgangskode- og adgangsstyring for virksomheder",
-      "alternatives": [
-         "1password",
-         "Bitwarden",
-         "Dashlane"
-      ]
-   },
-   {
-      "name": "Dynamicweb",
-      "url": "https://dynamicweb.dk",
-      "description": "Dynamicweb - CMS, Ecommerce og PIM - med fokus på B2B salgs processer og produkt informations styring",
-      "alternatives": [
-         "Shopify B2B, Commercetools, Sana Commerce"
-      ]
-   },
-   {
-      "name": "Velatir",
-      "url": "https://www.velatir.com",
-      "description": "Platform til sporbarhed, gennemsigtighed og kontrol over AI-handlinger – 100% EU-infrastruktur. Godkend, log og overvåg AI-brug på tværs af organisationen.",
-      "alternatives": [
-         "GoToHuman",
-         "Arize AI",
-         "Guardrails AI",
-         "Opik",
-         "Maisa AI"
-      ]
-   },
-   {
-      "name": "Contractbook",
-      "url": "https://www.contractbook.com",
-      "description": "Den komplette løsning til at administrere, følge og underskrive kontrakter - alt samlet i ét brugervenligt rum.",
-      "alternatives": [
-         "DocuSign",
-         "PandaDoc",
-         "Juro"
-      ],
-      "image": "images/contractbook.svg"
-   },
-   {
-      "name": "The Room Display",
-      "url": "https://www.theroomdisplay.com",
-      "description": "Digital optaget/ledig-skilt til møderum. Engangskøb - slip for abonnement. Virker med iPad",
-      "alternatives": [
-         "Joan",
-         "Meeting Room 365",
-         "Envoy"
-      ]
-   },
-   {
-      "name": "Klubmodul",
-      "url": "https://klubmodul.dk/",
-      "description": "Medlems- og klubadministration til foreninger med kontingentopkrævning, hold/aktiviteter, tilmelding, kommunikation og klubwebsite samlet i én løsning.",
-      "alternatives": [
-         "TeamSnap",
-         "WildApricot",
-         "ClubExpress",
-         "MemberPlanet",
-         "SportEasy"
-      ]
-   },
-   {
-      "name": "Effihub",
-      "url": "https://effihub.com/",
-      "description": "PSA til bureauer og konsulenthuse med tidsregistrering, projekt- og ressourceplanlægning, klippekort/retainers, fakturering og rapportering på tværs af kunder og opgaver.",
-      "alternatives": [
-         "Kantata",
-         "Scoro",
-         "Accelo",
-         "Productive",
-         "Wrike"
-      ]
-   },
-   {
-      "name": "Keen",
-      "url": "https://www.keenpartner.com",
-      "description": "PRM Software til styring og skalering af lead-genererende B2B partnerskaber.",
-      "alternatives": [
-         "PartnerStack",
-         "impact.com",
-         "SalesForce PRM",
-         "Impartner PRM"
-      ]
-   },
-   {
-      "name": "elmah.io",
-      "url": "https://elmah.io",
-      "description": "elmah.io er en dansk cloud-løsning, der automatisk overvåger .NET-applikationer for fejl og logger dem centralt, så udviklere hurtigt kan finde og løse problemer.",
-      "alternatives": [
-         "Sentry",
-         "Raygun",
-         "Rollbar",
-         "Azure Application Insights"
-      ]
-   },
-   {
-      "name": "DevCompendium",
-      "url": "https://www.devcompendium.com/",
-      "description": "Gem prompts, commands, code snippets og del dem med dit team eller offentligheden.",
-      "alternatives": [
-         "GitHub Gists",
-         "PromptBase",
-         "Cacher"
-      ]
-   },
-   {
-      "name": "Lynbro Cookie Consent",
-      "url": "https://wordpress.org/plugins/lynbro-cookie-consent/",
-      "description": "Gratis, flersproget cookie-samtykkebanner til WordPress med Google Consent Mode v2. GDPR/ePrivacy-compliant uden sidevisningsgrænse, med fuld kontrol over cookie-kategorier, auto-scanning og samtykke-log — udviklet i Danmark af Lynbro.",
-      "alternatives": [
-         "CookieYes",
-         "Complianz",
-         "Usercentrics",
-         "OneTrust",
-         "Osano"
-      ]
-   },
-   {
-      "name": "LønRadar",
-      "url": "https://loenradar.dk",
-      "description": "Løn-benchmarking platform og lønberegner",
-      "alternatives": [
-         "Glassdoor",
-         "Levels.fyi",
-         "PayScale",
-         "Salary.com"
-      ],
-      "image": "images/loenradar.png"
-   },
-   {
-      "name": "Heysender",
-      "url": "https://www.heysender.com",
-      "description": "Email API og SMTP-løsning. Tag kontrol over dine transaktionelle emails.",
-      "alternatives": [
-         "Mailgun",
-         "Postmark",
-         "MailerSend",
-         "Twilio SendGrid"
-      ],
-      "image": "images/heysender.png"
-   },
-   {
-      "name": "Heyloyalty",
-      "url": "https://www.heyloyalty.com",
-      "description": "Marketing automation platform. Heyloyalty fokuserer på kundeloyalitet. Saml dine data og personalisér kommunikationen og få gæster og kunder, der kommer tilbage",
-      "alternatives": [
-         "Klaviyo",
-         "Mailchimp",
-         "Customer.io",
-         "Active Campaign",
-         "Sleeknote"
-      ],
-      "image": "images/heyloyalty.png"
-   },
-   {
-      "name": "Connie",
-      "url": "https://www.getconnie.com",
-      "description": "Dokumentværktøj til kreative. Opret, send og underskriv dokumenter nemt, og sørg for, at dine produktioner og projekter kører gnidningsfrit.",
-      "alternatives": [
-         "DocuSign",
-         "Adobe Acrobat Sign",
-         "PandaDoc"
-      ],
-      "image": "images/connie.png"
-   },
-   {
-      "name": "Returnflows",
-      "url": "https://www.returnflows.com",
-      "description": "Return management platform for e-commerce. Returnflows hjælper med at gøre returnering nemmere og mere effektivt.",
-      "alternatives": [
-         "Returnless",
-         "Loop Returns",
-         "Returngo",
-         "Frate Returns"
-      ],
-      "image": "images/returnflows.png"
-   },
-   {
-      "name": "Pcrypt",
-      "url": "https://pcrypt.com/",
-      "description": "Pcrypt er en sikker password manager med fokus på privatliv og kryptering. Alle adgangskoder krypteres lokalt på brugerens enhed, før data sendes eller gemmes, så følsomme oplysninger aldrig deles i klartekst. Pcrypt understøtter deling af adgangskoder mellem brugere og teams uden at afsløre selve adgangskoden. Løsningen kan anvendes som cloud-tjeneste eller installeres on-prem, og kernekomponenterne er open source.",
-      "alternatives": [
-         "LastPass",
-         "1Password",
-         "Bitwarden"
-      ]
-   },
-   {
-      "name": "Yulsn Marketing Cloud",
-      "url": "https://yulsn.com",
-      "description": "Yulsn Marketing Cloud er til email marketing, marketing automation og loyalitetsprogrammer. Især til virksomheder, der sender rigtig mange mails, har høje krav om tilpasning til egne processer, og gerne vil automatisere meget.",
-      "alternatives": [
-         "Marketo",
-         "Bloomreach",
-         "Hubspot",
-         "Salesforce",
-         "Klaviyo",
-         "ActiveCampaign",
-         "ConvertKit",
-         "Kit",
-         "Campaign Monitor",
-         "Mailchimp"
-      ]
-   },
-   {
-      "name": "Kontolink",
-      "url": "https://kontolink.com",
-      "description": "Kontolink er en dansk platform der via adgang til bankdata (PSD2) og diverse bilagskilder (som f.eks. email) automatiserer bogføringen for små og mellemstore virksomheder.",
-      "alternatives": [
-         "Dext",
-         "Kick.co",
-         "Finally.com",
-         "Expensify"
-      ]
-   },
-   {
-      "name": "Avallone",
-      "url": "https://avallone.com",
-      "description": "Automatisere KYC-compliance",
-      "alternatives": [
-         "Spektr",
-         "Swift",
-         "Encompass",
-         "KYC Genie",
-         "smartKYC",
-         "Moodys KYC",
-         "LexisNexis Risk Solutions",
-         "Appian Connected KYC",
-         "Sumsub",
-         "IDnow",
-         "ComplyCube",
-         "Shufti Pro",
-         "SEON",
-         "Persona",
-         "Ontra"
-      ]
-   },
-   {
-      "name": "CVR Intel",
-      "url": "https://cvrintel.dk",
-      "description": "Virksomhedsdata, AI og leads samlet ét sted",
-      "alternatives": ["Bisnode/Dun & Bradstreet"]
-   },
-   {
-      "name": "Zylinc.com",
-      "url": "https://zylinc.com",
-      "description": "Omstillings- og kontaktcenterløsning",
-      "alternatives": [
-         "Puzzel",
-         "Genesis",
-         "Cisco"
-      ]
-   },
-   {
-      "name": "Dixa",
-      "url": "https://www.dixa.com",
-      "image": "images/dixa.png",
-      "description": "Agentic AI-platform til moderne kundeservice",
-      "alternatives": [
-         "Zendesk",
-         "Intercom",
-         "Freshdesk",
-         "Salesforce Service Cloud",
-         "HubSpot Service Hub"
-      ]
-   },
-   {
-      "name": "SHUP",
-      "url": "https://www.shup.dk",
-      "image": "images/shup.png",
-      "description": "Simpel hosted e-commerce platform.",
-      "alternatives": [
-         "WooCommerce",
-         "Shopify",
-         "Wix eCommerce",
-         "Squarespace",
-         "BigCommerce"
-      ]
-   },
-   {
-      "name": "Shoporama",
-      "url": "https://www.shoporama.dk",
-      "description": "Dansk webshop-platform med tæt community, dansk support og værktøjer til SEO, markedsføring og ordrehåndtering",
-      "alternatives": [
-         "Shopify",
-         "WooCommerce",
-         "Magento",
-         "BigCommerce",
-         "Wix"
-      ]
-   },
-   {
-      "name": "Plapre",
-      "url": "https://github.com/syv-ai/plapre",
-      "description": "Open source dansk tekst-til-tale med stemmekloning. Genererer 24kHz lyd fra dansk tekst og kan køres lokalt og on-prem — ingen data forlader din infrastruktur.",
-      "alternatives": [
-         "OpenAI TTS",
-         "ElevenLabs"
-      ]
-   },
-   {
-      "name": "PawNote",
-      "url": "https://pawnote.dk",
-      "description": "Bookingsystem og klinik-CRM udviklet specifikt til dyreterapeuter og mindre dyreklinikker.",
-      "alternatives": [
-         "Acuity Scheduling",
-         "Calendly",
-         "Time To Pet",
-         "ezyVet"
-      ]
-   },
-   {
-      "name": "Coherta",
-      "url": "https://www.coherta.com/da",
-      "description": "Coherta er en B2B platform til virksomheds- og kontaktdata, der samler, beriger og deduplikerer data til leadgenerering, segmentering og CRM-synkronisering (fx outreach, pipeline og rapportering).",
-      "alternatives": ["Bisnode/Dun & Bradstreet", "ZoomInfo", "Clearbit", "Lusha", "Apollo.io", "UpLead", "Lead411", "Snov.io", "Hunter.io", "Adapt.io", "LeadIQ", "DiscoverOrg", "InsideView", "LeadGenius", "LeadFuze", "LeadSift", "Leadspace", "LimeLeads"]
-   },
-   {
-      "name": "Meili Robots",
-      "url": "https://meilirobots.com/",
-      "description": "Universelt flådestyringssystem til mobile robotter, orkestrer dine robotter på én platform uanset type, mærke eller model. Bruges på tværs af forskellige industrisegmenter.",
-      "alternatives": [
-         "InOrbit", "Synaos", "Naise", "Formant", "Open-RMF", "Siemens SiMove", "MHP"
-      ]
-   },
-   {
-      "name": "freelio.dk",
-      "url": "https://freelio.dk",
-      "description": "Dansk alternativ til LinkedIn. Karriereværktøj. Rekrutteringsværktøj. Brandingværktøj. Meet-ups & Events.",
-      "alternatives": [
-         "LinkedIn"
-      ]
-   },
-   {
-      "name": "ProjectFlow",
-      "url": "https://fortesprojectflow.dk",
-      "description": "Projekt- og porteføljestyringssystem. Ressourcestyring. Tidsregistrering.",
-      "alternatives": [
-         "Microsoft Project",
-         "Planview",
-         "Wrike",
-         "PPM Express"
-      ]
-   },
-   {
-      "name": "One.com",
-      "url": "https://one.com",
-      "description": "Hjemmeside-hosting",
-      "alternatives": [
-         "Simply.com",
-         "1&1",
-         "GoDaddy"
-      ]
-   },
-   {
-      "name": "minforening",
-      "url": "https://minforening.dk",
-      "description": "MinForening gratis app og foreningssystem gør det nemt at være leder, kasserer, træner, instruktør, koordinator, medlem, forælder, familie, husstand og frivillig i en forening.",
-      "alternatives": [
-         "WildApricot",
-         "ClubExpress",
-         "MemberClicks",
-         "Neon CRM"
-      ]
-   },
-   {
-      "name": "deltaplan.dk",
-      "url": "https://deltaplan.dk",
-      "description": "Vagtplan, Tidsregistrering, HR, Kommunikation, Udtræk til løn mm.",
-      "alternatives": [
-         "planday.com",
-         "WhenIWork.com",
-         "papershift.com",
-         "Humanity.com"
-      ],
-      "image": "images/deltaplan.png"
-   },
-   {
-      "name": "redactpdf.io",
-      "url": "https://redactpdf.io",
-      "description": "Anonymisering af PDF, Office-dokumenter og e-mails.",
-      "alternatives": [
-         "Adobe Acrobat",
-         "redactable.com",
-         "PDF24.org"
-      ]
-   },
-   {
-      "name": "regrettable.eu",
-      "url": "https://regrettable.eu",
-      "description": "Drop-in fortrydelsesknap til EU-webshops. Gør det nemt at overholde EU-direktiv 2023/2673 med en letvægts-widget, automatiske bekræftelsesmails med leveringssporing og 10 års revisionslog.",
-      "alternatives": [
-         "Rescindly",
-         "Trusted Shops",
-         "Shopware Withdrawal Plugin"
-     ]
-   },
-   {
-      "name": "companydata.dk",
-      "url": "https://companydata.dk",
-      "description": "Dansk virksomhedsdata med REST API, finansiel sundhedsscore (CDS), 13 års regnskabshistorik, ejendomsdata og realtidsovervågning af danske selskaber.",
-      "alternatives": [
-         "Creditsafe",
-         "Dun & Bradstreet",
-         "ZoomInfo",
-         "OpenCorporates"
-      ]
-   },
-   {
-      "name": "Chainbox",
-      "url": "https://chainbox.dk",
-      "description": "Chainbox understøtter B2B-virksomheder med værktøjer til håndtering af produktdata, online salg og indholdsstyring",
-      "alternatives": [
-         "Shopify B2B, Commercetools, Sana Commerce"
-      ]
-   },
-   {
-      "name": "easyonline.ai",
-      "url": "https://easyonline.ai",
-      "description": "Upload din hjemmeside lavet med AI for kun 9 kr om måneden",
-      "alternatives": [
-         "Wix, Loveable, Wordpress"
-      ]
-   },
-   {
-      "name": "Shipmondo",
-      "url": "https://shipmondo.com/dk/",
-      "description": "Nem og hurtig fragthåndtering",
-      "alternatives": [
-         "Shippo",
-         "Shipstation",
-         "AfterShip",
-         "Easyship"
-      ]
-   },
-   {
-      "name": ".legal",
-      "url": "https://www.dotlegal.com",
-      "description": "Dansk GRC-platform der samler compliance-arbejdet med GDPR, NIS2, AI Act, ISO 27001 og DORA i én løsning. Indeholder moduler til databeskyttelse, informationssikkerhed, kontrakthåndtering, leverandørstyring og framework-skabeloner med AI-features.",
-      "alternatives": [
-         "OneTrust",
-         "Vanta",
-         "Drata",
-         "Secureframe",
-         "ISMS.online"
-      ]
-   },
-   {
-      "name": "VerifyID.dk",
-      "url": "https://verifyid.dk",
-      "description": "Aldersverifikation og ID-scanner til både fysiske butikker og online. Skræddersyede MitID-flows og specialister i MitID-integration til e-handel, login og compliance.",
-      "alternatives": [
-         "Beweiser",
-         "Veriff",
-         "Yoti",
-         "Onfido"
-      ]
-   },
-   {
-      "name": "SendRCS.dk",
-      "url": "https://sendrcs.dk",
-      "description": "Professionel RCS messaging platform til virksomheder. Send rich messages med billeder, knapper og karruseller via RCS Business Messaging.",
-      "alternatives": ["Twilio", "Sinch", "MessageBird", "Infobip"]
-   },
-   {
-      "name": "Nummeropslag.dk",
-      "url": "https://nummeropslag.dk",
-      "description": "Dansk nummeropslag, opkalds-ID og spamopkalds-beskyttelse med data fra CVR og danske teleudbydere. Findes både som app og som partner-API til at slå ukendte numre op, identificere virksomheder og blokere spam- og svindelopkald.",
-      "alternatives": [
-         "Truecaller",
-         "Hiya",
-         "Whoscall",
-         "Twilio Lookup"
-      ]
-   },
-   {
-      "name": "PennaPay",
-      "url": "https://pennapay.com",
-      "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
-      "alternatives": ["QuickBooks", "FreshBooks", "Wave"]
-   },
-   {
-      "name": "Byggepladsplanen.dk",
-      "url": "https://byggepladsplanen.dk",
-      "description": "Webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort.",
-      "alternatives": [
-         "Bluebeam",
-         "AutoCAD",
-         "SketchUp"
-      ],
-      "image": "images/byggepladsplanen.webp"
-   },
-   {
-      "name": "Kloaktegning.dk",
-      "url": "https://kloaktegning.dk",
-      "description": "Webbaseret tegneprogram til kloaktegninger med rør, brønde og danske kloaksymboler.",
-      "alternatives": [
-         "Bluebeam",
-         "AutoCAD"
-      ],
-      "image": "images/kloaktegning.webp"
-   },
-   {
-      "name": "Skilteplanen.dk",
-      "url": "https://skilteplanen.dk",
-      "description": "Webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde.",
-      "alternatives": [
-         "Bluebeam",
-         "AutoCAD",
-         "RapidPlan"
-],
-      "image": "images/skilteplanen.webp"
-   },
-   {
-      "name": "BrandBuddy",
-      "url": "https://brandbuddyai.dk",
-      "description": "E-mail marketing på autopilot til lokale virksomheder. BrandBuddy bygger et helt års e-mailkampagner til din virksomhed. Du skal bare give os din hjemmeside.",
-      "alternatives": ["Mailchimp", "MailerLite", "Brevo", "Klaviyo"]
-   }
+  {
+    "name": "Adamatics Platform (AdaLab)",
+    "url": "https://adamatics.com/platform/",
+    "description": "En dansk platform til data science, analytics og AI, der samler notebooks, dataadgang og deployment i ét kontrolleret miljø indenfor virksomheders egen netværk og kontrol. Kan deployes hos alle cloud providers der understøtter Kubernetes, såsom Scaleway, Upcloud, samt on-prem til kritisk infrastruktur.",
+    "alternatives": [
+      "Posit",
+      "PowerBI",
+      "Sagemaker"
+    ]
+  },
+  {
+    "name": "Admin By Request",
+    "url": "https://www.adminbyrequest.com",
+    "description": "Endpoint Privilege Management med just-in-time administratorrettigheder, godkendelsesflows og audit logs til Windows, macOS og Linux.",
+    "alternatives": [
+      "BeyondTrust",
+      "CyberArk",
+      "Delinea",
+      "AutoElevate"
+    ]
+  },
+  {
+    "name": "Alunta.com",
+    "url": "https://alunta.com",
+    "description": "Abonnementer, betalinger og fakturering",
+    "alternatives": [
+      "Stripe",
+      "Paddle",
+      "Recurly",
+      "Yonium",
+      "Chargebee"
+    ],
+    "image": "images/alunta.png"
+  },
+  {
+    "name": "Alviss AI",
+    "url": "https://alviss.io",
+    "description": "En dansk platform til Marketing Science der hjælper virksomheder med at identificere, simulere, prædiktere og optimere effecten af deres forskellige salgsgenererende aktiviteter som media, kommunikation or priser.",
+    "alternatives": [
+      "Google Analytics",
+      "Keen",
+      "LiftLab",
+      "Recast",
+      "Cassandra",
+      "Mutinex",
+      "MASS Analytics"
+    ]
+  },
+  {
+    "name": "Arrigoo CDP",
+    "url": "https://arrigoo.io",
+    "description": "Europæisk hosted Customer Data Platform til at indsamle, konsolidere og distribuere profildata på tværs af systemer og segmentere på baggrund af adfærd og egenskaber.",
+    "alternatives": [
+      "Microsoft Insight",
+      "Segment",
+      "Bloomreach",
+      "Adobe CDP",
+      "Tealium"
+    ],
+    "image": "images/arrigoo.png"
+  },
+  {
+    "name": "Bastio AI Security",
+    "url": "https://www.bastio.com",
+    "description": "Dansk AI-sikkerhedsgateway der beskytter LLM-applikationer med real-time threat detection. Drop-in proxy til OpenAI, Anthropic, Google m.fl. med prompt injection-beskyttelse, automatisk PII-masking, jailbreak-detektion, og fuld observability. Inkluderer også AI agent security og cost optimization via intelligent caching.",
+    "alternatives": [
+      "Lakera",
+      "Lasso Security",
+      "CalypsoAI",
+      "Prompt.security"
+    ],
+    "image": "images/bastio-ai-security.jpg"
+  },
+  {
+    "name": "Behandlerdata",
+    "url": "https://behandlerdata.dk",
+    "description": "Overenskomstpriser for behandlere - Behandlerdata.dk samler, normaliserer og udstiller takster, så I kan slå op på sekunder eller integrere direkte via API",
+    "alternatives": [
+      "OnlineTherapy",
+      "BetterHelp",
+      "International Therapist Directory",
+      "Location Independent Therapists",
+      "GoodTherapy",
+      "TherapyDen"
+    ]
+  },
+  {
+    "name": "BOARD OFFICE",
+    "url": "https://www.board-office.dk",
+    "description": "Dansk platform til bestyrelsesarbejde med mødeadministration, sikker dokumentdeling og avancerede værktøjer og AI-integration til governance og samarbejde",
+    "alternatives": [
+      "Admincontrol",
+      "Diligent Boards",
+      "BoardEffect",
+      "OnBoard",
+      "iBabs",
+      "Sherpany",
+      "Azues Convene",
+      "Boardable"
+    ],
+    "image": "images/boardoffice.png"
+  },
+  {
+    "name": "Boligforeningsweb",
+    "url": "https://boligforeningsweb.dk",
+    "description": "Software til administration af boligforeninger",
+    "alternatives": [
+      "Condo Control",
+      "Buildium",
+      "DoorLoop",
+      "Facebook"
+    ]
+  },
+  {
+    "name": "Campaign Builder",
+    "url": "https://www.campaignbuilder.io/",
+    "description": "All-in-one platform til at bygge, lancere og administrere kampagner på tværs af kanaler med catalog ads, HTML5 ads, popups, forms, workflows og SMS marketing",
+    "alternatives": [
+      "Marpipe",
+      "Kitchn",
+      "Bannerwise"
+    ]
+  },
+  {
+    "name": "Neuphlo",
+    "url": "https://neuphlo.com",
+    "description": "Projektstyring med indbygget testmanagement,vidensdeling og chatkanaler. Neuphlo kan tilgås via mcp server og har integration til GitHub, GitLab, Addo Sign",
+    "alternatives": [
+      "Jira og Xray",
+      "Linear",
+      "ALM"
+    ]
+  },
+  {
+    "name": "Clerk.io",
+    "url": "https://clerk.io",
+    "description": "Personalisering og anbefalinger",
+    "alternatives": [
+      "Dynamic Yield",
+      "Klevu",
+      "AlgShopify Paymentsolia"
+    ],
+    "image": "images/clerk.png"
+  },
+  {
+    "name": "Clearhaus A/S",
+    "url": "https://www.clearhaus.com",
+    "description": "Dansk betalingsindløser der tilbyder sikker kortbetaling, risikostyring og compliance for e-handel.",
+    "alternatives": [
+      "Stripe",
+      "Adyen",
+      "Bambora",
+      "Shopify Payments"
+    ],
+    "image": "images/clearhaus.png"
+  },
+  {
+    "name": "danadresse.dk",
+    "url": "https://danadresse.dk",
+    "description": "Dansk adresse-API og drop-in erstatning for DAWA (Danmarks Adressers Web API), der lukker 17. august 2026. Leverer adressesøgning, autocomplete, adressevask (datavask), reverse geocoding og replikering 1:1-kompatibelt med DAWA — skift blot baseURL og tilføj en API-nøgle, så kører den eksisterende integration videre uden kodeændringer. Landsdækkende adressedata fra Datafordeleren (DAR/BBR).",
+    "alternatives": [
+      "Google Maps Geocoding API",
+      "Mapbox",
+      "Loqate",
+      "Smarty"
+    ]
+  },
+  {
+    "name": "dataandmore.com",
+    "url": "https://dataandmore.com/",
+    "description": "Identifikation og sletning af GDPR og sikkerhedsinformation til compliance og risiko i ustrukturerede data. ",
+    "alternatives": [
+      "Miscrosoft Purview",
+      "BigID",
+      "Varonis"
+    ]
+  },
+  {
+    "name": "Dinero.dk",
+    "url": "https://dinero.dk",
+    "description": "Regnskab og bogholderi",
+    "alternatives": [
+      "Xero",
+      "QuickBooks",
+      "Sage"
+    ],
+    "image": "images/dinero.png"
+  },
+  {
+    "name": "Dreamdata.io",
+    "url": "https://dreamdata.io",
+    "description": "B2B revenue attribution",
+    "alternatives": [
+      "Bizible",
+      "Attribution",
+      "Ruler Analytics"
+    ],
+    "image": "images/dreamdata.png"
+  },
+  {
+    "name": "E-conomic.dk",
+    "url": "https://e-conomic.dk",
+    "description": "Regnskab og bogholderi",
+    "alternatives": [
+      "Xero",
+      "QuickBooks",
+      "Sage"
+    ],
+    "image": "images/e-conomic.png"
+  },
+  {
+    "name": "Ethnote",
+    "url": "https://ethnote.dk",
+    "description": "Dansk platform til kvalitativ dataanalyse og kodning.",
+    "alternatives": [
+      "Nvivo",
+      "Atlas.ti",
+      "MaxQDA",
+      "Dedoose",
+      "Dovetail"
+    ],
+    "image": "images/ethnote_logo_light.svg"
+  },
+  {
+    "name": "Rilanto Reviews",
+    "url": "https://rilanto.com",
+    "description": "Dansk platform til kundeanmeldelser. Rilanto er udviklet og hostet i Danmark, og er et supplement til eksisterende review-sites.",
+    "alternatives": [
+      "Trustpilot.com"
+    ],
+    "image": "images/rilanto.jpg"
+  },
+  {
+    "name": "Flare.link",
+    "url": "https://flare.link",
+    "description": "Flare er en one-stop-shop til videooptagelse, redigering, deling og embedding af video med 4K-optagelse, tilpasselig player, analytics og API-adgang.",
+    "alternatives": [
+      "Loom",
+      "Wistia",
+      "Screen Studio",
+      "Vidyard",
+      "Vidalytics",
+      "Tella"
+    ],
+    "image": "images/flare.png"
+  },
+  {
+    "name": "Fenerum.com",
+    "url": "https://fenerum.com",
+    "description": "SaaS finances",
+    "alternatives": [
+      "Yonium",
+      "Chargebee"
+    ],
+    "image": "images/fenerum.png"
+  },
+  {
+    "name": "fmcgProducts PIM",
+    "url": "https://www.fmcgsolutions.dk",
+    "description": "PIM-system til stamdata med syndikering til GS1, Tradesolution EPD, Dabas og Matinfo samt andre systemer internt og eksternt",
+    "alternatives": [
+      "GS1",
+      "Syndigo",
+      "Inriver"
+    ]
+  },
+  {
+    "name": "Foundbase",
+    "url": "https://www.foundbase.dk",
+    "description": "Foundbase er en alt-i-en platform til startups og mindre virksomheder",
+    "alternatives": [
+      "Salesforce",
+      "ClickUp",
+      "Pipedrive",
+      "Penneo"
+    ],
+    "image": "images/foundbase.png"
+  },
+  {
+    "name": "fremforge",
+    "url": "https://frem.sh",
+    "description": "EU suveræn CI/CD med Git inkluderet.",
+    "alternatives": [
+      "GitHub",
+      "Gitlab",
+      "bitbucket"
+    ]
+  },
+  {
+    "name": "GrowPanel.io",
+    "url": "https://growpanel.io",
+    "description": "Subscription analytics platform",
+    "alternatives": [
+      "ChartMogul",
+      "Baremetrics",
+      "ProfitWell"
+    ],
+    "image": "images/growpanel.png"
+  },
+  {
+    "name": "Henosia.com",
+    "url": "https://www.henosia.com",
+    "description": "Byg produktionsklare interne apps med AI, også uden at kunne kode.",
+    "alternatives": [
+      "Lovable",
+      "Retool",
+      "Replit"
+    ]
+  },
+  {
+    "name": "Herodesk.io",
+    "url": "https://herodesk.io",
+    "description": "Customer support og helpdesk",
+    "alternatives": [
+      "Zendesk",
+      "Intercom",
+      "Freshdesk"
+    ],
+    "image": "images/herodesk.png"
+  },
+  {
+    "name": "IDguard.dk",
+    "url": "https://idguard.dk",
+    "description": "Aldersverifikation og identitetsbekræftelse",
+    "alternatives": [
+      "Veriff",
+      "Yoti",
+      "AgeChecker.Net"
+    ]
+  },
+  {
+    "name": "inMobile",
+    "url": "https://www.inmobile.com",
+    "description": "SMS, RCS og E-mail - få dit budskab ud og til de rigtige modtagere",
+    "alternatives": [
+      "Twilio",
+      "Sinch",
+      "Infobip",
+      "Vonage",
+      "Messente"
+    ]
+  },
+  {
+    "name": "GatewayAPI",
+    "url": "https://gatewayapi.com",
+    "description": "Global CPaaS-platform | SMS, RCS & Email",
+    "alternatives": [
+      "Sinch",
+      "Twilio",
+      "Infobip",
+      "Vonage",
+      "Messente"
+    ],
+    "image": "images/gatewayapi.svg"
+  },
+  {
+    "name": "Iteras",
+    "url": "https://iteras.com",
+    "description": "Abonnementsstyringsplatform til fakturering, betalinger og kundeabonnementer med selvbetjeningsportaler og integration til nordiske betalingsudbydere",
+    "alternatives": [
+      "Zuora",
+      "Chargebee",
+      "Recurly",
+      "Aria",
+      "Chargify"
+    ],
+    "image": "images/iteras.png"
+  },
+  {
+    "name": "Jarvis",
+    "url": "https://odagroup.dk/pharma",
+    "description": "AI-companion til frontline-teams i pharma der udvider eksisterende CRM-systemer med intelligent møde-forberedelse, debriefs, indsigter, prioritering og opfølgning.",
+    "alternatives": [
+      "Veeva CRM",
+      "Salesforce Life Sciences",
+      "IQVIA OCE"
+    ],
+    "image": "images/jarvis.png"
+  },
+  {
+    "name": "Holdsport.dk",
+    "url": "https://holdsport.dk",
+    "description": "Software til kontingentopkrævning, kommunikation og medlemsadministration online.",
+    "alternatives": [
+      "Spond",
+      "Clubdesk"
+    ]
+  },
+  {
+    "name": "Mercura CPQ",
+    "url": "https://mercura.io",
+    "description": "Configure-Price-Quote-platform til konfiguration, prisberegning og tilbud på komplekse produkter.",
+    "alternatives": [
+      "Tacton",
+      "Salesforce CPQ",
+      "Experlogix"
+    ]
+  },
+  {
+    "name": "Kala",
+    "url": "https://kala.app",
+    "description": "Bedre styring af din forretning med overblik over tid, medarbejdere, projekter - med integreret kvalitetssikring og forbindelse til populære ERP systemer og lønprogrammer",
+    "alternatives": [
+      "Harvest",
+      "ClickUp",
+      "Toggl",
+      "Clockify"
+    ]
+  },
+  {
+    "name": "Mikrobageri.dk",
+    "url": "https://mikrobageri.dk",
+    "description": "Et simpelt bestillingssystem til mikrobagerier med online bestilling, bagekalender og overblik over bagningen",
+    "alternatives": [
+      "WooCommerce",
+      "Shopify",
+      "GloriaFood"
+    ]
+  },
+  {
+    "name": "Morningscore.io",
+    "url": "https://morningscore.io",
+    "description": "SEO + GEO tracking",
+    "alternatives": [
+      "Ahrefs",
+      "SEMrush",
+      "Moz"
+    ],
+    "image": "images/morningscore.png"
+  },
+  {
+    "name": "NextSign.dk",
+    "url": "https://www.nextsign.dk/",
+    "description": "Digital underskriftsløsning for virksomheder og organisationer",
+    "alternatives": [
+      "DocuSign",
+      "Scrive"
+    ]
+  },
+  {
+    "name": "Netsite",
+    "url": "https://www.netsite.dk/",
+    "description": "Domæne, DNS, email- og webhotel-hosting i Danmark med dansk support.",
+    "alternatives": [
+      "Simply.com",
+      "one.com",
+      "GoDaddy",
+      "Namecheap",
+      "Cloudflare"
+    ]
+  },
+  {
+    "name": "NordicScreen",
+    "url": "https://nordicscreen.com",
+    "description": "Digital signage-platform til styring af skærme og indhold med cloud-baseret CMS. Bruges til planlægning, afspilning og distribution af visuelt content på tværs af lokationer.",
+    "alternatives": [
+      "SignageLive",
+      "Appspace",
+      "Screencloud"
+    ]
+  },
+  {
+    "name": "PageVitals.com",
+    "url": "https://pagevitals.com",
+    "description": "Performance monitoring",
+    "alternatives": [
+      "New Relic",
+      "Datadog",
+      "Dynatrace"
+    ],
+    "image": "images/pagevitals.png"
+  },
+  {
+    "name": "PingPuffin.com",
+    "url": "https://pingpuffin.com",
+    "description": "Uptime monitoring og alerts",
+    "alternatives": [
+      "Pingdom",
+      "UptimeRobot",
+      "StatusCake",
+      "DownDetector"
+    ],
+    "image": "images/pingpuffin.png"
+  },
+  {
+    "name": "Plecto.com",
+    "url": "https://plecto.com",
+    "description": "Performance management og dashboards",
+    "alternatives": [
+      "Tableau",
+      "Power BI",
+      "Klipfolio"
+    ],
+    "image": "images/plecto.png"
+  },
+  {
+    "name": "Prowi",
+    "url": "https://prowi.io",
+    "description": "Commission Management Platform. Provision i realtid. Prowi viser sælgere deres provision i realtid via mobilappen. Dealen lukkes, de ser med det samme, hvad de har tjent. Feedback-loop. Gamification. Et salgsteam der faktisk drives af deres kompensationsplan.",
+    "alternatives": [
+      "Xactly",
+      "CaptivateIQ",
+      "Quotapath"
+    ],
+    "image": "images/prowi.jpg"
+  },
+  {
+    "name": "proprty.ai",
+    "url": "https://www.proprty.ai",
+    "description": "Tilstandsvurderinger, vedligeholdelsesplaner og CO₂-reduktion",
+    "alternatives": [
+      "OptiML",
+      "Property Inspect",
+      "Microsoft 365"
+    ],
+    "image": "images/proprty-ai.png"
+  },
+  {
+    "name": "Quickpay",
+    "url": "https://www.quickpay.net",
+    "description": "Betalingsløsning",
+    "alternatives": [
+      "Stripe",
+      "Shopify Payments",
+      "Bambora"
+    ],
+    "image": "images/quickpay.png"
+  },
+  {
+    "name": "Resos.com",
+    "url": "https://resos.com",
+    "description": "Reservations- og bookingssystem til restauranter",
+    "alternatives": [
+      "Tock",
+      "OpenTable",
+      "Resy",
+      "SevenRooms"
+    ]
+  },
+  {
+    "name": "Soge.dk",
+    "url": "https://soge.dk",
+    "description": "Dansk søgemaskine og API til køretøjsdata – slå enhver bil op via nummerplade eller stelnummer med data fra det officielle DMR-register (specifikationer, syn og historik).",
+    "alternatives": [
+      "carVertical",
+      "Carfax",
+      "AutoDNA"
+    ]
+  },
+  {
+    "name": "SEO.ai",
+    "url": "https://seo.ai",
+    "description": "Automatisering af indholdsproduktion",
+    "alternatives": [
+      "Jasper",
+      "Copy.ai",
+      "Writesonic"
+    ],
+    "image": "images/seoai.jpg"
+  },
+  {
+    "name": "Sleeknote.com",
+    "url": "https://sleeknote.com",
+    "description": "Email marketing og popups",
+    "alternatives": [
+      "Mailchimp",
+      "Klaviyo",
+      "ConvertKit"
+    ],
+    "image": "images/sleeknote.png"
+  },
+  {
+    "name": "SMTP.dk",
+    "url": "https://smtp.dk/",
+    "description": "Sikker levering af transaktions emails",
+    "alternatives": [
+      "Mailgun",
+      "Sendgrid",
+      "Amazon SES"
+    ]
+  },
+  {
+    "name": "Sumoshop",
+    "url": "https://www.sumoshop.dk",
+    "description": "E-commerce platform, der tilbyder hostede webshopløsninger",
+    "alternatives": [
+      "Shopify",
+      "Magento",
+      "WooCommerce"
+    ]
+  },
+  {
+    "name": "Tiimo (tiimoapp.com)",
+    "url": "https://www.tiimoapp.com",
+    "description": "Visuel dagsplanlægger med AI til opgaver, deadlines og fokus på arbejde og i hverdagen – udviklet med afsæt i neurodivergente behov, herunder ADHD og autisme, og relevant for alle, der ønsker støtte til planlægning. Kåret af Apple til iPhone App of the Year 2025.",
+    "alternatives": [
+      "Todoist",
+      "TickTick",
+      "Structured",
+      "Motion",
+      "Sunsama",
+      "Akiflow"
+    ]
+  },
+  {
+    "name": "Timelog.com",
+    "url": "https://timelog.com",
+    "description": "Tidsregistrering, ressourcestyring og fakturering",
+    "alternatives": [
+      "Toggl",
+      "Harvest",
+      "Clockify"
+    ],
+    "image": "images/timelog.png"
+  },
+  {
+    "name": "Hourtick.com",
+    "url": "https://hourtick.com",
+    "description": "Tidsregistrering, tasks og teamchat til mennesker og AI-agenter — uden per-seat-pris",
+    "alternatives": [
+      "Toggl",
+      "Harvest",
+      "Clockify"
+    ],
+    "image": "images/hourtick.png"
+  },
+  {
+    "name": "Ubivox.dk",
+    "url": "https://ubivox.dk/",
+    "description": "Send nyhedsbreve nemt og sikkert",
+    "alternatives": [
+      "MailChimp",
+      "Campaign Monitor",
+      "Klaviyo"
+    ]
+  },
+  {
+    "name": "Umbraco",
+    "url": "https://umbraco.com/",
+    "description": "Verdens meste udbredte Open Source .NET CMS. Stort økosystem af gratis og betalte extensions. ",
+    "alternatives": [
+      "Optimizely / EPIserver",
+      "Kentico",
+      "Drupal"
+    ]
+  },
+  {
+    "name": "Updatemate.ai",
+    "url": "https://updatemate.ai",
+    "description": "Automatisering og integrationer",
+    "alternatives": [
+      "Zapier",
+      "Make",
+      "n8n"
+    ],
+    "image": "images/updatemate.jpg"
+  },
+  {
+    "name": "WebContent",
+    "url": "https://webcontent.app",
+    "description": "WebContent er en platform til at søge, skabe, og udføre alt indenfor UGC ads.",
+    "alternatives": [
+      "Influee",
+      "Billo",
+      "Insense"
+    ]
+  },
+  {
+    "name": "Webhook.site",
+    "url": "https://webhook.site",
+    "description": "Hjælper apps til at snakke sammen og bygge workflows",
+    "alternatives": [
+      "Zapier",
+      "N8n",
+      "Pipedream",
+      "Requestbin"
+    ]
+  },
+  {
+    "name": "Weply",
+    "url": "https://www.weply.chat/da",
+    "description": "Weply er en 24/7 lead genererende live chat løsning.",
+    "alternatives": [
+      "Intercom",
+      "Tawk.to",
+      "Chatbase"
+    ]
+  },
+  {
+    "name": "Workfeed",
+    "url": "https://workfeed.io",
+    "description": "Arbejdstidsstyring og HR-system til planlægning, tidsregistrering og medarbejderadministration",
+    "alternatives": [
+      "Deputy",
+      "Homebase",
+      "HROne"
+    ]
+  },
+  {
+    "name": "Ziik",
+    "url": "https://ziik.io",
+    "description": "Ziik nytænker intranettet, med en all-in-one kommunikations- og informationdelingsplatform, der sikrer bedre engagement for medarbejdere",
+    "alternatives": [
+      "Sharepoint"
+    ]
+  },
+  {
+    "name": "ePay Payment Solutions",
+    "url": "https://epay.dk",
+    "description": "Vi gør det nemt at komme i gang med online betaling - uanset din virksomheds størrelse. Prøv nu og lav din første testbetaling på blot få minutter",
+    "alternatives": [
+      "Stripe",
+      "Adyen",
+      "PayPal",
+      "payoneer"
+    ]
+  },
+  {
+    "name": "Uniqkey",
+    "url": "https://www.uniqkey.eu/",
+    "description": "Adgangskode- og adgangsstyring for virksomheder",
+    "alternatives": [
+      "1password",
+      "Bitwarden",
+      "Dashlane"
+    ]
+  },
+  {
+    "name": "Dynamicweb",
+    "url": "https://dynamicweb.dk",
+    "description": "Dynamicweb - CMS, Ecommerce og PIM - med fokus på B2B salgs processer og produkt informations styring",
+    "alternatives": [
+      "Shopify B2B, Commercetools, Sana Commerce"
+    ]
+  },
+  {
+    "name": "Velatir",
+    "url": "https://www.velatir.com",
+    "description": "Platform til sporbarhed, gennemsigtighed og kontrol over AI-handlinger – 100% EU-infrastruktur. Godkend, log og overvåg AI-brug på tværs af organisationen.",
+    "alternatives": [
+      "GoToHuman",
+      "Arize AI",
+      "Guardrails AI",
+      "Opik",
+      "Maisa AI"
+    ]
+  },
+  {
+    "name": "Contractbook",
+    "url": "https://www.contractbook.com",
+    "description": "Den komplette løsning til at administrere, følge og underskrive kontrakter - alt samlet i ét brugervenligt rum.",
+    "alternatives": [
+      "DocuSign",
+      "PandaDoc",
+      "Juro"
+    ],
+    "image": "images/contractbook.svg"
+  },
+  {
+    "name": "The Room Display",
+    "url": "https://www.theroomdisplay.com",
+    "description": "Digital optaget/ledig-skilt til møderum. Engangskøb - slip for abonnement. Virker med iPad",
+    "alternatives": [
+      "Joan",
+      "Meeting Room 365",
+      "Envoy"
+    ]
+  },
+  {
+    "name": "Klubmodul",
+    "url": "https://klubmodul.dk/",
+    "description": "Medlems- og klubadministration til foreninger med kontingentopkrævning, hold/aktiviteter, tilmelding, kommunikation og klubwebsite samlet i én løsning.",
+    "alternatives": [
+      "TeamSnap",
+      "WildApricot",
+      "ClubExpress",
+      "MemberPlanet",
+      "SportEasy"
+    ]
+  },
+  {
+    "name": "Effihub",
+    "url": "https://effihub.com/",
+    "description": "PSA til bureauer og konsulenthuse med tidsregistrering, projekt- og ressourceplanlægning, klippekort/retainers, fakturering og rapportering på tværs af kunder og opgaver.",
+    "alternatives": [
+      "Kantata",
+      "Scoro",
+      "Accelo",
+      "Productive",
+      "Wrike"
+    ]
+  },
+  {
+    "name": "Keen",
+    "url": "https://www.keenpartner.com",
+    "description": "PRM Software til styring og skalering af lead-genererende B2B partnerskaber.",
+    "alternatives": [
+      "PartnerStack",
+      "impact.com",
+      "SalesForce PRM",
+      "Impartner PRM"
+    ]
+  },
+  {
+    "name": "elmah.io",
+    "url": "https://elmah.io",
+    "description": "elmah.io er en dansk cloud-løsning, der automatisk overvåger .NET-applikationer for fejl og logger dem centralt, så udviklere hurtigt kan finde og løse problemer.",
+    "alternatives": [
+      "Sentry",
+      "Raygun",
+      "Rollbar",
+      "Azure Application Insights"
+    ]
+  },
+  {
+    "name": "DevCompendium",
+    "url": "https://www.devcompendium.com/",
+    "description": "Gem prompts, commands, code snippets og del dem med dit team eller offentligheden.",
+    "alternatives": [
+      "GitHub Gists",
+      "PromptBase",
+      "Cacher"
+    ]
+  },
+  {
+    "name": "Lynbro Cookie Consent",
+    "url": "https://wordpress.org/plugins/lynbro-cookie-consent/",
+    "description": "Gratis, flersproget cookie-samtykkebanner til WordPress med Google Consent Mode v2. GDPR/ePrivacy-compliant uden sidevisningsgrænse, med fuld kontrol over cookie-kategorier, auto-scanning og samtykke-log — udviklet i Danmark af Lynbro.",
+    "alternatives": [
+      "CookieYes",
+      "Complianz",
+      "Usercentrics",
+      "OneTrust",
+      "Osano"
+    ]
+  },
+  {
+    "name": "LønRadar",
+    "url": "https://loenradar.dk",
+    "description": "Løn-benchmarking platform og lønberegner",
+    "alternatives": [
+      "Glassdoor",
+      "Levels.fyi",
+      "PayScale",
+      "Salary.com"
+    ],
+    "image": "images/loenradar.png"
+  },
+  {
+    "name": "Heysender",
+    "url": "https://www.heysender.com",
+    "description": "Email API og SMTP-løsning. Tag kontrol over dine transaktionelle emails.",
+    "alternatives": [
+      "Mailgun",
+      "Postmark",
+      "MailerSend",
+      "Twilio SendGrid"
+    ],
+    "image": "images/heysender.png"
+  },
+  {
+    "name": "Heyloyalty",
+    "url": "https://www.heyloyalty.com",
+    "description": "Marketing automation platform. Heyloyalty fokuserer på kundeloyalitet. Saml dine data og personalisér kommunikationen og få gæster og kunder, der kommer tilbage",
+    "alternatives": [
+      "Klaviyo",
+      "Mailchimp",
+      "Customer.io",
+      "Active Campaign",
+      "Sleeknote"
+    ],
+    "image": "images/heyloyalty.png"
+  },
+  {
+    "name": "Connie",
+    "url": "https://www.getconnie.com",
+    "description": "Dokumentværktøj til kreative. Opret, send og underskriv dokumenter nemt, og sørg for, at dine produktioner og projekter kører gnidningsfrit.",
+    "alternatives": [
+      "DocuSign",
+      "Adobe Acrobat Sign",
+      "PandaDoc"
+    ],
+    "image": "images/connie.png"
+  },
+  {
+    "name": "Returnflows",
+    "url": "https://www.returnflows.com",
+    "description": "Return management platform for e-commerce. Returnflows hjælper med at gøre returnering nemmere og mere effektivt.",
+    "alternatives": [
+      "Returnless",
+      "Loop Returns",
+      "Returngo",
+      "Frate Returns"
+    ],
+    "image": "images/returnflows.png"
+  },
+  {
+    "name": "Pcrypt",
+    "url": "https://pcrypt.com/",
+    "description": "Pcrypt er en sikker password manager med fokus på privatliv og kryptering. Alle adgangskoder krypteres lokalt på brugerens enhed, før data sendes eller gemmes, så følsomme oplysninger aldrig deles i klartekst. Pcrypt understøtter deling af adgangskoder mellem brugere og teams uden at afsløre selve adgangskoden. Løsningen kan anvendes som cloud-tjeneste eller installeres on-prem, og kernekomponenterne er open source.",
+    "alternatives": [
+      "LastPass",
+      "1Password",
+      "Bitwarden"
+    ]
+  },
+  {
+    "name": "Yulsn Marketing Cloud",
+    "url": "https://yulsn.com",
+    "description": "Yulsn Marketing Cloud er til email marketing, marketing automation og loyalitetsprogrammer. Især til virksomheder, der sender rigtig mange mails, har høje krav om tilpasning til egne processer, og gerne vil automatisere meget.",
+    "alternatives": [
+      "Marketo",
+      "Bloomreach",
+      "Hubspot",
+      "Salesforce",
+      "Klaviyo",
+      "ActiveCampaign",
+      "ConvertKit",
+      "Kit",
+      "Campaign Monitor",
+      "Mailchimp"
+    ]
+  },
+  {
+    "name": "Kontolink",
+    "url": "https://kontolink.com",
+    "description": "Kontolink er en dansk platform der via adgang til bankdata (PSD2) og diverse bilagskilder (som f.eks. email) automatiserer bogføringen for små og mellemstore virksomheder.",
+    "alternatives": [
+      "Dext",
+      "Kick.co",
+      "Finally.com",
+      "Expensify"
+    ]
+  },
+  {
+    "name": "Avallone",
+    "url": "https://avallone.com",
+    "description": "Automatisere KYC-compliance",
+    "alternatives": [
+      "Spektr",
+      "Swift",
+      "Encompass",
+      "KYC Genie",
+      "smartKYC",
+      "Moodys KYC",
+      "LexisNexis Risk Solutions",
+      "Appian Connected KYC",
+      "Sumsub",
+      "IDnow",
+      "ComplyCube",
+      "Shufti Pro",
+      "SEON",
+      "Persona",
+      "Ontra"
+    ]
+  },
+  {
+    "name": "CVR Intel",
+    "url": "https://cvrintel.dk",
+    "description": "Virksomhedsdata, AI og leads samlet ét sted",
+    "alternatives": [
+      "Bisnode/Dun & Bradstreet"
+    ]
+  },
+  {
+    "name": "Zylinc.com",
+    "url": "https://zylinc.com",
+    "description": "Omstillings- og kontaktcenterløsning",
+    "alternatives": [
+      "Puzzel",
+      "Genesis",
+      "Cisco"
+    ]
+  },
+  {
+    "name": "Dixa",
+    "url": "https://www.dixa.com",
+    "image": "images/dixa.png",
+    "description": "Agentic AI-platform til moderne kundeservice",
+    "alternatives": [
+      "Zendesk",
+      "Intercom",
+      "Freshdesk",
+      "Salesforce Service Cloud",
+      "HubSpot Service Hub"
+    ]
+  },
+  {
+    "name": "SHUP",
+    "url": "https://www.shup.dk",
+    "image": "images/shup.png",
+    "description": "Simpel hosted e-commerce platform.",
+    "alternatives": [
+      "WooCommerce",
+      "Shopify",
+      "Wix eCommerce",
+      "Squarespace",
+      "BigCommerce"
+    ]
+  },
+  {
+    "name": "Shoporama",
+    "url": "https://www.shoporama.dk",
+    "description": "Dansk webshop-platform med tæt community, dansk support og værktøjer til SEO, markedsføring og ordrehåndtering",
+    "alternatives": [
+      "Shopify",
+      "WooCommerce",
+      "Magento",
+      "BigCommerce",
+      "Wix"
+    ]
+  },
+  {
+    "name": "Plapre",
+    "url": "https://github.com/syv-ai/plapre",
+    "description": "Open source dansk tekst-til-tale med stemmekloning. Genererer 24kHz lyd fra dansk tekst og kan køres lokalt og on-prem — ingen data forlader din infrastruktur.",
+    "alternatives": [
+      "OpenAI TTS",
+      "ElevenLabs"
+    ]
+  },
+  {
+    "name": "PawNote",
+    "url": "https://pawnote.dk",
+    "description": "Bookingsystem og klinik-CRM udviklet specifikt til dyreterapeuter og mindre dyreklinikker.",
+    "alternatives": [
+      "Acuity Scheduling",
+      "Calendly",
+      "Time To Pet",
+      "ezyVet"
+    ]
+  },
+  {
+    "name": "Coherta",
+    "url": "https://www.coherta.com/da",
+    "description": "Coherta er en B2B platform til virksomheds- og kontaktdata, der samler, beriger og deduplikerer data til leadgenerering, segmentering og CRM-synkronisering (fx outreach, pipeline og rapportering).",
+    "alternatives": [
+      "Bisnode/Dun & Bradstreet",
+      "ZoomInfo",
+      "Clearbit",
+      "Lusha",
+      "Apollo.io",
+      "UpLead",
+      "Lead411",
+      "Snov.io",
+      "Hunter.io",
+      "Adapt.io",
+      "LeadIQ",
+      "DiscoverOrg",
+      "InsideView",
+      "LeadGenius",
+      "LeadFuze",
+      "LeadSift",
+      "Leadspace",
+      "LimeLeads"
+    ]
+  },
+  {
+    "name": "Meili Robots",
+    "url": "https://meilirobots.com/",
+    "description": "Universelt flådestyringssystem til mobile robotter, orkestrer dine robotter på én platform uanset type, mærke eller model. Bruges på tværs af forskellige industrisegmenter.",
+    "alternatives": [
+      "InOrbit",
+      "Synaos",
+      "Naise",
+      "Formant",
+      "Open-RMF",
+      "Siemens SiMove",
+      "MHP"
+    ]
+  },
+  {
+    "name": "freelio.dk",
+    "url": "https://freelio.dk",
+    "description": "Dansk alternativ til LinkedIn. Karriereværktøj. Rekrutteringsværktøj. Brandingværktøj. Meet-ups & Events.",
+    "alternatives": [
+      "LinkedIn"
+    ]
+  },
+  {
+    "name": "ProjectFlow",
+    "url": "https://fortesprojectflow.dk",
+    "description": "Projekt- og porteføljestyringssystem. Ressourcestyring. Tidsregistrering.",
+    "alternatives": [
+      "Microsoft Project",
+      "Planview",
+      "Wrike",
+      "PPM Express"
+    ]
+  },
+  {
+    "name": "One.com",
+    "url": "https://one.com",
+    "description": "Hjemmeside-hosting",
+    "alternatives": [
+      "Simply.com",
+      "1&1",
+      "GoDaddy"
+    ]
+  },
+  {
+    "name": "minforening",
+    "url": "https://minforening.dk",
+    "description": "MinForening gratis app og foreningssystem gør det nemt at være leder, kasserer, træner, instruktør, koordinator, medlem, forælder, familie, husstand og frivillig i en forening.",
+    "alternatives": [
+      "WildApricot",
+      "ClubExpress",
+      "MemberClicks",
+      "Neon CRM"
+    ]
+  },
+  {
+    "name": "deltaplan.dk",
+    "url": "https://deltaplan.dk",
+    "description": "Vagtplan, Tidsregistrering, HR, Kommunikation, Udtræk til løn mm.",
+    "alternatives": [
+      "planday.com",
+      "WhenIWork.com",
+      "papershift.com",
+      "Humanity.com"
+    ],
+    "image": "images/deltaplan.png"
+  },
+  {
+    "name": "redactpdf.io",
+    "url": "https://redactpdf.io",
+    "description": "Anonymisering af PDF, Office-dokumenter og e-mails.",
+    "alternatives": [
+      "Adobe Acrobat",
+      "redactable.com",
+      "PDF24.org"
+    ]
+  },
+  {
+    "name": "regrettable.eu",
+    "url": "https://regrettable.eu",
+    "description": "Drop-in fortrydelsesknap til EU-webshops. Gør det nemt at overholde EU-direktiv 2023/2673 med en letvægts-widget, automatiske bekræftelsesmails med leveringssporing og 10 års revisionslog.",
+    "alternatives": [
+      "Rescindly",
+      "Trusted Shops",
+      "Shopware Withdrawal Plugin"
+    ]
+  },
+  {
+    "name": "companydata.dk",
+    "url": "https://companydata.dk",
+    "description": "Dansk virksomhedsdata med REST API, finansiel sundhedsscore (CDS), 13 års regnskabshistorik, ejendomsdata og realtidsovervågning af danske selskaber.",
+    "alternatives": [
+      "Creditsafe",
+      "Dun & Bradstreet",
+      "ZoomInfo",
+      "OpenCorporates"
+    ]
+  },
+  {
+    "name": "Chainbox",
+    "url": "https://chainbox.dk",
+    "description": "Chainbox understøtter B2B-virksomheder med værktøjer til håndtering af produktdata, online salg og indholdsstyring",
+    "alternatives": [
+      "Shopify B2B, Commercetools, Sana Commerce"
+    ]
+  },
+  {
+    "name": "easyonline.ai",
+    "url": "https://easyonline.ai",
+    "description": "Upload din hjemmeside lavet med AI for kun 9 kr om måneden",
+    "alternatives": [
+      "Wix, Loveable, Wordpress"
+    ]
+  },
+  {
+    "name": "Shipmondo",
+    "url": "https://shipmondo.com/dk/",
+    "description": "Nem og hurtig fragthåndtering",
+    "alternatives": [
+      "Shippo",
+      "Shipstation",
+      "AfterShip",
+      "Easyship"
+    ]
+  },
+  {
+    "name": ".legal",
+    "url": "https://www.dotlegal.com",
+    "description": "Dansk GRC-platform der samler compliance-arbejdet med GDPR, NIS2, AI Act, ISO 27001 og DORA i én løsning. Indeholder moduler til databeskyttelse, informationssikkerhed, kontrakthåndtering, leverandørstyring og framework-skabeloner med AI-features.",
+    "alternatives": [
+      "OneTrust",
+      "Vanta",
+      "Drata",
+      "Secureframe",
+      "ISMS.online"
+    ]
+  },
+  {
+    "name": "VerifyID.dk",
+    "url": "https://verifyid.dk",
+    "description": "Aldersverifikation og ID-scanner til både fysiske butikker og online. Skræddersyede MitID-flows og specialister i MitID-integration til e-handel, login og compliance.",
+    "alternatives": [
+      "Beweiser",
+      "Veriff",
+      "Yoti",
+      "Onfido"
+    ]
+  },
+  {
+    "name": "SendRCS.dk",
+    "url": "https://sendrcs.dk",
+    "description": "Professionel RCS messaging platform til virksomheder. Send rich messages med billeder, knapper og karruseller via RCS Business Messaging.",
+    "alternatives": [
+      "Twilio",
+      "Sinch",
+      "MessageBird",
+      "Infobip"
+    ]
+  },
+  {
+    "name": "Nummeropslag.dk",
+    "url": "https://nummeropslag.dk",
+    "description": "Dansk nummeropslag, opkalds-ID og spamopkalds-beskyttelse med data fra CVR og danske teleudbydere. Findes både som app og som partner-API til at slå ukendte numre op, identificere virksomheder og blokere spam- og svindelopkald.",
+    "alternatives": [
+      "Truecaller",
+      "Hiya",
+      "Whoscall",
+      "Twilio Lookup"
+    ]
+  },
+  {
+    "name": "PennaPay",
+    "url": "https://pennapay.com",
+    "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
+    "alternatives": [
+      "QuickBooks",
+      "FreshBooks",
+      "Wave"
+    ]
+  },
+  {
+    "name": "Byggepladsplanen.dk",
+    "url": "https://byggepladsplanen.dk",
+    "description": "Webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort.",
+    "alternatives": [
+      "Bluebeam",
+      "AutoCAD",
+      "SketchUp"
+    ],
+    "image": "images/byggepladsplanen.webp"
+  },
+  {
+    "name": "Kloaktegning.dk",
+    "url": "https://kloaktegning.dk",
+    "description": "Webbaseret tegneprogram til kloaktegninger med rør, brønde og danske kloaksymboler.",
+    "alternatives": [
+      "Bluebeam",
+      "AutoCAD"
+    ],
+    "image": "images/kloaktegning.webp"
+  },
+  {
+    "name": "Skilteplanen.dk",
+    "url": "https://skilteplanen.dk",
+    "description": "Webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde.",
+    "alternatives": [
+      "Bluebeam",
+      "AutoCAD",
+      "RapidPlan"
+    ],
+    "image": "images/skilteplanen.webp"
+  },
+  {
+    "name": "BrandBuddy",
+    "url": "https://brandbuddyai.dk",
+    "description": "E-mail marketing på autopilot til lokale virksomheder. BrandBuddy bygger et helt års e-mailkampagner til din virksomhed. Du skal bare give os din hjemmeside.",
+    "alternatives": [
+      "Mailchimp",
+      "MailerLite",
+      "Brevo",
+      "Klaviyo"
+    ]
+  }
 ]
