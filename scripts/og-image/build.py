@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Genererer og-image.png (1200x630) til dansktechstack.dk.
+Genererer og-image.jpg (1200x630) til dansktechstack.dk.
 
 Billedet er en mosaik af iværksætterne bag projektet, GitHub-bidragydere
 og logoer fra products.json. Kør igen når der er kommet nye produkter
@@ -98,7 +98,7 @@ def logos(products):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--theme", choices=["red", "dark"], default="red")
-    ap.add_argument("--out", default=str(ROOT / "og-image.png"))
+    ap.add_argument("--out", default=str(ROOT / "og-image.jpg"))
     args = ap.parse_args()
 
     products = json.loads((ROOT / "products.json").read_text())
@@ -135,10 +135,12 @@ def main():
                     f"--screenshot={shot}", page.as_uri()],
                    check=True, capture_output=True)
 
-    # Render i 2x og skaler ned for skarpere kanter; gem som optimeret PNG
+    # Render i 2x og skaler ned for skarpere kanter. Gem som JPEG i høj kvalitet uden
+    # chroma-subsampling: farvereduktion/dithering bliver til pixel-støj, når LinkedIn
+    # komprimerer billedet igen, og subsampling slører kanterne mellem rød og hvid.
     im = Image.open(shot).convert("RGB").resize((1200, 630), Image.LANCZOS)
     buf = io.BytesIO()
-    im.quantize(colors=256, method=Image.Quantize.MEDIANCUT, dither=Image.Dither.FLOYDSTEINBERG).save(buf, "PNG", optimize=True)
+    im.save(buf, "JPEG", quality=95, subsampling=0, optimize=True, progressive=True)
     Path(args.out).write_bytes(buf.getvalue())
     print(f"{args.out}: {len(products)} produkter, {len(backer_faces)} iværksættere, "
           f"{contributor_count} bidragydere, {len(buf.getvalue()) // 1024} KB")
