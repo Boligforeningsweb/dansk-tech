@@ -1154,5 +1154,37 @@
       "url": "https://pennapay.com",
       "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
       "alternatives": ["QuickBooks", "FreshBooks", "Wave"]
+   },
+   {
+      "name": "Byggepladsplanen.dk",
+      "url": "https://byggepladsplanen.dk/",
+      "description": "Dansk, webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort. Del planer med kolleger og eksporter til PDF og JPG til PSS og dokumentation.",
+      "alternatives": [
+         "Bluebeam",
+         "AutoCAD",
+         "SketchUp"
+      ],
+      "image": "images/byggepladsplanen.webp"
+   },
+   {
+      "name": "Kloaktegning.dk",
+      "url": "https://kloaktegning.dk/",
+      "description": "Dansk, webbaseret tegneprogram til kloakplaner med rør, brønde og danske kloaksymboler. Tegn på kort eller eksisterende tegninger, importer LER- og GPS-data, og eksporter til PDF og JPG.",
+      "alternatives": [
+         "Bluebeam",
+         "AutoCAD"
+      ],
+      "image": "images/kloaktegning.webp"
+   },
+   {
+      "name": "Skilteplanen.dk",
+      "url": "https://skilteplanen.dk/",
+      "description": "Dansk, webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde. Placer skilte og afspærringer direkte på kort, samarbejd om projekter, og eksporter til PDF og JPG.",
+      "alternatives": [
+         "Bluebeam",
+         "AutoCAD",
+         "RapidPlan"
+      ],
+      "image": "images/skilteplanen.webp"
    }
 ]
