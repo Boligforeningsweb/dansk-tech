@@ -1154,5 +1154,11 @@
       "url": "https://pennapay.com",
       "description": "Gratis faktureringsværktøj til freelancere og selvstændige — lovpligtige fakturaer med moms og fortløbende numre, betalingslink med kort eller MobilePay, kundeportal og fildeling. Bygget i Danmark.",
       "alternatives": ["QuickBooks", "FreshBooks", "Wave"]
+   },
+   {
+      "name": "BrandBuddy",
+      "url": "https://brandbuddyai.dk",
+      "description": "E-mail marketing på autopilot til lokale virksomheder. BrandBuddy bygger et helt års e-mailkampagner til din virksomhed. Du skal bare give os din hjemmeside.",
+      "alternatives": ["Mailchimp", "MailerLite", "Brevo", "Klaviyo"]
    }
 ]
