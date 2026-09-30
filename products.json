@@ -581,6 +581,17 @@
       "image": "images/timelog.png"
    },
    {
+      "name": "Hourtick.com",
+      "url": "https://hourtick.com",
+      "description": "Tidsregistrering, tasks og teamchat til mennesker og AI-agenter — uden per-seat-pris",
+      "alternatives": [
+         "Toggl",
+         "Harvest",
+         "Clockify"
+      ],
+      "image": "images/hourtick.png"
+   },
+   {
       "name": "Ubivox.dk",
       "url": "https://ubivox.dk/",
       "description": "Send nyhedsbreve nemt og sikkert",
