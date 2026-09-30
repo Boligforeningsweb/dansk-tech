@@ -1,4 +1,29 @@
 <?php
+// Samme side må kun findes på én adresse
+if (parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) === '/index.php') {
+  $query = $_SERVER['QUERY_STRING'] ?? '';
+  header('Location: /' . ($query !== '' ? '?' . $query : ''), true, 301);
+  exit;
+}
+
+header('Strict-Transport-Security: max-age=31536000');
+
+// Tilføj kilde-parametre til udgående produktlinks, så produkterne kan se trafikken fra os
+function outbound_url($url) {
+  $params = ['ref' => 'dansktechstack.dk', 'utm_source' => 'dansktechstack.dk', 'utm_medium' => 'referral'];
+  $fragment = '';
+  if (($hash = strpos($url, '#')) !== false) {
+    $fragment = substr($url, $hash);
+    $url = substr($url, 0, $hash);
+  }
+  parse_str(parse_url($url, PHP_URL_QUERY) ?? '', $existing);
+  $params = array_diff_key($params, $existing);
+  if (!$params) {
+    return $url . $fragment;
+  }
+  return $url . (str_contains($url, '?') ? '&' : '?') . http_build_query($params) . $fragment;
+}
+
 // Load all products from JSON file
 $products = [];
 $productsFile = __DIR__ . '/products.json';
@@ -278,13 +303,16 @@ function e($value) {
       <div id="products-container">
         <ul role="list" class="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
         <?php foreach ($products as $product): 
-          $name = htmlspecialchars($product['name'], ENT_QUOTES, 'UTF-8');
-          $url = htmlspecialchars($product['url'], ENT_QUOTES, 'UTF-8');
-          $description = htmlspecialchars($product['description'], ENT_QUOTES, 'UTF-8');
+          $name = $product['name'];
+          $url = $product['url'];
+          $description = $product['description'];
           $alternatives = isset($product['alternatives']) && is_array($product['alternatives']) 
             ? $product['alternatives'] 
             : [];
-          $alternativesText = !empty($alternatives) ? implode(', ', array_map('htmlspecialchars', $alternatives)) : '';
+          $alternativesText = implode(', ', $alternatives);
+          if (mb_strlen($alternativesText) > 60) {
+            $alternativesText = mb_substr($alternativesText, 0, 60) . '...';
+          }
           
           // Extract domain from URL for favicon
           $domain = parse_url($url, PHP_URL_HOST);
@@ -296,32 +324,32 @@ function e($value) {
           }
           
           $isOriginal = in_array($url, $originalProducts);
-          $productDataAttributes = 'data-product data-name="' . htmlspecialchars(strtolower($name), ENT_QUOTES, 'UTF-8') . '" data-description="' . htmlspecialchars(strtolower($description), ENT_QUOTES, 'UTF-8') . '" data-alternatives="' . htmlspecialchars(strtolower(implode(' ', $alternatives)), ENT_QUOTES, 'UTF-8') . '"';
+          $productDataAttributes = 'data-product data-name="' . e(mb_strtolower($name)) . '" data-description="' . e(mb_strtolower($description)) . '" data-alternatives="' . e(mb_strtolower(implode(' ', $alternatives))) . '"';
         ?>
         <li <?php echo $productDataAttributes; ?>>
-          <a href="<?php echo $url; ?>" target="_blank" rel="noopener noreferrer" class="group block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-gray-300 dark:hover:border-gray-600 hover:shadow-md transition-all duration-200">
+          <a href="<?php echo e(outbound_url($url)); ?>" target="_blank" rel="noopener" class="group block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-gray-300 dark:hover:border-gray-600 hover:shadow-md transition-all duration-200">
             <div class="flex items-start gap-3">
               <div class="flex-shrink-0 mt-0.5 w-8 h-8 rounded bg-gray-200 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden">
                 <?php if ($faviconUrl): ?>
                 <img src="<?php echo $faviconUrl; ?>" alt="" width="32" height="32" loading="lazy" decoding="async" class="rounded w-full h-full object-contain" onerror="this.style.display='none'; this.parentElement.querySelector('.favicon-fallback').style.display='flex';" />
                 <?php endif; ?>
-                <span class="favicon-fallback text-sm font-bold text-gray-500 dark:text-gray-400" style="<?php echo $faviconUrl ? 'display: none;' : 'display: flex;'; ?>"><?php echo strtoupper(substr($name, 0, 1)); ?></span>
+                <span class="favicon-fallback text-sm font-bold text-gray-500 dark:text-gray-400" style="<?php echo $faviconUrl ? 'display: none;' : 'display: flex;'; ?>"><?php echo e(mb_strtoupper(mb_substr($name, 0, 1))); ?></span>
               </div>
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-1 flex-wrap">
                   <h3 class="text-base font-semibold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors truncate">
-                    <?php echo $name; ?>
+                    <?php echo e($name); ?>
                   </h3>
                   <?php if ($isOriginal): ?>
                   <span class="inline-flex items-center rounded-full bg-blue-600 px-2 py-0.5 text-xs font-medium text-white flex-shrink-0">Original</span>
                   <?php endif; ?>
                 </div>
-                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2" title="<?php echo htmlspecialchars($description); ?>">
-                  <?php echo $description; ?>
+                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2" title="<?php echo e($description); ?>">
+                  <?php echo e($description); ?>
                 </p>
                 <?php if (!empty($alternativesText)): ?>
                 <p class="text-xs text-gray-500 dark:text-gray-500">
-                  <span class="font-medium">Alternativ til:</span> <span class="text-gray-400 dark:text-gray-500"><?php echo htmlspecialchars(strlen($alternativesText) > 60 ? substr($alternativesText, 0, 60) . '...' : $alternativesText); ?></span>
+                  <span class="font-medium">Alternativ til:</span> <span class="text-gray-400 dark:text-gray-500"><?php echo e($alternativesText); ?></span>
                 </p>
                 <?php endif; ?>
               </div>
@@ -519,8 +547,8 @@ function e($value) {
           Hjælp os med at sprede budskabet om den danske tech stack. Del dette med andre danske virksomheder, der leder efter alternativer. 
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-4">
-          <a href="https://twitter.com/intent/tweet?text=Tjek%20lige%20den%20danske%20tech%20stack%20ud.%20Man%20kan%20sagtens%20k%C3%B8be%20fed%20software%20i%20Danmark.%20Se%20dansktechstack.dk&url=https://dansktechstack.dk" target="_blank" rel="noopener noreferrer" class="rounded-md bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
-            Del på Twitter
+          <a href="https://x.com/intent/post?text=Tjek%20lige%20den%20danske%20tech%20stack%20ud.%20Man%20kan%20sagtens%20k%C3%B8be%20fed%20software%20i%20Danmark.%20Se%20dansktechstack.dk&url=https://dansktechstack.dk" target="_blank" rel="noopener noreferrer" class="rounded-md bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
+            Del på X
           </a>
           <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://dansktechstack.dk" target="_blank" rel="noopener noreferrer" class="rounded-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
             Del på LinkedIn
