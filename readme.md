@@ -137,6 +137,18 @@ Som bidragyder skal du kun redigere én fil:
 
 ---
 
+## 🖼️ OG-billede (kun maintainers)
+
+`og-image.png` er en mosaik af iværksætterne, GitHub-bidragyderne og produkternes logoer. Generér det igen, når der er kommet nye produkter eller bidragydere, så tallene er opdaterede:
+
+```bash
+pip install pillow
+python3 scripts/og-image/build.py            # rød variant
+python3 scripts/og-image/build.py --theme dark
+```
+
+---
+
 ## 📝 Licens
 
 Dette projekt er open source og tilgængeligt under [MIT License](LICENSE) (eller den licens du vælger).

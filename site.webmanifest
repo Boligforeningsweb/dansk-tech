@@ -1,6 +1,9 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Den danske tech stack",
+  "short_name": "Dansk Tech",
+  "description": "Danske alternativer til udenlandsk software",
+  "lang": "da-DK",
+  "start_url": "/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +18,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffffff",
+  "theme_color": "#c8102e",
   "background_color": "#ffffff",
   "display": "standalone"
 }

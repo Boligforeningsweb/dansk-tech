@@ -1,184 +1,212 @@
+<?php
+// Load all products from JSON file
+$products = [];
+$productsFile = __DIR__ . '/products.json';
+
+if (file_exists($productsFile)) {
+  $productsContent = file_get_contents($productsFile);
+  $decoded = json_decode($productsContent, true);
+
+  if (json_last_error() === JSON_ERROR_NONE && is_array($decoded)) {
+    $products = $decoded;
+  }
+}
+
+// Load original products list
+$originalProducts = [];
+$originalFile = __DIR__ . '/original-products.json';
+
+if (file_exists($originalFile)) {
+  $originalContent = file_get_contents($originalFile);
+  $decoded = json_decode($originalContent, true);
+
+  if (json_last_error() === JSON_ERROR_NONE && is_array($decoded)) {
+    $originalProducts = $decoded;
+  }
+}
+
+// Sort products alphabetically by name
+usort($products, function($a, $b) {
+  return strcasecmp($a['name'], $b['name']);
+});
+
+// Only products with the required fields are shown on the page
+$products = array_values(array_filter($products, function($product) {
+  return isset($product['name'], $product['url'], $product['description']);
+}));
+
+$productCount = count($products);
+$siteUrl = 'https://dansktechstack.dk/';
+$pageTitle = "Den danske tech stack – $productCount danske alternativer til Big Tech";
+$pageDescription = "Find danske alternativer til Stripe, Shopify, Mailchimp, Zendesk og andre udenlandske systemer. $productCount danske SaaS-produkter, anbefalet af danske iværksættere.";
+$socialDescription = "Betalinger, e-mail, support, regnskab, monitoring og meget mere – bygget i Danmark. Find danske alternativer til de udenlandske giganter.";
+$ogImage = $siteUrl . 'og-image.png';
+$ogImageAlt = "Den danske tech stack: $productCount danske alternativer til Stripe, Shopify, Mailchimp, Zendesk og co.";
+
+// Schema.org JSON-LD, built from the same data as the page
+$faq = [
+  [
+    'q' => 'Hvad er den danske tech stack?',
+    'a' => "Den danske tech stack er en åben, kurateret liste over $productCount danske software-produkter, som kan bruges som alternativer til store internationale spillere som Stripe, Shopify, Mailchimp og Zendesk. Listen er startet af en gruppe danske iværksættere og vedligeholdes på GitHub.",
+  ],
+  [
+    'q' => 'Hvornår tæller et produkt som dansk?',
+    'a' => 'Et produkt kommer på listen, hvis virksomheden har hovedkontor i Danmark, har en dansk stifter eller medstifter, eller primært er dansk ejet. Produktet skal samtidig kunne indgå i en tech stack hos SaaS-, e-commerce- eller andre tech-virksomheder.',
+  ],
+  [
+    'q' => 'Hvorfor vælge dansk software?',
+    'a' => 'Danske systemer giver dansktalende support, data og kontrakter under dansk og europæisk lovgivning (GDPR) og mindre afhængighed af software fra lande uden for EU. Samtidig styrker du det danske tech-miljø.',
+  ],
+  [
+    'q' => 'Hvordan foreslår jeg et produkt til listen?',
+    'a' => 'Send en pull request på GitHub, hvor du tilføjer produktet til filen products.json med navn, URL, en kort beskrivelse og de internationale produkter, det er et alternativ til. Vi gennemgår forslaget og tilføjer det til listen.',
+  ],
+];
+
+$listItems = [];
+foreach ($products as $i => $product) {
+  $item = [
+    '@type' => 'SoftwareApplication',
+    'name' => $product['name'],
+    'url' => $product['url'],
+    'description' => $product['description'],
+    'applicationCategory' => 'BusinessApplication',
+  ];
+  if (!empty($product['alternatives']) && is_array($product['alternatives'])) {
+    $item['keywords'] = 'Alternativ til ' . implode(', ', $product['alternatives']);
+  }
+  $listItems[] = ['@type' => 'ListItem', 'position' => $i + 1, 'item' => $item];
+}
+
+$schema = [
+  '@context' => 'https://schema.org',
+  '@graph' => [
+    [
+      '@type' => 'Organization',
+      '@id' => $siteUrl . '#organization',
+      'name' => 'Den danske tech stack',
+      'alternateName' => 'Dansk Tech Stack',
+      'url' => $siteUrl,
+      'logo' => $siteUrl . 'web-app-manifest-512x512.png',
+      'email' => 'kontakt@langsom.com',
+      'sameAs' => ['https://github.com/Boligforeningsweb/dansk-tech'],
+      'parentOrganization' => [
+        '@type' => 'Organization',
+        'name' => 'langsom.com',
+        'url' => 'https://langsom.com',
+      ],
+    ],
+    [
+      '@type' => 'WebSite',
+      '@id' => $siteUrl . '#website',
+      'name' => 'Den danske tech stack',
+      'alternateName' => 'Dansk Tech Stack',
+      'url' => $siteUrl,
+      'description' => $pageDescription,
+      'inLanguage' => 'da-DK',
+      'publisher' => ['@id' => $siteUrl . '#organization'],
+    ],
+    [
+      '@type' => 'CollectionPage',
+      '@id' => $siteUrl . '#webpage',
+      'url' => $siteUrl,
+      'name' => $pageTitle,
+      'description' => $pageDescription,
+      'inLanguage' => 'da-DK',
+      'isPartOf' => ['@id' => $siteUrl . '#website'],
+      'about' => ['@id' => $siteUrl . '#organization'],
+      'dateModified' => date('c', filemtime($productsFile)),
+      'primaryImageOfPage' => [
+        '@type' => 'ImageObject',
+        'url' => $ogImage,
+        'width' => 1200,
+        'height' => 630,
+      ],
+      'mainEntity' => ['@id' => $siteUrl . '#produkter'],
+    ],
+    [
+      '@type' => 'ItemList',
+      '@id' => $siteUrl . '#produkter',
+      'name' => 'Danske alternativer til udenlandsk software',
+      'description' => 'Liste over danske tech-systemer, der kan erstatte internationale SaaS-produkter',
+      'numberOfItems' => $productCount,
+      'itemListOrder' => 'https://schema.org/ItemListOrderAscending',
+      'itemListElement' => $listItems,
+    ],
+    [
+      '@type' => 'FAQPage',
+      '@id' => $siteUrl . '#faq',
+      'mainEntity' => array_map(function($item) {
+        return [
+          '@type' => 'Question',
+          'name' => $item['q'],
+          'acceptedAnswer' => ['@type' => 'Answer', 'text' => $item['a']],
+        ];
+      }, $faq),
+    ],
+  ],
+];
+
+function e($value) {
+  return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+}
+?>
 <!DOCTYPE html>
 <html lang="da" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Den danske tech stack</title>
-  <meta name="description" content="Oversigt over danske tech-systemer som alternativer til store internationale spillere. Få inspiration til din tech stack med danske SaaS-løsninger til betalinger, analytics, monitoring og mere.">
-  
+  <title><?php echo e($pageTitle); ?></title>
+  <meta name="description" content="<?php echo e($pageDescription); ?>">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#c8102e">
+
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://dansktechstack.dk/" />
-  
+  <link rel="canonical" href="<?php echo $siteUrl; ?>" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-precomposed.png">
-  
+  <link rel="manifest" href="/site.webmanifest">
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://cdn.tailwindcss.com">
-  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
-  
-  <!-- Open Graph / Facebook -->
+  <link rel="preconnect" href="https://www.google.com">
+  <link rel="dns-prefetch" href="https://api.github.com">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://dansktechstack.dk/">
-  <meta property="og:title" content="Den danske tech stack">
-  <meta property="og:description" content="Oversigt over danske tech-systemer som alternativer til store internationale spillere. Få inspiration til din tech stack med danske SaaS-løsninger.">
-  <meta property="og:image" content="https://dansktechstack.dk/og-image-dansktechstack.png">
+  <meta property="og:url" content="<?php echo $siteUrl; ?>">
+  <meta property="og:title" content="<?php echo e($pageTitle); ?>">
+  <meta property="og:description" content="<?php echo e($socialDescription); ?>">
+  <meta property="og:image" content="<?php echo $ogImage; ?>">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="<?php echo e($ogImageAlt); ?>">
   <meta property="og:locale" content="da_DK">
-  <meta property="og:site_name" content="Dansk Tech Stack">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://dansktechstack.dk/">
-  <meta property="twitter:title" content="Den danske tech stack">
-  <meta property="twitter:description" content="Oversigt over danske tech-systemer som alternativer til store internationale spillere.">
-  <meta property="twitter:image" content="https://dansktechstack.dk/og-image-dansktechstack.png">
-  
+  <meta property="og:site_name" content="Den danske tech stack">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<?php echo e($pageTitle); ?>">
+  <meta name="twitter:description" content="<?php echo e($socialDescription); ?>">
+  <meta name="twitter:image" content="<?php echo $ogImage; ?>">
+  <meta name="twitter:image:alt" content="<?php echo e($ogImageAlt); ?>">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       darkMode: 'class',
     }
   </script>
-  
+
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Den danske tech stack",
-    "description": "Oversigt over danske tech-systemer som alternativer til store internationale spillere. Få inspiration til din tech stack med danske SaaS-løsninger til betalinger, analytics, monitoring og mere.",
-    "url": "https://dansktechstack.dk",
-    "publisher": {
-      "@type": "Organization",
-      "name": "langsom.com",
-      "url": "https://langsom.com"
-    },
-    "inLanguage": "da-DK"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Danske tech-systemer",
-    "description": "Liste over danske alternativer til internationale tech-systemer",
-    "itemListElement": [
-      {
-        "@type": "SoftwareApplication",
-        "name": "Alunta.com",
-        "description": "Abonnementer, betalinger og fakturering",
-        "url": "https://alunta.com",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "GrowPanel.io",
-        "description": "Subscription analytics platform",
-        "url": "https://growpanel.io",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "PingPuffin.com",
-        "description": "Uptime monitoring og alerts",
-        "url": "https://pingpuffin.com",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Sleeknote.com",
-        "description": "Email marketing og popups",
-        "url": "https://sleeknote.com",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Clerk.io",
-        "description": "Personalisering og anbefalinger",
-        "url": "https://clerk.io",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "PageVitals.com",
-        "description": "Performance monitoring",
-        "url": "https://pagevitals.com",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Herodesk.io",
-        "description": "Customer support og helpdesk",
-        "url": "https://herodesk.io",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Morningscore.io",
-        "description": "SEO + GEO tracking",
-        "url": "https://morningscore.io",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Dreamdata.io",
-        "description": "B2B revenue attribution",
-        "url": "https://dreamdata.io",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Timelog.com",
-        "description": "Tidsregistrering, ressourcestyring og fakturering",
-        "url": "https://timelog.com",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Fenerum.com",
-        "description": "SaaS finances",
-        "url": "https://fenerum.com",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "E-conomic.dk",
-        "description": "Regnskab og bogholderi",
-        "url": "https://e-conomic.dk",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Dinero.dk",
-        "description": "Regnskab og bogholderi",
-        "url": "https://dinero.dk",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Plecto.com",
-        "description": "Performance management og dashboards",
-        "url": "https://plecto.com",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Updatemate.ai",
-        "description": "Automatisering og integrationer",
-        "url": "https://updatemate.ai",
-        "applicationCategory": "BusinessApplication"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "SEO.ai",
-        "description": "Automatisering af indholdsproduktion",
-        "url": "https://seo.ai",
-        "applicationCategory": "BusinessApplication"
-      }
-    ]
-  }
+<?php echo json_encode($schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_HEX_TAG); ?>
+
   </script>
 </head>
 <body class="bg-white dark:bg-gray-900">
@@ -190,7 +218,7 @@
           Den danske tech stack
         </h1>
         <p class="mt-8 text-xl/8 text-gray-600 dark:text-gray-400 max-[450px]:hidden">
-          Vi er en gruppe iværksættere, der ønsker at sætte fokus på dansk software. I en tid hvor der ofte tales om Danmarks afhængighed af udenlandsk software, har vi udgivet en liste af danske software-virkomsheder, man kan vælge som alternativ til dem udenfor EU. 
+          Vi er en gruppe iværksættere, der ønsker at sætte fokus på dansk software. I en tid hvor der ofte tales om Danmarks afhængighed af udenlandsk software, har vi udgivet en liste af danske software-virksomheder, man kan vælge som alternativ til dem udenfor EU. 
           Danmark har nemlig en stolt tradition inden for softwareudvikling. Teknologier som Ruby on Rails, C++ og PHP har danske rødder, og nedenfor har vi samlet en liste over stærke danske alternativer til software, der ellers typisk købes i udlandet.
         </p>
         <p class="mt-8 text-xl/8 text-gray-600 dark:text-gray-400 hidden max-[450px]:block">
@@ -231,7 +259,7 @@
       <div class="mx-auto max-w-3xl text-center">
         <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Tech fra 🇩🇰</h2>
         <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
-          Oversigt over danske systemer til din tech stack
+          <?php echo $productCount; ?> danske systemer til din tech stack – søg på det udenlandske produkt, du gerne vil erstatte
         </p>
       </div>
       <div class="mt-8">
@@ -247,46 +275,9 @@
           </div>
         </div>
       </div>
-      <?php
-      // Load all products from JSON file
-      $products = [];
-      $productsFile = __DIR__ . '/products.json';
-      
-      if (file_exists($productsFile)) {
-        $productsContent = file_get_contents($productsFile);
-        $decoded = json_decode($productsContent, true);
-        
-        if (json_last_error() === JSON_ERROR_NONE && is_array($decoded)) {
-          $products = $decoded;
-        }
-      }
-      
-      // Load original products list
-      $originalProducts = [];
-      $originalFile = __DIR__ . '/original-products.json';
-      
-      if (file_exists($originalFile)) {
-        $originalContent = file_get_contents($originalFile);
-        $decoded = json_decode($originalContent, true);
-        
-        if (json_last_error() === JSON_ERROR_NONE && is_array($decoded)) {
-          $originalProducts = $decoded;
-        }
-      }
-      
-      // Sort products alphabetically by name
-      usort($products, function($a, $b) {
-        return strcasecmp($a['name'], $b['name']);
-      });
-      ?>
       <div id="products-container">
         <ul role="list" class="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4">
-        <?php foreach ($products as $index => $product): 
-          // Validate required fields
-          if (!isset($product['name']) || !isset($product['url']) || !isset($product['description'])) {
-            continue;
-          }
-          
+        <?php foreach ($products as $product): 
           $name = htmlspecialchars($product['name'], ENT_QUOTES, 'UTF-8');
           $url = htmlspecialchars($product['url'], ENT_QUOTES, 'UTF-8');
           $description = htmlspecialchars($product['description'], ENT_QUOTES, 'UTF-8');
@@ -312,7 +303,7 @@
             <div class="flex items-start gap-3">
               <div class="flex-shrink-0 mt-0.5 w-8 h-8 rounded bg-gray-200 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden">
                 <?php if ($faviconUrl): ?>
-                <img src="<?php echo $faviconUrl; ?>" alt="<?php echo $name; ?>" width="32" height="32" class="rounded w-full h-full object-contain" onerror="this.style.display='none'; this.parentElement.querySelector('.favicon-fallback').style.display='flex';" />
+                <img src="<?php echo $faviconUrl; ?>" alt="" width="32" height="32" loading="lazy" decoding="async" class="rounded w-full h-full object-contain" onerror="this.style.display='none'; this.parentElement.querySelector('.favicon-fallback').style.display='flex';" />
                 <?php endif; ?>
                 <span class="favicon-fallback text-sm font-bold text-gray-500 dark:text-gray-400" style="<?php echo $faviconUrl ? 'display: none;' : 'display: flex;'; ?>"><?php echo strtoupper(substr($name, 0, 1)); ?></span>
               </div>
@@ -472,7 +463,7 @@
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="border-t border-gray-300 dark:border-white/15"></div>
   </div>
-  <div id="forslag"class="bg-white py-24 sm:py-32 dark:bg-gray-900">
+  <div id="forslag" class="bg-white py-24 sm:py-32 dark:bg-gray-900">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Send dit forslag via <a href="https://github.com/Boligforeningsweb/dansk-tech" class="underline">GitHub</a></h2>
@@ -497,6 +488,23 @@
           <figcaption class="mt-4 text-sm text-gray-600 dark:text-gray-400 font-medium">David Heinemeier Hansson <br/> Stifter af Ruby on Rails, Bestseller-forfatter og medejer af flere danske startups</figcaption>
         </figure>
       </div>
+    </div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="border-t border-gray-300 dark:border-white/15"></div>
+  </div>
+  <div id="faq" class="bg-white py-24 sm:py-32 dark:bg-gray-900">
+    <div class="mx-auto max-w-3xl px-6 lg:px-8">
+      <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white text-center">Ofte stillede spørgsmål</h2>
+      <dl class="mt-12 divide-y divide-gray-200 dark:divide-white/10">
+        <?php foreach ($faq as $item): ?>
+        <div class="py-6">
+          <dt class="text-base/7 font-semibold text-gray-900 dark:text-white"><?php echo e($item['q']); ?></dt>
+          <dd class="mt-2 text-base/7 text-gray-600 dark:text-gray-400"><?php echo e($item['a']); ?></dd>
+        </div>
+        <?php endforeach; ?>
+      </dl>
     </div>
   </div>
 
