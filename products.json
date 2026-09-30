@@ -206,6 +206,19 @@
       "image": "images/e-conomic.png"
    },
    {
+      "name": "Ethnote",
+      "url": "https://ethnote.dk",
+      "description": "Dansk platform til kvalitativ dataanalyse og kodning.",
+      "alternatives": [
+         "Nvivo",
+         "Atlas.ti",
+         "MaxQDA",
+         "Dedoose",
+         "Dovetail"
+      ],
+      "image": "images/ethnote_logo_light.svg"
+   },
+   {
       "name": "Rilanto Reviews",
       "url": "https://rilanto.com",
       "description": "Dansk platform til kundeanmeldelser. Rilanto er udviklet og hostet i Danmark, og er et supplement til eksisterende review-sites.",
@@ -280,6 +293,16 @@
          "ProfitWell"
       ],
       "image": "images/growpanel.png"
+   },
+   {
+      "name": "Henosia.com",
+      "url": "https://www.henosia.com",
+      "description": "Byg produktionsklare interne apps med AI, også uden at kunne kode.",
+      "alternatives": [
+         "Lovable",
+         "Retool",
+         "Replit"
+      ]
    },
    {
       "name": "Herodesk.io",
@@ -557,6 +580,19 @@
          "Shopify",
          "Magento",
          "WooCommerce"
+      ]
+   },
+   {
+      "name": "Tiimo (tiimoapp.com)",
+      "url": "https://www.tiimoapp.com",
+      "description": "Visuel dagsplanlægger med AI til opgaver, deadlines og fokus på arbejde og i hverdagen – udviklet med afsæt i neurodivergente behov, herunder ADHD og autisme, og relevant for alle, der ønsker støtte til planlægning. Kåret af Apple til iPhone App of the Year 2025.",
+      "alternatives": [
+         "Todoist",
+         "TickTick",
+         "Structured",
+         "Motion",
+         "Sunsama",
+         "Akiflow"
       ]
    },
    {
@@ -1184,7 +1220,13 @@
          "Bluebeam",
          "AutoCAD",
          "RapidPlan"
-      ],
+],
       "image": "images/skilteplanen.webp"
+   },
+   {
+      "name": "BrandBuddy",
+      "url": "https://brandbuddyai.dk",
+      "description": "E-mail marketing på autopilot til lokale virksomheder. BrandBuddy bygger et helt års e-mailkampagner til din virksomhed. Du skal bare give os din hjemmeside.",
+      "alternatives": ["Mailchimp", "MailerLite", "Brevo", "Klaviyo"]
    }
 ]
