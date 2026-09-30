@@ -1163,7 +1163,8 @@
       "name": "Kallax.io",
       "url": "https://kallax.io",
       "description": "Brætspilsbegivenheder og organisering af samlinger til nørder, organisationer og virksomheder. Bygget af danskere, europæiske servere.",
-      "alternatives": ["BoardGameGeek", "GeekGroup", "Meetup"]
+      "alternatives": ["BoardGameGeek", "GeekGroup", "Meetup"],
+      "image": "images/kallax-io.png"
    },
    {
       "name": "PennaPay",
