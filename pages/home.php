@@ -116,6 +116,10 @@ partial('head', [
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
               <img src="/techsavvy.png" alt="TechSavvy" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
             </div>
+            <!-- Teknologisk Institut logo -->
+            <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
+              <img src="/tekinstitut.png" alt="Teknologisk Institut" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
+            </div>
             <!-- Berlingske logo -->
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
               <img src="/berlingske.png" alt="Berlingske" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
