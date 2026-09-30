@@ -1192,6 +1192,38 @@
       "alternatives": ["QuickBooks", "FreshBooks", "Wave"]
    },
    {
+      "name": "Byggepladsplanen.dk",
+      "url": "https://byggepladsplanen.dk",
+      "description": "Webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort.",
+      "alternatives": [
+         "Bluebeam",
+         "AutoCAD",
+         "SketchUp"
+      ],
+      "image": "images/byggepladsplanen.webp"
+   },
+   {
+      "name": "Kloaktegning.dk",
+      "url": "https://kloaktegning.dk",
+      "description": "Webbaseret tegneprogram til kloaktegninger med rør, brønde og danske kloaksymboler.",
+      "alternatives": [
+         "Bluebeam",
+         "AutoCAD"
+      ],
+      "image": "images/kloaktegning.webp"
+   },
+   {
+      "name": "Skilteplanen.dk",
+      "url": "https://skilteplanen.dk",
+      "description": "Webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde.",
+      "alternatives": [
+         "Bluebeam",
+         "AutoCAD",
+         "RapidPlan"
+],
+      "image": "images/skilteplanen.webp"
+   },
+   {
       "name": "BrandBuddy",
       "url": "https://brandbuddyai.dk",
       "description": "E-mail marketing på autopilot til lokale virksomheder. BrandBuddy bygger et helt års e-mailkampagner til din virksomhed. Du skal bare give os din hjemmeside.",
