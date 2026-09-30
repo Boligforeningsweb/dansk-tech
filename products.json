@@ -1157,8 +1157,8 @@
    },
    {
       "name": "Byggepladsplanen.dk",
-      "url": "https://byggepladsplanen.dk/",
-      "description": "Dansk, webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort. Del planer med kolleger og eksporter til PDF og JPG til PSS og dokumentation.",
+      "url": "https://byggepladsplanen.dk",
+      "description": "Dansk, webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort.",
       "alternatives": [
          "Bluebeam",
          "AutoCAD",
@@ -1168,8 +1168,8 @@
    },
    {
       "name": "Kloaktegning.dk",
-      "url": "https://kloaktegning.dk/",
-      "description": "Dansk, webbaseret tegneprogram til kloakplaner med rør, brønde og danske kloaksymboler. Tegn på kort eller eksisterende tegninger, importer LER- og GPS-data, og eksporter til PDF og JPG.",
+      "url": "https://kloaktegning.dk",
+      "description": "Dansk, webbaseret tegneprogram til kloaktegninger med rør, brønde og danske kloaksymboler.",
       "alternatives": [
          "Bluebeam",
          "AutoCAD"
@@ -1178,8 +1178,8 @@
    },
    {
       "name": "Skilteplanen.dk",
-      "url": "https://skilteplanen.dk/",
-      "description": "Dansk, webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde. Placer skilte og afspærringer direkte på kort, samarbejd om projekter, og eksporter til PDF og JPG.",
+      "url": "https://skilteplanen.dk",
+      "description": "Dansk, webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde.",
       "alternatives": [
          "Bluebeam",
          "AutoCAD",
