@@ -40,7 +40,7 @@ $siteUrl = 'https://dansktechstack.dk/';
 $pageTitle = "Den danske tech stack – $productCount danske alternativer til Big Tech";
 $pageDescription = "Find danske alternativer til Stripe, Shopify, Mailchimp, Zendesk og andre udenlandske systemer. $productCount danske SaaS-produkter, anbefalet af danske iværksættere.";
 $socialDescription = "Betalinger, e-mail, support, regnskab, monitoring og meget mere – bygget i Danmark. Find danske alternativer til de udenlandske giganter.";
-$ogImage = $siteUrl . 'og-image.png';
+$ogImage = $siteUrl . 'og-image.jpg';
 $ogImageAlt = "Den danske tech stack: $productCount danske alternativer til Stripe, Shopify, Mailchimp, Zendesk og co.";
 
 // Schema.org JSON-LD, built from the same data as the page
@@ -182,7 +182,7 @@ function e($value) {
   <meta property="og:title" content="<?php echo e($pageTitle); ?>">
   <meta property="og:description" content="<?php echo e($socialDescription); ?>">
   <meta property="og:image" content="<?php echo $ogImage; ?>">
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="<?php echo e($ogImageAlt); ?>">

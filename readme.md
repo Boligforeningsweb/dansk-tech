@@ -139,7 +139,7 @@ Som bidragyder skal du kun redigere én fil:
 
 ## 🖼️ OG-billede (kun maintainers)
 
-`og-image.png` er en mosaik af iværksætterne, GitHub-bidragyderne og produkternes logoer. Generér det igen, når der er kommet nye produkter eller bidragydere, så tallene er opdaterede:
+`og-image.jpg` er en mosaik af iværksætterne, GitHub-bidragyderne og produkternes logoer. Generér det igen, når der er kommet nye produkter eller bidragydere, så tallene er opdaterede:
 
 ```bash
 pip install pillow
