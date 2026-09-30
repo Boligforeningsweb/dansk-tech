@@ -1158,7 +1158,7 @@
    {
       "name": "Byggepladsplanen.dk",
       "url": "https://byggepladsplanen.dk",
-      "description": "Dansk, webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort.",
+      "description": "Webbaseret værktøj til byggepladsplaner med hegn, arbejdsområder, skilte og køreveje på kort.",
       "alternatives": [
          "Bluebeam",
          "AutoCAD",
@@ -1169,7 +1169,7 @@
    {
       "name": "Kloaktegning.dk",
       "url": "https://kloaktegning.dk",
-      "description": "Dansk, webbaseret tegneprogram til kloaktegninger med rør, brønde og danske kloaksymboler.",
+      "description": "Webbaseret tegneprogram til kloaktegninger med rør, brønde og danske kloaksymboler.",
       "alternatives": [
          "Bluebeam",
          "AutoCAD"
@@ -1179,7 +1179,7 @@
    {
       "name": "Skilteplanen.dk",
       "url": "https://skilteplanen.dk",
-      "description": "Dansk, webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde.",
+      "description": "Webbaseret værktøj til skilte- og afmærkningsplaner ved vejarbejde.",
       "alternatives": [
          "Bluebeam",
          "AutoCAD",
