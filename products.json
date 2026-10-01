@@ -1289,5 +1289,16 @@
       "Plan A",
       "Greenly"
     ]
+  },
+  {
+    "name": "TimeTrack.dk",
+    "url": "https://timetrack.dk",
+    "description": "AI-native dansk tidsregistrering til selvstændige, bureauer og virksomheder. Indbygget MCP-server og åbent API, så AI-agenter som Claude, Cursor og Copilot kan registrere tid, oprette fakturaer og tjekke klippekort-saldo for dig. Registrér tid på web, app, browserudvidelse og desktop, sælg klippekort med forudbetalte timer, og send timerne direkte til faktura i Billy, Dinero eller e-conomic. Database og backup ligger i EU, og det er gratis for op til 3 brugere.",
+    "alternatives": [
+      "Toggl",
+      "Harvest",
+      "Clockify",
+      "Timely"
+    ]
   }
 ]
