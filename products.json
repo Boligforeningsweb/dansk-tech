@@ -1277,5 +1277,17 @@
       "Brevo",
       "Klaviyo"
     ]
+  },
+  {
+    "name": "qlim8",
+    "url": "https://qlim8.com/",
+    "description": "Dansk platform til klimaregnskab og ESG afrapportering. Beregn scope 1-3 udledninger, forbind dine interne systemer (danske og internationale), afrapporter efter alle de store frameworks (ESRS, VSME, ISSB, CDP osv), få fuldt overblik over hele jeres værdikæde med scope 3 portal og inviter jeres konsulenter og revisorer direkte ind på platformen.",
+    "alternatives": [
+      "Persefoni",
+      "Watershed",
+      "Sphera",
+      "Plan A",
+      "Greenly"
+    ]
   }
 ]
