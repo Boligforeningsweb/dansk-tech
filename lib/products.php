@@ -24,12 +24,3 @@ function load_original_products() {
 function products_modified_at() {
   return filemtime(APP_ROOT . '/products.json');
 }
-
-function favicon_url($url) {
-  $domain = parse_url($url, PHP_URL_HOST);
-  if (!$domain) {
-    return '';
-  }
-  $domain = str_replace('www.', '', $domain);
-  return 'https://www.google.com/s2/favicons?domain=' . urlencode($domain) . '&sz=32';
-}
