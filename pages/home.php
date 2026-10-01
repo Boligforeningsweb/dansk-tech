@@ -225,6 +225,9 @@ partial('head', [
           Er du selv udvikler og kender lige præcis dét stykke software fra Danmark som mangler på listen? Så kan du sende os en pull request og foreslå til listen af produkter fra eksterne bidragydere. Herunder kan du se dem der har bidraget indtil videre. Det er hhv. <a href="https://github.com/BoMoellerDK" class="underline">Bo Møller</a> og <a href="https://github.com/jonasdev" class="underline">Jonas Kaas Kristensen</a> der styrer repo'et.
         </p>
         <div id="contributors" class="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+          <?php foreach (load_contributors() as $contributor): ?>
+          <a href="<?php echo e($contributor['url']); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo e(contributor_avatar_url($contributor, 48)); ?>" alt="<?php echo e($contributor['login']); ?>" width="48" height="48" loading="lazy" decoding="async" class="rounded-full object-cover outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10"></a>
+          <?php endforeach; ?>
         </div>
       </div>
     </div>
@@ -323,30 +326,6 @@ partial('head', [
           // Scroll to products
           document.getElementById('produkter').scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
-      });
-    })();
-    
-    // GitHub contributors
-    (async () => {
-      const response = await fetch('https://api.github.com/repos/Boligforeningsweb/dansk-tech/contributors?per_page=500&page=1');
-      const contributors = await response.json();
-      const container = document.getElementById('contributors');
-
-      contributors.forEach(contributor => {
-        const link = document.createElement('a');
-        link.href = contributor.html_url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-
-        const img = document.createElement('img');
-        img.src = contributor.avatar_url;
-        img.alt = contributor.login;
-        img.width = 48;
-        img.height = 48;
-        img.className = 'rounded-full object-cover outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10';
-
-        link.appendChild(img);
-        container.appendChild(link);
       });
     })();
   </script>

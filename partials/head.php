@@ -31,10 +31,6 @@ $ogImageAlt = $ogImageAlt ?? $title;
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://www.google.com">
-  <link rel="dns-prefetch" href="https://api.github.com">
-
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
 <?php if ($canonical): ?>

@@ -5,6 +5,5 @@ module.exports = {
     './index.php',
     './pages/**/*.php',
     './partials/**/*.php',
-    './lib/**/*.php',
   ],
 }

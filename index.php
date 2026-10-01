@@ -15,6 +15,11 @@ if ($path !== '/' && str_ends_with($path, '/')) {
   redirect(rtrim($path, '/') . $queryString);
 }
 
+if (preg_match('#^/cache/favicons/([a-z0-9.-]+)\.png$#', $path, $match)) {
+  serve_favicon($match[1]);
+  exit;
+}
+
 switch ($path) {
   case '/':
     render('home');
