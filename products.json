@@ -133,6 +133,15 @@
     ]
   },
   {
+    "name": "Clarefy.ai",
+    "url": "https://clarefy.ai",
+    "description": "AI-inventory planning til e-commerce. Undgå udsolgte bestsellere, reducer bundet kapital og automatiser indkøbet.",
+    "alternatives": [
+      "Inventory Planner",
+      "Prediko"
+    ]
+  },
+  {
     "name": "Clerk.io",
     "url": "https://clerk.io",
     "description": "Personalisering og anbefalinger",
