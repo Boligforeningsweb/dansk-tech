@@ -1289,5 +1289,16 @@
       "Plan A",
       "Greenly"
     ]
+  },
+  {
+    "name": "Liviate",
+    "url": "https://liviate.com",
+    "description": "Dansk cloud og managed hosting med virtuelle servere, Kubernetes, backup og overvågning.",
+    "alternatives": [
+      "AWS",
+      "Microsoft Azure",
+      "Google Cloud",
+      "DigitalOcean"
+    ]
   }
 ]
