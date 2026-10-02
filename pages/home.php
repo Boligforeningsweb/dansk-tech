@@ -28,6 +28,10 @@ $faq = [
     'a' => 'Danske systemer giver dansktalende support, data og kontrakter under dansk og europæisk lovgivning (GDPR) og mindre afhængighed af software fra lande uden for EU. Samtidig styrker du det danske tech-miljø.',
   ],
   [
+    'q' => 'Betaler produkterne for at være på listen?',
+    'a' => 'Nej. Ingen produkter betaler for at være med, og vi tjener ikke penge på links. Et produkt kommer på listen, fordi det opfylder kriterierne – ikke fordi det har betalt.',
+  ],
+  [
     'q' => 'Hvordan foreslår jeg et produkt til listen?',
     'a' => 'Send en pull request på GitHub, hvor du tilføjer produktet til filen products.json med navn, URL, en kort beskrivelse og de internationale produkter, det er et alternativ til. Vi gennemgår forslaget og tilføjer det til listen.',
   ],
