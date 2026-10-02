@@ -1,7 +1,10 @@
 <?php if (!defined('APP_ROOT')) { http_response_code(404); exit; } ?>
   <footer class="bg-white dark:bg-gray-900">
     <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-      <div class="flex justify-center gap-x-6 md:order-2">
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 md:order-2">
+        <a href="/alternativer" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
+          Alle alternativer
+        </a>
         <a href="mailto:kontakt@langsom.com" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
           Kontakt os på kontakt@langsom.com
         </a>

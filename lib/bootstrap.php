@@ -11,6 +11,7 @@ header('Strict-Transport-Security: max-age=31536000');
 
 require APP_ROOT . '/lib/http.php';
 require APP_ROOT . '/lib/products.php';
+require APP_ROOT . '/lib/alternatives.php';
 require APP_ROOT . '/lib/favicons.php';
 require APP_ROOT . '/lib/contributors.php';
 require APP_ROOT . '/lib/schema.php';

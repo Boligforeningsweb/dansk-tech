@@ -56,3 +56,12 @@ function schema_json(array $graph) {
   return json_encode(['@context' => 'https://schema.org', '@graph' => $graph],
     JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_HEX_TAG);
 }
+
+// $items = [['Forside', '/'], ['Alternativer', '/alternativer'], ['Stripe', '/alternativer/stripe']]
+function schema_breadcrumbs(array $items, $id) {
+  $list = [];
+  foreach (array_values($items) as $i => [$name, $path]) {
+    $list[] = ['@type' => 'ListItem', 'position' => $i + 1, 'name' => $name, 'item' => SITE_URL . ltrim($path, '/')];
+  }
+  return ['@type' => 'BreadcrumbList', '@id' => $id, 'itemListElement' => $list];
+}

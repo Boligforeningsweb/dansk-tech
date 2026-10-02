@@ -25,6 +25,26 @@ switch ($path) {
     render('home');
     break;
 
+  case '/alternativer':
+    render('alternatives');
+    break;
+
+  case '/sitemap.xml':
+    render('sitemap');
+    break;
+
   default:
+    if (preg_match('#^/alternativer/([^/]+)$#', $path, $match)) {
+      $alternatives = load_alternatives();
+      if (isset($alternatives[$match[1]])) {
+        render('alternative', ['alternative' => $alternatives[$match[1]]]);
+        break;
+      }
+      // Fx /alternativer/Stripe eller /alternativer/1Password -> kanonisk slug
+      $slug = alternative_slug(rawurldecode($match[1]));
+      if (isset($alternatives[$slug])) {
+        redirect('/alternativer/' . $slug . $queryString);
+      }
+    }
     render('404', [], 404);
 }
