@@ -85,7 +85,7 @@ partial('head', [
   'schema' => $schema,
 ]);
 ?>
-  <div class="min-h-screen flex items-center justify-center relative" style="background-image: url('/images/danmark.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="min-h-screen flex items-center justify-center relative" style="background-image: url('/images/danmark.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <div class="absolute inset-0 bg-white/70 dark:bg-gray-900/70"></div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full relative z-10">
       <div class="mx-auto max-w-3xl text-center">
@@ -114,19 +114,19 @@ partial('head', [
           <div class="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
             <!-- TechSavvy logo -->
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/techsavvy.png" alt="TechSavvy" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
+              <img src="/techsavvy.png" width="280" height="72" alt="TechSavvy" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
             </div>
             <!-- Teknologisk Institut logo -->
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/teknologiskinstitut.png" alt="Teknologisk Institut" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
+              <img src="/teknologiskinstitut.png" width="280" height="65" alt="Teknologisk Institut" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
             </div>
             <!-- Berlingske logo -->
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/berlingske.png" alt="Berlingske" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
+              <img src="/berlingske.png" width="280" height="54" alt="Berlingske" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
             </div>
             <!-- Zetland logo -->
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/zetland.png" alt="Zetland" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
+              <img src="/zetland.png" width="280" height="62" alt="Zetland" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
             </div>
           </div>
         </div>
