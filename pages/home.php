@@ -229,6 +229,10 @@ partial('head', [
           <a href="<?php echo e($contributor['url']); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo e(contributor_avatar_url($contributor, 48)); ?>" alt="<?php echo e($contributor['login']); ?>" width="48" height="48" loading="lazy" decoding="async" class="rounded-full object-cover outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10"></a>
           <?php endforeach; ?>
         </div>
+        <div class="mt-12 flex flex-col items-center gap-4 rounded-2xl bg-gray-50 px-6 py-6 sm:flex-row sm:justify-center sm:gap-6 dark:bg-gray-800">
+          <a href="/badge" class="flex-none" aria-hidden="true" tabindex="-1"><?php echo badge_svg(['label' => 'Dansk alternativ til', 'name' => 'Stripe'], 'lys', 'kompakt'); ?></a>
+          <p class="text-sm/6 text-gray-600 sm:text-left dark:text-gray-400"><span class="font-semibold text-gray-900 dark:text-white">Er jeres produkt på listen?</span> Vis det på jeres website med et gratis badge. <a href="/badge" class="whitespace-nowrap font-semibold text-gray-900 hover:underline dark:text-white">Hent et badge <span aria-hidden="true">→</span></a></p>
+        </div>
       </div>
     </div>
   </div>

@@ -24,7 +24,7 @@ from fontTools.ttLib import TTFont
 ROOT = Path(__file__).resolve().parents[2]
 CHARS = (" abcdefghijklmnopqrstuvwxyzæøåäöüéèáàíóúñç"
          "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅÄÖÜÉ"
-         "0123456789.,:;!?&+-–/()'’\"@#%*_")
+         "0123456789.,:;!?&+-–—·…/()'’\"@#%*_")
 
 
 def build(path):
