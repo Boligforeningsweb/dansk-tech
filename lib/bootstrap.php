@@ -46,6 +46,11 @@ function asset_url($file) {
   return '/' . $file . '?v=' . $version;
 }
 
+// Rundet ned til nærmeste 10 med "+" (samme som i OG-billedet)
+function at_least($n) {
+  return $n >= 20 ? (intdiv($n, 10) * 10) . '+' : (string) $n;
+}
+
 function redirect($location, $status = 301) {
   header('Location: ' . $location, true, $status);
   exit;

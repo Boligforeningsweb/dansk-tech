@@ -6,7 +6,8 @@ Billedet er en mosaik af iværksætterne bag projektet, GitHub-bidragydere
 og logoer fra products.json. Kør igen når der er kommet nye produkter
 eller bidragydere, så tallene og ansigterne er opdaterede.
 
-Kræver: Python 3, Pillow (pip install pillow) og Google Chrome.
+Kræver: Python 3, Pillow (pip install pillow) og Google Chrome (eller CHROME=/sti/til/chrome).
+Tallene rundes ned til nærmeste 10 ("110+"), så billedet ikke bliver forkert, når listen vokser.
 
     python3 scripts/og-image/build.py            # rød variant (default)
     python3 scripts/og-image/build.py --theme dark
@@ -15,8 +16,10 @@ import argparse
 import hashlib
 import io
 import json
+import os
 import random
 import re
+import shutil
 import subprocess
 import urllib.parse
 import urllib.request
@@ -28,7 +31,10 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
 CACHE = HERE / ".cache"
 REPO = "Boligforeningsweb/dansk-tech"
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+CHROME = os.environ.get("CHROME") or next(
+    (p for p in ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+                 shutil.which("google-chrome") or "", shutil.which("chromium") or ""] if p and Path(p).exists()),
+    "google-chrome")
 
 
 def fetch(url):
@@ -94,6 +100,11 @@ def logos(products):
     return result
 
 
+def at_least(n):
+    # Rundet ned til nærmeste 10 med "+", så tallet ikke bliver forkert, når listen vokser
+    return f"{n // 10 * 10}+" if n >= 20 else str(n)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--theme", choices=["red", "dark"], default="red")
@@ -121,9 +132,9 @@ def main():
             .replace("{{THEME}}", args.theme)
             .replace("{{TILES}}", tile_html)
             .replace("{{STACK}}", stack_html)
-            .replace("{{PRODUCTS}}", str(len(products)))
+            .replace("{{PRODUCTS}}", at_least(len(products)))
             .replace("{{BACKERS}}", str(len(backer_faces)))
-            .replace("{{CONTRIBUTORS}}", str(contributor_count)))
+            .replace("{{CONTRIBUTORS}}", at_least(contributor_count)))
     page = CACHE / "og.html"
     page.write_text(html)
 

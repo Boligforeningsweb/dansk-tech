@@ -9,8 +9,9 @@ $productCount = count($products);
 $title = "Den danske tech stack – $productCount danske alternativer til Big Tech";
 $description = "Find danske alternativer til Stripe, Shopify, Mailchimp, Zendesk og andre udenlandske systemer. $productCount danske SaaS-produkter, anbefalet af danske iværksættere.";
 $socialDescription = "Betalinger, e-mail, support, regnskab, monitoring og meget mere – bygget i Danmark. Find danske alternativer til de udenlandske giganter.";
-$ogImage = SITE_URL . 'og-image.jpg';
-$ogImageAlt = "Den danske tech stack: $productCount danske alternativer til Stripe, Shopify, Mailchimp, Zendesk og co.";
+// Versions-hash i URL'en, så LinkedIn m.fl. henter billedet igen, når det opdateres
+$ogImage = SITE_URL . ltrim(asset_url('og-image.jpg'), '/');
+$ogImageAlt = "Den danske tech stack: " . at_least($productCount) . " danske alternativer til Stripe, Shopify, Mailchimp, Zendesk og co.";
 
 // Schema.org JSON-LD, built from the same data as the page
 $faq = [
