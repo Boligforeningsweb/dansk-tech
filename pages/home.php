@@ -113,22 +113,11 @@ partial('head', [
         <div class="mt-16 pt-12 border-t border-gray-200/50 dark:border-gray-700/50">
           <p class="text-xs font-medium uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-8">Omtalt i bl.a.</p>
           <div class="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
-            <!-- TechSavvy logo -->
+            <?php foreach (load_json('data/press.json') as $press): ?>
             <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/techsavvy.png" width="280" height="72" alt="TechSavvy" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
+              <img src="<?php echo e($press['image']); ?>" width="<?php echo (int) $press['width']; ?>" height="<?php echo (int) $press['height']; ?>" alt="<?php echo e($press['name']); ?>" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
             </div>
-            <!-- Teknologisk Institut logo -->
-            <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/teknologiskinstitut.png" width="280" height="65" alt="Teknologisk Institut" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
-            </div>
-            <!-- Berlingske logo -->
-            <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/berlingske.png" width="280" height="54" alt="Berlingske" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
-            </div>
-            <!-- Zetland logo -->
-            <div class="group flex items-center justify-center h-12 opacity-90 hover:opacity-100 transition-opacity duration-300">
-              <img src="/zetland.png" width="280" height="62" alt="Zetland" class="h-full w-auto max-w-[140px] object-contain transition-all duration-300" />
-            </div>
+            <?php endforeach; ?>
           </div>
         </div>
       </div>

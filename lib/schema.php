@@ -13,6 +13,9 @@ function schema_organization() {
     'logo' => SITE_URL . 'web-app-manifest-512x512.png',
     'email' => 'kontakt@langsom.com',
     'sameAs' => ['https://github.com/Boligforeningsweb/dansk-tech'],
+    'founder' => array_map(function($person) {
+      return ['@type' => 'Person', 'name' => $person['name'], 'description' => $person['role']];
+    }, load_json('data/people.json')['founders'] ?? []),
     'parentOrganization' => [
       '@type' => 'Organization',
       'name' => 'langsom.com',

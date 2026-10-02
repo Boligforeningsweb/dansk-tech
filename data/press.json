@@ -1,0 +1,6 @@
+[
+  { "name": "TechSavvy", "image": "/techsavvy.png", "width": 280, "height": 72 },
+  { "name": "Teknologisk Institut", "image": "/teknologiskinstitut.png", "width": 280, "height": 65 },
+  { "name": "Berlingske", "image": "/berlingske.png", "width": 280, "height": 54 },
+  { "name": "Zetland", "image": "/zetland.png", "width": 280, "height": 62 }
+]

@@ -77,6 +77,7 @@ partial('site-header');
     <div class="mt-10 max-w-3xl">
       <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white"><?php echo e($heading); ?></h1>
       <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400"><?php echo e($intro); ?></p>
+      <?php partial('trust-bar'); ?>
     </div>
 
     <ul role="list" class="mt-12 grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -100,6 +101,8 @@ partial('site-header');
       </ul>
     </section>
     <?php endif; ?>
+
+    <?php partial('about-list'); ?>
 
     <section class="mt-20 rounded-2xl bg-gray-50 px-6 py-10 sm:px-10 dark:bg-gray-800">
       <h2 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Kender du et dansk alternativ til <?php echo e($name); ?>?</h2>
