@@ -106,7 +106,7 @@ partial('head', [
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <a href="#produkter" class="rounded-md bg-gray-900 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
-            Produkter fra 🇩🇰
+            Se produkterne
           </a>
           <a href="#iværksættere" class="text-base font-semibold text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
             Hvem står bag? <span aria-hidden="true">→</span>
@@ -130,7 +130,7 @@ partial('head', [
   <div id="produkter" class="bg-white py-24 sm:py-32 dark:bg-gray-900">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Tech fra 🇩🇰</h2>
+        <h2 class="flex items-center justify-center gap-3 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white"><?php partial('logo', ['size' => 36]); ?>Tech fra Danmark</h2>
         <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
           <?php echo $productCount; ?> danske systemer til din tech stack – søg på det udenlandske produkt, du gerne vil erstatte
         </p>
@@ -228,6 +228,10 @@ partial('head', [
           <?php foreach (load_contributors() as $contributor): ?>
           <a href="<?php echo e($contributor['url']); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo e(contributor_avatar_url($contributor, 48)); ?>" alt="<?php echo e($contributor['login']); ?>" width="48" height="48" loading="lazy" decoding="async" class="rounded-full object-cover outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10"></a>
           <?php endforeach; ?>
+        </div>
+        <div class="mt-12 flex flex-col items-center gap-4 rounded-2xl bg-gray-50 px-6 py-6 sm:flex-row sm:justify-center sm:gap-6 dark:bg-gray-800">
+          <a href="/badge" class="flex-none" aria-hidden="true" tabindex="-1"><?php echo badge_svg(['label' => 'Dansk alternativ til', 'name' => 'Stripe'], 'lys', 'kompakt'); ?></a>
+          <p class="text-sm/6 text-gray-600 sm:text-left dark:text-gray-400"><span class="font-semibold text-gray-900 dark:text-white">Er jeres produkt på listen?</span> Vis det på jeres website med et gratis badge. <a href="/badge" class="whitespace-nowrap font-semibold text-gray-900 hover:underline dark:text-white">Hent et badge <span aria-hidden="true">→</span></a></p>
         </div>
       </div>
     </div>

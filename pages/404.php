@@ -14,7 +14,7 @@ partial('head', [
       <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Vi kunne ikke finde siden, du leder efter. Men der er masser af dansk software på forsiden.</p>
       <div class="mt-10 flex items-center justify-center gap-x-6">
         <a href="/#produkter" class="rounded-md bg-gray-900 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
-          Se produkter fra 🇩🇰
+          Se produkterne
         </a>
         <a href="/" class="text-base font-semibold text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
           Til forsiden <span aria-hidden="true">→</span>

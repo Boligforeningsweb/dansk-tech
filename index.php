@@ -15,6 +15,11 @@ if ($path !== '/' && str_ends_with($path, '/')) {
   redirect(rtrim($path, '/') . $queryString);
 }
 
+if (preg_match('#^/badge/([a-z0-9-]+)\.svg$#', $path, $match)) {
+  serve_standalone_badge($match[1]);
+  exit;
+}
+
 if (preg_match('#^/badge/([a-z0-9-]+)/([a-z0-9-]+)\.svg$#', $path, $match)) {
   serve_badge($match[1], $match[2]);
   exit;
