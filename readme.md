@@ -66,9 +66,11 @@ Følg disse trin for at tilføje et dansk tech-produkt:
    }
    ```
    - **Vigtigt:** `alternatives` skal være en array (med firkantede parenteser) med internationale produkter, som dit danske produkt er alternativ til
+   - Skriv **ét produkt pr. element** – `["Wix", "WordPress"]`, ikke `["Wix, WordPress"]` – og stav produktet som resten af listen (fx `"Mailchimp"`, ikke `"MailChimp"`)
    - **Valgfri:** `image` felt kan inkluderes med stien til et billede (f.eks. "images/ditprodukt.png"), men hvis det ikke inkluderes, bruges automatisk favicon fra produktets URL
    - Sørg for at JSON filen er gyldig (brug en JSON validator hvis du er i tvivl)
    - Husk komma efter hvert produkt (undtagen det sidste)
+   - Din pull request tjekkes automatisk. Fejler tjekket, står der præcis hvad der skal rettes. Du kan også køre det selv: `php tools/validate-products.php`
 
 5. **Commit og push**:
    ```bash
