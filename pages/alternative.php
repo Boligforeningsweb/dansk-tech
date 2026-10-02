@@ -110,6 +110,7 @@ partial('site-header');
       <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
         <a href="https://github.com/Boligforeningsweb/dansk-tech#-hvordan-bidrager-du" class="rounded-md bg-gray-900 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-800 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">Foreslå et produkt på GitHub</a>
         <a href="/alternativer" class="text-sm font-semibold text-gray-900 hover:text-gray-700 dark:text-white">Se alle alternativer <span aria-hidden="true">→</span></a>
+        <a href="/badge" class="text-sm font-semibold text-gray-900 hover:text-gray-700 dark:text-white">Er I på listen? Hent et badge <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>

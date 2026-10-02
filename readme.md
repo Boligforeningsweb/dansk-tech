@@ -153,6 +153,8 @@ CSS'en bygges med Tailwind (v3.4, standalone-CLI, kræver ikke Node). Kør dette
 
 `index.php` er en router: `pages/` indeholder siderne, `partials/` de fælles dele (head, footer, produktkort), `lib/` hjælpefunktioner og `data/people.json` iværksætterne på forsiden. Ukendte URL'er giver en rigtig 404.
 
+Produkterne kan hente et badge på `/badge` (fx "Dansk alternativ til Stripe"), som serveres af `/badge/{produkt}/{alternativ}.svg`. Teksten tegnes som vektorer ud fra `data/badge-font.json` (Inter, se `tools/badge/`).
+
 Hvert udenlandsk produkt i `alternatives` får automatisk sin egen side på `/alternativer/{navn}` (fx `/alternativer/stripe`), og `/alternativer` viser dem alle A–Å. Sider med mindst 2 danske produkter indekseres og kommer i `/sitemap.xml`; resten får `noindex` (`ALTERNATIVE_MIN_INDEXED` i `lib/alternatives.php`).
 
 ---
