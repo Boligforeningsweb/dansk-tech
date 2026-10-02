@@ -3,7 +3,7 @@ if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
 // Kun sider, der må indekseres (alternativsider med færre end ALTERNATIVE_MIN_INDEXED produkter udelades)
 $lastmod = date('Y-m-d', products_modified_at());
-$urls = [SITE_URL, SITE_URL . 'alternativer'];
+$urls = [SITE_URL, SITE_URL . 'alternativer', SITE_URL . 'badge'];
 foreach (load_alternatives() as $alternative) {
   if ($alternative['indexed']) {
     $urls[] = SITE_URL . ltrim(alternative_url($alternative['name']), '/');

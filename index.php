@@ -15,6 +15,11 @@ if ($path !== '/' && str_ends_with($path, '/')) {
   redirect(rtrim($path, '/') . $queryString);
 }
 
+if (preg_match('#^/badge/([a-z0-9-]+)/([a-z0-9-]+)\.svg$#', $path, $match)) {
+  serve_badge($match[1], $match[2]);
+  exit;
+}
+
 if (preg_match('#^/cache/favicons/([a-z0-9.-]+)\.png$#', $path, $match)) {
   serve_favicon($match[1]);
   exit;
@@ -27,6 +32,10 @@ switch ($path) {
 
   case '/alternativer':
     render('alternatives');
+    break;
+
+  case '/badge':
+    render('badge');
     break;
 
   case '/sitemap.xml':

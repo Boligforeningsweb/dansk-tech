@@ -5,6 +5,9 @@
         <a href="/alternativer" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
           Alle alternativer
         </a>
+        <a href="/badge" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
+          Badge til jeres website
+        </a>
         <a href="mailto:kontakt@langsom.com" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
           Kontakt os på kontakt@langsom.com
         </a>
