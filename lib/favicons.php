@@ -1,10 +1,10 @@
 <?php
 if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
-// Favicons hentes én gang fra Google og gemmes i cache/favicons/. Derefter serverer nginx
+// Favicons hentes én gang fra Google og gemmes i CACHE_DIR/favicons/. Derefter serverer nginx
 // filen direkte; kun første forespørgsel (filen findes ikke endnu) rammer PHP.
 
-const FAVICON_DIR = APP_ROOT . '/cache/favicons';
+const FAVICON_DIR = CACHE_DIR . '/favicons';
 const FAVICON_MISS_TTL = 86400;
 
 function favicon_domain($url) {

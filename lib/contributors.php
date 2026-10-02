@@ -1,10 +1,10 @@
 <?php
 if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
-// Bidragydere fra GitHub, cachet i cache/contributors.json. Er cachen forældet, vises den
+// Bidragydere fra GitHub, cachet i CACHE_DIR/contributors.json. Er cachen forældet, vises den
 // gamle version med det samme, og den opdateres først, når svaret er sendt til den besøgende.
 
-const CONTRIBUTORS_CACHE = APP_ROOT . '/cache/contributors.json';
+const CONTRIBUTORS_CACHE = CACHE_DIR . '/contributors.json';
 const CONTRIBUTORS_TTL = 21600;
 const CONTRIBUTORS_API = 'https://api.github.com/repos/Boligforeningsweb/dansk-tech/contributors?per_page=100';
 
