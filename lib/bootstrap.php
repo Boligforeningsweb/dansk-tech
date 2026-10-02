@@ -3,6 +3,10 @@ if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
 const SITE_URL = 'https://dansktechstack.dk/';
 
+// Cache-mappe. På Forge (zero-downtime deploys) sættes DTS_CACHE_DIR i nginx til en mappe uden for
+// release-mappen, så cachen overlever deploys. Lokalt bruges cache/ i repoet.
+define('CACHE_DIR', rtrim(($_SERVER['DTS_CACHE_DIR'] ?? '') ?: (getenv('DTS_CACHE_DIR') ?: APP_ROOT . '/cache'), '/'));
+
 header('Strict-Transport-Security: max-age=31536000');
 
 require APP_ROOT . '/lib/http.php';
