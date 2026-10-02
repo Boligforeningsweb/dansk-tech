@@ -56,6 +56,7 @@ partial('site-header');
     <div class="mt-10 max-w-3xl">
       <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">Danske alternativer til udenlandsk software</h1>
       <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Find det udenlandske system, du bruger i dag, og se hvilke danske systemer der kan erstatte det. Vi har danske alternativer til <?php echo $total; ?> udenlandske systemer.</p>
+      <?php partial('trust-bar'); ?>
     </div>
 
     <section class="mt-14">
@@ -98,6 +99,8 @@ partial('site-header');
         <?php endforeach; ?>
       </div>
     </section>
+
+    <?php partial('about-list'); ?>
   </main>
 <?php partial('footer'); ?>
 </body>
