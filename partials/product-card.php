@@ -41,7 +41,7 @@ $productDataAttributes = 'data-product data-name="' . e(mb_strtolower($name)) . 
                 </p>
                 <?php if (!empty($alternativesText)): ?>
                 <p class="text-xs text-gray-500 dark:text-gray-500">
-                  <span class="font-medium">Alternativ til:</span> <span class="text-gray-400 dark:text-gray-500"><?php echo e($alternativesText); ?></span>
+                  <span class="font-medium text-gray-600 dark:text-gray-400">Alternativ til:</span> <span class="text-gray-500 dark:text-gray-400"><?php echo e($alternativesText); ?></span>
                 </p>
                 <?php endif; ?>
               </div>
