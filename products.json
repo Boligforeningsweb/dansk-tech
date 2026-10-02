@@ -5,7 +5,7 @@
     "description": "En dansk platform til data science, analytics og AI, der samler notebooks, dataadgang og deployment i ét kontrolleret miljø indenfor virksomheders egen netværk og kontrol. Kan deployes hos alle cloud providers der understøtter Kubernetes, såsom Scaleway, Upcloud, samt on-prem til kritisk infrastruktur.",
     "alternatives": [
       "Posit",
-      "PowerBI",
+      "Power BI",
       "Sagemaker"
     ]
   },
@@ -127,7 +127,8 @@
     "url": "https://neuphlo.com",
     "description": "Projektstyring med indbygget testmanagement,vidensdeling og chatkanaler. Neuphlo kan tilgås via mcp server og har integration til GitHub, GitLab, Addo Sign",
     "alternatives": [
-      "Jira og Xray",
+      "Jira",
+      "Xray",
       "Linear",
       "ALM"
     ]
@@ -237,8 +238,7 @@
     "description": "Dansk platform til kundeanmeldelser. Rilanto er udviklet og hostet i Danmark, og er et supplement til eksisterende review-sites.",
     "alternatives": [
       "Trustpilot.com"
-    ],
-    "image": "images/rilanto.jpg"
+    ]
   },
   {
     "name": "Flare.link",
@@ -639,7 +639,7 @@
     "url": "https://ubivox.dk/",
     "description": "Send nyhedsbreve nemt og sikkert",
     "alternatives": [
-      "MailChimp",
+      "Mailchimp",
       "Campaign Monitor",
       "Klaviyo"
     ]
@@ -649,7 +649,8 @@
     "url": "https://umbraco.com/",
     "description": "Verdens meste udbredte Open Source .NET CMS. Stort økosystem af gratis og betalte extensions. ",
     "alternatives": [
-      "Optimizely / EPIserver",
+      "Optimizely",
+      "Episerver",
       "Kentico",
       "Drupal"
     ]
@@ -681,7 +682,7 @@
     "description": "Hjælper apps til at snakke sammen og bygge workflows",
     "alternatives": [
       "Zapier",
-      "N8n",
+      "n8n",
       "Pipedream",
       "Requestbin"
     ]
@@ -730,7 +731,7 @@
     "url": "https://www.uniqkey.eu/",
     "description": "Adgangskode- og adgangsstyring for virksomheder",
     "alternatives": [
-      "1password",
+      "1Password",
       "Bitwarden",
       "Dashlane"
     ]
@@ -740,7 +741,9 @@
     "url": "https://dynamicweb.dk",
     "description": "Dynamicweb - CMS, Ecommerce og PIM - med fokus på B2B salgs processer og produkt informations styring",
     "alternatives": [
-      "Shopify B2B, Commercetools, Sana Commerce"
+      "Shopify B2B",
+      "Commercetools",
+      "Sana Commerce"
     ]
   },
   {
@@ -866,7 +869,7 @@
       "MailerSend",
       "Twilio SendGrid"
     ],
-    "image": "images/heysender.png"
+    "image": "images/heysender.jpg"
   },
   {
     "name": "Heyloyalty",
@@ -876,7 +879,7 @@
       "Klaviyo",
       "Mailchimp",
       "Customer.io",
-      "Active Campaign",
+      "ActiveCampaign",
       "Sleeknote"
     ],
     "image": "images/heyloyalty.png"
@@ -1167,7 +1170,9 @@
     "url": "https://chainbox.dk",
     "description": "Chainbox understøtter B2B-virksomheder med værktøjer til håndtering af produktdata, online salg og indholdsstyring",
     "alternatives": [
-      "Shopify B2B, Commercetools, Sana Commerce"
+      "Shopify B2B",
+      "Commercetools",
+      "Sana Commerce"
     ]
   },
   {
@@ -1175,7 +1180,9 @@
     "url": "https://easyonline.ai",
     "description": "Upload din hjemmeside lavet med AI for kun 9 kr om måneden",
     "alternatives": [
-      "Wix, Loveable, Wordpress"
+      "Wix",
+      "Lovable",
+      "WordPress"
     ]
   },
   {

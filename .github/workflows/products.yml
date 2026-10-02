@@ -1,0 +1,16 @@
+name: products.json
+
+# Tjekker at nye/ændrede produkter følger formatet i readme.md
+on:
+  pull_request:
+    paths:
+      - 'products.json'
+      - 'original-products.json'
+      - 'tools/validate-products.php'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: php tools/validate-products.php
