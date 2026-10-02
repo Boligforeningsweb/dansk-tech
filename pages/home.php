@@ -106,7 +106,7 @@ partial('head', [
         </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
           <a href="#produkter" class="rounded-md bg-gray-900 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
-            Produkter fra 🇩🇰
+            Se produkterne
           </a>
           <a href="#iværksættere" class="text-base font-semibold text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
             Hvem står bag? <span aria-hidden="true">→</span>
@@ -130,7 +130,7 @@ partial('head', [
   <div id="produkter" class="bg-white py-24 sm:py-32 dark:bg-gray-900">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-3xl text-center">
-        <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Tech fra 🇩🇰</h2>
+        <h2 class="flex items-center justify-center gap-3 text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white"><?php partial('logo', ['size' => 36]); ?>Tech fra Danmark</h2>
         <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
           <?php echo $productCount; ?> danske systemer til din tech stack – søg på det udenlandske produkt, du gerne vil erstatte
         </p>

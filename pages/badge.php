@@ -5,12 +5,11 @@ $products = load_products();
 $product = isset($_GET['produkt']) ? find_product_by_slug((string) $_GET['produkt']) : null;
 $badges = $product ? product_badges($product) : [];
 $badge = $badges[(string) ($_GET['badge'] ?? '')] ?? ($badges ? reset($badges) : null);
-$supporters = supporter_badges();
-$supporter = $supporters[(string) ($_GET['stoette'] ?? '')] ?? reset($supporters);
+$supporter = supporter_badges()['vi-stoetter-dansk-tech'];
 
 $url = SITE_URL . 'badge';
 $title = 'Badges til jeres website | Den danske tech stack';
-$description = 'Gratis badges til jeres website: "Dansk alternativ til Stripe" til produkterne på listen, og "Vi bruger dansk software" til alle, der bruger og støtter dansk tech.';
+$description = 'Gratis badges til jeres website: "Dansk alternativ til Stripe" til produkterne på listen, og "Vi støtter dansk tech" til alle andre.';
 $example = ['label' => 'Dansk alternativ til', 'name' => 'Stripe'];
 
 partial('head', [
@@ -27,7 +26,7 @@ partial('site-header');
     <?php partial('breadcrumbs', ['items' => [['Forside', '/'], ['Badge', null]]]); ?>
 
     <div class="mt-10 max-w-3xl">
-      <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">Vis at I er med i dansk tech</h1>
+      <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">Badges til jeres website</h1>
       <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Sæt et gratis badge på jeres website. Badgesene er helt frivillige – ingen betaler for at være på listen, og ingen skal have et badge for at komme med.</p>
     </div>
 
@@ -38,9 +37,9 @@ partial('site-header');
         <div class="mt-5" aria-hidden="true"><?php echo badge_svg(['label' => 'Dansk alternativ til', 'name' => 'Stripe'], 'lys', 'kompakt'); ?></div>
       </a>
       <a href="#stoette" class="group rounded-2xl border border-gray-200 p-6 hover:border-gray-300 hover:shadow-md transition-all duration-200 dark:border-gray-700">
-        <p class="text-base font-semibold text-gray-900 dark:text-white">Bruger eller støtter I dansk software?</p>
+        <p class="text-base font-semibold text-gray-900 dark:text-white">Vil I støtte dansk tech?</p>
         <p class="mt-1 text-sm/6 text-gray-600 dark:text-gray-400">Til alle virksomheder – også jer, der ikke selv laver software.</p>
-        <div class="mt-5" aria-hidden="true"><?php echo badge_svg($supporters['vi-bruger-dansk-software'], 'lys', 'kompakt'); ?></div>
+        <div class="mt-5" aria-hidden="true"><?php echo badge_svg($supporter, 'lys', 'kompakt'); ?></div>
       </a>
     </div>
 
@@ -81,13 +80,8 @@ partial('site-header');
 
     <section id="stoette" class="mt-20 scroll-mt-6 border-t border-gray-200 pt-16 dark:border-white/10">
       <p class="text-sm font-semibold text-gray-500 dark:text-gray-400">Til alle virksomheder</p>
-      <h2 class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Bruger eller støtter I dansk software?</h2>
-      <p class="mt-4 max-w-2xl text-base/7 text-gray-600 dark:text-gray-400">Vis jeres kunder og ansatte, at I vælger dansk. Badget linker til listen, så andre også kan finde danske alternativer.</p>
-      <div class="mt-6 flex flex-wrap gap-2">
-        <?php foreach ($supporters as $item): $active = $item['slug'] === $supporter['slug']; ?>
-        <a href="/badge?<?php echo e(http_build_query(array_filter(['produkt' => $product ? product_slug($product) : null, 'badge' => $product ? $badge['slug'] : null, 'stoette' => $item['slug']]))); ?>#stoette"<?php echo $active ? ' aria-current="true"' : ''; ?> class="rounded-full px-3.5 py-1.5 text-sm font-medium <?php echo $active ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900' : 'border border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'; ?>"><?php echo e($item['title']); ?></a>
-        <?php endforeach; ?>
-      </div>
+      <h2 class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Vil I støtte dansk tech?</h2>
+      <p class="mt-4 max-w-2xl text-base/7 text-gray-600 dark:text-gray-400">Badget linker til listen, så andre også kan finde gode danske systemer – uanset om I selv laver software eller ej.</p>
       <?php partial('badge-variants', ['product' => null, 'badge' => $supporter]); ?>
     </section>
 
@@ -98,7 +92,7 @@ partial('site-header');
       </div>
       <div>
         <h2 class="text-sm font-semibold text-gray-900 dark:text-white">Skal vi have badget for at være med?</h2>
-        <p class="mt-2 text-sm/6 text-gray-600 dark:text-gray-400">Nej. Det er helt frivilligt og påvirker ikke jeres plads på listen. "Vi bruger dansk software" og "Vi støtter dansk tech" kan alle bruge.</p>
+        <p class="mt-2 text-sm/6 text-gray-600 dark:text-gray-400">Nej. Det er helt frivilligt og påvirker ikke jeres plads på listen. "Vi støtter dansk tech" kan alle bruge.</p>
       </div>
       <div>
         <h2 class="text-sm font-semibold text-gray-900 dark:text-white">Hvor skal det stå?</h2>

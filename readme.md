@@ -1,4 +1,4 @@
-# 🇩🇰 Den danske tech stack
+# <img src="assets/logo.svg" width="32" height="32" alt="" align="top"> Den danske tech stack
 
 En oversigt over danske tech-systemer som alternativer til store internationale spillere. Få inspiration til din tech stack med danske SaaS-løsninger til betalinger, analytics, monitoring og mere.
 
@@ -192,4 +192,4 @@ Tak til alle der bidrager til at fremme dansk tech! Hver tilføjelse, forbedring
 
 ---
 
-**Bygget i København af folkene fra langsom.com + venner fra branchen.** 🇩🇰
+**Bygget i København af folkene fra langsom.com + venner fra branchen.**

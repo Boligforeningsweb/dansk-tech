@@ -2,10 +2,10 @@
 if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
 // Badges til produkternes egne websites: "Dansk alternativ til Stripe" eller det generelle
-// "Dansk software · dansktechstack.dk". Teksten tegnes som vektorer ud fra skriften Inter (data/badge-font.json, lavet af
+// "Listet på dansktechstack.dk" - og "Vi støtter dansk tech" til alle andre. Teksten tegnes som vektorer ud fra skriften Inter (data/badge-font.json, lavet af
 // tools/badge/build-font.py), så badget ser ens ud overalt, og bredden altid passer til teksten.
 
-const BADGE_GENERIC = 'dansk-software';
+const BADGE_GENERIC = 'listet-paa-dansktechstack';
 // Den første version af det generelle badge hed sådan - URL'en virker stadig
 const BADGE_GENERIC_OLD = 'den-danske-tech-stack';
 const BADGE_THEMES = [
@@ -42,30 +42,20 @@ function product_badges(array $product) {
   return $badges;
 }
 
-// "Dansk software · dansktechstack.dk" - kan bruges af alle produkter på listen og i vores egen footer.
-// Den store variant vender teksten om, så "Dansk software" er det store budskab.
+// "Listet på dansktechstack.dk" - til alle produkter på listen
 function generic_badge() {
   return [
     'slug' => BADGE_GENERIC,
-    'label' => 'Dansk software ·',
+    'label' => 'Listet på',
     'name' => 'dansktechstack.dk',
-    'stor' => ['label' => 'dansktechstack.dk', 'name' => 'Dansk software'],
     'link' => SITE_URL,
   ];
 }
 
-// Badges uden produkt, som alle kan bruge: til virksomheder, der bruger dansk software, og til
-// alle, der vil støtte. Serveres på /badge/{slug}.svg og linker til forsiden.
+// Badges uden produkt, som alle kan bruge - også virksomheder, der ikke selv laver software.
+// Serveres på /badge/{slug}.svg og linker til forsiden.
 function supporter_badges() {
   return [
-    'vi-bruger-dansk-software' => [
-      'slug' => 'vi-bruger-dansk-software',
-      'label' => 'Vi bruger',
-      'name' => 'dansk software',
-      'stor' => ['label' => 'dansktechstack.dk', 'name' => 'Vi bruger dansk software'],
-      'link' => SITE_URL,
-      'title' => 'Vi bruger dansk software',
-    ],
     'vi-stoetter-dansk-tech' => [
       'slug' => 'vi-stoetter-dansk-tech',
       'label' => 'Vi støtter',
@@ -136,19 +126,20 @@ function badge_text($text, $weight, $size, $x, $baseline, $fill) {
   return ['<g fill="' . $fill . '">' . $paths . '</g>', $cursor * $scale, ($inkRight ?? 0) * $scale];
 }
 
-function badge_flag($x, $y, $width) {
-  $height = round($width * 28 / 37, 2);
-  $bar = round($height * 4 / 28, 2);
-  return '<g transform="translate(' . $x . ' ' . $y . ')"><rect width="' . $width . '" height="' . $height . '" rx="' . round($width / 10, 1) . '" fill="#c8102e"/>'
-    . '<rect x="' . round($width * 12 / 37, 2) . '" width="' . $bar . '" height="' . $height . '" fill="#fff"/>'
-    . '<rect y="' . round($height * 12 / 28, 2) . '" width="' . $width . '" height="' . $bar . '" fill="#fff"/></g>';
+// Logoet (samme som assets/logo.svg, tegnet i en 32x32-boks)
+function badge_logo($x, $y, $size) {
+  $line = 'fill="none" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"';
+  return '<g transform="translate(' . $x . ' ' . $y . ') scale(' . round($size / 32, 4) . ')">'
+    . '<polygon points="16,1.3 31.4,9.6 16,17.9 0.6,9.6" fill="#c8102e"/>'
+    . '<polyline points="1.9,16 16,23.7 30.1,16" ' . $line . ' stroke="#de7082"/>'
+    . '<polyline points="1.9,22.4 16,30.1 30.1,22.4" ' . $line . ' stroke="#ecabb6"/></g>';
 }
 
 // Layout pr. format. Venstre og højre margin er ens.
 function badge_layout($format) {
   return $format === 'stor'
-    ? ['height' => 48, 'pad' => 16, 'flag' => 24, 'gap' => 10, 'radius' => 10]
-    : ['height' => 32, 'pad' => 12, 'flag' => 18, 'gap' => 8, 'radius' => 8];
+    ? ['height' => 48, 'pad' => 16, 'icon' => 24, 'gap' => 10, 'radius' => 10]
+    : ['height' => 32, 'pad' => 12, 'icon' => 18, 'gap' => 8, 'radius' => 8];
 }
 
 function badge_size(array $badge, $format) {
@@ -161,7 +152,7 @@ function badge_size(array $badge, $format) {
     $labelWidth = $badge['label'] !== '' ? badge_text($badge['label'] . ' ', 500, 13, 0, 0, '')[1] : 0;
     $textWidth = $labelWidth + badge_text($badge['name'], 700, 13, 0, 0, '')[2];
   }
-  return [(int) round($l['pad'] + $l['flag'] + $l['gap'] + $textWidth + $l['pad']), $l['height']];
+  return [(int) round($l['pad'] + $l['icon'] + $l['gap'] + $textWidth + $l['pad']), $l['height']];
 }
 
 function badge_svg(array $badge, $theme, $format) {
@@ -169,8 +160,8 @@ function badge_svg(array $badge, $theme, $format) {
   $l = badge_layout($format);
   [$width, $height] = badge_size($badge, $format);
   $text = badge_texts($badge, $format);
-  $x = $l['pad'] + $l['flag'] + $l['gap'];
-  $flag = badge_flag($l['pad'], round(($height - $l['flag'] * 28 / 37) / 2, 2), $l['flag']);
+  $x = $l['pad'] + $l['icon'] + $l['gap'];
+  $logo = badge_logo($l['pad'], round(($height - $l['icon']) / 2, 2), $l['icon']);
 
   if ($format === 'stor') {
     $paths = badge_text($text['label'], 500, 11, $x, 20, $t['muted'])[0]
@@ -184,10 +175,10 @@ function badge_svg(array $badge, $theme, $format) {
   return '<svg xmlns="http://www.w3.org/2000/svg" width="' . $width . '" height="' . $height . '" viewBox="0 0 ' . $width . ' ' . $height . '" role="img" aria-label="' . $title . '">'
     . '<title>' . $title . '</title>'
     . '<rect x="0.5" y="0.5" width="' . ($width - 1) . '" height="' . ($height - 1) . '" rx="' . $l['radius'] . '" fill="' . $t['bg'] . '" stroke="' . $t['border'] . '"/>'
-    . $flag . $paths . '</svg>';
+    . $logo . $paths . '</svg>';
 }
 
-// /badge/{slug}.svg: badges uden produkt ("Dansk software", "Vi bruger dansk software" osv.)
+// /badge/{slug}.svg: badges uden produkt ("Listet på dansktechstack.dk", "Vi støtter dansk tech")
 function serve_standalone_badge($slug) {
   $badges = standalone_badges();
   $theme = $_GET['tema'] ?? 'lys';

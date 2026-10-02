@@ -10,8 +10,8 @@
         </a>
       </div>
       <div class="mt-8 flex flex-col items-center gap-4 md:order-1 md:mt-0 md:flex-row md:gap-6">
-        <?php [$badgeWidth, $badgeHeight] = badge_size(generic_badge(), 'kompakt'); ?>
-        <a href="/badge" title="Hent badget til jeres website" class="flex-none"><img src="/badge/<?php echo BADGE_GENERIC; ?>.svg" alt="Dansk software · dansktechstack.dk" width="<?php echo $badgeWidth; ?>" height="<?php echo $badgeHeight; ?>" loading="lazy" /></a>
+        <?php $footerBadge = supporter_badges()['vi-stoetter-dansk-tech']; [$badgeWidth, $badgeHeight] = badge_size($footerBadge, 'kompakt'); ?>
+        <a href="/badge" title="Hent badget til jeres website" class="flex-none"><img src="/badge/<?php echo $footerBadge['slug']; ?>.svg" alt="<?php echo e($footerBadge['title']); ?>" width="<?php echo $badgeWidth; ?>" height="<?php echo $badgeHeight; ?>" loading="lazy" /></a>
       <p class="text-center text-sm/6 text-gray-600 md:text-left dark:text-gray-400">Bygget i København af folkene fra <a href="https://langsom.com">langsom.com</a> + venner fra branchen.</p>
       </div>
     </div>
