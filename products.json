@@ -96,7 +96,7 @@
       "OnBoard",
       "iBabs",
       "Sherpany",
-      "Azues Convene",
+      "Azeus Convene",
       "Boardable"
     ],
     "image": "images/boardoffice.png"
@@ -149,7 +149,7 @@
     "alternatives": [
       "Dynamic Yield",
       "Klevu",
-      "AlgShopify Paymentsolia"
+      "Algolia"
     ],
     "image": "images/clerk.png"
   },

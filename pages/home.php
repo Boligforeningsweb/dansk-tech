@@ -153,6 +153,9 @@ partial('head', [
             <button type="button" class="search-example text-xs px-2.5 py-1 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors" data-search="Mailchimp">Mailchimp</button>
             <button type="button" class="search-example text-xs px-2.5 py-1 rounded-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors" data-search="Zendesk">Zendesk</button>
           </div>
+          <p id="alternative-suggestion" class="mt-4 hidden text-center text-sm">
+            <a href="#" class="font-semibold text-gray-900 hover:underline dark:text-white"></a>
+          </p>
         </div>
       </div>
       <div id="products-container">
@@ -165,6 +168,9 @@ partial('head', [
         <p>Ingen produkter fundet. Prøv at søge efter et andet navn eller international software.</p>
       </div>
       </div>
+      <p class="mt-12 text-center">
+        <a href="/alternativer" class="text-base font-semibold text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">Se danske alternativer til alle <?php echo count(load_alternatives()); ?> udenlandske systemer <span aria-hidden="true">→</span></a>
+      </p>
     </div>
   </div>
 
@@ -279,9 +285,31 @@ partial('head', [
       if (!searchInput || !productItems.length) return;
       
       // Function to perform search
+      // Udenlandske produkter med egen side: slug => navn
+      const alternativePages = <?php echo json_encode(array_map(function($alternative) { return $alternative['name']; }, load_alternatives()), JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP); ?>;
+      const suggestion = document.getElementById('alternative-suggestion');
+
+      // Samme regler som alternative_slug() i lib/alternatives.php
+      function slugify(text) {
+        const map = { 'æ': 'ae', 'ø': 'oe', 'å': 'aa', 'ä': 'ae', 'ö': 'oe', 'ü': 'ue', 'é': 'e', '&': ' og ', '+': ' plus ' };
+        return text.toLowerCase().trim().replace(/[æøåäöüé&+]/g, c => map[c]).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+      }
+
+      function showSuggestion(query) {
+        const slug = slugify(query);
+        const name = slug && alternativePages[slug];
+        suggestion.classList.toggle('hidden', !name);
+        if (name) {
+          const link = suggestion.querySelector('a');
+          link.href = '/alternativer/' + slug;
+          link.textContent = 'Se alle danske alternativer til ' + name + ' →';
+        }
+      }
+
       function performSearch(query) {
         const searchQuery = query.toLowerCase().trim();
         let visibleCount = 0;
+        showSuggestion(query);
         
         productItems.forEach(function(item) {
           const name = item.getAttribute('data-name') || '';
