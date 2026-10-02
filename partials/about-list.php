@@ -10,6 +10,7 @@ $criteria = [
   ['Kun dansk software', 'Virksomheden skal have hovedkontor i Danmark, en dansk stifter eller medstifter, eller være primært dansk ejet.'],
   ['Gennemgået før det kommer med', 'Nye produkter foreslås som offentlige pull requests på GitHub og gennemgås af vedligeholderne, før de kommer på listen.'],
   ['Helt åbent', 'Hele listen og alle ændringer kan ses på GitHub – også hvem der har foreslået hvad.'],
+  ['Ingen betalte placeringer', 'Ingen produkter betaler for at være med, og vi tjener ikke penge på links.'],
 ];
 ?>
     <section id="om-listen" aria-labelledby="om-listen-titel" class="mt-24 scroll-mt-6 border-t border-gray-200 pt-16 dark:border-white/10">
