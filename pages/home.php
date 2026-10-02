@@ -94,6 +94,7 @@ partial('head', [
     <div class="absolute inset-0 bg-white/70 dark:bg-gray-900/70"></div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full relative z-10">
       <div class="mx-auto max-w-3xl text-center">
+        <?php partial('logo', ['size' => 64, 'class' => 'mx-auto mb-7 size-12 sm:size-16']); ?>
         <h1 class="text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-6xl lg:text-7xl dark:text-white">
           Den danske tech stack
         </h1>
