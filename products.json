@@ -154,6 +154,18 @@
     "image": "images/clerk.png"
   },
   {
+    "name": "ClearContract",
+    "url": "https://clearcontract.dk",
+    "description": "Kontraktstyring med AI-agenter, der modtager, gennemgår, arkiverer og holder øje med jeres kontrakter. Kontraktsystemet du ikke behøver at bruge - bygget til agenter fra bunden.",
+    "alternatives": [
+      "Ironclad",
+      "Juro",
+      "Harvey",
+      "Legora",
+      "DocuSign"
+    ]
+  },
+  {
     "name": "Clearhaus A/S",
     "url": "https://www.clearhaus.com",
     "description": "Dansk betalingsindløser der tilbyder sikker kortbetaling, risikostyring og compliance for e-handel.",
