@@ -4,6 +4,7 @@ if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 $products = load_products();
 $originalProducts = load_original_products();
 $people = load_json('data/people.json');
+$contributors = load_contributors();
 
 $productCount = count($products);
 $title = "Den danske tech stack – $productCount danske alternativer til Big Tech";
@@ -231,10 +232,10 @@ partial('head', [
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Send dit forslag via <a href="https://github.com/Boligforeningsweb/dansk-tech" class="underline">GitHub</a></h2>
         <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">
-          Er du selv udvikler og kender lige præcis dét stykke software fra Danmark som mangler på listen? Så kan du sende os en pull request og foreslå til listen af produkter fra eksterne bidragydere. Herunder kan du se dem der har bidraget indtil videre. Det er hhv. <a href="https://github.com/BoMoellerDK" class="underline">Bo Møller</a> og <a href="https://github.com/jonasdev" class="underline">Jonas Kaas Kristensen</a> der styrer repo'et.
+          Er du selv udvikler og kender lige præcis dét stykke software fra Danmark som mangler på listen? Så kan du sende os en pull request og foreslå til listen af produkter fra eksterne bidragydere. Herunder kan se de <b><?php echo count($contributors); ?> bidragsydere</b> der har budt ind med forslag indtil videre. Det er hhv. <a href="https://github.com/BoMoellerDK" class="underline">Bo Møller</a> og <a href="https://github.com/jonasdev" class="underline">Jonas Kaas Kristensen</a> der styrer repo'et.
         </p>
         <div id="contributors" class="mt-10 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-          <?php foreach (load_contributors() as $contributor): ?>
+          <?php foreach ($contributors as $contributor): ?>
           <a href="<?php echo e($contributor['url']); ?>" target="_blank" rel="noopener noreferrer"><img src="<?php echo e(contributor_avatar_url($contributor, 48)); ?>" alt="<?php echo e($contributor['login']); ?>" width="48" height="48" loading="lazy" decoding="async" class="rounded-full object-cover outline-1 -outline-offset-1 outline-black/5 dark:outline-white/10"></a>
           <?php endforeach; ?>
         </div>
