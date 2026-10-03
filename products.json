@@ -1353,6 +1353,15 @@
     ]
   },
   {
+    "name": "Place2Book",
+    "url": "https://place2book.com",
+    "description": "100% Dansk-ejet billetsystem til små og større arrangementer, med eller uden seating, scanning og fremmøderegistrering, og meget mere.",
+    "alternatives": [
+      "Ticketmaster",
+      "Eventbrite"
+    ]
+  },
+  {
     "name": "Zalye.dk",
     "url": "https://zalye.dk",
     "description": "Dansk håndværker-system med AI, der selv regner tilbud, planlægger opgaver og køreruter automatisk og sender fakturaer. Tider, materialer og billeder registreres fra telefonen, og fakturaen lander direkte i dit regnskabsprogram.",
