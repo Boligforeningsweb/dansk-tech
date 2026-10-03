@@ -1382,5 +1382,15 @@
       "GitLab",
       "Bitbucket"
     ]
+  },
+  {
+    "name": "biosuite",
+    "url": "https://biosuite.io",
+    "description": "Procurement- og spend management-software til biotech virksomheder.",
+    "alternatives": [
+      "Prendio",
+      "Precoro",
+      "Procurify"
+    ]
   }
 ]
