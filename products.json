@@ -1372,5 +1372,15 @@
       "Tradify",
       "Housecall Pro"
     ]
+  },
+  {
+    "name": "Gitoro",
+    "url": "https://gitoro.com",
+    "description": "100% europæisk Git hosting SaaS. Avanceret CI/CD med GitLab-lignende konfiguration. Pull requests og issues som man kender det samt AI-guidet review. Avanceret RBAC, service accounts og MCP-adgang for AI-agenter. Gratis for små teams.",
+    "alternatives": [
+      "GitHub",
+      "GitLab",
+      "Bitbucket"
+    ]
   }
 ]
