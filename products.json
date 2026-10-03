@@ -154,6 +154,18 @@
     "image": "images/clerk.png"
   },
   {
+    "name": "ClearContract",
+    "url": "https://clearcontract.dk",
+    "description": "Kontraktstyring med AI-agenter, der modtager, gennemgår, arkiverer og holder øje med jeres kontrakter. Kontraktsystemet du ikke behøver at bruge - bygget til agenter fra bunden.",
+    "alternatives": [
+      "Ironclad",
+      "Juro",
+      "Harvey",
+      "Legora",
+      "DocuSign"
+    ]
+  },
+  {
     "name": "Clearhaus A/S",
     "url": "https://www.clearhaus.com",
     "description": "Dansk betalingsindløser der tilbyder sikker kortbetaling, risikostyring og compliance for e-handel.",
@@ -415,6 +427,18 @@
       "ClickUp",
       "Toggl",
       "Clockify"
+    ]
+  },
+  {
+    "name": "LandingRoom.com",
+    "url": "https://landingroom.com/",
+    "description": "Dansk rekrutteringsplatform (ATS) med fokus på kandidatoplevelsen. Samler karrieresider, ansøgninger, interviews og tilbud med et personligt kandidatrum, der følger kandidaten fra første kontakt til første arbejdsdag.",
+    "alternatives": [
+      "Greenhouse",
+      "Lever",
+      "Workable",
+      "Ashby",
+      "Teamtailor"
     ]
   },
   {
@@ -1335,6 +1359,18 @@
     "alternatives": [
       "Ticketmaster",
       "Eventbrite"
+    ]
+  },
+  {
+    "name": "Zalye.dk",
+    "url": "https://zalye.dk",
+    "description": "Dansk håndværker-system med AI, der selv regner tilbud, planlægger opgaver og køreruter automatisk og sender fakturaer. Tider, materialer og billeder registreres fra telefonen, og fakturaen lander direkte i dit regnskabsprogram.",
+    "alternatives": [
+      "Jobber",
+      "ServiceTitan",
+      "simPRO",
+      "Tradify",
+      "Housecall Pro"
     ]
   }
 ]
