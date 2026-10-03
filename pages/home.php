@@ -100,7 +100,7 @@ partial('head', [
           Den danske tech stack
         </h1>
         <p class="mt-8 text-xl/8 text-gray-600 dark:text-gray-400 max-[450px]:hidden">
-          Vi er en gruppe iværksættere, der ønsker at sætte fokus på dansk software. I en tid hvor der ofte tales om Danmarks afhængighed af udenlandsk software, har vi udgivet en liste af danske software-virksomheder, man kan vælge som alternativ til dem udenfor EU. 
+          Vi er en gruppe iværksættere, der ønsker at sætte fokus på dansk software. I en tid hvor der ofte tales om Danmarks afhængighed af udenlandsk software, har vi udgivet en liste af danske software-virksomheder, man kan vælge som alternativ til dem udenfor EU. Siden er en non-profit, open-sourced platform og der er indtil videre tilføjet <?php echo $productCount; ?> produkter fra <?php echo count($contributors); ?> bidragsydere.
         </p>
         <p class="mt-8 text-xl/8 text-gray-600 dark:text-gray-400 hidden max-[450px]:block">
           Vi er en gruppe iværksættere, der ønsker at sætte fokus på danske produkter, man kan bruge i sin tech stack. I en tid hvor der ofte tales om Danmarks afhængighed af udenlandsk software, vil vi fremhæve danske systemer, vi selv har tillid til.
