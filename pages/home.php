@@ -100,18 +100,26 @@ partial('head', [
         </h1>
         <p class="mt-8 text-xl/8 text-gray-600 dark:text-gray-400 max-[450px]:hidden">
           Vi er en gruppe iværksættere, der ønsker at sætte fokus på dansk software. I en tid hvor der ofte tales om Danmarks afhængighed af udenlandsk software, har vi udgivet en liste af danske software-virksomheder, man kan vælge som alternativ til dem udenfor EU. 
-          Danmark har nemlig en stolt tradition inden for softwareudvikling. Teknologier som Ruby on Rails, C++ og PHP har danske rødder, og nedenfor har vi samlet en liste over stærke danske alternativer til software, der ellers typisk købes i udlandet.
         </p>
         <p class="mt-8 text-xl/8 text-gray-600 dark:text-gray-400 hidden max-[450px]:block">
           Vi er en gruppe iværksættere, der ønsker at sætte fokus på danske produkter, man kan bruge i sin tech stack. I en tid hvor der ofte tales om Danmarks afhængighed af udenlandsk software, vil vi fremhæve danske systemer, vi selv har tillid til.
         </p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href="#produkter" class="rounded-md bg-gray-900 px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
-            Se produkterne
-          </a>
-          <a href="#iværksættere" class="text-base font-semibold text-gray-900 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
-            Hvem står bag? <span aria-hidden="true">→</span>
-          </a>
+        <div class="mt-10 flex justify-center">
+          <div class="w-full max-w-xl rounded-3xl bg-white/70 p-3.5 shadow-xl shadow-gray-900/10 ring-1 ring-black/5 backdrop-blur-sm dark:bg-gray-900/50 dark:ring-white/10">
+            <div class="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+              <a href="#produkter" class="inline-flex items-center justify-center rounded-2xl bg-gray-900 px-6 py-3.5 text-base font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:bg-white dark:text-gray-900 dark:hover:bg-gray-100">
+                Se produkterne
+              </a>
+              <a href="https://github.com/Boligforeningsweb/dansk-tech" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-gray-300/80 bg-white/80 px-6 py-3.5 text-base font-semibold text-gray-900 transition-all hover:-translate-y-0.5 hover:border-gray-900 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:border-white/20 dark:bg-gray-800/80 dark:text-white dark:hover:border-white dark:hover:bg-gray-800">
+                <svg class="size-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                Tilføj produkt
+              </a>
+            </div>
+            <a href="#iværksættere" class="group mt-3 inline-flex w-full items-center justify-center gap-1.5 rounded-xl px-4 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-white/70 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-white/5 dark:hover:text-white">
+              Hvem står bag?
+              <span class="inline-block transition-transform group-hover:translate-x-0.5" aria-hidden="true">→</span>
+            </a>
+          </div>
         </div>
         
         <!-- Media mentions section -->
