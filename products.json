@@ -418,6 +418,18 @@
     ]
   },
   {
+    "name": "LandingRoom.com",
+    "url": "https://landingroom.com/",
+    "description": "Dansk rekrutteringsplatform (ATS) med fokus på kandidatoplevelsen. Samler karrieresider, ansøgninger, interviews og tilbud med et personligt kandidatrum, der følger kandidaten fra første kontakt til første arbejdsdag.",
+    "alternatives": [
+      "Greenhouse",
+      "Lever",
+      "Workable",
+      "Ashby",
+      "Teamtailor"
+    ]
+  },
+  {
     "name": "Mikrobageri.dk",
     "url": "https://mikrobageri.dk",
     "description": "Et simpelt bestillingssystem til mikrobagerier med online bestilling, bagekalender og overblik over bagningen",
