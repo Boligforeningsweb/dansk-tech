@@ -1351,5 +1351,17 @@
       "Google Cloud",
       "DigitalOcean"
     ]
+  },
+  {
+    "name": "Zalye.dk",
+    "url": "https://zalye.dk",
+    "description": "Dansk håndværker-system med AI, der selv regner tilbud, planlægger opgaver og køreruter automatisk og sender fakturaer. Tider, materialer og billeder registreres fra telefonen, og fakturaen lander direkte i dit regnskabsprogram.",
+    "alternatives": [
+      "Jobber",
+      "ServiceTitan",
+      "simPRO",
+      "Tradify",
+      "Housecall Pro"
+    ]
   }
 ]
