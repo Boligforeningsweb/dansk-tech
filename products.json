@@ -1,5 +1,17 @@
 [
   {
+    "name": "Huuray.com",
+    "url": "https://huuray.com",
+    "description": "B2B-platform og API til digitale gavekort og belønninger, med mere end 170 lande og tusindvis af brands. Bruges til medarbejdergaver, kundeloyalitet, incitamenter og udbetalinger direkte fra eget system.",
+    "alternatives": [
+      "Tango Card",
+      "Tremendous",
+      "Runa",
+      "Giftbit",
+      "Xoxoday"
+    ]
+  },
+  {
     "name": "Adamatics Platform (AdaLab)",
     "url": "https://adamatics.com/platform/",
     "description": "En dansk platform til data science, analytics og AI, der samler notebooks, dataadgang og deployment i ét kontrolleret miljø indenfor virksomheders egen netværk og kontrol. Kan deployes hos alle cloud providers der understøtter Kubernetes, såsom Scaleway, Upcloud, samt on-prem til kritisk infrastruktur.",
