@@ -316,8 +316,8 @@
     "description": "EU suveræn CI/CD med Git inkluderet.",
     "alternatives": [
       "GitHub",
-      "Gitlab",
-      "bitbucket"
+      "GitLab",
+      "Bitbucket"
     ]
   },
   {
@@ -1414,6 +1414,16 @@
       "Prendio",
       "Precoro",
       "Procurify"
+    ]
+  },
+  {
+    "name": "Meneo",
+    "url": "https://meneo.dk/",
+    "description": "Dansk opgavestyring til bogholdere og revisorer. Meneo opretter tilbagevendende kundeopgaver automatisk og samler deadlines, ansvar og tidsregistrering i ét overblik.",
+    "alternatives": [
+      "Karbon",
+      "Jetpack Workflow",
+      "Financial Cents"
     ]
   }
 ]
