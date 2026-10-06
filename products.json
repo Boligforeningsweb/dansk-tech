@@ -1448,5 +1448,17 @@
       "Buildium",
       "Facebook"
     ]
+  },
+  {
+    "name": "Txty.dk",
+    "url": "https://txty.dk",
+    "description": "SMS-gateway bosat i Aarhus. Send og modtag SMS via REST API eller kontrolpanel med eget afsendernavn, keywords på kortnummer 1919, virtuelle numre, HLR-opslag og leveringsrapporter som webhook.",
+    "alternatives": [
+      "Twilio",
+      "Sinch",
+      "Infobip",
+      "Vonage",
+      "Messente"
+    ]
   }
 ]
