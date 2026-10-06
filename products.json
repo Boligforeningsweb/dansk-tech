@@ -1438,5 +1438,15 @@
       "Hoxhunt",
       "Knowb4"
     ]
+  },
+  {
+    "name": "NaboPortalen",
+    "url": "https://naboportalen.dk",
+    "description": "Driftssystem til boligforeninger, der samler fejlmeldinger, sager, dokumenter, opgaver, booking og beboerkommunikation i én platform med beboerapp.",
+    "alternatives": [
+      "Condo Control",
+      "Buildium",
+      "Facebook"
+    ]
   }
 ]
