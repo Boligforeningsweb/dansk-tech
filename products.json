@@ -288,6 +288,13 @@
     ],
     "image": "images/fenerum.png"
   },
+{
+  "name": "Filecamp",
+  "url": "https://filecamp.com",
+  "description": "Grundlagt af to danskere. Filecamp er en cloudbaseret platform til digital asset management (DAM), der gør det nemt at organisere og dele billeder, videoer og dokumenter. Med egen branding, fleksibel adgangsstyring og ubegrænset antal brugere.",
+  "alternatives": ["Bynder", "Brandfolder", "Canto"]
+  "image": "images/filecamp.png"
+},
   {
     "name": "fmcgProducts PIM",
     "url": "https://www.fmcgsolutions.dk",
