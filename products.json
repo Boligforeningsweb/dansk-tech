@@ -1425,5 +1425,18 @@
       "Jetpack Workflow",
       "Financial Cents"
     ]
+  },
+  {
+    "name": "Moxso",
+    "url": "https://moxso.com/",
+    "description": "Moxso bruger medarbejderadfærd til at måle Human Risk og målrette træning, phishing-simulationer og follow-up dér, hvor risikoen faktisk ligger.",
+    "alternatives": [
+      "Cyberpilot",
+      "Nimblr",
+      "JungleMap",
+      "Pistachio",
+      "Hoxhunt",
+      "Knowb4"
+    ]
   }
 ]
