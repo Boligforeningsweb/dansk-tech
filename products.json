@@ -1213,6 +1213,18 @@
     ]
   },
   {
+    "name": "cvrapi.dk",
+    "url": "https://cvrapi.dk",
+    "description": "Det originale CVR API fra 2012 med over 250.000 brugere hver måned. Slå danske og norske virksomheder op på CVR-nummer, P-nummer, navn eller telefonnummer og få svaret som JSON eller XML.",
+    "alternatives": [
+      "OpenCorporates",
+      "Creditsafe",
+      "Dun & Bradstreet",
+      "Bisnode/Dun & Bradstreet",
+      "ZoomInfo"
+    ]
+  },
+  {
     "name": "Chainbox",
     "url": "https://chainbox.dk",
     "description": "Chainbox understøtter B2B-virksomheder med værktøjer til håndtering af produktdata, online salg og indholdsstyring",
