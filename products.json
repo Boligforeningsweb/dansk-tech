@@ -1427,6 +1427,19 @@
     ]
   },
   {
+    "name": "Moxso",
+    "url": "https://moxso.com/",
+    "description": "Moxso bruger medarbejderadfærd til at måle Human Risk og målrette træning, phishing-simulationer og follow-up dér, hvor risikoen faktisk ligger.",
+    "alternatives": [
+      "Cyberpilot",
+      "Nimblr",
+      "JungleMap",
+      "Pistachio",
+      "Hoxhunt",
+      "Knowb4"
+    ]
+  },
+  {
     "name": "NaboPortalen",
     "url": "https://naboportalen.dk",
     "description": "Driftssystem til boligforeninger, der samler fejlmeldinger, sager, dokumenter, opgaver, booking og beboerkommunikation i én platform med beboerapp.",
