@@ -1474,6 +1474,16 @@
     ]
   },
   {
+    "name": "Lønbånd",
+    "url": "https://lonbaand.tielemans.dev/?ref=dansktechstack",
+    "description": "Gratis lønberegner, der viser lønforskellen mellem kvinder og mænd i virksomhedens egne lønkategorier; lønfilen forlader ikke browseren. Betalt kit med lønkriterier, lønbånd og lønoplysning til ansøgere.",
+    "alternatives": [
+      "Figures",
+      "Syndio",
+      "Trusaic"
+    ]
+  },
+  {
     "name": "Sporlock",
     "url": "https://cpr.tielemans.dev/?ref=dansktechstack",
     "description": "Finder CPR-numre i filer i SharePoint og OneDrive, viser hvem der kan åbne dem, og lukker for risikabel deling. Gratis CPR-tjek af enkeltfiler direkte i browseren, uden upload.",
