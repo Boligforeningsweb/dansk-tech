@@ -1472,5 +1472,15 @@
       "Vonage",
       "Messente"
     ]
+  },
+  {
+    "name": "Lønbånd",
+    "url": "https://lonbaand.tielemans.dev/?ref=dansktechstack",
+    "description": "Gratis lønberegner, der viser lønforskellen mellem kvinder og mænd i virksomhedens egne lønkategorier; lønfilen forlader ikke browseren. Betalt kit med lønkriterier, lønbånd og lønoplysning til ansøgere.",
+    "alternatives": [
+      "Figures",
+      "Syndio",
+      "Trusaic"
+    ]
   }
 ]
