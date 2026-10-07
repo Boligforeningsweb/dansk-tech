@@ -1,13 +1,12 @@
 <?php
 if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
-// Kun sider, der må indekseres (alternativsider med færre end ALTERNATIVE_MIN_INDEXED produkter udelades)
-$lastmod = date('Y-m-d', products_modified_at());
+// Alle eksisterende alternativsider er med, også dem med ét dansk produkt.
+// Filernes mtime ændres ved deploy og er ikke en pålidelig indholdsdato.
+// lastmod er valgfri og udelades, indtil reelle ændringsdatoer vedligeholdes.
 $urls = [SITE_URL, SITE_URL . 'alternativer', SITE_URL . 'badge'];
 foreach (load_alternatives() as $alternative) {
-  if ($alternative['indexed']) {
-    $urls[] = SITE_URL . ltrim(alternative_url($alternative['name']), '/');
-  }
+  $urls[] = SITE_URL . ltrim(alternative_url($alternative['name']), '/');
 }
 
 header('Content-Type: application/xml; charset=utf-8');
@@ -17,7 +16,6 @@ echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 <?php foreach ($urls as $url): ?>
   <url>
     <loc><?php echo e($url); ?></loc>
-    <lastmod><?php echo $lastmod; ?></lastmod>
   </url>
 <?php endforeach; ?>
 </urlset>

@@ -24,14 +24,14 @@ function schema_organization() {
   ];
 }
 
-function schema_website($description) {
+function schema_website() {
   return [
     '@type' => 'WebSite',
     '@id' => SITE_URL . '#website',
     'name' => 'Den danske tech stack',
     'alternateName' => 'Dansk Tech Stack',
     'url' => SITE_URL,
-    'description' => $description,
+    'description' => 'En åben, kurateret liste over danske software-produkter som alternativer til internationale systemer.',
     'inLanguage' => 'da-DK',
     'publisher' => ['@id' => SITE_URL . '#organization'],
   ];
@@ -58,6 +58,27 @@ function schema_product_list_items(array $products) {
 function schema_json(array $graph) {
   return json_encode(['@context' => 'https://schema.org', '@graph' => $graph],
     JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_HEX_TAG);
+}
+
+// De samme spørgsmål, svar og afklaringspunkter som i den synlige FAQ.
+// FAQPage beskriver indholdet; Google viser ikke længere FAQ rich results.
+function schema_faq(array $items, $id) {
+  return [
+    '@type' => 'FAQPage',
+    '@id' => $id,
+    'mainEntity' => array_map(function($item) {
+      $text = $item['a'];
+      if (!empty($item['consideration'])) {
+        $text .= "\n\nInden du vælger: " . $item['consideration'];
+      }
+      $answer = ['@type' => 'Answer', 'text' => $text];
+      if (isset($item['source'])) {
+        $answer['text'] .= "\n\nLæs mere hos " . $item['source']['name'];
+        $answer['citation'] = ['@type' => 'WebPage', 'name' => $item['source']['name'], 'url' => $item['source']['url']];
+      }
+      return ['@type' => 'Question', 'name' => $item['q'], 'acceptedAnswer' => $answer];
+    }, $items),
+  ];
 }
 
 // $items = [['Forside', '/'], ['Alternativer', '/alternativer'], ['Stripe', '/alternativer/stripe']]
