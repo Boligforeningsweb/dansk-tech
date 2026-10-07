@@ -56,16 +56,15 @@ $criteria = [
 
       <?php if ($contributors): ?>
       <div class="mt-14 flex flex-col gap-x-6 gap-y-4 sm:flex-row sm:items-center">
-        <div class="flex items-center">
-          <?php foreach ($shownContributors as $i => $contributor): ?>
-          <?php // Overlappende stak; på mobil vises de første 9 ?>
-          <a href="<?php echo e($contributor['url']); ?>" target="_blank" rel="noopener noreferrer" title="<?php echo e($contributor['login']); ?>" class="<?php echo $i > 0 ? '-ml-2' : ''; ?><?php echo $i >= 9 ? ' hidden sm:block' : ' block'; ?>"><img src="<?php echo e(contributor_avatar_url($contributor, 36)); ?>" alt="<?php echo e($contributor['login']); ?>" width="36" height="36" loading="lazy" decoding="async" class="size-9 rounded-full object-cover ring-2 ring-white dark:ring-gray-900"></a>
+        <div class="flex min-w-0 flex-wrap items-center gap-2 sm:flex-1">
+          <?php foreach ($shownContributors as $contributor): ?>
+          <a href="<?php echo e($contributor['url']); ?>" target="_blank" rel="noopener noreferrer" title="<?php echo e($contributor['login']); ?>" class="block flex-none"><img src="<?php echo e(contributor_avatar_url($contributor, 36)); ?>" alt="<?php echo e($contributor['login']); ?>" width="36" height="36" loading="lazy" decoding="async" class="size-9 rounded-full object-cover ring-2 ring-white dark:ring-gray-900"></a>
           <?php endforeach; ?>
           <?php if (count($contributors) > count($shownContributors)): ?>
-          <a href="https://github.com/Boligforeningsweb/dansk-tech/graphs/contributors" class="-ml-2 inline-flex h-9 min-w-9 items-center justify-center rounded-full bg-gray-100 px-2 text-xs font-semibold text-gray-700 ring-2 ring-white hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-900">+<?php echo count($contributors) - count($shownContributors); ?></a>
+          <a href="https://github.com/Boligforeningsweb/dansk-tech/graphs/contributors" class="inline-flex h-9 min-w-9 flex-none items-center justify-center rounded-full bg-gray-100 px-2 text-xs font-semibold text-gray-700 ring-2 ring-white hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-900">+<?php echo count($contributors) - count($shownContributors); ?></a>
           <?php endif; ?>
         </div>
-        <p class="text-sm/6 text-gray-600 dark:text-gray-400"><span class="font-semibold text-gray-900 dark:text-white"><?php echo count($contributors); ?> bidragydere</span> har foreslået og rettet produkter. <a href="https://github.com/Boligforeningsweb/dansk-tech/graphs/contributors" class="whitespace-nowrap font-semibold text-gray-900 hover:underline dark:text-white">Se dem på GitHub <span aria-hidden="true">→</span></a></p>
+        <p class="text-sm/6 text-gray-600 sm:flex-1 dark:text-gray-400"><span class="font-semibold text-gray-900 dark:text-white"><?php echo count($contributors); ?> bidragydere</span> har foreslået og rettet produkter. <a href="https://github.com/Boligforeningsweb/dansk-tech/graphs/contributors" class="whitespace-nowrap font-semibold text-gray-900 hover:underline dark:text-white">Se dem på GitHub <span aria-hidden="true">→</span></a></p>
       </div>
       <?php endif; ?>
 

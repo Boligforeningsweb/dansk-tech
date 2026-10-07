@@ -155,7 +155,17 @@ CSS'en bygges med Tailwind (v3.4, standalone-CLI, kræver ikke Node). Kør dette
 
 Produkterne kan hente et badge på `/badge` (fx "Dansk alternativ til Stripe"), som serveres af `/badge/{produkt}/{alternativ}.svg`. Teksten tegnes som vektorer ud fra `data/badge-font.json` (Inter, se `tools/badge/`).
 
-Hvert udenlandsk produkt i `alternatives` får automatisk sin egen side på `/alternativer/{navn}` (fx `/alternativer/stripe`), og `/alternativer` viser dem alle A–Å. Sider med mindst 2 danske produkter indekseres og kommer i `/sitemap.xml`; resten får `noindex` (`ALTERNATIVE_MIN_INDEXED` i `lib/alternatives.php`).
+Hvert udenlandsk produkt i `alternatives` får automatisk sin egen side på `/alternativer/{navn}` (fx `/alternativer/stripe`), og `/alternativer` viser dem alle A–Å. Alle eksisterende alternativsider tillader indeksering og kommer i `/sitemap.xml`, også sider med ét dansk produkt. Google afgør selv, hvilke sider der faktisk indekseres.
+
+Alternativsiderne har en FAQ med produktforklaringer og vejledning, tydeligt deklareret som skrevet med AI. De enkelte forklaringer ligger i `data/product-guides.json`, med produktets URL som nøgle og felterne `explanation`, `consideration` og `sourceHash`. Teksterne bygger kun på oplysningerne i `products.json`; spørgsmål under "Inden du vælger" er afklaringspunkter, ikke påstande om produktets funktioner. Der kaldes ingen AI-tjeneste ved sidevisning.
+
+`sourceHash` er SHA-256 af produktnavn + linjeskift + produktbeskrivelse (`hash('sha256', $product['name'] . "\n" . $product['description'])`). Nye produkter og produkter med ændret navn eller beskrivelse bruger automatisk den aktuelle produktbeskrivelse i FAQ'en, indtil en opdateret AI-forklaring er gennemgået og gemt med en ny hash. Fjernes et produkt fra listen, vises dets forklaring heller ikke længere. Bidragydere skal fortsat kun redigere `products.json`; guides vedligeholdes internt.
+
+Tjek indhold og indeksering lokalt med `php tools/check-alternative-pages.php`. Kontrollen rapporterer også, hvor mange produkter der har en aktuel AI-guide, og advarer om produkter, der bruger deres beskrivelse som fallback. Den tester manglende, ugyldige og forældede guidefiler i isolerede processer.
+
+SEO: Alternativsiderne har sidetitel, meta description, canonical, Open Graph/Twitter og JSON-LD med `CollectionPage`, `BreadcrumbList`, `ItemList`/`SoftwareApplication` og `FAQPage`/`Question`/`Answer`. FAQ-markup bygges fra de samme data som den synlige FAQ, inklusive afklaringspunkter og leverandørhenvisninger. Den fælles `WebSite`-beskrivelse er ens på alle sider. FAQ-schema er en beskrivelse af indholdet, ikke et løfte om særlige Google-visninger; Google viser ikke længere FAQ rich results. Vi tilføjer ikke ukendte priser eller anmeldelser til produkt-schema.
+
+`lastmod` og `dateModified` udelades, fordi filernes ændringstid ved en deployment ikke dokumenterer en reel ændring af indholdet. Felterne er valgfrie og bør først tilføjes igen, når der vedligeholdes pålidelige indholdsdatoer.
 
 ---
 

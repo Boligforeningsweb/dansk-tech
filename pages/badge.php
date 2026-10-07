@@ -18,7 +18,7 @@ partial('head', [
   'canonical' => $url,
   // Varianter med valgt produkt er værktøjssider, ikke indhold
   'robots' => $_GET ? 'noindex, follow' : null,
-  'schema' => schema_json([schema_organization(), schema_website($description), schema_breadcrumbs([['Forside', '/'], ['Badge', '/badge']], $url . '#breadcrumb')]),
+  'schema' => schema_json([schema_organization(), schema_website(), schema_breadcrumbs([['Forside', '/'], ['Badge', '/badge']], $url . '#breadcrumb')]),
 ]);
 partial('site-header');
 ?>
@@ -48,8 +48,8 @@ partial('site-header');
       <h2 class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Er jeres produkt på listen?</h2>
       <h3 class="mt-8 text-lg font-semibold text-gray-900 dark:text-white">1. Vælg jeres produkt</h3>
       <form method="get" action="/badge#produkt" class="mt-4 flex max-w-xl gap-3">
-        <label for="produkt" class="sr-only">Produkt</label>
-        <select id="produkt" name="produkt" onchange="this.form.submit()" class="block w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:border-gray-600 dark:bg-gray-800 dark:text-white">
+        <label for="produkt-valg" class="sr-only">Produkt</label>
+        <select id="produkt-valg" name="produkt" onchange="this.form.submit()" class="block w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-base text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:border-gray-600 dark:bg-gray-800 dark:text-white">
           <option value="">Vælg produkt …</option>
           <?php foreach ($products as $item): ?>
           <option value="<?php echo e(product_slug($item)); ?>"<?php echo $product && product_slug($item) === product_slug($product) ? ' selected' : ''; ?>><?php echo e($item['name']); ?></option>

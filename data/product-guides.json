@@ -1,0 +1,657 @@
+{
+  "https://huuray.com": {
+    "sourceHash": "7a52effe6462e4cecb7971e7b6892aad1d37447619b65239d7c6198532c991da",
+    "explanation": "Huuray.com samler digitale gavekort og belønninger på en B2B-platform. Det kan bruges til medarbejdergaver og kundeloyalitet, eller forbindes til egne systemer via API, når belønninger skal være en del af en eksisterende arbejdsgang.",
+    "consideration": "Afklar dækning af de lande og gavekortbrands, I vil bruge, samt hvordan udbetalinger håndteres."
+  },
+  "https://adamatics.com/platform/": {
+    "sourceHash": "58445c89f57a7880bfa10d946453a93120c5f895c62bbd7fbc5ef103cb2b3d89",
+    "explanation": "AdaLab samler notebooks, dataadgang og deployment til arbejdet med dataanalyse og AI. Platformen kan placeres i virksomhedens eget miljø eller hos en cloududbyder, der understøtter Kubernetes, så placeringen kan tilpasses jeres infrastruktur.",
+    "consideration": "Undersøg, hvem der skal drive miljøet, og hvordan jeres datakilder og modeller flyttes ind."
+  },
+  "https://www.adminbyrequest.com": {
+    "sourceHash": "315a5d43960e4bc9e9ad7d740c3d284f7105725d711b989a79a0a9b4bd7698a4",
+    "explanation": "Admin By Request styrer administratorrettigheder på Windows, macOS og Linux. Just-in-time betyder, at rettigheder kan gives, når der er brug for dem, mens godkendelsesflows og logs hjælper med at følge adgangen.",
+    "consideration": "Afprøv godkendelse og tidsbegrænset adgang med de programmer og operativsystemer, jeres medarbejdere bruger."
+  },
+  "https://alunta.com": {
+    "sourceHash": "78f9b0bc123b500c530a6787f98c9d0022311a007192b3be76d7dd24f1ad7f87",
+    "explanation": "Alunta.com arbejder med abonnementer, betalinger og fakturering. Vurder sammenhængen mellem løbende opkrævninger og fakturaer, især når kunder skifter abonnement eller ændrer deres aftale.",
+    "consideration": "Afklar betalingsmetoder, abonnementsændringer og forbindelsen til jeres regnskabssystem."
+  },
+  "https://alviss.io": {
+    "sourceHash": "508462f38449fc3f763486ea000225a1188e6206d1628e7eefc6554ed75f1086",
+    "explanation": "Alviss AI er en platform til at analysere og simulere effekten af aktiviteter, der skaber salg. Den beskæftiger sig blandt andet med medier, kommunikation og priser, så arbejdet med marketing kan tage udgangspunkt i modeller og data.",
+    "consideration": "Spørg, hvilke data modellerne kræver, og hvordan usikkerhed i beregningerne vises."
+  },
+  "https://arrigoo.io": {
+    "sourceHash": "315cfce9e9f3cf3153ce7fb7630f874f856a34a09b170d1eb72568060a16468c",
+    "explanation": "Arrigoo CDP samler og konsoliderer kunders profildata på tværs af systemer. Data kan bruges til at danne segmenter ud fra adfærd og egenskaber og sendes videre til de systemer, der skal bruge dem.",
+    "consideration": "Kortlæg jeres datakilder, ønskede segmenter og de systemer, der skal modtage profilerne."
+  },
+  "https://www.bastio.com": {
+    "sourceHash": "be5a71bb886fd07560606a9e827054d408d6045d334b4bdd02f3540e39e52e46",
+    "explanation": "Bastio AI Security lægger en sikkerhedsgateway mellem en applikation og dens AI-udbyder. Beskrivelsen omfatter blandt andet beskyttelse mod prompt injection, maskering af personoplysninger og overvågning af AI-brug, også for agenter.",
+    "consideration": "Test gatewayen med jeres egne prompts, og undersøg håndtering af logs og personoplysninger."
+  },
+  "https://behandlerdata.dk": {
+    "sourceHash": "1bb3cb7124b4d80808fc4bd924f40350a884978e3025592168679c960d5f622b",
+    "explanation": "Behandlerdata samler og normaliserer overenskomsttakster for behandlere. Oplysningerne kan slås op eller hentes via API. Produktbeskrivelsen handler om prisdata, så relevansen bør vurderes ud fra dette konkrete behov.",
+    "consideration": "Afklar, hvilke overenskomster der dækkes, og hvordan takster ajourføres i API'et."
+  },
+  "https://www.board-office.dk": {
+    "sourceHash": "eda303b0b97b048258788f30aa82b87c8276c3af600b6fe7bc57f5cc6265e018",
+    "explanation": "BOARD OFFICE samler bestyrelsens mødeadministration og dokumentdeling med værktøjer til governance og samarbejde. Governance handler her om arbejdet med at styre og føre tilsyn med virksomheden; beskrivelsen nævner også AI-integration.",
+    "consideration": "Afprøv dokumentadgang og mødeforløb med både bestyrelsesmedlemmer og sekretariat."
+  },
+  "https://boligforeningsweb.dk": {
+    "sourceHash": "ecca8f1f08d0992c93da229be104928ffacf70f56c9e705e75028507fc829c70",
+    "explanation": "Boligforeningsweb er software til administration af boligforeninger. Vurder det ud fra foreningens konkrete administrative opgaver, og bed om en gennemgang af de moduler, der skal understøtte dem.",
+    "consideration": "Bed om en gennemgang af de konkrete administrative opgaver, jeres forening skal løse."
+  },
+  "https://www.campaignbuilder.io/": {
+    "sourceHash": "76754dc0fd041a39ba5d732f4627386581f1ae39f78e4e649f375e039d94408e",
+    "explanation": "Campaign Builder samler værktøjer til at bygge, lancere og administrere kampagner på tværs af kanaler. Beskrivelsen omfatter katalogannoncer, HTML5-annoncer, popups, formularer, workflows og SMS-marketing.",
+    "consideration": "Afklar, hvilke annoncekanaler og katalogformater der passer til jeres eksisterende kampagner."
+  },
+  "https://neuphlo.com": {
+    "sourceHash": "dac4c090f99f6311b22b89dfda6269b9a070d5e4b49b1b874ccf527f65070b3d",
+    "explanation": "Neuphlo kombinerer projektstyring med testmanagement, vidensdeling og chat. GitHub, GitLab og Addo Sign nævnes som integrationer, og adgang via MCP gør det relevant at undersøge i arbejdsgange med AI-værktøjer.",
+    "consideration": "Afprøv sammenhængen mellem opgaver, tests og kode samt adgangsrettigheder for MCP-klienter."
+  },
+  "https://clarefy.ai": {
+    "sourceHash": "5cbfd5d974bafe3bb47745d1e4565d5eed9e3a5ee78d357f8f61a286180dd335",
+    "explanation": "Clarefy.ai arbejder med lager- og indkøbsplanlægning til e-commerce. Formålet er at planlægge indkøb, så virksomheden kan balancere risikoen for udsolgte varer med den kapital, der er bundet på lageret.",
+    "consideration": "Afklar datakrav og afprøv planlægningen på varer med sæsonudsving eller varierende leveringstid."
+  },
+  "https://clerk.io": {
+    "sourceHash": "4412840dc64d48707215679306ce600f1b3a7eb8716e9f25b9d3b0f1663a34e2",
+    "explanation": "Clerk.io arbejder med personalisering og anbefalinger. Personalisering tilpasser det, en bruger ser, mens anbefalinger hjælper brugeren med at finde relevante produkter eller andet indhold.",
+    "consideration": "Bed om eksempler på anbefalinger med jeres egne data og den platform, I bruger."
+  },
+  "https://clearcontract.dk": {
+    "sourceHash": "9d3942d4d5e5b05d703e3ea524d0d0b02f5a8938b2e95fb5a89ac34e7d07eeee",
+    "explanation": "ClearContract bruger AI-agenter til at modtage, gennemgå og arkivere kontrakter samt holde øje med dem efterfølgende. Det retter sig mod kontraktarbejde, hvor løbende håndtering ønskes lagt ind i automatiserede processer.",
+    "consideration": "Afklar, hvilke handlinger agenterne må udføre, og hvor jeres egen godkendelse er nødvendig."
+  },
+  "https://www.clearhaus.com": {
+    "sourceHash": "937098b6363c424dfd24984b0c6b4730a85e3c5bb0d545690fc0d17648adcdc7",
+    "explanation": "Clearhaus A/S er en betalingsindløser til e-handel. Indløsning er den del af betalingsforløbet, der håndterer kortbetalingens økonomiske afvikling; beskrivelsen fremhæver også risikostyring og compliance.",
+    "consideration": "Afklar, hvilken betalingsgateway der skal bruges sammen med indløseren, og de samlede omkostninger."
+  },
+  "https://danadresse.dk": {
+    "sourceHash": "7c787977f4bab709354729e49e49b9ea57b47b3be23d57f8f5f01a664398c67d",
+    "explanation": "danadresse.dk leverer danske adressedata via API, blandt andet søgning, autocomplete, adressevask og reverse geocoding. Beskrivelsen fremhæver DAWA-kompatibilitet, så eksisterende adresseintegrationer er et oplagt sted at afprøve løsningen.",
+    "consideration": "Test jeres nuværende DAWA-kald, API-nøgler og databehov, før I ændrer integrationens base-URL."
+  },
+  "https://dataandmore.com/": {
+    "sourceHash": "53a4b29721fafe4bc54997427f0c0ea04c93b578dcaff3d6a4613c5b2c00d71f",
+    "explanation": "dataandmore.com identificerer og sletter GDPR- og sikkerhedsrelateret information i ustrukturerede data. Ustrukturerede data er materiale, der ikke ligger i faste databasefelter, hvilket kan gøre følsomme oplysninger sværere at finde og håndtere.",
+    "consideration": "Afklar, hvilke datakilder der understøttes, og hvordan fund kontrolleres før sletning."
+  },
+  "https://dinero.dk": {
+    "sourceHash": "6fdaa0687dac281f6075222a07c60547a97f63a59f4b407caf6c0989dcfeaa1f",
+    "explanation": "Dinero.dk er et system til regnskab og bogholderi. Bogføring registrerer virksomhedens økonomiske hændelser og danner grundlag for regnskabet; vurder løsningen ud fra jeres daglige rutiner og samarbejdet med bogholder eller revisor.",
+    "consideration": "Gennemgå jeres bogføringsrutiner og behov for samarbejde med bogholder eller revisor."
+  },
+  "https://dreamdata.io": {
+    "sourceHash": "19e1cd415de2823436a764b0e3373d5bbb0728710bcbf80f8e29ff78094b4d5a",
+    "explanation": "Dreamdata.io arbejder med B2B revenue attribution: at forbinde aktiviteter i kunderejsen med den omsætning, de bidrager til. Det er relevant for virksomheder, der vil undersøge sammenhængen mellem marketingindsatser og B2B-salg.",
+    "consideration": "Afklar, hvordan jeres marketing- og salgsdata forbindes, og hvilke tilskrivningsmodeller der bruges."
+  },
+  "https://e-conomic.dk": {
+    "sourceHash": "c561c0fe5cd82063059a3eed3465c1019adfd41f516130cd2192220c201bc042",
+    "explanation": "E-conomic.dk er et system til regnskab og bogholderi. Bogføring registrerer virksomhedens økonomiske hændelser og danner grundlag for regnskabet; vurder løsningen ud fra de rutiner og systemforbindelser, I har brug for.",
+    "consideration": "Undersøg integrationer og afprøv flytning af regnskabsdata sammen med jeres bogholder."
+  },
+  "https://ethnote.dk": {
+    "sourceHash": "901d8bf2595af6f037dde7eb571e2a2c36583a05d2e897618c79dc33713cbb98",
+    "explanation": "Ethnote er en platform til kvalitativ dataanalyse og kodning. Kodning bruges til at organisere materiale efter temaer, så indholdet kan analyseres systematisk frem for kun at blive læst som enkeltstående udsagn.",
+    "consideration": "Afprøv løsningen med jeres materiale og den kodningsmetode, I arbejder efter."
+  },
+  "https://rilanto.com": {
+    "sourceHash": "418966e0e88c46b8515e29c5fc10ab489e9345111edf40126244f1205f46d608",
+    "explanation": "Rilanto Reviews er en platform til kundeanmeldelser, som ifølge beskrivelsen er udviklet og hostet i Danmark. Den præsenteres som et supplement til eksisterende anmeldelsessider, så brugen behøver ikke indebære et fuldt skifte.",
+    "consideration": "Afklar, hvordan anmeldelser indsamles og vises sammen med jeres eksisterende anmeldelseskanaler."
+  },
+  "https://flare.link": {
+    "sourceHash": "de4afd178e9e8d2cfb6ddab419e85fbd4058dec80f5df78c05e4b8d173de9c1e",
+    "explanation": "Flare.link samler videooptagelse, redigering, deling og indlejring på hjemmesider. Beskrivelsen omfatter 4K-optagelse, en tilpasselig afspiller, analytics og API-adgang, så både produktion og brug af video indgår i platformen.",
+    "consideration": "Test optagelse og indlejring i jeres arbejdsgang, og afklar behov for analyse og branding."
+  },
+  "https://fenerum.com": {
+    "sourceHash": "3d298b1d110317764ff7026f6e9cc37c154797d243786951451c55d53bf016af",
+    "explanation": "Fenerum.com beskrives som et produkt til SaaS-økonomi. Den korte produktbeskrivelse afgrænser ikke funktionerne, så afklar hvilke opgaver inden for abonnementer og økonomi løsningen faktisk understøtter.",
+    "consideration": "Bed om en gennemgang af netop de abonnements- og økonomiopgaver, I vil samle."
+  },
+  "https://www.fmcgsolutions.dk": {
+    "sourceHash": "b9d3f6879e591b1006cce0586dc89524bc161fc351c194f39501cfc62723e684",
+    "explanation": "fmcgProducts PIM organiserer produktstamdata og sender dem videre til interne og eksterne systemer. GS1, Tradesolution EPD, Dabas og Matinfo er nævnt som modtagere, hvilket gør datadistribution til et centralt vurderingspunkt.",
+    "consideration": "Kontroller, at jeres datamodeller, obligatoriske felter og modtagersystemer dækkes."
+  },
+  "https://www.foundbase.dk": {
+    "sourceHash": "4d2b7d2fca57859cb3ddf64cc2f280b436905a8b63c0e6738a9dfecaf39046b9",
+    "explanation": "Foundbase beskrives som en samlet platform til startups og mindre virksomheder. Den korte produktbeskrivelse oplyser ikke, hvilke opgaver platformen dækker, så begynd med at afklare de moduler, jeres virksomhed har brug for.",
+    "consideration": "Bed om at få vist jeres vigtigste arbejdsgange, og afklar hvad der fortsat kræver andre værktøjer."
+  },
+  "https://frem.sh": {
+    "sourceHash": "252bc22d929f4dc1297b3ab28165ef58562b0100b798131117932815751c0539",
+    "explanation": "fremforge kombinerer Git med CI/CD og beskrives som EU-suveræn. CI/CD handler om at automatisere bygning, kontrol og levering af kode, så produktet er relevant at undersøge som en del af udviklingsteamets infrastruktur.",
+    "consideration": "Afklar placering af kode og builds, samt hvordan jeres pipelines og repositories kan flyttes."
+  },
+  "https://growpanel.io": {
+    "sourceHash": "1b1deddabd25f0f7ef8699788b2a742d2980b8464938b2ae78a70e7d2c31889f",
+    "explanation": "GrowPanel.io analyserer abonnementsforretninger. Subscription analytics handler om at følge udviklingen i abonnementer, så ændringer i kunder og løbende omsætning kan forstås i sammenhæng.",
+    "consideration": "Afklar datakilder og definitioner af de nøgletal, I allerede rapporterer på."
+  },
+  "https://www.henosia.com": {
+    "sourceHash": "d74f900b58f8648287f0a5b6e5ee0a009aadd01b4735e98dab946474ac80c194",
+    "explanation": "Henosia.com bruger AI til at bygge interne apps, også for personer uden kodeerfaring. Det er relevant at undersøge, hvis virksomhedens interne arbejdsgange kræver et værktøj, som de eksisterende systemer ikke dækker.",
+    "consideration": "Afprøv forbindelsen til jeres data, og afklar adgangsstyring og vedligeholdelse af den færdige app."
+  },
+  "https://herodesk.io": {
+    "sourceHash": "ec7158b93aeab02abe2da1cbdb982b0b8ddd37bac9aeb5d3258408d84cdb584b",
+    "explanation": "Herodesk.io er et værktøj til kundesupport og helpdesk. En helpdesk organiserer arbejdet med kundehenvendelser, så teamet kan holde styr på, hvad der skal besvares og følges op på.",
+    "consideration": "Test jeres vigtigste supportkanaler og arbejdsgange med de medarbejdere, der skal bruge systemet."
+  },
+  "https://idguard.dk": {
+    "sourceHash": "6db79aa2f2b55390ea8273bf0d3f13891e70427bdc22d78f038f2909ece62cd1",
+    "explanation": "IDguard.dk arbejder med aldersverifikation og identitetsbekræftelse. Vurder løsningen ud fra det adgangs- eller købsforløb, hvor en brugers alder eller identitet skal kontrolleres.",
+    "consideration": "Afklar kontrolmetoder, brugeroplevelse og hvilke identitetsdata der gemmes efter kontrollen."
+  },
+  "https://www.inmobile.com": {
+    "sourceHash": "3503d6052cd761860acbe7eeab713dfa38a9493b807914384bd0c9db68d5d7f7",
+    "explanation": "inMobile tilbyder SMS, RCS og e-mail til kommunikation med modtagere. De tre kanaler giver forskellige muligheder for beskeder, så valg af kanal bør tage udgangspunkt i jeres målgruppe og beskedtype.",
+    "consideration": "Afklar kanal- og landedækning samt håndtering af samtykke og afmelding i jeres arbejdsgang."
+  },
+  "https://gatewayapi.com": {
+    "sourceHash": "6b7ba0ae72754e01d1c56f5cb7411be6d75332ffe7e735c8241ea15244a771d0",
+    "explanation": "GatewayAPI tilbyder SMS, RCS og e-mail på en global CPaaS-platform. CPaaS betyder, at kommunikationstjenester kan indgå i egne applikationer, frem for at beskeder kun sendes fra et selvstændigt værktøj.",
+    "consideration": "Test integrationen og leveringsrapporterne for de kanaler og lande, I faktisk bruger."
+  },
+  "https://iteras.com": {
+    "sourceHash": "1283b96485431319e290f8646d185f8a2c3363a836482e34f131100c98ef57d1",
+    "explanation": "Iteras samler kundeabonnementer, fakturering og betalinger. Beskrivelsen omfatter selvbetjeningsportaler og forbindelser til nordiske betalingsudbydere, så både den interne administration og kundens egen adgang er relevante at afprøve.",
+    "consideration": "Gennemgå ændringer af abonnementer, selvbetjening og de betalingsudbydere, I er afhængige af."
+  },
+  "https://odagroup.dk/pharma": {
+    "sourceHash": "f3cff200aaedc750e068d32febc37ebeb939ed382608faf8892b4a0e6d19f5ab",
+    "explanation": "Jarvis er en AI-companion til frontline-teams i pharma, der udvider eksisterende CRM-systemer. Den arbejder med mødeforberedelse, debriefs, indsigter, prioritering og opfølgning, så den bør vurderes i sammenhæng med det nuværende CRM.",
+    "consideration": "Afklar CRM-forbindelsen, datagrundlaget og krav til godkendelse af AI-genererede indsigter."
+  },
+  "https://holdsport.dk": {
+    "sourceHash": "86b146f3b7a09b385af2946c499b42ffb549ee26be24694df562bf61af632967",
+    "explanation": "Holdsport.dk samler kontingentopkrævning, kommunikation og medlemsadministration online. Produktet er relevant at undersøge for en klub eller forening, der ønsker at forbinde det administrative arbejde med kontakten til medlemmerne.",
+    "consideration": "Afprøv opkrævning og medlemsforløb med jeres forskellige medlemstyper og aktiviteter."
+  },
+  "https://mercura.io": {
+    "sourceHash": "f173efc7aaf43eb4c65c9dd437f7de04e5c9a8292385d01458fed576ea26f05f",
+    "explanation": "Mercura CPQ understøtter konfiguration, prisberegning og tilbud på komplekse produkter. Et CPQ-system er relevant, når tilbud afhænger af kombinationer og valgmuligheder, som gør manuel prissætning og tilbudsarbejde besværligt.",
+    "consideration": "Test jeres mest krævende produktkombinationer, prisregler og tilbudsformater."
+  },
+  "https://kala.app": {
+    "sourceHash": "68e9dad5574f15a1213ec2b1fb50bae5d583236a46eed5dd0d5d1b60ba0fde44",
+    "explanation": "Kala samler overblik over tid, medarbejdere og projekter med integreret kvalitetssikring. Beskrivelsen nævner forbindelser til ERP- og lønsystemer, så sammenhængen med virksomhedens øvrige administration er central at afprøve.",
+    "consideration": "Afklar, hvilke ERP- og lønsystemer der dækkes, og hvordan registreringer overføres."
+  },
+  "https://landingroom.com/": {
+    "sourceHash": "3e3e1a854d6f63c5e1ba00a7a2dd7ec2217d70df472097ce349eccfaf575d758",
+    "explanation": "LandingRoom.com samler karrieresider, ansøgninger, interviews og tilbud i et rekrutteringssystem. Et personligt kandidatrum følger kandidaten gennem forløbet frem til første arbejdsdag, så kandidatoplevelsen er en central del af produktet.",
+    "consideration": "Afprøv et helt rekrutteringsforløb fra ansøgning til første arbejdsdag med jeres kommunikation."
+  },
+  "https://mikrobageri.dk": {
+    "sourceHash": "91bb9ddf1377ac2f81196eb5ea3ffba8005267f626ffdbb78850bce169c498f1",
+    "explanation": "Mikrobageri.dk er et bestillingssystem til mikrobagerier med online bestilling og bagekalender. Det forbinder kundernes bestillinger med overblikket over bagningen og bør vurderes ud fra bageriets konkrete produktion og salg.",
+    "consideration": "Test bestillingsfrister, produktudvalg og hvordan ordrer passer ind i jeres bagekalender."
+  },
+  "https://morningscore.io": {
+    "sourceHash": "b850d75a1a591e7561c66893019c25f328ba9a5984ffb5857e2b7bd968962408",
+    "explanation": "Morningscore.io arbejder med SEO- og GEO-tracking. SEO handler om synlighed i søgemaskiner, mens GEO handler om synlighed i AI-genererede svar; afklar hvilke målinger produktet tilbyder for hver del.",
+    "consideration": "Afklar, hvilke søgetjenester og markeder der måles, og hvordan resultaterne beregnes."
+  },
+  "https://www.nextsign.dk/": {
+    "sourceHash": "8498705ed30adf6ce6026b621a6bb9f2a265e0c35a01eb44bfbe929b675ea6cd",
+    "explanation": "NextSign.dk er en digital underskriftsløsning til virksomheder og organisationer. Digital underskrift indgår i godkendelse af dokumenter, og løsningen bør vurderes ud fra jeres dokumenttyper og krav til underskrivernes identifikation.",
+    "consideration": "Afprøv underskriftsforløbet med jeres dokumenter og krav til identifikation af underskrivere."
+  },
+  "https://www.netsite.dk/": {
+    "sourceHash": "aea7604ff6f28071349f36595af061c371dbb53da6835bd41978d35516bb6a2c",
+    "explanation": "Netsite tilbyder domæner, DNS, e-mail og webhotel-hosting i Danmark med dansk support. Det gør produktet relevant at undersøge, hvis I vil samle flere af hjemmesidens grundlæggende tjenester hos samme leverandør.",
+    "consideration": "Afklar flytning af domæner og mail samt de tekniske krav, jeres hjemmeside stiller."
+  },
+  "https://nordicscreen.com": {
+    "sourceHash": "e7a89a81b3c3bc1ad643d53c33392c7eee050848fd2440948dccdf8d2f9773d7",
+    "explanation": "NordicScreen styrer skærme og indhold gennem et cloud-baseret CMS. Platformen bruges til at planlægge, afspille og distribuere visuelt indhold på tværs af lokationer, eksempelvis hvor flere skærme skal administreres samlet.",
+    "consideration": "Afprøv jeres skærme og afspillere, og afklar hvordan indhold opdateres ved forbindelsesproblemer."
+  },
+  "https://pagevitals.com": {
+    "sourceHash": "cfd3d180ef1a00143cca350ad9dde8b73978831acfd8adc88349c61d7ad01e26",
+    "explanation": "PageVitals.com arbejder med performance monitoring: at følge, hvordan en løsning præsterer over tid. Afklar hvilke målinger tjenesten leverer, og om de hjælper jer med at opdage de problemer, I vil reagere på.",
+    "consideration": "Afklar, hvilke dele af jeres løsning der måles, og hvordan I opdager ændringer i ydeevnen."
+  },
+  "https://pingpuffin.com": {
+    "sourceHash": "7b5c4a7c88583f150360c345ae9dc410a2f1ac7ac5339bd6e41c3f1710b21ca5",
+    "explanation": "PingPuffin.com overvåger oppetid og sender alarmer. Oppetid handler om, hvorvidt en tjeneste er tilgængelig, så vurder kontrolhyppighed og hvordan de ansvarlige får besked om et problem.",
+    "consideration": "Afklar kontrolhyppighed, alarmkanaler og hvordan planlagt nedetid håndteres."
+  },
+  "https://plecto.com": {
+    "sourceHash": "236cb0ba7142eb5e55c174b719e3535bac3c2e2e7db310733fcc91603555105e",
+    "explanation": "Plecto.com kombinerer performance management og dashboards. Et dashboard samler nøgletal i en oversigt, så teamet kan følge resultater og bruge dem i arbejdet med mål og opfølgning.",
+    "consideration": "Test jeres datakilder og nøgletalsdefinitioner, og afklar hvem der må se hvilke resultater."
+  },
+  "https://prowi.io": {
+    "sourceHash": "be890cfceb1fdf9c4a6fba54730c3e3404479f87b9df3ed24ee0fde1ca9ed654",
+    "explanation": "Prowi håndterer salgsprovision og viser sælgere deres provision i realtid via en mobilapp. Beskrivelsen fremhæver sammenhængen mellem lukkede salg, den synlige belønning og gamification i salgsteamet.",
+    "consideration": "Afprøv jeres provisionsregler, inklusive rettelser og annullerede salg, før I tager løsningen i brug."
+  },
+  "https://www.proprty.ai": {
+    "sourceHash": "1e06bbc8d4f0c2ebb37e201df2371fa285c710f18fb131242f14db7baffea14d",
+    "explanation": "proprty.ai arbejder med tilstandsvurderinger, vedligeholdelsesplaner og CO₂-reduktion. En vedligeholdelsesplan forbinder vurderingen af en ejendoms tilstand med de indsatser, der skal prioriteres og gennemføres.",
+    "consideration": "Afklar, hvilke input vurderingerne kræver, og hvordan vedligeholdelse og CO₂-effekt beregnes."
+  },
+  "https://www.quickpay.net": {
+    "sourceHash": "5083603a7211f297862a643c0e8d48c1418493557f302925af0d6950f44f2876",
+    "explanation": "Quickpay beskrives som en betalingsløsning. Vurder det ud fra jeres online betalingsforløb, og afklar hvordan løsningen hænger sammen med betalingsmetoder, indløsningsaftale og webshop.",
+    "consideration": "Afklar understøttede betalingsmetoder, indløsningsaftale og forbindelsen til jeres webshop."
+  },
+  "https://resos.com": {
+    "sourceHash": "ddf85047447a1a34ee06addfe65988289df64aaa27a03aef1b17ebdadd7f52d6",
+    "explanation": "Resos.com er et reservations- og bookingsystem til restauranter. Det retter sig mod arbejdet med bordreservationer og bør vurderes ud fra restaurantens kapacitet, åbningstider og måde at modtage gæster på.",
+    "consideration": "Afprøv reservationer med jeres bordopsætning, åbningstider og regler for afbestilling."
+  },
+  "https://soge.dk": {
+    "sourceHash": "27d01ad69ffcfd092e9baf7a41a535d844821e63f9f2b23b81d62c82935f72f9",
+    "explanation": "Soge.dk giver adgang til køretøjsdata via søgning og API. Et køretøj kan slås op med nummerplade eller stelnummer, og beskrivelsen omfatter specifikationer, syn og historik fra DMR-registeret.",
+    "consideration": "Kontroller, at datadækning og historik svarer til de oplysninger, jeres arbejdsgang kræver."
+  },
+  "https://seo.ai": {
+    "sourceHash": "bf2aade1cb1bc933925ef999b678ecfe2de32296b3838e198787213cc04e1adc",
+    "explanation": "SEO.ai automatiserer indholdsproduktion. Vurder både arbejdsforløbet og kvaliteten af det færdige indhold: automatisering fjerner ikke behovet for at kontrollere fakta og relevans før publicering.",
+    "consideration": "Afklar sprog og redigeringsmuligheder, og planlæg faglig kontrol af tekster før publicering."
+  },
+  "https://sleeknote.com": {
+    "sourceHash": "addb93406f398bc42ea29278337bb45af63f0f977ba8dc9fc17b30d836455509",
+    "explanation": "Sleeknote.com arbejder med e-mailmarketing og popups. Produktet er relevant at undersøge, når kommunikation via e-mail og elementer på hjemmesiden skal indgå i samme marketingarbejde.",
+    "consideration": "Afprøv tilmeldingsforløb og forbindelsen til jeres øvrige e-mailværktøjer."
+  },
+  "https://smtp.dk/": {
+    "sourceHash": "1b12109d7b82102ecf75b37e5ffc89e743a37747fe8e1e0f644836e63b9bb1e2",
+    "explanation": "SMTP.dk er et produkt til levering af transaktionsmails. Det er beskeder, der knytter sig til en handling eller hændelse i et system, og løsningen bør vurderes ud fra jeres krav til den type udsendelser.",
+    "consideration": "Test jeres afsenderdomæne, forventede mailmængde og mulighederne for at følge leveringen."
+  },
+  "https://www.sumoshop.dk": {
+    "sourceHash": "76fe5cd4f818900f1f577bed5aba1ad760fb08ca93b5ea9bd1aab1e24270c4d6",
+    "explanation": "Sumoshop er en e-commerce-platform med hostede webshopløsninger. Hosted betyder, at hosting indgår i platformen; afklar hvilke driftsopgaver leverandøren håndterer, og hvilke I selv står for.",
+    "consideration": "Afklar betalings- og fragtforbindelser, produktdata og mulighederne for at flytte webshoppen senere."
+  },
+  "https://thorcommerce.io/": {
+    "sourceHash": "09d108840cd158b341f4e43116fd9c1bbd0b1ba7b566cf85eca0d81f6063b4b6",
+    "explanation": "Thor Commerce er en headless e-commerce-platform til B2B og direkte forbrugersalg. Produktkatalog, kundespecifikke priser, lager, checkout og ordrer tilgås via GraphQL-API'er, så salgsoplevelsen kan bygges adskilt fra handelsplatformen.",
+    "consideration": "Vurder udviklingsbehovet til jeres frontend, og test API'erne med jeres pris- og ordrelogik."
+  },
+  "https://www.tiimoapp.com": {
+    "sourceHash": "b46d74272c74900ca77d2c24000e09ea218ad8f24c89f63f28c01f48a4797d70",
+    "explanation": "Tiimo er en visuel dagsplanlægger med AI til opgaver, deadlines og fokus. Den er udviklet med afsæt i neurodivergente behov, herunder ADHD og autisme, og retter sig mod støtte til planlægning på arbejde og i hverdagen.",
+    "consideration": "Afprøv planlægningen i din egen hverdag, og vurder hvilke visuelle hjælpemidler der fungerer for dig."
+  },
+  "https://timelog.com": {
+    "sourceHash": "cf0b5d7fa3412dcc7b28c472f64def84e01d1289e72fce25fbe127bdc10e074f",
+    "explanation": "Timelog.com kombinerer tidsregistrering, ressourcestyring og fakturering. De tre områder forbinder registreret arbejde med teamets kapacitet og den efterfølgende afregning til kunder.",
+    "consideration": "Afprøv forløbet fra planlagt arbejde til registrerede timer og faktura med jeres kundeaftaler."
+  },
+  "https://hourtick.com": {
+    "sourceHash": "23fe6e5a63725c62c4cde3861ee7e1717c701bf465e2b5894eb6e9ac86088cc2",
+    "explanation": "Hourtick.com samler tidsregistrering, opgaver og teamchat til mennesker og AI-agenter. Beskrivelsen fremhæver en prismodel uden betaling pr. bruger, så både arbejdsflow og model for adgang er relevante at undersøge.",
+    "consideration": "Afklar agentadgang og den samlede prismodel for netop jeres team og brug."
+  },
+  "https://ubivox.dk/": {
+    "sourceHash": "ae1a9430c670f9d511e643b900f42cfba4ffc4bb024714b538bbfaee5f4277a5",
+    "explanation": "Ubivox.dk er et værktøj til udsendelse af nyhedsbreve. Vurder det ud fra jeres indhold og modtagerlister, og afklar mulighederne for redigering, segmentering og levering.",
+    "consideration": "Test nyhedsbrevets layout, håndtering af modtagerlister og afmelding med jeres eget indhold."
+  },
+  "https://umbraco.com/": {
+    "sourceHash": "8f9e26661e498f5d08654bd84750fdbb7acf3877011c9ed3d44bc0f332126ae0",
+    "explanation": "Umbraco er et open source CMS på .NET med et økosystem af gratis og betalte udvidelser. Det er relevant at undersøge for teams, der vil bygge og vedligeholde indholdssider med udgangspunkt i .NET.",
+    "consideration": "Afklar hosting og udviklingsansvar samt de udvidelser, jeres redaktører og hjemmeside kræver."
+  },
+  "https://updatemate.ai": {
+    "sourceHash": "6570d890c675ad2cc9a5d63ce4ad22e97b760eb137d29f615b7c19e494468581",
+    "explanation": "Updatemate.ai arbejder med automatisering og integrationer. Integrationer forbinder systemer, mens automatisering får trin i en arbejdsgang til at ske uden, at nogen udfører dem manuelt hver gang.",
+    "consideration": "Afprøv de konkrete systemforbindelser, og afklar håndtering af fejl og genkørsel."
+  },
+  "https://webcontent.app": {
+    "sourceHash": "386ea0f73afbc7047763aec318356b72e6803b6c1ef682ece330429b5f2135eb",
+    "explanation": "WebContent er en platform til arbejdet med UGC-annoncer. UGC betegner indhold skabt af brugere eller creators, og platformen beskrives som et sted til at søge, skabe og udføre denne type annoncearbejde.",
+    "consideration": "Afklar produktionsforløb, brugsrettigheder og hvordan indhold leveres til jeres annoncekanaler."
+  },
+  "https://webhook.site": {
+    "sourceHash": "5502c5c0963b5579175961195a59a096614f591ab86f393d6946a14d4e8e45d6",
+    "explanation": "Webhook.site hjælper apps med at udveksle information og indgå i workflows. En webhook sender en besked, når en hændelse sker i et system, så et andet system kan reagere på den.",
+    "consideration": "Test jeres webhook-format, og afklar opbevaring af de data, I sender til tjenesten."
+  },
+  "https://www.weply.chat/da": {
+    "sourceHash": "7cb79d964ddf066d0bce426ca5293b1da8fb8d1823fda323cede5dc588e00f8f",
+    "explanation": "Weply er en livechat-løsning med fokus på leadgenerering døgnet rundt. Et lead er en mulig kunde, så vurderingen handler både om samtalerne på hjemmesiden og om at få relevante henvendelser videre til salgsarbejdet.",
+    "consideration": "Afklar, hvordan samtaler håndteres, og hvordan kvalificerede leads gives videre til jeres team."
+  },
+  "https://workfeed.io": {
+    "sourceHash": "771a82ede04e4c0350f1ba2c3e67eb68a76f87d6e6de1456565f051286bf6a75",
+    "explanation": "Workfeed samler planlægning, tidsregistrering og medarbejderadministration. Vurder sammenhængen mellem arbejdstid og HR-opgaver, og afprøv løsningen med de vagt- og arbejdstidsregler, I bruger.",
+    "consideration": "Afprøv jeres vagt- og arbejdstidsregler samt overførsel til de øvrige administrative systemer."
+  },
+  "https://ziik.io": {
+    "sourceHash": "8cfd9a649122c1348be8a8aa5acd8a7e2853fd4f3bf19019f468c441dc83925a",
+    "explanation": "Ziik er en platform til intern kommunikation og informationsdeling, beskrevet som en samlet tilgang til intranetarbejde. Vurder den ud fra, hvordan medarbejderne skal finde information og holde kontakt med organisationen.",
+    "consideration": "Afprøv adgangen for forskellige medarbejdergrupper, og vurder hvordan eksisterende indhold flyttes."
+  },
+  "https://epay.dk": {
+    "sourceHash": "97cf3d8571a4b0adf95f292c3340c50779ebac9c6d02d14e3a15220352ef242a",
+    "explanation": "ePay Payment Solutions arbejder med online betaling. Vurder løsningen ud fra hele forløbet fra kundens betaling til jeres opfølgning, og afklar hvilke betalingsmetoder og integrationer der understøttes.",
+    "consideration": "Test hele betalingsforløbet i jeres løsning, og afklar metoder, aftaler og samlede gebyrer."
+  },
+  "https://www.uniqkey.eu/": {
+    "sourceHash": "1d4a2e6fb6c542d5aa2e9c3d563f35870020aa0e1c55c532554e3b4ce2cea48f",
+    "explanation": "Uniqkey er et produkt til adgangskode- og adgangsstyring for virksomheder. Vurder både medarbejdernes daglige adgang og administrationen, når en medarbejder begynder, skifter rolle eller forlader virksomheden.",
+    "consideration": "Afprøv onboarding og lukning af medarbejderadgang samt de enheder og tjenester, I bruger."
+  },
+  "https://dynamicweb.dk": {
+    "sourceHash": "7913a012ab3f35358f79411917c4a051bb613dbe9019f538bf0e4681d287538a",
+    "explanation": "Dynamicweb kombinerer CMS, e-commerce og PIM med fokus på B2B-salg. CMS håndterer indhold, mens PIM samler produktinformation; de to områder knyttes her til virksomhedens online handel.",
+    "consideration": "Test jeres B2B-priser, produktdatamodel og forbindelse til de systemer, der styrer salget."
+  },
+  "https://www.velatir.com": {
+    "sourceHash": "7d22f0fd4b037d66236fa797aa57e221849a715797fcd6f7fd91fe193e827d77",
+    "explanation": "Velatir godkender, logger og overvåger AI-brug på tværs af en organisation. Platformen fokuserer på sporbarhed og kontrol over AI-handlinger og beskrives som baseret på EU-infrastruktur.",
+    "consideration": "Afklar, hvilke AI-værktøjer der kan omfattes, og hvor i arbejdsgangen godkendelser skal placeres."
+  },
+  "https://www.contractbook.com": {
+    "sourceHash": "a4b2f34d777229f5ae1b8b245eab7616890c25e75f87f801414195caf1b0c5f3",
+    "explanation": "Contractbook samler administration, opfølgning og underskrift af kontrakter. Vurder løsningen ud fra hele kontraktens forløb, både når aftalen indgås og når den skal findes og følges op på senere.",
+    "consideration": "Afprøv jeres kontraktforløb fra kladde til underskrift og senere opfølgning."
+  },
+  "https://www.theroomdisplay.com": {
+    "sourceHash": "5161b6014bb31016f9e3572087c93626e8fbd4e5ba2633d46df7aab203283ae2",
+    "explanation": "The Room Display viser, om et møderum er optaget eller ledigt, på et digitalt skilt. Produktbeskrivelsen nævner brug med iPad og en model med engangskøb; bekræft aktuelle vilkår hos leverandøren.",
+    "consideration": "Afklar kalenderforbindelse, nødvendigt iPad-udstyr og hvordan skiltet ajourføres."
+  },
+  "https://klubmodul.dk/": {
+    "sourceHash": "23cbdd789e0ff6ec7b7e9023812d2425c78642ceb6c04d47f1818553e2c30a0e",
+    "explanation": "Klubmodul samler medlemsadministration, kontingenter, aktiviteter, tilmelding, kommunikation og klubwebsite. Det er relevant at undersøge, når en forening vil forbinde medlemsforløb og aktiviteter med det administrative arbejde.",
+    "consideration": "Afprøv holdtilmelding og opkrævning med jeres medlemstyper og foreningens regler."
+  },
+  "https://effihub.com/": {
+    "sourceHash": "ba63566aa151dd2833020daaf1555e0759f7660c102be53420148ddba156f17f",
+    "explanation": "Effihub er en PSA-løsning til bureauer og konsulenthuse. Den forbinder tidsregistrering, projekt- og ressourceplanlægning, klippekort, fakturering og rapportering, så kundeopgaver kan følges fra plan til afregning.",
+    "consideration": "Test jeres aftaletyper, klippekort og faktureringsrutiner på et konkret kundeprojekt."
+  },
+  "https://www.keenpartner.com": {
+    "sourceHash": "5c1f6e525f334f3c27fa2c197cba50e2f8f8c2b3ec9e86d35bc8474163b02ff0",
+    "explanation": "Keen er PRM-software til B2B-partnerskaber, der skaber leads. PRM betyder partner relationship management og handler om at organisere relationer til partnere og deres bidrag til salgsarbejdet.",
+    "consideration": "Afklar, hvordan partnerleads registreres, fordeles og følges gennem jeres salgsproces."
+  },
+  "https://elmah.io": {
+    "sourceHash": "f5483c51d6510b3647ecca6128e3b2675b98aed056f7dc6ff3e978e156d39eae",
+    "explanation": "elmah.io overvåger .NET-applikationer for fejl og samler dem i centrale logs. Det giver udviklere et sted at undersøge problemer på tværs af applikationen frem for kun at lede i lokale logfiler.",
+    "consideration": "Test fejllogning i jeres .NET-miljø, og afklar hvilke oplysninger der sendes i logs."
+  },
+  "https://www.devcompendium.com/": {
+    "sourceHash": "77a9f06bd6101a4a6fe9952f1b6992ae0d64d37e96fb42c8cfb66eab9626c4ed",
+    "explanation": "DevCompendium gemmer prompts, kommandoer og kodestumper med mulighed for deling i et team eller offentligt. Vurder det som fælles opsamling af materiale, der skal kunne findes og genbruges i udviklingsarbejdet.",
+    "consideration": "Afklar delingsrettigheder, og undgå at gemme hemmeligheder eller persondata i offentligt materiale."
+  },
+  "https://wordpress.org/plugins/lynbro-cookie-consent/": {
+    "sourceHash": "7b6a20a7a20a706008ab15ac2492e555c838bdf5c38958cabd7d302ba35ea2c6",
+    "explanation": "Lynbro Cookie Consent er et flersproget samtykkebanner til WordPress med Google Consent Mode v2. Beskrivelsen omfatter cookie-kategorier, scanning og samtykkelogs; den samlede samtykkeopsætning skal afprøves på jeres eget website.",
+    "consideration": "Test, at scripts faktisk håndteres efter samtykkevalget, og gennemgå opsætningen på jeres eget website."
+  },
+  "https://loenradar.dk": {
+    "sourceHash": "7a644521320037940c2bfdc413fb83d962aceaf51f8e382ba4fd85a005eb2c71",
+    "explanation": "LønRadar er en platform til lønbenchmarking og lønberegning. Benchmarking sammenligner en løn med et datagrundlag, så relevansen afhænger af, om de sammenlignede roller, erfaringer og områder passer til dit spørgsmål.",
+    "consideration": "Afklar datakilder og dækning af de jobtyper, erfaringer og områder, du sammenligner."
+  },
+  "https://www.heysender.com": {
+    "sourceHash": "b11af3bcc09148aa64ab14a22426929277189114d1dbc3fd397576840fa9521d",
+    "explanation": "Heysender tilbyder e-mail-API og SMTP til transaktionsmails. Transaktionsmails knytter sig til hændelser i en applikation, så løsningen bør afprøves med jeres konkrete beskedtyper og krav til levering.",
+    "consideration": "Test API eller SMTP med jeres applikation, afsenderdomæner og forventede udsendelsesmængde."
+  },
+  "https://www.heyloyalty.com": {
+    "sourceHash": "1d4e51561f10ff00242876d419e97a251b7ce80bd0666a0e74217eacec489a20",
+    "explanation": "Heyloyalty kombinerer marketing automation med fokus på kundeloyalitet. Platformen samler data til personaliseret kommunikation, der skal hjælpe med at få gæster og kunder til at vende tilbage.",
+    "consideration": "Afklar datakilder og afprøv et konkret loyalitetsforløb med jeres egne kundesegmenter."
+  },
+  "https://www.getconnie.com": {
+    "sourceHash": "66e9af92e13492c6885a40bfe57e4e2ed0bee02bc78c52e8f0c42f57c3521104",
+    "explanation": "Connie er et dokumentværktøj til kreative, hvor dokumenter kan oprettes, sendes og underskrives. Vurder det ud fra de aftaler og dokumentforløb, der indgår i jeres produktioner og projekter.",
+    "consideration": "Afprøv de dokumenttyper og underskriftsforløb, jeres produktioner kræver."
+  },
+  "https://www.returnflows.com": {
+    "sourceHash": "690a4c1e3b495c46a45e2f0d4bceb039b442e0860491d08992ae0bc8899b5a89",
+    "explanation": "Returnflows er en platform til returhåndtering i e-commerce. Vurder den ud fra kundens returforløb og virksomhedens arbejde med at modtage varen, følge sagen og afslutte returneringen.",
+    "consideration": "Test jeres returregler og forbindelsen til webshop, fragt og tilbagebetaling."
+  },
+  "https://pcrypt.com/": {
+    "sourceHash": "fee44cd5b153b81b44f71c3d62136c7f061874bb7c83cddd94b15a59ac31fd9f",
+    "explanation": "Pcrypt er en password manager, der krypterer adgangskoder lokalt på brugerens enhed før lagring eller overførsel. Den understøtter deling mellem brugere og teams og beskrives med mulighed for både cloud og lokal installation.",
+    "consideration": "Afklar driftsansvar, adgangsgendannelse og de delingsregler, jeres team har brug for."
+  },
+  "https://yulsn.com": {
+    "sourceHash": "5509bfd2ce0d2a84ecbabde0092f228149b2cfcec1dc9eaa511c1237595a5922",
+    "explanation": "Yulsn Marketing Cloud samler e-mailmarketing, automatisering og loyalitetsprogrammer. Beskrivelsen retter sig især mod virksomheder med store mailmængder og behov for at tilpasse automatiseringen til egne processer.",
+    "consideration": "Afprøv et af jeres mest krævende mailforløb, og afklar tilpasning og kapacitet."
+  },
+  "https://kontolink.com": {
+    "sourceHash": "722bdae8f35323571893ff1d40fd55e385f6544e1ac61703261078314647c8c0",
+    "explanation": "Kontolink bruger bankdata og bilagskilder til at automatisere bogføring for små og mellemstore virksomheder. Beskrivelsen nævner PSD2-adgang og blandt andet e-mail som bilagskilde, så datatilgangen er central for arbejdsgangen.",
+    "consideration": "Afklar bank- og regnskabsforbindelser, og test hvordan bilag matches og godkendes."
+  },
+  "https://avallone.com": {
+    "sourceHash": "428d192ac342be852bdb409cefebfc7028e6eb810dc22d362b2baf74e21c0e46",
+    "explanation": "Avallone arbejder med automatisering af KYC-compliance. KYC betyder at kende sin kunde og omfatter kontrol af kunderelationer; den konkrete dækning af kontrol og dokumentation bør afklares med leverandøren.",
+    "consideration": "Gennemgå jeres KYC-forløb, datakilder og behov for dokumentation og manuel kontrol."
+  },
+  "https://cvrintel.dk": {
+    "sourceHash": "359132b8c70706169eee7c18912df37c07678438c3c0a3467d9d22c6253dae4d",
+    "explanation": "CVR Intel samler virksomhedsdata, AI og leads. Et lead er en mulig kunde, så vurder både datagrundlaget og hvordan oplysningerne hjælper jer med at finde relevante virksomheder til salgsarbejdet.",
+    "consideration": "Afklar datakilder, opdateringshyppighed og hvordan leads passer til jeres målgruppe."
+  },
+  "https://zylinc.com": {
+    "sourceHash": "be89296d8e8c59a44746c8c9f182afa336b91265adb0ca63e103916f37327412",
+    "explanation": "Zylinc.com er en omstillings- og kontaktcenterløsning. Omstilling handler om at få henvendelser videre til den rette modtager; afklar også hvilke kontaktkanaler og kundeserviceforløb løsningen understøtter.",
+    "consideration": "Afprøv jeres opkaldsflow, og afklar forbindelsen til telefoni og øvrige kundesystemer."
+  },
+  "https://www.dixa.com": {
+    "sourceHash": "5cf588dd31b64b43d403576c7d332ac81a2d594af8601034bff4d31c1c26111d",
+    "explanation": "Dixa beskrives som en agentic AI-platform til kundeservice. Det gør den relevant at undersøge, når AI-agenter skal indgå i håndteringen af kundehenvendelser og samarbejde med det øvrige supportarbejde.",
+    "consideration": "Test overdragelse til medarbejdere, og afklar hvilke svar og handlinger AI-agenterne må udføre."
+  },
+  "https://www.shup.dk": {
+    "sourceHash": "2d74539a343de47ffe3c9dc534914f8b5bccf8f83ed1add93fba9e626b1158d6",
+    "explanation": "SHUP er en hosted e-commerce-platform, beskrevet som enkel. Hosting indgår i platformen, så vurderingen bør omfatte både webshoparbejdet og fordelingen af ansvar for den tekniske drift.",
+    "consideration": "Test produktopsætning og checkout, og afklar hvilke betalings- og fragtforbindelser der findes."
+  },
+  "https://www.shoporama.dk": {
+    "sourceHash": "79c24459c6ece58066b15eac1989e69c135be204904d780d5dc2678233288f05",
+    "explanation": "Shoporama er en webshop-platform med dansk support og et community omkring produktet. Beskrivelsen omfatter værktøjer til SEO, markedsføring og ordrer, så både salg og den daglige webshopdrift er relevante at undersøge.",
+    "consideration": "Afprøv jeres produktdata, ordreflow og de forbindelser, webshoppen skal have til andre systemer."
+  },
+  "https://github.com/syv-ai/plapre": {
+    "sourceHash": "8d344457af0b0af7dba2852fadfa9a80a724495f01e327a48c1a0b75a70cc57a",
+    "explanation": "Plapre er open source tekst-til-tale på dansk med stemmekloning. Det kan køres lokalt eller i egen infrastruktur, hvilket gør placering af talegenereringen til et konkret valg i jeres opsætning.",
+    "consideration": "Test udtale og lydkvalitet, og afklar rettigheder til de stemmer, I vil bruge."
+  },
+  "https://pawnote.dk": {
+    "sourceHash": "22ed8622a80368a06dc263e9a7805c3d12d51e4f5d7ac4a9fdd9748f61d4ffee",
+    "explanation": "PawNote kombinerer booking og klinik-CRM til dyreterapeuter og mindre dyreklinikker. CRM organiserer arbejdet med kunder, så løsningen forbinder tidsbestilling med klinikkens kundeadministration.",
+    "consideration": "Afprøv jeres aftaletyper og kundeoplysninger, og vurder hvordan eksisterende data kan flyttes."
+  },
+  "https://www.coherta.com/da": {
+    "sourceHash": "daf8b6624565091efa2e79a1bb5d2589ca3c5730f7b5b60678b1e8ad7bab0d7d",
+    "explanation": "Coherta samler, beriger og fjerner dubletter i virksomheds- og kontaktdata til B2B-arbejde. Data kan bruges til leads, segmentering og CRM-synkronisering, så kvaliteten af jeres kontaktgrundlag er et centralt vurderingspunkt.",
+    "consideration": "Afklar datakilder, markedsdækning og hvordan dubletter håndteres ved synkronisering til jeres CRM."
+  },
+  "https://meilirobots.com/": {
+    "sourceHash": "7cda42df2c75b3e97b831f88bfc54c1e1e0efbe67c88aacdf0b2cf84a9683bcf",
+    "explanation": "Meili Robots styrer flåder af mobile robotter på tværs af typer, mærker og modeller. Orkestrering betyder her at koordinere robotterne samlet; kompatibilitet med jeres konkrete robotter skal afprøves.",
+    "consideration": "Afprøv kompatibilitet med jeres konkrete robotter og de opgaver, de skal løse sammen."
+  },
+  "https://freelio.dk": {
+    "sourceHash": "100aa56eca6656adc636fbe56c4ac4a3474148d5367cd941b42917212bba5a94",
+    "explanation": "freelio.dk er beskrevet som et dansk alternativ til LinkedIn med karriere-, rekrutterings- og brandingværktøjer samt meetups og events. Relevansen afhænger derfor af, om dit behov er netværk, jobsøgning eller rekruttering.",
+    "consideration": "Undersøg, om de faggrupper og virksomheder, du vil møde, er aktive på platformen."
+  },
+  "https://fortesprojectflow.dk": {
+    "sourceHash": "70a81bb94cce37eb4ef0b74650319b3b2114aa67bbbadd56b5b5f18ec116cb3d",
+    "explanation": "ProjectFlow samler projekt- og porteføljestyring, ressourcestyring og tidsregistrering. Porteføljestyring ser på flere projekter samlet, så prioritering på tværs af opgaver og teamets kapacitet bliver centrale vurderingspunkter.",
+    "consideration": "Afprøv prioritering på tværs af projekter og jeres måde at planlægge ressourcer på."
+  },
+  "https://one.com": {
+    "sourceHash": "dabbee1d4cf2d8dc0eac5b76c6e3b00b08679de9f1a7baf0b1e3cd611d071d67",
+    "explanation": "One.com beskrives som en løsning til hjemmeside-hosting. Hosting er det driftssted, hvor hjemmesidens filer og eventuelle applikation ligger; afklar hvilke tekniske krav jeres hjemmeside stiller.",
+    "consideration": "Afklar understøttelse af jeres hjemmeside, backup og mulighederne for senere flytning."
+  },
+  "https://minforening.dk": {
+    "sourceHash": "88b74f03e8266e1cac7647c5b54ac2746328defab6ae13cf6f802c200c6c4b00",
+    "explanation": "minforening er en app og et foreningssystem til medlemmer, frivillige og foreningens forskellige roller. Vurder den fælles digitale adgang ud fra både det administrative arbejde og medlemmernes daglige brug.",
+    "consideration": "Afprøv løsningen med både ledere og medlemmer, og afklar rolle- og adgangsfordeling."
+  },
+  "https://deltaplan.dk": {
+    "sourceHash": "49f02cfad69b252b3126a700baf82de87a368324e4638cc6502d3ae4c60fd6ff",
+    "explanation": "deltaplan.dk samler vagtplaner, tidsregistrering, HR og kommunikation med mulighed for udtræk til løn. Vurder sammenhængen mellem planlagte vagter, udført arbejde og den efterfølgende lønbehandling.",
+    "consideration": "Afprøv jeres vagtregler og lønudtræk med den lønopsætning, I allerede bruger."
+  },
+  "https://redactpdf.io": {
+    "sourceHash": "768cab04e3661ccbea2fac8e98402274ab590becef2c6f393b974f4fb1292e47",
+    "explanation": "redactpdf.io arbejder med anonymisering af PDF-filer, Office-dokumenter og e-mails. Formålet er at fjerne oplysninger fra materialet; kontrollér resultatet i både det synlige indhold og eventuelle tekstlag og metadata.",
+    "consideration": "Test, at fjernede oplysninger også er væk fra tekstlag og metadata i jeres dokumenttyper."
+  },
+  "https://regrettable.eu": {
+    "sourceHash": "f4814503933cd4b4eb01578d3c932e71ae8c7868a1c0b84dea646f221aecdad5",
+    "explanation": "regrettable.eu tilbyder en fortrydelsesknap til webshops som en widget med bekræftelsesmails og revisionslog. Vurder både kundens forløb og jeres dokumentation af henvendelsen i den konkrete webshop.",
+    "consideration": "Afklar integration, lagring af logs og om forløbet opfylder de krav, der gælder for jeres salg."
+  },
+  "https://companydata.dk": {
+    "sourceHash": "77152d5aeb9fb02183bf161c46843d42cd6f27dd19528b5c9c5a5fc6a13a5583",
+    "explanation": "companydata.dk leverer danske virksomhedsdata via REST API, herunder regnskabshistorik, en finansiel sundhedsscore, ejendomsdata og overvågning. Et API gør oplysningerne tilgængelige for egne systemer og analyser.",
+    "consideration": "Afklar datadækning og metoden bag sundhedsscoren, før den indgår i jeres vurderinger."
+  },
+  "https://cvrapi.dk": {
+    "sourceHash": "74cb80dc132e9b58256806aee959965d762a544a9e33e7c82f08ff83cad40b63",
+    "explanation": "cvrapi.dk giver adgang til danske og norske virksomhedsopslag med svar i JSON eller XML. Opslag kan ske via blandt andet CVR-nummer, P-nummer, navn og telefonnummer, så data kan bruges i egne integrationer.",
+    "consideration": "Test de felter og opslagstyper, I bruger, og afklar datakvalitet og opdateringshyppighed."
+  },
+  "https://chainbox.dk": {
+    "sourceHash": "9c8ae0da9cf503d56f92274faad48bfbb95b4720ef35e65cd780cee0fd8c949e",
+    "explanation": "Chainbox understøtter B2B-virksomheder med produktdata, online salg og indholdsstyring. Vurder sammenhængen mellem produktinformationen og de salgsregler, der skal gælde for jeres erhvervskunder.",
+    "consideration": "Afklar jeres B2B-salgsregler og hvordan produktdata flyttes mellem platformen og andre systemer."
+  },
+  "https://easyonline.ai": {
+    "sourceHash": "343cae6cf953cf8d1b058ddaab5ea1f6fe1999192dafa086f14397614a9267f7",
+    "explanation": "easyonline.ai tilbyder hosting af hjemmesider lavet med AI. Beskrivelsen handler om at uploade og publicere en allerede bygget hjemmeside, så afklar hvilket arbejde der kræves for at holde den opdateret bagefter.",
+    "consideration": "Afklar understøttede filtyper, domæneopsætning og muligheder for opdatering og backup."
+  },
+  "https://shipmondo.com/dk/": {
+    "sourceHash": "137de92d85640c6030ec6c67c55c31c116b06db4c36e3b03032dee59e3e17d14",
+    "explanation": "Shipmondo er et værktøj til fragthåndtering. Vurder det ud fra de forsendelser, virksomheden skal håndtere, og afklar transportører, fragtaftaler og forbindelsen til jeres ordre- eller webshopsystem.",
+    "consideration": "Afklar transportører, egne fragtaftaler og sammenhængen med jeres webshop eller ordresystem."
+  },
+  "https://www.dotlegal.com": {
+    "sourceHash": "07dc73aec1a6d46c992f96a2983cbdbc3ff3d4bff6367fe50dc02f78851e4d39",
+    "explanation": ".legal samler compliance-arbejde i en GRC-platform med moduler til databeskyttelse, informationssikkerhed, kontrakter og leverandører. GRC står for governance, risk og compliance: organisering af styring, risici og krav.",
+    "consideration": "Kortlæg jeres relevante krav, og afklar hvilke opgaver platformen understøtter, og hvilke I selv skal udføre."
+  },
+  "https://verifyid.dk": {
+    "sourceHash": "16a5aefedebd8a4dce2488ad4741f918fe2a3ccfd023142e15e7ef457e3caf6f",
+    "explanation": "VerifyID.dk arbejder med aldersverifikation og ID-scanning både online og i fysiske butikker. Beskrivelsen fremhæver også tilpassede MitID-forløb til blandt andet e-handel og login.",
+    "consideration": "Afprøv det konkrete ID- eller MitID-forløb, og afklar håndtering af de indsamlede personoplysninger."
+  },
+  "https://sendrcs.dk": {
+    "sourceHash": "e35b5cd91a3024f682f9b64787c0593795dcfbf111f405576f77a65394155169",
+    "explanation": "SendRCS.dk er en platform til RCS Business Messaging. Den bruges til beskeder med billeder, knapper og karruseller, så kommunikationen kan rumme mere indhold og flere handlinger end en almindelig tekstbesked.",
+    "consideration": "Afklar dækning blandt jeres modtagere, og hvordan beskeder håndteres, hvis RCS ikke er tilgængeligt."
+  },
+  "https://nummeropslag.dk": {
+    "sourceHash": "e28c167b1e46cd96eeaa1bb91b4f04b18d801605d919adde3c9c90d84a522e6d",
+    "explanation": "Nummeropslag.dk bruger CVR- og teleudbyderdata til nummeropslag, opkalds-ID og beskyttelse mod spamopkald. Produktet findes både som app og partner-API, så behovet kan være personlig opkaldshåndtering eller en systemintegration.",
+    "consideration": "Afklar datadækning og hvordan fejl i identifikation eller blokering kan rettes."
+  },
+  "https://pennapay.com": {
+    "sourceHash": "6cc79d0f8e5eb8952e978108f5c597bab9d3be4768591b914a2fefc36470cee3",
+    "explanation": "PennaPay er et faktureringsværktøj til freelancere og selvstændige med betalingslinks, kundeportal og fildeling. Beskrivelsen nævner kort og MobilePay samt fakturaer med moms og fortløbende numre.",
+    "consideration": "Afklar betalingsomkostninger og forbindelsen mellem fakturering, kundeportal og jeres bogføring."
+  },
+  "https://byggepladsplanen.dk": {
+    "sourceHash": "9f225a24f16750947f81ea78e3a14e3e0754c4c8a5cc81351c7e7041400dc13a",
+    "explanation": "Byggepladsplanen.dk er et webværktøj til at placere hegn, arbejdsområder, skilte og køreveje på et kort. Det retter sig mod planlægning og kommunikation af byggepladsens praktiske indretning.",
+    "consideration": "Test kortgrundlag og de symboler og eksportformater, jeres byggepladsplan kræver."
+  },
+  "https://kloaktegning.dk": {
+    "sourceHash": "a06c7d4859781855e06c708bf56754e512b6badb04ddb55d6c8a406c48a43b5b",
+    "explanation": "Kloaktegning.dk er et webbaseret tegneprogram med rør, brønde og danske kloaksymboler. Det retter sig mod arbejdet med kloaktegninger og bør vurderes ud fra denne konkrete tegningsopgave.",
+    "consideration": "Afklar målestok, dokumentation og eksport til de formater, modtagerne af tegningen kræver."
+  },
+  "https://skilteplanen.dk": {
+    "sourceHash": "cd6d51c0870e2cd3d9cba11a8e16da19b928ec916c2686d969284cc921411332",
+    "explanation": "Skilteplanen.dk er et webværktøj til skilte- og afmærkningsplaner ved vejarbejde. Planen viser placeringen omkring arbejdsområdet; afklar symboler, eksport og gennemgang af den færdige plan.",
+    "consideration": "Test symboludvalg og eksport, og afklar hvordan planen gennemgås før den tages i brug."
+  },
+  "https://brandbuddyai.dk": {
+    "sourceHash": "09f8b885170699ef9b6cc0fc22df8203d68fbe941292b76d2ce74c4f73615728",
+    "explanation": "BrandBuddy laver e-mailkampagner til lokale virksomheder med udgangspunkt i deres hjemmeside. Produktbeskrivelsen fremhæver planlægning af et helt års kampagner, så godkendelse og løbende tilpasning af indhold er centrale vurderingspunkter.",
+    "consideration": "Afklar, hvordan tekster godkendes, og hvordan kampagner tilpasses ændringer i jeres tilbud."
+  },
+  "https://qlim8.com/": {
+    "sourceHash": "b82383cca06cb40184edd4a15f9d3a896353e25f66c254af6b2e1c5ef48f1541",
+    "explanation": "qlim8 samler klimaregnskab og ESG-afrapportering med beregning af scope 1-3-udledninger. Beskrivelsen omfatter systemforbindelser, en portal til værdikædedata og adgang for konsulenter og revisorer.",
+    "consideration": "Afklar datagrundlag, beregningsmetoder og dækning af det rapporteringsframework, I arbejder efter."
+  },
+  "https://timetrack.dk": {
+    "sourceHash": "0a5bc4e53615ef36b4ac55430f0e9807d49d4ea9864558384b6854f31d3797fc",
+    "explanation": "TimeTrack.dk forbinder tidsregistrering med klippekort og fakturering. Beskrivelsen omfatter flere registreringsflader, regnskabsintegrationer samt MCP og API, så både medarbejdere og AI-agenter kan indgå i arbejdsflowet.",
+    "consideration": "Test overførsel til jeres regnskabssystem, og afklar agenternes adgang til timer og fakturaer."
+  },
+  "https://liviate.com": {
+    "sourceHash": "fb4c27f18eb217340befa304e0a0cd92b59aba58af4a3c7d0a9a2176ec6c7e72",
+    "explanation": "Liviate tilbyder cloud og managed hosting med virtuelle servere, Kubernetes, backup og overvågning. Managed hosting indebærer hjælp til driften; afklar præcis hvilke opgaver leverandøren tager ansvar for.",
+    "consideration": "Afklar ansvarsfordeling for drift, backup-gendannelse og de tjenester, jeres applikation afhænger af."
+  },
+  "https://place2book.com": {
+    "sourceHash": "da670e39196d485497f841db15b573900e811f66321522d9ed9a726db1353f51",
+    "explanation": "Place2Book er et billetsystem til arrangementer med blandt andet seating, scanning og fremmøderegistrering. Vurder hele forløbet fra pladser og billetkøb til adgang og registrering af deltagere på dagen.",
+    "consideration": "Afprøv jeres pladstyper og adgangsflow, og afklar gebyrer og håndtering af aflysninger."
+  },
+  "https://zalye.dk": {
+    "sourceHash": "1c14eb8684d3ee9b8465cda912ed8fe3978cc4313a904ca0264ab71f105d2ea4",
+    "explanation": "Zalye.dk kombinerer tilbud, opgave- og ruteplanlægning samt fakturering til håndværkere. Tid, materialer og billeder registreres fra telefonen, og beskrivelsen nævner overførsel af fakturaer til regnskabssystemet.",
+    "consideration": "Afprøv en konkret opgave fra tilbud til faktura, og kontroller AI-beregninger mod egne priser."
+  },
+  "https://gitoro.com": {
+    "sourceHash": "9c283fa0b2c0798f1313c58055613329dc534d2520a01bb81effdc5aa04e6326",
+    "explanation": "Gitoro tilbyder europæisk Git-hosting med CI/CD, pull requests, issues og AI-guidet review. Beskrivelsen omfatter også rollebaseret adgang, servicekonti og MCP-adgang for AI-agenter, så både kodearbejde og adgangsstyring indgår.",
+    "consideration": "Test jeres pipeline-konfiguration og adgangsmodel, før repositories og agenter flyttes over."
+  },
+  "https://biosuite.io": {
+    "sourceHash": "82e55187985f8abbff570c0ff58322297413db7a6b40bdaec04cc78a0ebe2d26",
+    "explanation": "biosuite er indkøbs- og spend management-software til biotech-virksomheder. Spend management handler om at styre og følge virksomhedens udgifter, så vurder løsningen ud fra jeres indkøbsforløb og dokumentationsbehov.",
+    "consideration": "Afklar understøttelse af jeres leverandører, indkøbsgodkendelser og krav til dokumentation."
+  },
+  "https://meneo.dk/": {
+    "sourceHash": "891437079415a71f8a751a0fe98e6bf004bf0fac033e146a8d9565b37b38eb94",
+    "explanation": "Meneo er opgavestyring til bogholdere og revisorer med automatisk oprettelse af tilbagevendende kundeopgaver. Deadlines, ansvar og tidsregistrering samles, så gentagne leverancer kan planlægges og følges på tværs af kunder.",
+    "consideration": "Afprøv jeres tilbagevendende opgaver, frister og ansvarsfordeling på et repræsentativt kundeforløb."
+  },
+  "https://moxso.com/": {
+    "sourceHash": "e3c6b91f92e8f827ead962470f12e4424b5d25a68f46c4843df9ccf351f56b14",
+    "explanation": "Moxso bruger medarbejderadfærd til at måle menneskelige sikkerhedsrisici og målrette træning, phishing-simulationer og opfølgning. Phishing-simulationer efterligner falske henvendelser for at træne medarbejdernes reaktioner.",
+    "consideration": "Afklar målemetoder, medarbejderindsigt og hvordan træningens effekt følges uden unødig dataindsamling."
+  },
+  "https://naboportalen.dk": {
+    "sourceHash": "d7910e86f09b84750e8fecab509935627521918f2dfc49ca30f3a3e93a7ea651",
+    "explanation": "NaboPortalen samler boligforeningers fejlmeldinger, sager, dokumenter, opgaver, booking og beboerkommunikation med en beboerapp. Vurder sammenhængen mellem beboernes henvendelser og foreningens arbejde med at løse dem.",
+    "consideration": "Afprøv en fejlmelding fra beboer til afsluttet sag, og afklar adgang for bestyrelse og driftsteam."
+  },
+  "https://txty.dk": {
+    "sourceHash": "4e0330e5329dbd2d81a80060140d7531c0e77b17fcc1c96b6dd1883b57dd3c42",
+    "explanation": "Txty.dk er en SMS-gateway med REST API og kontrolpanel til at sende og modtage beskeder. Beskrivelsen nævner afsendernavn, keywords, virtuelle numre, HLR-opslag og leveringsrapporter via webhook.",
+    "consideration": "Test afsenderopsætning, svarbeskeder og leveringswebhooks i jeres konkrete SMS-forløb."
+  }
+}

@@ -1,0 +1,19 @@
+name: Alternativsider
+
+on:
+  pull_request:
+    paths:
+      - 'products.json'
+      - 'data/product-guides.json'
+      - 'lib/**.php'
+      - 'pages/**.php'
+      - 'partials/**.php'
+      - 'tools/check-alternative-pages.php'
+      - '.github/workflows/alternatives.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: php tools/check-alternative-pages.php

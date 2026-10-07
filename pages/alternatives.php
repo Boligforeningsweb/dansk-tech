@@ -5,7 +5,7 @@ $alternatives = load_alternatives();
 $total = count($alternatives);
 $url = SITE_URL . 'alternativer';
 
-$popular = array_filter($alternatives, function($alternative) { return $alternative['indexed']; });
+$popular = $alternatives;
 uasort($popular, function($a, $b) {
   return [count($b['products']), $a['name']] <=> [count($a['products']), $b['name']];
 });
@@ -27,7 +27,7 @@ $breadcrumbs = [['Forside', '/'], ['Alternativer', '/alternativer']];
 
 $schema = schema_json([
   schema_organization(),
-  schema_website($description),
+  schema_website(),
   [
     '@type' => 'CollectionPage',
     '@id' => $url . '#webpage',
@@ -37,7 +37,6 @@ $schema = schema_json([
     'inLanguage' => 'da-DK',
     'isPartOf' => ['@id' => SITE_URL . '#website'],
     'breadcrumb' => ['@id' => $url . '#breadcrumb'],
-    'dateModified' => date('c', products_modified_at()),
   ],
   schema_breadcrumbs($breadcrumbs, $url . '#breadcrumb'),
 ]);
@@ -55,7 +54,7 @@ partial('site-header');
 
     <div class="mt-10 max-w-3xl">
       <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">Danske alternativer til udenlandsk software</h1>
-      <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Find det udenlandske system, du bruger i dag, og se hvilke danske systemer der kan erstatte det. Vi har danske alternativer til <?php echo $total; ?> udenlandske systemer.</p>
+      <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Find det system, du bruger i dag, og se hvilke danske produkter der er foreslået som alternativer. Vi har forslag til <?php echo $total; ?> systemer. Undersøg funktioner og integrationer hos leverandøren, før du vælger.</p>
       <?php partial('trust-bar'); ?>
     </div>
 

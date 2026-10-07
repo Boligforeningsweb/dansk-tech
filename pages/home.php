@@ -26,7 +26,7 @@ $faq = [
   ],
   [
     'q' => 'Hvorfor vælge dansk software?',
-    'a' => 'Danske systemer giver dansktalende support, data og kontrakter under dansk og europæisk lovgivning (GDPR) og mindre afhængighed af software fra lande uden for EU. Samtidig styrker du det danske tech-miljø.',
+    'a' => 'Dansk software kan være et valg, hvis du vil støtte det danske tech-miljø og undersøge leverandører med tilknytning til Danmark. Dansk tilknytning garanterer ikke dansk support, datalagring i Danmark eller overholdelse af GDPR. Afklar support, databehandling og kontraktvilkår hos den enkelte leverandør.',
   ],
   [
     'q' => 'Betaler produkterne for at være på listen?',
@@ -40,7 +40,7 @@ $faq = [
 
 $schema = schema_json([
   schema_organization(),
-  schema_website($description),
+  schema_website(),
   [
     '@type' => 'CollectionPage',
     '@id' => SITE_URL . '#webpage',
@@ -50,7 +50,6 @@ $schema = schema_json([
     'inLanguage' => 'da-DK',
     'isPartOf' => ['@id' => SITE_URL . '#website'],
     'about' => ['@id' => SITE_URL . '#organization'],
-    'dateModified' => date('c', products_modified_at()),
     'primaryImageOfPage' => [
       '@type' => 'ImageObject',
       'url' => $ogImage,
@@ -63,7 +62,7 @@ $schema = schema_json([
     '@type' => 'ItemList',
     '@id' => SITE_URL . '#produkter',
     'name' => 'Danske alternativer til udenlandsk software',
-    'description' => 'Liste over danske tech-systemer, der kan erstatte internationale SaaS-produkter',
+    'description' => 'Liste over danske tech-systemer foreslået som alternativer til internationale SaaS-produkter',
     'numberOfItems' => $productCount,
     'itemListOrder' => 'https://schema.org/ItemListOrderAscending',
     'itemListElement' => schema_product_list_items($products),
