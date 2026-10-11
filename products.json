@@ -2,7 +2,7 @@
   {
     "name": "FlowAgent.nu",
     "url": "https://flowagent.nu",
-    "description": "Projekt- og ordresystem til virksomheder med medarbejdere i marken, der samler udkald, serviceaftaler og store projekter ét sted. Serviceopgaver oprettes automatisk, medarbejderne registrerer timer og materialer i appen, og fakturaen går direkte til e-conomic, Dinero eller Business Central med løn til Danløn, Dataløn og Proløn.",
+    "description": "Projekt- og ordresystem der samler udkald, serviceaftaler og store projekter ét sted. Serviceopgaver oprettes automatisk, medarbejderne registrerer timer og materialer i appen, og fakturaen går direkte til e-conomic, Dinero eller Business Central med løn til Danløn, Dataløn og Proløn.",
     "alternatives": [
       "Jobber",
       "ServiceTitan",
