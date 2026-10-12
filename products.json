@@ -1,5 +1,18 @@
 [
   {
+    "name": "FlowAgent.nu",
+    "url": "https://flowagent.nu",
+    "description": "Projekt- og ordresystem der samler udkald, serviceaftaler og store projekter ét sted. Serviceopgaver oprettes automatisk, medarbejderne registrerer timer og materialer i appen, og fakturaen går direkte til e-conomic, Dinero eller Business Central med løn til Danløn, Dataløn og Proløn.",
+    "alternatives": [
+      "Jobber",
+      "ServiceTitan",
+      "simPRO",
+      "Housecall Pro",
+      "Salesforce Field Service",
+      "Microsoft Dynamics 365 Field Service"
+    ]
+  },
+  {
     "name": "Huuray.com",
     "url": "https://huuray.com",
     "description": "B2B-platform og API til digitale gavekort og belønninger, med mere end 170 lande og tusindvis af brands. Bruges til medarbejdergaver, kundeloyalitet, incitamenter og udbetalinger direkte fra eget system.",
