@@ -477,6 +477,18 @@
     ]
   },
   {
+    "name": "Midora.dk",
+    "url": "https://midora.dk",
+    "description": "Sagsstyring til håndværkere og byggebranchen, der samler kvalitetssikring (KS), fotodokumentation, tidsregistrering og tilbud i én app. Virker offline på byggepladsen.",
+    "alternatives": [
+      "Fieldwire",
+      "PlanRadar",
+      "SafetyCulture",
+      "Procore",
+      "PlanCraft"
+    ]
+  },
+  {
     "name": "Morningscore.io",
     "url": "https://morningscore.io",
     "description": "SEO + GEO tracking",
