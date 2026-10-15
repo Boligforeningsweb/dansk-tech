@@ -1,5 +1,12 @@
 [
   {
+    "name": "OKF Todo",
+    "url": "https://dalby.md/projects/okf-todo",
+    "description": "Gratis open source-opgavestyring til udviklere og supportmedarbejdere med data gemt lokalt. Brug din egen AI-assistent til at omsætte mails, noter og regneark til opgaveforslag",
+    "alternatives": ["Todoist", "Microsoft To Do"]
+  },
+
+  {
     "name": "FlowAgent.nu",
     "url": "https://flowagent.nu",
     "description": "Projekt- og ordresystem der samler udkald, serviceaftaler og store projekter ét sted. Serviceopgaver oprettes automatisk, medarbejderne registrerer timer og materialer i appen, og fakturaen går direkte til e-conomic, Dinero eller Business Central med løn til Danløn, Dataløn og Proløn.",
