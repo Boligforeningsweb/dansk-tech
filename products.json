@@ -1517,5 +1517,13 @@
       "Varonis",
       "BigID"
     ]
+  },
+  {
+    "name": "MedusaJS.com",
+    "url": "https://medusajs.com",
+    "description": "Open-source, headless commerceplatform med backend, administrationspanel og en Next.js frontend. Gør det muligt at bygge og self-hoste skræddersyede webshops med fuld kontrol over kode og infrastruktur.",
+    "alternatives": [
+      "Shopify"
+    ]
   }
 ]
