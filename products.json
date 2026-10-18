@@ -1532,5 +1532,17 @@
     "alternatives": [
       "Shopify"
     ]
+  },
+  {
+    "name": "Avoruni.dk",
+    "url": "https://avoruni.dk",
+    "description": "Timeregistrering, sager og ugeplan til små håndværksfirmaer. Medarbejderne skriver timer på telefonen, også uden net, og mester godkender ugens timer og henter en lønfil til Danløn, DataLøn, Proløn eller Zenegy. Kører i browseren uden installation.",
+    "alternatives": [
+      "Jobber",
+      "Tradify",
+      "Connecteam",
+      "Clockify",
+      "Toggl"
+    ]
   }
 ]
