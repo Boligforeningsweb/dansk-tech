@@ -1544,5 +1544,18 @@
       "Clockify",
       "Toggl"
     ]
+  },
+  {
+    "name": "TwentyThree",
+    "url": "https://www.twentythree.com",
+    "description": "TwentyThree er en dansk webinar- og videoplatform til marketingteams. Produktet gør det let for virksomheder at hoste og måle video, afholde webinarer, optage personlige videobeskeder og samle alle deres videoer i ét bibliotek.",
+    "alternatives": [
+      "Youtube",
+      "Wistia",
+      "Vimeo",
+      "On24",
+      "Zoom"
+    ],
+    "image": "images/twentythree.png"
   }
 ]
