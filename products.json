@@ -1544,5 +1544,17 @@
       "Clockify",
       "Toggl"
     ]
+  },
+  {
+    "name": "Fashion-Planner.com",
+    "url": "https://fashion-planner.com/",
+    "description": "Demand planning og forecasting til mode-, beauty- og interiørbrands. Synkroniserer med jeres ERP og giver overblik over fremtidigt lager på størrelsesniveau, NOOS-opfølgning og sæsonprognoser, så indkøbet rammer mere præcist.",
+    "alternatives": [
+      "Centric Planning",
+      "Toolio",
+      "Inventory Planner",
+      "Prediko",
+      "Netstock"
+    ]
   }
 ]
