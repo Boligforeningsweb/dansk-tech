@@ -1546,6 +1546,18 @@
     ]
   },
   {
+    "name": "Fashion-Planner.com",
+    "url": "https://fashion-planner.com/",
+    "description": "Demand planning og forecasting til mode-, beauty- og interiørbrands. Synkroniserer med jeres ERP og giver overblik over fremtidigt lager på størrelsesniveau, NOOS-opfølgning og sæsonprognoser, så indkøbet rammer mere præcist.",
+    "alternatives": [
+      "Centric Planning",
+      "Toolio",
+      "Inventory Planner",
+      "Prediko",
+      "Netstock"
+    ]
+  },
+  {
     "name": "TwentyThree",
     "url": "https://www.twentythree.com",
     "description": "TwentyThree er en dansk webinar- og videoplatform til marketingteams. Produktet gør det let for virksomheder at hoste og måle video, afholde webinarer, optage personlige videobeskeder og samle alle deres videoer i ét bibliotek.",
