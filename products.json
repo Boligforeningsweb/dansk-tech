@@ -1569,5 +1569,11 @@
       "Zoom"
     ],
     "image": "images/twentythree.png"
+  },
+  {
+    "name": "Lynkig.dk",
+    "url": "https://lynkig.dk",
+    "description": "Dansk søgning og produktanbefalinger til webshops, med plugin til WooCommerce. Forstår sammensatte ord, æ/ø/å og stavefejl, og har faste priser måned til måned.",
+    "alternatives": ["Doofinder", "Searchanise", "Algolia"]
   }
 ]
