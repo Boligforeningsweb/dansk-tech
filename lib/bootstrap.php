@@ -10,6 +10,7 @@ define('CACHE_DIR', rtrim(($_SERVER['DTS_CACHE_DIR'] ?? '') ?: (getenv('DTS_CACH
 header('Strict-Transport-Security: max-age=31536000');
 
 require APP_ROOT . '/lib/http.php';
+require APP_ROOT . '/lib/i18n.php';
 require APP_ROOT . '/lib/products.php';
 require APP_ROOT . '/lib/alternatives.php';
 require APP_ROOT . '/lib/badges.php';
@@ -32,9 +33,9 @@ function load_json($file) {
 
 // Rolle-tekst, evt. med et link på en del af teksten
 function person_role(array $person) {
-  $role = e($person['role']);
+  $role = e(t($person['role']));
   if (!empty($person['link'])) {
-    $text = e($person['link']['text']);
+    $text = e(t($person['link']['text']));
     $link = '<a target="_blank" href="' . e($person['link']['url']) . '">' . $text . '</a>';
     $role = preg_replace('/' . preg_quote($text, '/') . '/', $link, $role, 1);
   }
@@ -61,6 +62,14 @@ function redirect($location, $status = 301) {
 // Render en side med et sæt variabler i eget scope
 function render($page, array $vars = [], $status = 200) {
   http_response_code($status);
+  if ($page !== 'sitemap') {
+    // HTML visits update a preference cookie; shared caches must not swallow that update.
+    header('Cache-Control: private, no-store');
+    header('Content-Language: ' . language_tag());
+    if ($status === 200) {
+      remember_language(locale());
+    }
+  }
   extract($vars);
   require APP_ROOT . '/pages/' . $page . '.php';
 }

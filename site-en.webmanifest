@@ -1,0 +1,24 @@
+{
+  "name": "The Danish Tech Stack",
+  "short_name": "Danish Tech",
+  "description": "Danish alternatives to international software",
+  "lang": "en-GB",
+  "start_url": "/en",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#c8102e",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

@@ -7,14 +7,14 @@ function schema_organization() {
   return [
     '@type' => 'Organization',
     '@id' => SITE_URL . '#organization',
-    'name' => 'Den danske tech stack',
+    'name' => t('Den danske tech stack'),
     'alternateName' => 'Dansk Tech Stack',
     'url' => SITE_URL,
     'logo' => SITE_URL . 'web-app-manifest-512x512.png',
     'email' => 'kontakt@langsom.com',
     'sameAs' => ['https://github.com/Boligforeningsweb/dansk-tech'],
     'founder' => array_map(function($person) {
-      return ['@type' => 'Person', 'name' => $person['name'], 'description' => $person['role']];
+      return ['@type' => 'Person', 'name' => $person['name'], 'description' => t($person['role'])];
     }, load_json('data/people.json')['founders'] ?? []),
     'parentOrganization' => [
       '@type' => 'Organization',
@@ -28,11 +28,11 @@ function schema_website() {
   return [
     '@type' => 'WebSite',
     '@id' => SITE_URL . '#website',
-    'name' => 'Den danske tech stack',
+    'name' => t('Den danske tech stack'),
     'alternateName' => 'Dansk Tech Stack',
     'url' => SITE_URL,
-    'description' => 'En åben, kurateret liste over danske software-produkter som alternativer til internationale systemer.',
-    'inLanguage' => 'da-DK',
+    'description' => t('En åben, kurateret liste over danske software-produkter som alternativer til internationale systemer.'),
+    'inLanguage' => ['da-DK', 'en-GB'],
     'publisher' => ['@id' => SITE_URL . '#organization'],
   ];
 }
@@ -44,11 +44,12 @@ function schema_product_list_items(array $products) {
       '@type' => 'SoftwareApplication',
       'name' => $product['name'],
       'url' => $product['url'],
-      'description' => $product['description'],
+      'description' => locale() === 'en' && product_description_language($product) === 'da'
+        ? ['@value' => product_description($product), '@language' => 'da'] : product_description($product),
       'applicationCategory' => 'BusinessApplication',
     ];
     if (!empty($product['alternatives']) && is_array($product['alternatives'])) {
-      $item['keywords'] = 'Alternativ til ' . implode(', ', $product['alternatives']);
+      $item['keywords'] = t('Alternativ til ') . implode(', ', $product['alternatives']);
     }
     $items[] = ['@type' => 'ListItem', 'position' => $i + 1, 'item' => $item];
   }
@@ -69,11 +70,14 @@ function schema_faq(array $items, $id) {
     'mainEntity' => array_map(function($item) {
       $text = $item['a'];
       if (!empty($item['consideration'])) {
-        $text .= "\n\nInden du vælger: " . $item['consideration'];
+        $text .= t("\n\nInden du vælger: ") . $item['consideration'];
       }
       $answer = ['@type' => 'Answer', 'text' => $text];
+      if (isset($item['language'])) {
+        $answer['inLanguage'] = language_tag($item['language']);
+      }
       if (isset($item['source'])) {
-        $answer['text'] .= "\n\nLæs mere hos " . $item['source']['name'];
+        $answer['text'] .= t("\n\nLæs mere hos ") . $item['source']['name'];
         $answer['citation'] = ['@type' => 'WebPage', 'name' => $item['source']['name'], 'url' => $item['source']['url']];
       }
       return ['@type' => 'Question', 'name' => $item['q'], 'acceptedAnswer' => $answer];

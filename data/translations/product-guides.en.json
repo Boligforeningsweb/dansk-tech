@@ -1,0 +1,788 @@
+{
+  "https://huuray.com": {
+    "sourceHash": "7a52effe6462e4cecb7971e7b6892aad1d37447619b65239d7c6198532c991da",
+    "guideHash": "38074a008fefcb5c9613c898db91c98c02dc3f1992adc3f9a9e87b717014a84c",
+    "explanation": "Huuray.com brings digital gift cards and rewards together on a B2B platform. It can be used for employee gifts and customer loyalty, or connected to your own systems through an API to make rewards part of an existing workflow.",
+    "consideration": "Check coverage of the countries and gift card brands you need, and how payouts are handled."
+  },
+  "https://adamatics.com/platform/": {
+    "sourceHash": "58445c89f57a7880bfa10d946453a93120c5f895c62bbd7fbc5ef103cb2b3d89",
+    "guideHash": "4a7e6a022ddb230601e06dc591355c18e68f71d2d71c9178044736d8786b71c5",
+    "explanation": "AdaLab brings notebooks, data access and deployment together for data analysis and AI. The platform can run in your own environment or with a Kubernetes-compatible cloud provider to suit your infrastructure.",
+    "consideration": "Establish who will operate the environment and how your data sources and models will be migrated."
+  },
+  "https://www.adminbyrequest.com": {
+    "sourceHash": "315a5d43960e4bc9e9ad7d740c3d284f7105725d711b989a79a0a9b4bd7698a4",
+    "guideHash": "f7283e5990f2d8baa3b53df59ef204360948d01e396b91997774b7ff8dfed463",
+    "explanation": "Admin By Request manages administrator access on Windows, macOS and Linux. Just-in-time access grants privileges when needed, while approval workflows and logs help track access.",
+    "consideration": "Test approvals and time-limited access with the applications and operating systems your staff use."
+  },
+  "https://alunta.com": {
+    "sourceHash": "78f9b0bc123b500c530a6787f98c9d0022311a007192b3be76d7dd24f1ad7f87",
+    "guideHash": "dd9e0df8b7db5b08e3ef9a330f8643219f5454cc19647d29a564351e8c151591",
+    "explanation": "Alunta.com handles subscriptions, payments and invoicing. Assess how recurring charges and invoices work together, especially when customers change subscriptions or agreements.",
+    "consideration": "Check payment methods, subscription changes and the connection to your accounting system."
+  },
+  "https://alviss.io": {
+    "sourceHash": "508462f38449fc3f763486ea000225a1188e6206d1628e7eefc6554ed75f1086",
+    "guideHash": "f353e81725b8c438b1af55ed1b1310185d0a9260328c747b1b032fb1b69d841d",
+    "explanation": "Alviss AI analyses and simulates the impact of activities that generate sales, including media, communications and pricing. It helps bring models and data into marketing decisions.",
+    "consideration": "Ask what data the models require and how uncertainty in the calculations is shown."
+  },
+  "https://arrigoo.io": {
+    "sourceHash": "315cfce9e9f3cf3153ce7fb7630f874f856a34a09b170d1eb72568060a16468c",
+    "guideHash": "e2fe257c15496574dd0695b3dd7e9032cb6b4670aeb21a142ae303f4f1f94f4a",
+    "explanation": "Arrigoo CDP collects and consolidates customer profile data across systems. Data can form segments based on behaviour and attributes and be sent to the systems that need it.",
+    "consideration": "Map your data sources, desired segments and the systems that will receive the profiles."
+  },
+  "https://www.bastio.com": {
+    "sourceHash": "be5a71bb886fd07560606a9e827054d408d6045d334b4bdd02f3540e39e52e46",
+    "guideHash": "022d4c683445ab82fc4a079574d48a73622217e1171c306600322d82b0f3a0fe",
+    "explanation": "Bastio AI Security places a security gateway between an application and its AI provider. Its description includes prompt injection protection, personal data masking and monitoring of AI use, including agents.",
+    "consideration": "Test the gateway with your own prompts and check how logs and personal data are handled."
+  },
+  "https://behandlerdata.dk": {
+    "sourceHash": "1bb3cb7124b4d80808fc4bd924f40350a884978e3025592168679c960d5f622b",
+    "guideHash": "b5b684db4dbfa2e8f3686f819c2362b3b0b35d141964ab6e78afb7ed884dcef5",
+    "explanation": "Behandlerdata collects and normalises agreed fee schedules for healthcare practitioners. Information can be looked up or retrieved through an API. Its description concerns pricing data, so assess it against that specific need.",
+    "consideration": "Check which agreements are covered and how rates are kept up to date in the API."
+  },
+  "https://www.board-office.dk": {
+    "sourceHash": "eda303b0b97b048258788f30aa82b87c8276c3af600b6fe7bc57f5cc6265e018",
+    "guideHash": "9a07b2c0d91928ffbb20e69112929c5e34a3ccdda346527bc7ed0a1b6fc7bcb7",
+    "explanation": "BOARD OFFICE brings board meeting administration and document sharing together with governance and collaboration tools. Governance here concerns directing and overseeing the company; the description also mentions AI integration.",
+    "consideration": "Test document access and meeting workflows with board members and administrative staff."
+  },
+  "https://boligforeningsweb.dk": {
+    "sourceHash": "ecca8f1f08d0992c93da229be104928ffacf70f56c9e705e75028507fc829c70",
+    "guideHash": "56fd76403da3415db26c6e4814bf3ad38be2609035403274709ab30e3aecb962",
+    "explanation": "Boligforeningsweb is software for housing association administration. Assess it against your association's specific administrative tasks and request a walkthrough of the modules that support them.",
+    "consideration": "Request a walkthrough of the specific administrative tasks your association needs to handle."
+  },
+  "https://www.campaignbuilder.io/": {
+    "sourceHash": "76754dc0fd041a39ba5d732f4627386581f1ae39f78e4e649f375e039d94408e",
+    "guideHash": "fec4ddf1a8a73e688e5f3e0055d770a0fedd7292e7daa0295fe3f6c7caa4659b",
+    "explanation": "Campaign Builder provides tools to build, launch and manage cross-channel campaigns. Its description covers catalogue ads, HTML5 ads, popups, forms, workflows and SMS marketing.",
+    "consideration": "Check which advertising channels and catalogue formats fit your existing campaigns."
+  },
+  "https://neuphlo.com": {
+    "sourceHash": "dac4c090f99f6311b22b89dfda6269b9a070d5e4b49b1b874ccf527f65070b3d",
+    "guideHash": "e94020ce135eceed080e4ebaa60cc34dbbb6556bc1d57fac08fea117649445c1",
+    "explanation": "Neuphlo combines project management, test management, knowledge sharing and chat. Integrations include GitHub, GitLab and Addo Sign. MCP access also makes it relevant to workflows involving AI tools.",
+    "consideration": "Test the connections between tasks, tests and code, and access permissions for MCP clients."
+  },
+  "https://clarefy.ai": {
+    "sourceHash": "5cbfd5d974bafe3bb47745d1e4565d5eed9e3a5ee78d357f8f61a286180dd335",
+    "guideHash": "eb792b751353f07a493ae98098b1525bf4d9678abff1cd755ddceceb08325019",
+    "explanation": "Clarefy.ai handles inventory and purchasing planning for e-commerce. It aims to balance the risk of running out of stock against capital tied up in inventory.",
+    "consideration": "Check data requirements and test planning with seasonal products or variable lead times."
+  },
+  "https://clerk.io": {
+    "sourceHash": "4412840dc64d48707215679306ce600f1b3a7eb8716e9f25b9d3b0f1663a34e2",
+    "guideHash": "bc7ab453ce8bd7a11b526cf53eecd2de6df99f65d0cf04ebfd51ca1d1688cc70",
+    "explanation": "Clerk.io provides personalisation and recommendations. Personalisation adapts what users see, while recommendations help them find relevant products or other content.",
+    "consideration": "Request examples of recommendations using your own data and platform."
+  },
+  "https://clearcontract.dk": {
+    "sourceHash": "9d3942d4d5e5b05d703e3ea524d0d0b02f5a8938b2e95fb5a89ac34e7d07eeee",
+    "guideHash": "6dabad0d4340ef1dbab98b6f667d1834c95add7f271ca81c202b24ed2b09c2d9",
+    "explanation": "ClearContract uses AI agents to receive, review, archive and monitor contracts. It targets contract workflows where ongoing handling is to become part of automated processes.",
+    "consideration": "Establish which actions agents may take and where your own approval is required."
+  },
+  "https://www.clearhaus.com": {
+    "sourceHash": "937098b6363c424dfd24984b0c6b4730a85e3c5bb0d545690fc0d17648adcdc7",
+    "guideHash": "eaeacc6fe8d624081d267eca0340dba951bde49520f14d45eb692cca6d974aaf",
+    "explanation": "Clearhaus A/S is a payment acquirer for e-commerce. Acquiring handles financial settlement of card payments. The description also highlights risk management and compliance.",
+    "consideration": "Check which payment gateway you need alongside the acquirer and the total cost."
+  },
+  "https://danadresse.dk": {
+    "sourceHash": "7c787977f4bab709354729e49e49b9ea57b47b3be23d57f8f5f01a664398c67d",
+    "guideHash": "7aa35be6f73d359d1a16ec7711c7d43d9574eb1b82cc34b4eaa3cc468e8a478c",
+    "explanation": "danadresse.dk provides Danish address data through an API, including search, autocomplete, address cleansing and reverse geocoding. Its description highlights DAWA compatibility, making existing address integrations a useful place to test it.",
+    "consideration": "Test your existing DAWA calls, API keys and data needs before changing the integration's base URL."
+  },
+  "https://dataandmore.com/": {
+    "sourceHash": "53a4b29721fafe4bc54997427f0c0ea04c93b578dcaff3d6a4613c5b2c00d71f",
+    "guideHash": "087be9c67ed771a7ecec850b787211f35a8c3dc6cd3c47fe9b2deb6d8f4f4c55",
+    "explanation": "dataandmore.com identifies and deletes GDPR-sensitive and security-related information in unstructured data. This is material outside fixed database fields, where sensitive information can be harder to locate and manage.",
+    "consideration": "Check supported data sources and how findings are verified before deletion."
+  },
+  "https://dinero.dk": {
+    "sourceHash": "6fdaa0687dac281f6075222a07c60547a97f63a59f4b407caf6c0989dcfeaa1f",
+    "guideHash": "ca89c4443fc011989daf83b726e200e9fa4552ab156d1f81079b512bfcae7ee5",
+    "explanation": "Dinero.dk is an accounting and bookkeeping system. Bookkeeping records business transactions as a basis for accounts. Assess the system against daily routines and collaboration with your bookkeeper or accountant.",
+    "consideration": "Review your bookkeeping routines and how you need to collaborate with your bookkeeper or accountant."
+  },
+  "https://dreamdata.io": {
+    "sourceHash": "19e1cd415de2823436a764b0e3373d5bbb0728710bcbf80f8e29ff78094b4d5a",
+    "guideHash": "e24c4d89410cf838232cb11998d92b0b0aeea801e1d68dd23b40c05b665bb167",
+    "explanation": "Dreamdata.io provides B2B revenue attribution, connecting customer journey activities with the revenue they contribute to. It is relevant to businesses examining the relationship between marketing efforts and B2B sales.",
+    "consideration": "Check how marketing and sales data are connected and which attribution models are used."
+  },
+  "https://e-conomic.dk": {
+    "sourceHash": "c561c0fe5cd82063059a3eed3465c1019adfd41f516130cd2192220c201bc042",
+    "guideHash": "5e9a5891fa886e06d6acc11847d290cde55a9154e401d21ed90da14f887c01c8",
+    "explanation": "E-conomic.dk is an accounting and bookkeeping system. Bookkeeping records business transactions as a basis for accounts. Assess it against the routines and system connections you need.",
+    "consideration": "Check integrations and test migration of accounting data with your bookkeeper."
+  },
+  "https://ethnote.dk": {
+    "sourceHash": "901d8bf2595af6f037dde7eb571e2a2c36583a05d2e897618c79dc33713cbb98",
+    "guideHash": "da6e878055c8d71803b53db0f2bd38a0dc0409d09967d12bd3bfd12c78729a09",
+    "explanation": "Ethnote is a platform for qualitative data analysis and coding. Coding organises material into themes so content can be analysed systematically rather than read only as isolated statements.",
+    "consideration": "Test it with your own material and coding methodology."
+  },
+  "https://rilanto.com": {
+    "sourceHash": "418966e0e88c46b8515e29c5fc10ab489e9345111edf40126244f1205f46d608",
+    "guideHash": "b6210913af54482a15f8c2d1850dd224db8c83286099b27e31bbb63b061dc2b0",
+    "explanation": "Rilanto Reviews is a customer review platform described as developed and hosted in Denmark. It is presented as a supplement to existing review sites, so using it need not mean switching completely.",
+    "consideration": "Check how reviews are collected and displayed alongside your existing review channels."
+  },
+  "https://flare.link": {
+    "sourceHash": "de4afd178e9e8d2cfb6ddab419e85fbd4058dec80f5df78c05e4b8d173de9c1e",
+    "guideHash": "7f83623fe569aa5a48ecea21ae73fbb1bae4f434725afddc4c6a43b07f7ba7cb",
+    "explanation": "Flare.link combines video recording, editing, sharing and website embedding. The description covers 4K recording, a customisable player, analytics and API access, spanning video production and use.",
+    "consideration": "Test recording and embedding in your workflow and check analytics and branding requirements."
+  },
+  "https://fenerum.com": {
+    "sourceHash": "3d298b1d110317764ff7026f6e9cc37c154797d243786951451c55d53bf016af",
+    "guideHash": "32e95383e045d695a3129b935b15032d9030484ba2cc5e430764ba0a11e85885",
+    "explanation": "Fenerum.com is described as a SaaS finance product. The short description does not define its features, so establish which subscription and finance tasks it actually supports.",
+    "consideration": "Request a walkthrough of the specific subscription and finance tasks you want to bring together."
+  },
+  "https://www.fmcgsolutions.dk": {
+    "sourceHash": "b9d3f6879e591b1006cce0586dc89524bc161fc351c194f39501cfc62723e684",
+    "guideHash": "c5538652adb690db40fb123d0e2eff8b1f12cb67d06ac011d4b8280872a89543",
+    "explanation": "fmcgProducts PIM organises product master data and distributes it to internal and external systems. Named recipients include GS1, Tradesolution EPD, Dabas and Matinfo, making data distribution a key point to assess.",
+    "consideration": "Verify coverage of your data models, required fields and recipient systems."
+  },
+  "https://www.foundbase.dk": {
+    "sourceHash": "4d2b7d2fca57859cb3ddf64cc2f280b436905a8b63c0e6738a9dfecaf39046b9",
+    "guideHash": "13a3728a26eaeab021d8f41a1768e801b4c2a6b955789fd8fca72ee44f8596bc",
+    "explanation": "Foundbase is described as an all-in-one platform for startups and small businesses. Its short description does not specify the tasks it covers, so start by checking the modules your business needs.",
+    "consideration": "Ask to see your key workflows and establish which tasks will still need other tools."
+  },
+  "https://frem.sh": {
+    "sourceHash": "252bc22d929f4dc1297b3ab28165ef58562b0100b798131117932815751c0539",
+    "guideHash": "8729972406ee0fa5d5fe347215e23b2ee63d03b4c0085afb23b36f42fbbcbd85",
+    "explanation": "fremforge combines Git and CI/CD and is described as EU-sovereign. CI/CD automates building, checking and delivering code, making it relevant to development team infrastructure.",
+    "consideration": "Check where code and builds run and how to migrate your pipelines and repositories."
+  },
+  "https://growpanel.io": {
+    "sourceHash": "1b1deddabd25f0f7ef8699788b2a742d2980b8464938b2ae78a70e7d2c31889f",
+    "guideHash": "cf8e302f5e93d31b03e709b6a77a3926183450ebd035676b05e3a069bf7122a7",
+    "explanation": "GrowPanel.io analyses subscription businesses. Subscription analytics tracks subscription trends to help understand changes in customers and recurring revenue together.",
+    "consideration": "Check data sources and the definitions of metrics you already report on."
+  },
+  "https://www.henosia.com": {
+    "sourceHash": "d74f900b58f8648287f0a5b6e5ee0a009aadd01b4735e98dab946474ac80c194",
+    "guideHash": "e9106d862aabced9cfe5a8e245df61b2b956eff2e01fa3d1060cb753391e4082",
+    "explanation": "Henosia.com uses AI to build internal apps, including for people without coding experience. It is relevant when internal workflows need a tool that existing systems do not cover.",
+    "consideration": "Test connections to your data and check access control and maintenance of the finished app."
+  },
+  "https://herodesk.io": {
+    "sourceHash": "ec7158b93aeab02abe2da1cbdb982b0b8ddd37bac9aeb5d3258408d84cdb584b",
+    "guideHash": "73971688fe61a3eed959653e4faa3a4e124102314bbb6225e8706bb3e448ee1f",
+    "explanation": "Herodesk.io is a customer support and helpdesk tool. A helpdesk organises customer enquiries so the team can track what needs a response or follow-up.",
+    "consideration": "Test your key support channels and workflows with the staff who will use the system."
+  },
+  "https://idguard.dk": {
+    "sourceHash": "6db79aa2f2b55390ea8273bf0d3f13891e70427bdc22d78f038f2909ece62cd1",
+    "guideHash": "a052e95e39e16cf22e263c687ae3699b45fd7f1d6e19c2d065507deeb69fd718",
+    "explanation": "IDguard.dk provides age verification and identity checks. Assess it against the access or purchase process where a user's age or identity needs verification.",
+    "consideration": "Check verification methods, the user experience and which identity data is retained afterwards."
+  },
+  "https://www.inmobile.com": {
+    "sourceHash": "3503d6052cd761860acbe7eeab713dfa38a9493b807914384bd0c9db68d5d7f7",
+    "guideHash": "ed3f49674d5148bdcfb2bf93f9c081591bfc6381c85b91ec5f86cf5c93dd86ff",
+    "explanation": "inMobile offers SMS, RCS and email communication. Each channel supports different kinds of messages, so choose based on your audience and message type.",
+    "consideration": "Check channel and country coverage and how consent and unsubscribing fit your workflow."
+  },
+  "https://gatewayapi.com": {
+    "sourceHash": "6b7ba0ae72754e01d1c56f5cb7411be6d75332ffe7e735c8241ea15244a771d0",
+    "guideHash": "8b7de4419b174f9f9ab413a6ff6b3ad5cac2027d9b917700f46a97a1697aadda",
+    "explanation": "GatewayAPI offers SMS, RCS and email on a global CPaaS platform. CPaaS lets communications services become part of your own applications rather than sending messages only from a separate tool.",
+    "consideration": "Test integration and delivery reports for the channels and countries you actually use."
+  },
+  "https://iteras.com": {
+    "sourceHash": "1283b96485431319e290f8646d185f8a2c3363a836482e34f131100c98ef57d1",
+    "guideHash": "49b73e51eacb6579fd66656093bf44e6e0a8fc5ce831275b8cff9e657b35097f",
+    "explanation": "Iteras combines customer subscriptions, invoicing and payments. Its description includes self-service portals and Nordic payment provider integrations, making both internal administration and customer access worth testing.",
+    "consideration": "Review subscription changes, self-service and the payment providers you rely on."
+  },
+  "https://odagroup.dk/pharma": {
+    "sourceHash": "f3cff200aaedc750e068d32febc37ebeb939ed382608faf8892b4a0e6d19f5ab",
+    "guideHash": "5171314e4d02cb4ff6729bd88664f2fffe853397207994b1bef6ccb7c83978f8",
+    "explanation": "Jarvis is an AI companion for frontline pharma teams that extends existing CRM systems. It covers meeting preparation, debriefs, insights, prioritisation and follow-up, so assess it alongside your current CRM.",
+    "consideration": "Check the CRM connection, underlying data and approval requirements for AI-generated insights."
+  },
+  "https://holdsport.dk": {
+    "sourceHash": "86b146f3b7a09b385af2946c499b42ffb549ee26be24694df562bf61af632967",
+    "guideHash": "3560d13d6952c38e4edc3fca3bec5a3171eadffad0a7b36bec28e1cf67fb6c54",
+    "explanation": "Holdsport.dk combines online membership fee collection, communications and member administration. It is relevant to clubs and associations connecting administration with member contact.",
+    "consideration": "Test fee collection and member workflows with your different membership types and activities."
+  },
+  "https://mercura.io": {
+    "sourceHash": "f173efc7aaf43eb4c65c9dd437f7de04e5c9a8292385d01458fed576ea26f05f",
+    "guideHash": "4a038f085d1c63f044d50e3a23f7247667a712e56919b45388de670bb9159cec",
+    "explanation": "Mercura CPQ supports configuring, pricing and quoting complex products. CPQ is relevant when combinations and options make manual pricing and quotation work difficult.",
+    "consideration": "Test your most demanding product combinations, pricing rules and quotation formats."
+  },
+  "https://kala.app": {
+    "sourceHash": "68e9dad5574f15a1213ec2b1fb50bae5d583236a46eed5dd0d5d1b60ba0fde44",
+    "guideHash": "ac5ff4386857c0641651723a74d9dbee45480dd359ea7663e8d74557162cc2f0",
+    "explanation": "Kala brings together time, staff and project oversight with integrated quality assurance. Its description mentions ERP and payroll connections, making links to your wider administration important to test.",
+    "consideration": "Check which ERP and payroll systems are covered and how records are transferred."
+  },
+  "https://landingroom.com/": {
+    "sourceHash": "3e3e1a854d6f63c5e1ba00a7a2dd7ec2217d70df472097ce349eccfaf575d758",
+    "guideHash": "eb9f349fd8b9dcd72424bafa7dae5a0e44baa37dcda3cc70c8881e51c386e195",
+    "explanation": "LandingRoom.com combines career pages, applications, interviews and offers in a recruitment system. A personal candidate space follows candidates through to their first working day, making candidate experience central to the product.",
+    "consideration": "Test a complete recruitment process from application to first day with your own communications."
+  },
+  "https://mikrobageri.dk": {
+    "sourceHash": "91bb9ddf1377ac2f81196eb5ea3ffba8005267f626ffdbb78850bce169c498f1",
+    "guideHash": "a84eb5a1cc20f5afd4ea91eeba1b5157229b3f7cf15c96541dc783e2aab0026b",
+    "explanation": "Mikrobageri.dk is an ordering system for micro-bakeries with online orders and a baking calendar. It connects customer orders with the baking overview and should be assessed against your bakery's production and sales.",
+    "consideration": "Test order deadlines, the product range and how orders fit into your baking calendar."
+  },
+  "https://morningscore.io": {
+    "sourceHash": "b850d75a1a591e7561c66893019c25f328ba9a5984ffb5857e2b7bd968962408",
+    "guideHash": "a6b2730322803e80c2dd833d02dfdf4067ce413af29a8d7694bce001efe75573",
+    "explanation": "Morningscore.io provides SEO and GEO tracking. SEO concerns search engine visibility, while GEO concerns visibility in AI-generated answers. Check which measurements the product offers for each.",
+    "consideration": "Check which search services and markets are measured and how results are calculated."
+  },
+  "https://www.nextsign.dk/": {
+    "sourceHash": "8498705ed30adf6ce6026b621a6bb9f2a265e0c35a01eb44bfbe929b675ea6cd",
+    "guideHash": "e9de7b6797bd952622d1b0099fc7101e10c2dcd869928d3af33bf807e503eda0",
+    "explanation": "NextSign.dk is a digital signature solution for businesses and organisations. Assess it against your document types and requirements for identifying signatories.",
+    "consideration": "Test the signing process with your documents and signatory identification requirements."
+  },
+  "https://www.netsite.dk/": {
+    "sourceHash": "aea7604ff6f28071349f36595af061c371dbb53da6835bd41978d35516bb6a2c",
+    "guideHash": "a49b5536b37bcaee326a20a0a48fe14c6e51db415b32680337b680cecb5c18e4",
+    "explanation": "Netsite offers domains, DNS, email and web hosting in Denmark with Danish support. It is relevant if you want to bring several basic website services together with one supplier.",
+    "consideration": "Check domain and email migration and your website's technical requirements."
+  },
+  "https://nordicscreen.com": {
+    "sourceHash": "e7a89a81b3c3bc1ad643d53c33392c7eee050848fd2440948dccdf8d2f9773d7",
+    "guideHash": "bbcb981e92e245b205c38c80577640ece9b981107595fa0a0ba212314f648c34",
+    "explanation": "NordicScreen manages screens and content through a cloud-based CMS. It schedules, plays and distributes visual content across locations where multiple screens need central management.",
+    "consideration": "Test your screens and players and check how content is updated during connection problems."
+  },
+  "https://pagevitals.com": {
+    "sourceHash": "cfd3d180ef1a00143cca350ad9dde8b73978831acfd8adc88349c61d7ad01e26",
+    "guideHash": "7c895a823c92d500040841f20b080a711990a71afce9250cad230f8fa72373f6",
+    "explanation": "PageVitals.com provides performance monitoring to track how a service performs over time. Check which measurements it provides and whether they help identify the problems you want to respond to.",
+    "consideration": "Check which parts of your service are measured and how performance changes are detected."
+  },
+  "https://pingpuffin.com": {
+    "sourceHash": "7b5c4a7c88583f150360c345ae9dc410a2f1ac7ac5339bd6e41c3f1710b21ca5",
+    "guideHash": "4cf3cce00b031b82bc1b35ee40da6157cf6562303cce06ebf13690cb499a292d",
+    "explanation": "PingPuffin.com monitors uptime and sends alerts. Uptime concerns whether a service is available, so assess checking frequency and how the responsible people are notified of problems.",
+    "consideration": "Check monitoring frequency, alert channels and handling of planned downtime."
+  },
+  "https://plecto.com": {
+    "sourceHash": "236cb0ba7142eb5e55c174b719e3535bac3c2e2e7db310733fcc91603555105e",
+    "guideHash": "ff859140009213220adeb6ae6c83f0f678bbdd246e80ad0663843f6d60ba253a",
+    "explanation": "Plecto.com combines performance management and dashboards. A dashboard brings metrics into one overview so teams can follow results and use them to manage goals and follow-up.",
+    "consideration": "Test your data sources and metric definitions and establish who may see which results."
+  },
+  "https://prowi.io": {
+    "sourceHash": "be890cfceb1fdf9c4a6fba54730c3e3404479f87b9df3ed24ee0fde1ca9ed654",
+    "guideHash": "4f430a14f0438f8a9f472e576d9f708f8b056ddc09c4d9b336778b3c1a5aace8",
+    "explanation": "Prowi manages sales commission and shows salespeople their commission in real time through a mobile app. Its description highlights the link between closed sales, visible rewards and gamification.",
+    "consideration": "Test your commission rules, including corrections and cancelled sales, before adopting it."
+  },
+  "https://www.proprty.ai": {
+    "sourceHash": "1e06bbc8d4f0c2ebb37e201df2371fa285c710f18fb131242f14db7baffea14d",
+    "guideHash": "55d55a38353ae9e544e305dcb9014ec4a81373342a92e124a95c04db3dc7998a",
+    "explanation": "proprty.ai covers building condition assessments, maintenance plans and CO₂ reduction. A maintenance plan links a property's condition to the actions that need prioritising and carrying out.",
+    "consideration": "Check the inputs assessments require and how maintenance and CO₂ impact are calculated."
+  },
+  "https://www.quickpay.net": {
+    "sourceHash": "5083603a7211f297862a643c0e8d48c1418493557f302925af0d6950f44f2876",
+    "guideHash": "8b714187167a1933f449aeb9b9cdd6cebcf4c2ef93c0753d3a22c068e94e2499",
+    "explanation": "Quickpay is described as a payment solution. Assess it against your online payment process and check how it connects to payment methods, acquiring agreements and your webshop.",
+    "consideration": "Check supported payment methods, acquiring agreements and the connection to your webshop."
+  },
+  "https://resos.com": {
+    "sourceHash": "ddf85047447a1a34ee06addfe65988289df64aaa27a03aef1b17ebdadd7f52d6",
+    "guideHash": "7eb5580f39170de305bb520492c8d028d8c9165cc1e86bd3023994d4fd3053fb",
+    "explanation": "Resos.com is a restaurant reservation and booking system. Assess it against your capacity, opening hours and approach to welcoming guests.",
+    "consideration": "Test reservations with your table layout, opening hours and cancellation rules."
+  },
+  "https://soge.dk": {
+    "sourceHash": "27d01ad69ffcfd092e9baf7a41a535d844821e63f9f2b23b81d62c82935f72f9",
+    "guideHash": "970f4d30ee982742b57bd0c81eea10d1aa2fc37cdfd16935e3ced42e1050502b",
+    "explanation": "Soge.dk provides vehicle data through search and an API. Vehicles can be looked up by registration plate or VIN, with specifications, inspections and history from the DMR register.",
+    "consideration": "Verify that data coverage and history match the information your workflow requires."
+  },
+  "https://seo.ai": {
+    "sourceHash": "bf2aade1cb1bc933925ef999b678ecfe2de32296b3838e198787213cc04e1adc",
+    "guideHash": "55bd11cdc6cf4df06a2222193d94609a9edb3fe52bcf97ccc18fb4f4dcc8beda",
+    "explanation": "SEO.ai automates content production. Assess both the workflow and the quality of finished content: automation does not remove the need to check facts and relevance before publishing.",
+    "consideration": "Check languages and editing options and plan expert review before publishing."
+  },
+  "https://sleeknote.com": {
+    "sourceHash": "addb93406f398bc42ea29278337bb45af63f0f977ba8dc9fc17b30d836455509",
+    "guideHash": "43fa7be56b845a9418cf2b1bcb1437d30da5f14262f9a26e8d39ac02821a93ac",
+    "explanation": "Sleeknote.com provides email marketing and popups. It is relevant when email communication and website elements need to work together in your marketing.",
+    "consideration": "Test signup flows and connections to your other email tools."
+  },
+  "https://smtp.dk/": {
+    "sourceHash": "1b12109d7b82102ecf75b37e5ffc89e743a37747fe8e1e0f644836e63b9bb1e2",
+    "guideHash": "5ec7ab46d516c613e2488466f5ae250bdfa215b9c5c04af112f85cfa9ef3a08a",
+    "explanation": "SMTP.dk delivers transactional emails, messages linked to an action or event in a system. Assess it against your requirements for this type of sending.",
+    "consideration": "Test your sender domain, expected email volume and options for tracking delivery."
+  },
+  "https://www.sumoshop.dk": {
+    "sourceHash": "76fe5cd4f818900f1f577bed5aba1ad760fb08ca93b5ea9bd1aab1e24270c4d6",
+    "guideHash": "b2454f89f00d3e786680bed2e9e92732966f610f0a100c74526c268f7e53d6a0",
+    "explanation": "Sumoshop is an e-commerce platform with hosted online stores. Hosting is included, so establish which operational tasks the supplier handles and which remain yours.",
+    "consideration": "Check payment and shipping connections, product data and options for migrating your store later."
+  },
+  "https://thorcommerce.io/": {
+    "sourceHash": "09d108840cd158b341f4e43116fd9c1bbd0b1ba7b566cf85eca0d81f6063b4b6",
+    "guideHash": "d77f84c79f13b147021f5404afbbf75b61d832dae0c241d9cc6cdbfe64c3935b",
+    "explanation": "Thor Commerce is a headless e-commerce platform for B2B and direct-to-consumer sales. Product catalogues, customer-specific prices, inventory, checkout and orders are accessed through GraphQL APIs, separating the storefront from the commerce platform.",
+    "consideration": "Assess frontend development needs and test the APIs with your pricing and order logic."
+  },
+  "https://www.tiimoapp.com": {
+    "sourceHash": "b46d74272c74900ca77d2c24000e09ea218ad8f24c89f63f28c01f48a4797d70",
+    "guideHash": "171a203450f8b0670a8b5b9e4e7ce7d4a7479d677fc0bfeb8c69039e66d161db",
+    "explanation": "Tiimo is a visual daily planner with AI for tasks, deadlines and focus. Developed around neurodivergent needs, including ADHD and autism, it supports planning at work and in everyday life.",
+    "consideration": "Try the planner in your own daily routine and assess which visual aids work for you."
+  },
+  "https://timelog.com": {
+    "sourceHash": "cf0b5d7fa3412dcc7b28c472f64def84e01d1289e72fce25fbe127bdc10e074f",
+    "guideHash": "48d5d0e0aea7c6fa99a8abe69adae92cdd1ec10ab3dd2a93d41d75cd8ac81ff8",
+    "explanation": "Timelog.com combines time tracking, resource management and invoicing. These connect recorded work with team capacity and subsequent customer billing.",
+    "consideration": "Test the process from planned work to recorded hours and invoices with your customer agreements."
+  },
+  "https://hourtick.com": {
+    "sourceHash": "23fe6e5a63725c62c4cde3861ee7e1717c701bf465e2b5894eb6e9ac86088cc2",
+    "guideHash": "6a0624362cfa1d089c8481ae71c034dc82b511512926b165e6bf0c473b97aa4a",
+    "explanation": "Hourtick.com brings time tracking, tasks and team chat together for people and AI agents. Its description highlights a pricing model without per-user charges, making both workflow and access arrangements relevant to investigate.",
+    "consideration": "Check agent access and the complete pricing model for your team and usage."
+  },
+  "https://ubivox.dk/": {
+    "sourceHash": "ae1a9430c670f9d511e643b900f42cfba4ffc4bb024714b538bbfaee5f4277a5",
+    "guideHash": "4386a33042cecdcaecca26a44182070dea33de2f244897558a8ecf01cf92cf9b",
+    "explanation": "Ubivox.dk is a newsletter sending tool. Assess it with your content and recipient lists and check editing, segmentation and delivery options.",
+    "consideration": "Test newsletter layout, recipient list management and unsubscribing with your own content."
+  },
+  "https://umbraco.com/": {
+    "sourceHash": "8f9e26661e498f5d08654bd84750fdbb7acf3877011c9ed3d44bc0f332126ae0",
+    "guideHash": "92fbf32e86901d3012c72d929916847198f61b34fa6fa5b41362ca1bfe757273",
+    "explanation": "Umbraco is an open-source .NET CMS with free and paid extensions. It is relevant to teams building and maintaining content websites using .NET.",
+    "consideration": "Check hosting and development responsibilities and the extensions your editors and website require."
+  },
+  "https://updatemate.ai": {
+    "sourceHash": "6570d890c675ad2cc9a5d63ce4ad22e97b760eb137d29f615b7c19e494468581",
+    "guideHash": "d55835bf2b955cb1fdf51d3707deacd294d8082e3ce597bed1d1f08092b99d63",
+    "explanation": "Updatemate.ai provides automation and integrations. Integrations connect systems, while automation runs workflow steps without someone repeating them manually.",
+    "consideration": "Test the specific system connections and check error handling and reruns."
+  },
+  "https://webcontent.app": {
+    "sourceHash": "386ea0f73afbc7047763aec318356b72e6803b6c1ef682ece330429b5f2135eb",
+    "guideHash": "29a8d7d368020690c409e912f8ed2b7b7bcc0520ecba639c54f70e1a2e661e38",
+    "explanation": "WebContent is a platform for UGC advertising. UGC is content made by users or creators; the platform is described as a place to find, create and execute this kind of advertising.",
+    "consideration": "Check production workflows, usage rights and content delivery to your advertising channels."
+  },
+  "https://webhook.site": {
+    "sourceHash": "5502c5c0963b5579175961195a59a096614f591ab86f393d6946a14d4e8e45d6",
+    "guideHash": "0c28c77249dc9910d4027a2ad8db0850254ed83f80aec47d08f1a41d63a4a812",
+    "explanation": "Webhook.site helps applications exchange information and participate in workflows. A webhook sends a message when an event happens in one system so another system can respond.",
+    "consideration": "Test your webhook format and check retention of data sent to the service."
+  },
+  "https://www.weply.chat/da": {
+    "sourceHash": "7cb79d964ddf066d0bce426ca5293b1da8fb8d1823fda323cede5dc588e00f8f",
+    "guideHash": "b7a0071dab595205ab63166468946b1249e3b3c16701f8edf3a7145d93388311",
+    "explanation": "Weply is a live chat solution focused on round-the-clock lead generation. A lead is a potential customer, so assess both website conversations and how relevant enquiries reach your sales process.",
+    "consideration": "Check how conversations are handled and how qualified leads are passed to your team."
+  },
+  "https://workfeed.io": {
+    "sourceHash": "771a82ede04e4c0350f1ba2c3e67eb68a76f87d6e6de1456565f051286bf6a75",
+    "guideHash": "be5dc8d647995490a153cfc483df41580ae22a6b3a1814fbe7ac6e7b2504fda5",
+    "explanation": "Workfeed combines scheduling, time tracking and employee administration. Assess how working time connects to HR tasks and test it against your shift and working-time rules.",
+    "consideration": "Test shift and working-time rules and transfers to your other administrative systems."
+  },
+  "https://ziik.io": {
+    "sourceHash": "8cfd9a649122c1348be8a8aa5acd8a7e2853fd4f3bf19019f468c441dc83925a",
+    "guideHash": "6686f685a5dbee55224dc6f3bba43c7093b838549d7ccff1e04a9d555ba5fe5c",
+    "explanation": "Ziik is an internal communications and information-sharing platform described as an integrated approach to intranets. Assess it against how staff need to find information and stay connected to the organisation.",
+    "consideration": "Test access for different employee groups and assess migration of existing content."
+  },
+  "https://epay.dk": {
+    "sourceHash": "97cf3d8571a4b0adf95f292c3340c50779ebac9c6d02d14e3a15220352ef242a",
+    "guideHash": "c29f6870e35e13efa5cdd6b5c909e8a39a29aa6b9e67259907439bfd86650cf4",
+    "explanation": "ePay Payment Solutions provides online payments. Assess the whole process from customer payment to your follow-up and check supported payment methods and integrations.",
+    "consideration": "Test the full payment process in your setup and check methods, agreements and total fees."
+  },
+  "https://www.uniqkey.eu/": {
+    "sourceHash": "1d4a2e6fb6c542d5aa2e9c3d563f35870020aa0e1c55c532554e3b4ce2cea48f",
+    "guideHash": "cbceec713e11316a229078ee4b823f5b9aaba6224ab37727ba6320e25eec97f0",
+    "explanation": "Uniqkey provides business password and access management. Assess everyday staff access and administration when employees join, change roles or leave.",
+    "consideration": "Test onboarding, access removal and the devices and services you use."
+  },
+  "https://dynamicweb.dk": {
+    "sourceHash": "7913a012ab3f35358f79411917c4a051bb613dbe9019f538bf0e4681d287538a",
+    "guideHash": "8e488a7e61020b6432340f22f59a18dbb67f6a9a5b5ae52cbfb4a70afcb0060f",
+    "explanation": "Dynamicweb combines CMS, e-commerce and PIM with a B2B sales focus. The CMS manages content and PIM manages product information, linking both to online commerce.",
+    "consideration": "Test your B2B pricing, product data model and connections to sales systems."
+  },
+  "https://www.velatir.com": {
+    "sourceHash": "7d22f0fd4b037d66236fa797aa57e221849a715797fcd6f7fd91fe193e827d77",
+    "guideHash": "61ef556e75c6a2af289a8170e6234f8da13eaffb947da633bf34738a333711d7",
+    "explanation": "Velatir approves, logs and monitors AI use across an organisation. It focuses on traceability and control of AI actions and is described as using EU infrastructure.",
+    "consideration": "Check which AI tools can be covered and where approvals should sit in the workflow."
+  },
+  "https://www.contractbook.com": {
+    "sourceHash": "a4b2f34d777229f5ae1b8b245eab7616890c25e75f87f801414195caf1b0c5f3",
+    "guideHash": "306f5d6d090344d2888c1cc58e1a2429e188911019320efed19da2c50e56a3e8",
+    "explanation": "Contractbook combines contract administration, follow-up and signatures. Assess it across the complete contract lifecycle, from making an agreement to finding and reviewing it later.",
+    "consideration": "Test your contract workflow from draft to signature and subsequent follow-up."
+  },
+  "https://www.theroomdisplay.com": {
+    "sourceHash": "5161b6014bb31016f9e3572087c93626e8fbd4e5ba2633d46df7aab203283ae2",
+    "guideHash": "8c505827acb9b575346dbc0332574d2c0468e58d0647cf08d4a20e49034a3d26",
+    "explanation": "The Room Display shows whether a meeting room is occupied or available on a digital sign. Its description mentions iPad support and a one-off purchase model; confirm current terms with the supplier.",
+    "consideration": "Check calendar integration, required iPad equipment and how the display stays up to date."
+  },
+  "https://klubmodul.dk/": {
+    "sourceHash": "23cbdd789e0ff6ec7b7e9023812d2425c78642ceb6c04d47f1818553e2c30a0e",
+    "guideHash": "e01cd2f8e7baf5cb6edcf7c1915c62121e707e766a2867e733f27bef6b719982",
+    "explanation": "Klubmodul combines member administration, fees, activities, registration, communications and a club website. It is relevant to associations connecting member journeys and activities to administration.",
+    "consideration": "Test activity registration and fee collection with your membership types and association rules."
+  },
+  "https://effihub.com/": {
+    "sourceHash": "ba63566aa151dd2833020daaf1555e0759f7660c102be53420148ddba156f17f",
+    "guideHash": "509a2d5ad53512833e4dfea9f5d0d6cf7bbeb90fc4ea227064045ea6116fa06d",
+    "explanation": "Effihub is a PSA solution for agencies and consultancies. It connects time tracking, project and resource planning, prepaid hours, invoicing and reporting to follow client work from planning to billing.",
+    "consideration": "Test your agreement types, prepaid hours and invoicing routines on a real client project."
+  },
+  "https://www.keenpartner.com": {
+    "sourceHash": "5c1f6e525f334f3c27fa2c197cba50e2f8f8c2b3ec9e86d35bc8474163b02ff0",
+    "guideHash": "c0eed32023106a0927caee443bb001c346e848e4c3df8689834ccec7220c4d9b",
+    "explanation": "Keen is PRM software for lead-generating B2B partnerships. Partner relationship management organises relationships with partners and their contribution to sales.",
+    "consideration": "Check how partner leads are recorded, assigned and followed through your sales process."
+  },
+  "https://elmah.io": {
+    "sourceHash": "f5483c51d6510b3647ecca6128e3b2675b98aed056f7dc6ff3e978e156d39eae",
+    "guideHash": "546b83f076f003f2928fbf00a61f1040f29a8c5102f16e6a11992330c498b2e2",
+    "explanation": "elmah.io monitors .NET applications for errors and collects them in central logs. Developers can investigate problems across an application rather than relying only on local log files.",
+    "consideration": "Test error logging in your .NET environment and check what information is sent in logs."
+  },
+  "https://www.devcompendium.com/": {
+    "sourceHash": "77a9f06bd6101a4a6fe9952f1b6992ae0d64d37e96fb42c8cfb66eab9626c4ed",
+    "guideHash": "506e613b4afab937da6d73021d0d3c69f5a0a6be63964511bd03e7609ba0ba78",
+    "explanation": "DevCompendium stores prompts, commands and code snippets for sharing within a team or publicly. Assess it as a shared collection of material to find and reuse in development.",
+    "consideration": "Check sharing permissions and avoid storing secrets or personal data in public material."
+  },
+  "https://wordpress.org/plugins/lynbro-cookie-consent/": {
+    "sourceHash": "7b6a20a7a20a706008ab15ac2492e555c838bdf5c38958cabd7d302ba35ea2c6",
+    "guideHash": "e05b6bb6289f64ceaece690f19d1883bd85bdc194cf98802ff4daa15454d59b3",
+    "explanation": "Lynbro Cookie Consent is a multilingual WordPress consent banner with Google Consent Mode v2. Its description includes cookie categories, scanning and consent logs. Test the complete consent setup on your own website.",
+    "consideration": "Verify that scripts actually follow consent choices and review the setup on your website."
+  },
+  "https://loenradar.dk": {
+    "sourceHash": "7a644521320037940c2bfdc413fb83d962aceaf51f8e382ba4fd85a005eb2c71",
+    "guideHash": "400dbc4a193675c1adfc46f49b704387cd7f416b62c95374373612adfe74bfc2",
+    "explanation": "LønRadar provides salary benchmarking and calculation. Benchmarking compares a salary with a dataset, so its relevance depends on whether roles, experience and locations match your question.",
+    "consideration": "Check data sources and coverage of the jobs, experience levels and locations you compare."
+  },
+  "https://www.heysender.com": {
+    "sourceHash": "b11af3bcc09148aa64ab14a22426929277189114d1dbc3fd397576840fa9521d",
+    "guideHash": "1a6eed199a9de19ce0dcc5a895bd22b4b2ccc93a9f36ea529fffdd9fa66570e0",
+    "explanation": "Heysender offers an email API and SMTP for transactional email. These messages relate to application events, so test it against your message types and delivery requirements.",
+    "consideration": "Test the API or SMTP with your application, sender domains and expected volume."
+  },
+  "https://www.heyloyalty.com": {
+    "sourceHash": "1d4e51561f10ff00242876d419e97a251b7ce80bd0666a0e74217eacec489a20",
+    "guideHash": "7950824a3bef170954c91e76d98d2509fb1e4155a6989bfda376130f0f8f6ed4",
+    "explanation": "Heyloyalty combines marketing automation with a customer loyalty focus. It brings data together for personalised communications aimed at encouraging return visits and purchases.",
+    "consideration": "Check data sources and test a specific loyalty journey with your own customer segments."
+  },
+  "https://www.getconnie.com": {
+    "sourceHash": "66e9af92e13492c6885a40bfe57e4e2ed0bee02bc78c52e8f0c42f57c3521104",
+    "guideHash": "92ec8ad689056a58f787d971d3ef464111617954ab535b5695f79237279fe6d6",
+    "explanation": "Connie is a document tool for creative professionals, supporting document creation, sending and signatures. Assess it against the agreements and document workflows in your productions and projects.",
+    "consideration": "Test the document types and signing workflows your productions require."
+  },
+  "https://www.returnflows.com": {
+    "sourceHash": "690a4c1e3b495c46a45e2f0d4bceb039b442e0860491d08992ae0bc8899b5a89",
+    "guideHash": "34d15eee85c7c22f49b0460195dfd45566877a2a4e9ff435c78ebfc20b5283a8",
+    "explanation": "Returnflows is an e-commerce returns management platform. Assess the customer return journey and your work receiving items, following cases and completing returns.",
+    "consideration": "Test your return rules and connections to your webshop, shipping and refunds."
+  },
+  "https://pcrypt.com/": {
+    "sourceHash": "fee44cd5b153b81b44f71c3d62136c7f061874bb7c83cddd94b15a59ac31fd9f",
+    "guideHash": "8bf42ee6b196b6cf4f96557234110ddadb35a5db05090656ad06e2a658615ec4",
+    "explanation": "Pcrypt is a password manager that encrypts passwords locally on the user's device before storage or transfer. It supports sharing between users and teams and is described as offering cloud and on-premises installation.",
+    "consideration": "Check operational responsibility, access recovery and the sharing rules your team needs."
+  },
+  "https://yulsn.com": {
+    "sourceHash": "5509bfd2ce0d2a84ecbabde0092f228149b2cfcec1dc9eaa511c1237595a5922",
+    "guideHash": "587ffd6fbd49c9c46b77fd54c33a6af7b316f315a3de9211c1a074710db97ef0",
+    "explanation": "Yulsn Marketing Cloud combines email marketing, automation and loyalty programmes. Its description particularly targets businesses with large email volumes and custom automation processes.",
+    "consideration": "Test one of your most demanding email workflows and check customisation and capacity."
+  },
+  "https://kontolink.com": {
+    "sourceHash": "722bdae8f35323571893ff1d40fd55e385f6544e1ac61703261078314647c8c0",
+    "guideHash": "577e348bb9953c3a28aae782a1e037018adcbd9cc21a96fcf633c0ef21f4c21c",
+    "explanation": "Kontolink uses bank data and receipt sources to automate bookkeeping for small and medium-sized businesses. Its description mentions PSD2 access and email as a source, making data access central to the workflow.",
+    "consideration": "Check banking and accounting connections and test how receipts are matched and approved."
+  },
+  "https://avallone.com": {
+    "sourceHash": "428d192ac342be852bdb409cefebfc7028e6eb810dc22d362b2baf74e21c0e46",
+    "guideHash": "e022828c148360ae60dc3c42259d617103172111dd92d28786eabfb4ffe08e5c",
+    "explanation": "Avallone automates KYC compliance. Know Your Customer involves checks on customer relationships; establish the specific scope of verification and documentation with the supplier.",
+    "consideration": "Review your KYC process, data sources and requirements for documentation and manual checks."
+  },
+  "https://cvrintel.dk": {
+    "sourceHash": "359132b8c70706169eee7c18912df37c07678438c3c0a3467d9d22c6253dae4d",
+    "guideHash": "bb6b2878353546631169f332d1eba8026c110cab819500d5c34a4c8cd2f93836",
+    "explanation": "CVR Intel combines company data, AI and leads. A lead is a potential customer, so assess the data and how it helps you find relevant businesses for sales.",
+    "consideration": "Check data sources, update frequency and how leads fit your target audience."
+  },
+  "https://zylinc.com": {
+    "sourceHash": "be89296d8e8c59a44746c8c9f182afa336b91265adb0ca63e103916f37327412",
+    "guideHash": "13a817fd659c43cb86f68e2be6d9625bdd88df15a19e97171e732c83af072001",
+    "explanation": "Zylinc.com provides switchboard and contact centre services. Routing connects enquiries to the right person; also establish which communication channels and customer service workflows it supports.",
+    "consideration": "Test your call flow and connections to telephony and other customer systems."
+  },
+  "https://www.dixa.com": {
+    "sourceHash": "5cf588dd31b64b43d403576c7d332ac81a2d594af8601034bff4d31c1c26111d",
+    "guideHash": "2281933328839e8dd87cd4fdb6501e92751bca0a1623e84097c0dbbd4a3b7a7e",
+    "explanation": "Dixa is described as an agentic AI platform for customer service. It is relevant when AI agents are to handle customer enquiries alongside the wider support workflow.",
+    "consideration": "Test handover to staff and establish which answers and actions AI agents are allowed to provide."
+  },
+  "https://www.shup.dk": {
+    "sourceHash": "2d74539a343de47ffe3c9dc534914f8b5bccf8f83ed1add93fba9e626b1158d6",
+    "guideHash": "4ef404d2fcddf255bf20386dd9b5104eab956041334cd3785f9f839664f1928c",
+    "explanation": "SHUP is described as a simple hosted e-commerce platform. Hosting is included, so assess both store management and responsibility for technical operations.",
+    "consideration": "Test product setup and checkout and check available payment and shipping integrations."
+  },
+  "https://www.shoporama.dk": {
+    "sourceHash": "79c24459c6ece58066b15eac1989e69c135be204904d780d5dc2678233288f05",
+    "guideHash": "19dea0e58c64f4c9a2f6a0baa51c428922002f261d58273ff596541fc3d9e625",
+    "explanation": "Shoporama is an e-commerce platform with Danish support and a product community. Its description includes SEO, marketing and order tools, making both sales and day-to-day store operations relevant to assess.",
+    "consideration": "Test your product data, order flow and required connections to other systems."
+  },
+  "https://github.com/syv-ai/plapre": {
+    "sourceHash": "8d344457af0b0af7dba2852fadfa9a80a724495f01e327a48c1a0b75a70cc57a",
+    "guideHash": "e097bdcf9b5d16bcb5aabae9d960391ab6aff2513fecb1a0cfd8533c8e68c802",
+    "explanation": "Plapre is open-source Danish text-to-speech with voice cloning. It runs locally or on your own infrastructure, letting you choose where speech generation takes place.",
+    "consideration": "Test pronunciation and audio quality and check rights to the voices you want to use."
+  },
+  "https://pawnote.dk": {
+    "sourceHash": "22ed8622a80368a06dc263e9a7805c3d12d51e4f5d7ac4a9fdd9748f61d4ffee",
+    "guideHash": "9975259e3741ba1cef1e54ae3ac1578d59db498df6bef68ea0f5a39b29121783",
+    "explanation": "PawNote combines booking and clinic CRM for animal therapists and small veterinary clinics. CRM organises customer relationships, connecting appointments with clinic customer administration.",
+    "consideration": "Test your appointment types and customer data and assess how existing data can be migrated."
+  },
+  "https://www.coherta.com/da": {
+    "sourceHash": "daf8b6624565091efa2e79a1bb5d2589ca3c5730f7b5b60678b1e8ad7bab0d7d",
+    "guideHash": "da9fa9588d38e29622eced9ed15c2ed026f7369aadbedc16a887509afad42e27",
+    "explanation": "Coherta collects, enriches and deduplicates company and contact data for B2B work. Data supports leads, segmentation and CRM synchronisation, making contact data quality a key assessment point.",
+    "consideration": "Check data sources, market coverage and duplicate handling during CRM synchronisation."
+  },
+  "https://meilirobots.com/": {
+    "sourceHash": "7cda42df2c75b3e97b831f88bfc54c1e1e0efbe67c88aacdf0b2cf84a9683bcf",
+    "guideHash": "7ed686552530e4993b901cae58653e35efa66328879d861dd06d1afc8e0456af",
+    "explanation": "Meili Robots manages mobile robot fleets across types, brands and models. Orchestration coordinates robots together; compatibility with your specific robots needs testing.",
+    "consideration": "Test compatibility with your actual robots and the tasks they need to perform together."
+  },
+  "https://freelio.dk": {
+    "sourceHash": "100aa56eca6656adc636fbe56c4ac4a3474148d5367cd941b42917212bba5a94",
+    "guideHash": "fda92b6882e2fb730374680623a5591f3c5f06eda4f6504744d5d85031e608e9",
+    "explanation": "freelio.dk is described as a Danish alternative to LinkedIn with career, recruitment and branding tools, meetups and events. Relevance depends on whether you need networking, job hunting or recruitment.",
+    "consideration": "Check whether the professional groups and businesses you want to meet are active on the platform."
+  },
+  "https://fortesprojectflow.dk": {
+    "sourceHash": "70a81bb94cce37eb4ef0b74650319b3b2114aa67bbbadd56b5b5f18ec116cb3d",
+    "guideHash": "ff247098ad282763edf56519b27e958b2d2152947b2128e7a900de2d588f09f4",
+    "explanation": "ProjectFlow combines project and portfolio management, resource management and time tracking. Portfolio management looks at multiple projects together, making cross-project priorities and team capacity key points to assess.",
+    "consideration": "Test prioritisation across projects and your approach to resource planning."
+  },
+  "https://one.com": {
+    "sourceHash": "dabbee1d4cf2d8dc0eac5b76c6e3b00b08679de9f1a7baf0b1e3cd611d071d67",
+    "guideHash": "be4895d4e97e21f79137381f313aeb7521bede49feaa6222971590fb6f68c676",
+    "explanation": "One.com is described as a website hosting solution. Hosting is where website files and applications run, so check your website's technical requirements.",
+    "consideration": "Check website compatibility, backups and future migration options."
+  },
+  "https://minforening.dk": {
+    "sourceHash": "88b74f03e8266e1cac7647c5b54ac2746328defab6ae13cf6f802c200c6c4b00",
+    "guideHash": "9f762b87542239cd2e82f3348e452dbbb966b2a2925fd1c66ce81aedfb044b5e",
+    "explanation": "minforening is an app and association management system for members, volunteers and association roles. Assess shared digital access against both administration and members' daily use.",
+    "consideration": "Test it with leaders and members and check roles and access permissions."
+  },
+  "https://deltaplan.dk": {
+    "sourceHash": "49f02cfad69b252b3126a700baf82de87a368324e4638cc6502d3ae4c60fd6ff",
+    "guideHash": "ad63425c8cf8e34e6b625b57560f56db249c4badb5486b648bca4cbecc6d6616",
+    "explanation": "deltaplan.dk combines shift schedules, time tracking, HR and communications with payroll exports. Assess how planned shifts, completed work and subsequent payroll processing connect.",
+    "consideration": "Test your shift rules and payroll exports against your existing payroll setup."
+  },
+  "https://redactpdf.io": {
+    "sourceHash": "768cab04e3661ccbea2fac8e98402274ab590becef2c6f393b974f4fb1292e47",
+    "guideHash": "0237cdda89636d67ca45db47333b28285e1f522d440815d580b846e68684232b",
+    "explanation": "redactpdf.io anonymises PDFs, Office documents and emails. Its purpose is to remove information; verify the result in visible content and any text layers and metadata.",
+    "consideration": "Test that removed information is also absent from text layers and metadata in your document types."
+  },
+  "https://regrettable.eu": {
+    "sourceHash": "f4814503933cd4b4eb01578d3c932e71ae8c7868a1c0b84dea646f221aecdad5",
+    "guideHash": "2ab0897ca0146e6aabcee4622498f5c9d857aa5d408e9b3bef269384efc4960b",
+    "explanation": "regrettable.eu provides a webshop withdrawal button as a widget with confirmation emails and an audit log. Assess both the customer journey and your documentation of the request in your store.",
+    "consideration": "Check integration, log retention and whether the process meets the requirements applicable to your sales."
+  },
+  "https://companydata.dk": {
+    "sourceHash": "77152d5aeb9fb02183bf161c46843d42cd6f27dd19528b5c9c5a5fc6a13a5583",
+    "guideHash": "912cf7ec461377dbe19467f14ab2c190e35afe3a534afde28cd5b1939f6d1049",
+    "explanation": "companydata.dk provides Danish company data through a REST API, including accounts, a financial health score, property data and monitoring. The API makes information available to your own systems and analyses.",
+    "consideration": "Check data coverage and how the health score is calculated before using it in assessments."
+  },
+  "https://cvrapi.dk": {
+    "sourceHash": "74cb80dc132e9b58256806aee959965d762a544a9e33e7c82f08ff83cad40b63",
+    "guideHash": "c5f00907888a346f29bb31819dbb4ca11995da5fd042afaedb1910bb27561640",
+    "explanation": "cvrapi.dk provides Danish and Norwegian company lookups in JSON or XML. Searches include company registration number, production unit number, name and phone number for use in your own integrations.",
+    "consideration": "Test the fields and lookup types you use and check data quality and update frequency."
+  },
+  "https://chainbox.dk": {
+    "sourceHash": "9c8ae0da9cf503d56f92274faad48bfbb95b4720ef35e65cd780cee0fd8c949e",
+    "guideHash": "4403aa5c271d48fc43eced0e773be92d2bc3ac32aaf56b416c318b88d61141a8",
+    "explanation": "Chainbox supports B2B businesses with product data, online sales and content management. Assess the connections between product information and the sales rules for your business customers.",
+    "consideration": "Check your B2B sales rules and how product data moves between the platform and other systems."
+  },
+  "https://easyonline.ai": {
+    "sourceHash": "343cae6cf953cf8d1b058ddaab5ea1f6fe1999192dafa086f14397614a9267f7",
+    "guideHash": "91a1ea4250736683d8f7403bfef9ff5fddbfcd52828bdb7d47bd06c01988a582",
+    "explanation": "easyonline.ai hosts websites created with AI. Its description concerns uploading and publishing an existing website, so check the work needed to keep it updated afterwards.",
+    "consideration": "Check supported file types, domain setup and options for updates and backups."
+  },
+  "https://shipmondo.com/dk/": {
+    "sourceHash": "137de92d85640c6030ec6c67c55c31c116b06db4c36e3b03032dee59e3e17d14",
+    "guideHash": "3b82f36ce475b51ff3a81f0bf50abbcbe3211da02b0da43e5d0e3c5af4f664a0",
+    "explanation": "Shipmondo is a shipping management tool. Assess it against your shipments and check carriers, shipping agreements and connections to your order or webshop system.",
+    "consideration": "Check carriers, your own shipping agreements and connections to your webshop or order system."
+  },
+  "https://www.dotlegal.com": {
+    "sourceHash": "07dc73aec1a6d46c992f96a2983cbdbc3ff3d4bff6367fe50dc02f78851e4d39",
+    "guideHash": "24593cb8eb627ee84e66737f3d34775538ad09536d9710d304334aa34cd6ab54",
+    "explanation": ".legal brings compliance work together in a GRC platform with modules for data protection, information security, contracts and suppliers. GRC stands for governance, risk and compliance: organising oversight, risks and requirements.",
+    "consideration": "Map your relevant requirements and establish which tasks the platform supports and which you must perform yourself."
+  },
+  "https://verifyid.dk": {
+    "sourceHash": "16a5aefedebd8a4dce2488ad4741f918fe2a3ccfd023142e15e7ef457e3caf6f",
+    "guideHash": "3d0742c091fe08d88d4e284166f5668c87985bd4559200e523b0f6e14721106e",
+    "explanation": "VerifyID.dk provides age verification and ID scanning online and in physical shops. Its description also highlights customised MitID flows for e-commerce and login.",
+    "consideration": "Test the specific ID or MitID flow and check handling of the personal data collected."
+  },
+  "https://sendrcs.dk": {
+    "sourceHash": "e35b5cd91a3024f682f9b64787c0593795dcfbf111f405576f77a65394155169",
+    "guideHash": "81a4ec9182039096d384a865e8c142abcd1949d820ff0e8e2ee4736193bd2567",
+    "explanation": "SendRCS.dk is a platform for RCS Business Messaging. It sends messages with images, buttons and carousels, supporting more content and actions than a standard text message.",
+    "consideration": "Check recipient coverage and how messages are handled when RCS is unavailable."
+  },
+  "https://nummeropslag.dk": {
+    "sourceHash": "e28c167b1e46cd96eeaa1bb91b4f04b18d801605d919adde3c9c90d84a522e6d",
+    "guideHash": "24581e5a0513b6957879e67b54c2de447f39150654483ae76a4e51fc1d1c281c",
+    "explanation": "Nummeropslag.dk uses company register and telecom data for number lookups, caller ID and spam call protection. Available as an app and partner API, it supports personal call management and system integrations.",
+    "consideration": "Check data coverage and how incorrect identifications or blocks can be corrected."
+  },
+  "https://pennapay.com": {
+    "sourceHash": "6cc79d0f8e5eb8952e978108f5c597bab9d3be4768591b914a2fefc36470cee3",
+    "guideHash": "ae1d694b690f3c1f9f3b19c1a4912919e4b288bd31360f72db28106bf237536c",
+    "explanation": "PennaPay is an invoicing tool for freelancers and the self-employed with payment links, a customer portal and file sharing. Its description mentions cards, MobilePay and VAT invoices with sequential numbers.",
+    "consideration": "Check payment costs and the connections between invoicing, the customer portal and bookkeeping."
+  },
+  "https://byggepladsplanen.dk": {
+    "sourceHash": "9f225a24f16750947f81ea78e3a14e3e0754c4c8a5cc81351c7e7041400dc13a",
+    "guideHash": "435ee13221d0edca69720777d0de178452bd22749508331553b95141bd05e290",
+    "explanation": "Byggepladsplanen.dk is a web tool for placing fences, work areas, signs and access routes on a map. It supports planning and communicating a construction site's practical layout.",
+    "consideration": "Test map coverage and the symbols and export formats your site plan requires."
+  },
+  "https://kloaktegning.dk": {
+    "sourceHash": "a06c7d4859781855e06c708bf56754e512b6badb04ddb55d6c8a406c48a43b5b",
+    "guideHash": "347bc005db0ac5534aa42d816c005e4636718505ac8090f879be85d8d60297df",
+    "explanation": "Kloaktegning.dk is a web-based drawing tool with pipes, manholes and Danish sewer symbols. Assess it against your specific sewer drawing tasks.",
+    "consideration": "Check scale, documentation and export to the formats required by recipients of the drawing."
+  },
+  "https://skilteplanen.dk": {
+    "sourceHash": "cd6d51c0870e2cd3d9cba11a8e16da19b928ec916c2686d969284cc921411332",
+    "guideHash": "5a5ecd8119f4f8f68e362cb202be89002f29df28e3e76790950dd0912d105614",
+    "explanation": "Skilteplanen.dk is a web tool for roadwork signage and traffic management plans. The plan shows placement around the work area; check symbols, export and review of the finished plan.",
+    "consideration": "Test the symbol selection and export and establish how the plan is reviewed before use."
+  },
+  "https://brandbuddyai.dk": {
+    "sourceHash": "09f8b885170699ef9b6cc0fc22df8203d68fbe941292b76d2ce74c4f73615728",
+    "guideHash": "20bb553a18440854c611c9769d2c2b64fa2ddaef1e8e9af96609318ca20d1f39",
+    "explanation": "BrandBuddy creates email campaigns for local businesses using their website. Its description highlights planning a full year of campaigns, making approval and ongoing content adjustment important to assess.",
+    "consideration": "Check how text is approved and how campaigns adapt when your offers change."
+  },
+  "https://qlim8.com/": {
+    "sourceHash": "b82383cca06cb40184edd4a15f9d3a896353e25f66c254af6b2e1c5ef48f1541",
+    "guideHash": "470723701e2a121907fc489e2e1cdea71cc2832e3cd9c2cd895b8855d98290b1",
+    "explanation": "qlim8 combines carbon accounting and ESG reporting with scope 1–3 emissions calculations. Its description includes system connections, a value chain data portal and access for consultants and auditors.",
+    "consideration": "Check underlying data, calculation methods and coverage of the reporting framework you use."
+  },
+  "https://timetrack.dk": {
+    "sourceHash": "0a5bc4e53615ef36b4ac55430f0e9807d49d4ea9864558384b6854f31d3797fc",
+    "guideHash": "dbad73f47a2fd47d448caf5faa2c17d06aabe525ad9bf778d62c48f5274e5b9b",
+    "explanation": "TimeTrack.dk connects time tracking, prepaid hours and invoicing. Its description covers several time-entry interfaces, accounting integrations, MCP and an API, allowing both staff and AI agents into the workflow.",
+    "consideration": "Test transfer to your accounting system and check agents' access to hours and invoices."
+  },
+  "https://liviate.com": {
+    "sourceHash": "fb4c27f18eb217340befa304e0a0cd92b59aba58af4a3c7d0a9a2176ec6c7e72",
+    "guideHash": "4a2d9522cbe73b9eeac986c322e4d0a5fd81dc36a1cc885689abfaeffa5823f7",
+    "explanation": "Liviate offers cloud and managed hosting with virtual servers, Kubernetes, backups and monitoring. Managed hosting includes operational help; establish precisely which tasks the supplier takes responsibility for.",
+    "consideration": "Check responsibilities for operations, restoring backups and services your application depends on."
+  },
+  "https://place2book.com": {
+    "sourceHash": "da670e39196d485497f841db15b573900e811f66321522d9ed9a726db1353f51",
+    "guideHash": "e7f60a31d19c715b5d5348c7da17caa7dfb737138400db51451c17fc57577aa3",
+    "explanation": "Place2Book is an event ticketing system with seating, scanning and attendance tracking. Assess the whole process from seat selection and ticket purchase to entry and check-in on the day.",
+    "consideration": "Test your seat types and entry flow and check fees and cancellation handling."
+  },
+  "https://zalye.dk": {
+    "sourceHash": "1c14eb8684d3ee9b8465cda912ed8fe3978cc4313a904ca0264ab71f105d2ea4",
+    "guideHash": "cec47a2e985f52c689367e753ab7a48f56120338434528f8b47758bc08caf46c",
+    "explanation": "Zalye.dk combines quotes, task and route planning and invoicing for tradespeople. Time, materials and photos are recorded by phone, and its description mentions invoice transfer to accounting systems.",
+    "consideration": "Test a real job from quote to invoice and check AI calculations against your own prices."
+  },
+  "https://gitoro.com": {
+    "sourceHash": "9c283fa0b2c0798f1313c58055613329dc534d2520a01bb81effdc5aa04e6326",
+    "guideHash": "77f04c632971e824b05e92e2e60e3bb65f1393c5f26c4378991574bf3a50c457",
+    "explanation": "Gitoro offers European Git hosting with CI/CD, pull requests, issues and AI-guided review. Its description also covers role-based access, service accounts and MCP access for AI agents, spanning both development and access management.",
+    "consideration": "Test your pipeline configuration and access model before migrating repositories and agents."
+  },
+  "https://biosuite.io": {
+    "sourceHash": "82e55187985f8abbff570c0ff58322297413db7a6b40bdaec04cc78a0ebe2d26",
+    "guideHash": "2665246633b8e865252f5e3c37ab4f021f32459d43c4db9fd3097a5c1eadaaf4",
+    "explanation": "biosuite provides procurement and spend management software for biotech businesses. Spend management tracks and controls company expenditure, so assess it against your purchasing process and documentation needs.",
+    "consideration": "Check support for your suppliers, purchasing approvals and documentation requirements."
+  },
+  "https://meneo.dk/": {
+    "sourceHash": "891437079415a71f8a751a0fe98e6bf004bf0fac033e146a8d9565b37b38eb94",
+    "guideHash": "9d9a7f6441844493e3bfc77d01818f789bb231302cb8ff367ccb91311fd7401e",
+    "explanation": "Meneo is task management for bookkeepers and accountants with automatic creation of recurring client tasks. Deadlines, responsibilities and time tracking are brought together to plan and follow recurring work across clients.",
+    "consideration": "Test recurring tasks, deadlines and responsibilities against a representative client workflow."
+  },
+  "https://moxso.com/": {
+    "sourceHash": "e3c6b91f92e8f827ead962470f12e4424b5d25a68f46c4843df9ccf351f56b14",
+    "guideHash": "a60709d90c4a131fad68031a7b9682e5b1810f18fdf17bcfaa8e5e25fb322a91",
+    "explanation": "Moxso uses employee behaviour to measure human security risks and target training, phishing simulations and follow-up. Phishing simulations imitate fraudulent messages to train employees' responses.",
+    "consideration": "Check measurement methods, employee visibility and how training effectiveness is followed without unnecessary data collection."
+  },
+  "https://naboportalen.dk": {
+    "sourceHash": "d7910e86f09b84750e8fecab509935627521918f2dfc49ca30f3a3e93a7ea651",
+    "guideHash": "8abad624c854c033735bf76cd5d68b55d07075e0e09592c92a7a982b8f9190cd",
+    "explanation": "NaboPortalen combines housing association fault reports, cases, documents, tasks, bookings and resident communications with a resident app. Assess the connection between residents' enquiries and the work to resolve them.",
+    "consideration": "Test a fault report from resident submission to case closure and check board and operations team access."
+  },
+  "https://txty.dk": {
+    "sourceHash": "4e0330e5329dbd2d81a80060140d7531c0e77b17fcc1c96b6dd1883b57dd3c42",
+    "guideHash": "e882af2a94bd84d7784dc0a98ad40b134982712c347f44e930e67033706a1185",
+    "explanation": "Txty.dk is an SMS gateway with a REST API and dashboard for sending and receiving messages. Its description mentions sender names, keywords, virtual numbers, HLR lookups and webhook delivery reports.",
+    "consideration": "Test sender setup, replies and delivery webhooks in your actual SMS workflow."
+  }
+}

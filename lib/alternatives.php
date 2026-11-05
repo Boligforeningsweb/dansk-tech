@@ -12,7 +12,7 @@ function alternative_slug($name) {
 }
 
 function alternative_url($name) {
-  return '/alternativer/' . alternative_slug($name);
+  return locale_path('/alternativer/' . alternative_slug($name));
 }
 
 // slug => ['name' => ..., 'slug' => ..., 'products' => [...]]
@@ -63,7 +63,7 @@ function list_names(array $names) {
     return implode('', $names);
   }
   $last = array_pop($names);
-  return implode(', ', $names) . ' og ' . $last;
+  return implode(', ', $names) . (locale() === 'en' ? ' and ' : ' og ') . $last;
 }
 
 // AI-tekster skrives og gennemgås i repoet, ikke ved sidevisning.
@@ -76,7 +76,19 @@ function product_guide(array $product) {
   if (!is_array($guide) || ($guide['sourceHash'] ?? '') !== $sourceHash
       || !is_string($guide['explanation'] ?? null) || trim($guide['explanation']) === ''
       || !is_string($guide['consideration'] ?? null) || trim($guide['consideration']) === '') {
-    return ['explanation' => $product['description'], 'consideration' => null];
+    return ['explanation' => product_description($product), 'consideration' => null];
+  }
+  if (locale() === 'en') {
+    static $english = null;
+    $english ??= load_json('data/translations/product-guides.en.json');
+    $translation = $english[$product['url']] ?? [];
+    if (($translation['sourceHash'] ?? '') === $sourceHash
+        && ($translation['guideHash'] ?? '') === hash('sha256', $guide['explanation'] . "\n" . $guide['consideration'])
+        && is_string($translation['explanation'] ?? null) && trim($translation['explanation']) !== ''
+        && is_string($translation['consideration'] ?? null) && trim($translation['consideration']) !== '') {
+      return $translation;
+    }
+    return ['explanation' => product_description($product), 'consideration' => null];
   }
   return $guide;
 }
@@ -87,19 +99,20 @@ function alternative_faq(array $alternative) {
   foreach ($alternative['products'] as $product) {
     $guide = product_guide($product);
     $faq[] = [
-      'q' => "Hvad kan {$product['name']} bruges til?",
+      'q' => t('Hvad kan {name} bruges til?', ['{name}' => $product['name']]),
       'a' => $guide['explanation'],
+      'language' => $guide['consideration'] === null ? product_description_language($product) : locale(),
       'consideration' => $guide['consideration'],
       'source' => ['name' => $product['name'], 'url' => $product['url']],
     ];
   }
   $faq[] = [
-    'q' => "Kan jeg erstatte $name direkte med et af disse produkter?",
-    'a' => "At et produkt er på listen som alternativ til $name betyder, at det er foreslået til lignende behov. Det er ikke en garanti for de samme funktioner eller en direkte udskiftning. Lav en liste over de funktioner, du bruger i $name, og afprøv dine vigtigste arbejdsgange hos den nye leverandør. Afklar også integrationer, flytning af data og den samlede pris før et skifte.",
+    'q' => t('Kan jeg erstatte {name} direkte med et af disse produkter?', ['{name}' => $name]),
+    'a' => t('At et produkt er på listen som alternativ til {name} betyder, at det er foreslået til lignende behov. Det er ikke en garanti for de samme funktioner eller en direkte udskiftning. Lav en liste over de funktioner, du bruger i {name}, og afprøv dine vigtigste arbejdsgange hos den nye leverandør. Afklar også integrationer, flytning af data og den samlede pris før et skifte.', ['{name}' => $name]),
   ];
   $faq[] = [
-    'q' => 'Betyder et dansk produkt, at mine data opbevares i Danmark?',
-    'a' => 'Nej. Dansk betyder her, at virksomheden har hovedkontor i Danmark, en dansk stifter eller medstifter, eller primært er dansk ejet. Det fortæller ikke i sig selv, hvor data opbevares, hvilke underleverandører der bruges, eller hvilket sprog supporten foregår på. Spørg leverandøren om de forhold, der er afgørende for jer.',
+    'q' => t('Betyder et dansk produkt, at mine data opbevares i Danmark?'),
+    'a' => t('Nej. Dansk betyder her, at virksomheden har hovedkontor i Danmark, en dansk stifter eller medstifter, eller primært er dansk ejet. Det fortæller ikke i sig selv, hvor data opbevares, hvilke underleverandører der bruges, eller hvilket sprog supporten foregår på. Spørg leverandøren om de forhold, der er afgørende for jer.'),
   ];
   return $faq;
 }

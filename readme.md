@@ -15,6 +15,7 @@ Danmark har nemlig en stolt tradition inden for softwareudvikling. Teknologier s
 ### Formål
 
 Projektet har til formål at:
+
 - ✅ Sætte fokus på danske tech-produkter til software-virksomheder
 - ✅ Give inspiration til danske alternativer i tech stacks
 - ✅ Fremme synligheden af dansk tech-innovation
@@ -28,178 +29,121 @@ Initiativet er startet af en gruppe danske iværksættere, chefer og investorer,
 
 ---
 
-## 🤝 Hvordan bidrager du?
+<a id="bidrag"></a>
+<a id="-hvordan-bidrager-du"></a>
 
-Vi er glade for bidrag! 
+## 🤝 Foreslå et produkt eller en rettelse
 
-**Vigtigt:** Du kan tilføje produkter til den samlede liste ved at redigere filen `products.json`. Produkter i denne fil vises automatisk i den alfabetisk sorterede liste på siden.
+Du kan bidrage på to måder:
 
-Du skal **ikke** redigere `original-products.json` (denne fil markerer de oprindelige produkter) eller sitets kode (`index.php`, `pages/`, `partials/`, `lib/`, `data/`) - det håndteres internt af projektet.
+- **Send et forslag:** [Opret et issue på GitHub](https://github.com/Boligforeningsweb/dansk-tech/issues/new). Skriv produktets navn, hjemmeside, en kort beskrivelse, dets danske tilknytning og hvilke internationale produkter det er et alternativ til. Du behøver ikke skrive kode. Du kan også foreslå rettelser til eksisterende oplysninger.
+- **Lav en pull request:** Tilføj eller ret produktet i [products.json](products.json). Se vejledningen nedenfor.
 
-### Tilføj et produkt til listen
+Projektet er non-profit. Det koster ikke noget at blive optaget, og du behøver ikke sætte et badge på dit website.
 
-Følg disse trin for at tilføje et dansk tech-produkt:
+<a id="kriterier"></a>
+<a id="-retningslinjer-for-bidrag"></a>
 
-1. **Fork dette repository** (klik på "Fork" øverst til højre på GitHub)
+## 📋 Hvilke produkter kan komme med?
 
-2. **Clone din fork** til din computer:
-   ```bash
-   git clone https://github.com/DIT-BRUGERNAVN/dansk-tech.git
-   cd dansk-tech
-   ```
+Produktet skal have mindst én af disse danske tilknytninger:
 
-3. **Opret en ny branch**:
-   ```bash
-   git checkout -b tilfoej-produkt-navn
-   ```
+- Hovedkontor i Danmark.
+- Dansk stifter eller medstifter.
+- Primært dansk ejerskab.
 
-4. **Rediger `products.json`**:
-   - Åbn filen i din editor
-   - Tilføj dit produkt til arrayet (produkterne er alfabetisk sorteret, men du kan tilføje det hvor du vil - vi sorterer automatisk)
-   - Følg denne struktur:
-   ```json
-   {
-     "name": "DitProdukt.dk",
-     "url": "https://ditprodukt.dk",
-     "description": "Kort beskrivelse af hvad produktet gør",
-     "alternatives": ["Internationalt Produkt 1", "Internationalt Produkt 2", "Internationalt Produkt 3"]
-   }
-   ```
-   - **Vigtigt:** `alternatives` skal være en array (med firkantede parenteser) med internationale produkter, som dit danske produkt er alternativ til
-   - Skriv **ét produkt pr. element** – `["Wix", "WordPress"]`, ikke `["Wix, WordPress"]` – og stav produktet som resten af listen (fx `"Mailchimp"`, ikke `"MailChimp"`)
-   - **Valgfri:** `image` felt kan inkluderes med stien til et billede (f.eks. "images/ditprodukt.png"), men hvis det ikke inkluderes, bruges automatisk favicon fra produktets URL
-   - Sørg for at JSON filen er gyldig (brug en JSON validator hvis du er i tvivl)
-   - Husk komma efter hvert produkt (undtagen det sidste)
-   - Din pull request tjekkes automatisk. Fejler tjekket, står der præcis hvad der skal rettes. Du kan også køre det selv: `php tools/validate-products.php`
+Det skal også kunne bruges i en tech stack hos fx en softwarevirksomhed, en SaaS-virksomhed eller en webshop. Beskriv, hvad produktet gør, og hvilke behov det kan dække. Undgå udokumenterede løfter om funktioner, sikkerhed eller datalagring.
 
-5. **Commit og push**:
-   ```bash
-   git add products.json
-   git commit -m "Tilføj [Produktnavn]"
-   git push origin tilfoej-produkt-navn
-   ```
+## ✏️ Tilføj et produkt direkte på GitHub
 
-6. **Opret en Pull Request** på GitHub:
-   - Gå til dit forked repository på GitHub
-   - Klik på "Compare & pull request"
-   - Udfyld beskrivelsen med information om produktet
-   - Submit pull request
+Du behøver ikke installere noget eller starte sitet lokalt.
 
-**Eksempel på et reelt produkt i JSON filen:**
+1. Tjek først [listen](https://dansktechstack.dk/#produkter), så produktet ikke allerede findes.
+2. Åbn [products.json](products.json), og klik på blyanten for at redigere. GitHub kan bede dig om at oprette en fork — din egen kopi af projektet.
+3. Tilføj dit produkt som et nyt objekt i listen. Brug strukturen nedenfor. Rækkefølgen er valgfri; sitet sorterer automatisk alfabetisk.
+4. Gem ændringen med en kort besked, fx `Tilføj DitProdukt.dk`, og opret en pull request til dette repository.
+5. Beskriv kort produktet og dets danske tilknytning i din pull request. Vi gennemgår forslaget, før det bliver tilføjet.
+
 ```json
 {
-  "name": "Ubivox.dk",
-  "url": "https://ubivox.dk/",
-  "description": "Send nyhedsbreve nemt og sikkert",
-  "alternatives": ["MailChimp", "Campaign Monitor", "Klaviyo"]
+  "name": "DitProdukt.dk",
+  "url": "https://ditprodukt.dk",
+  "description": "Kort dansk beskrivelse af, hvad produktet gør.",
+  "alternatives": ["Mailchimp", "Campaign Monitor", "Klaviyo"]
 }
 ```
 
-**Vigtigt:** 
-- Produkter tilføjet via `products.json` vises automatisk i den alfabetisk sorterede liste på siden
-- Du må **ikke** redigere `original-products.json` - denne fil markerer de oprindelige produkter og må kun ændres af projektets maintainers
+Udskift eksempelteksten og alternativnavnene med oplysninger, der passer til dit produkt. Husk komma mellem objekterne i den eksisterende liste, men intet komma efter det sidste objekt.
 
----
+| Felt | Hvad skal du skrive? |
+| --- | --- |
+| `name` | Produktets navn, gerne med domæne, fx `DitProdukt.dk`. |
+| `url` | Den fulde hjemmesideadresse, fx `https://ditprodukt.dk`. |
+| `description` | 1–2 korte sætninger på dansk om, hvad produktet gør. |
+| `alternatives` | Mindst ét internationalt produkt, som dit produkt kan være et alternativ til. |
+| `image` | Valgfrit: stien til et eksisterende produktbillede i `images/`. Du kan udelade feltet; så prøver sitet automatisk produktets favicon. |
 
-## 📋 Retningslinjer for bidrag
+Skriv **ét alternativ pr. element**: `["Wix", "WordPress"]`, ikke `["Wix, WordPress"]`. Brug samme stavemåde som resten af filen, fx `Mailchimp`.
 
-### Kriterier for produkter
+**Til et almindeligt produktforslag skal du kun ændre `products.json`.** Du skal ikke ændre `original-products.json`, sitets kode eller filerne i `data/`. Vedligeholderne håndterer engelske oversættelser og eventuelle AI-forklaringer. En manglende oversættelse blokerer ikke dit produktforslag.
 
-For at et produkt kan inkluderes, skal det opfylde følgende:
+Et nyt logo er valgfrit. Hvis du vil tilføje et, kan du også vedlægge billedfilen i `images/` og angive stien i `image`.
 
-**Danske kriterier** (mindst ét af følgende):
-- ✅ Hovedkontor i Danmark
-- ✅ Dansk stifter eller medstifter
-- ✅ Primært dansk ejerskab
+### Hvad betyder de automatiske checks?
 
-**Tech stack kriterier**:
-- ✅ Produktet skal kunne anvendes i en tech-stack for software-virksomheder
-- ✅ Produktet skal være relevant for SaaS-firmaer, e-commerce-firmaer eller lignende tech/web-firmaer
+GitHub kontrollerer din pull request automatisk. Røde checks kan fx skyldes ugyldig JSON, et produkt der allerede findes, et manglende felt eller et alternativnavn, der staves anderledes end i resten af listen. Åbn det fejlede check for at se beskeden, og ret din ændring.
 
-### Produktinformation
+Advarsler om manglende oversættelser eller AI-forklaringer er til vedligeholderne. Du skal ikke selv oprette de tekster. Spørg i din pull request, hvis en fejlbesked er uklar.
 
-Når du tilføjer et produkt til `products.json`, skal du inkludere:
+<details>
+<summary>Foretrækker du at bruge Git lokalt?</summary>
 
-- **name**: Produktets fulde navn (inkl. domæne, f.eks. "Alunta.com")
-- **url**: URL til produktets hjemmeside
-- **description**: Kort beskrivelse af hvad produktet gør (1-2 sætninger)
-- **alternatives**: Array med internationale produkter, som det danske produkt er alternativ til (f.eks. ["Stripe", "Paddle", "Recurly"])
-- **image** (valgfri): Sti til produktbillede (f.eks. "images/ditprodukt.png"). Hvis ikke inkluderet, bruges automatisk favicon fra produktets URL
-
----
-
-## 📝 Filstruktur for bidragydere
-
-Som bidragyder skal du kun redigere én fil:
-
-- **`products.json`** - Tilføj dit produkt her. Produkter i denne fil vises automatisk i den alfabetisk sorterede liste på siden.
-
-**Må ikke redigeres:**
-- **`original-products.json`** - Marker de oprindelige produkter. Kun projektets maintainers må ændre denne fil.
-
----
-
-## 🛠️ Kør sitet lokalt (kun maintainers)
+Fork repositoryet på GitHub, og kør:
 
 ```bash
-php -S localhost:8000 tools/dev-router.php
+git clone https://github.com/DIT-BRUGERNAVN/dansk-tech.git
+cd dansk-tech
+git checkout -b tilfoej-produkt-navn
 ```
 
-CSS'en bygges med Tailwind (v3.4, standalone-CLI, kræver ikke Node). Kør dette efter ændringer i PHP-skabelonerne og commit `assets/app.css` – en GitHub Action tjekker, at filen er opdateret:
+Rediger `products.json`. Hvis du har PHP installeret, kan du kontrollere filen lokalt:
 
 ```bash
-./tools/tailwind/build.sh
+php tools/validate-products.php
 ```
 
-`index.php` er en router: `pages/` indeholder siderne, `partials/` de fælles dele (head, footer, produktkort), `lib/` hjælpefunktioner og `data/people.json` iværksætterne på forsiden. Ukendte URL'er giver en rigtig 404.
-
-Produkterne kan hente et badge på `/badge` (fx "Dansk alternativ til Stripe"), som serveres af `/badge/{produkt}/{alternativ}.svg`. Teksten tegnes som vektorer ud fra `data/badge-font.json` (Inter, se `tools/badge/`).
-
-Hvert udenlandsk produkt i `alternatives` får automatisk sin egen side på `/alternativer/{navn}` (fx `/alternativer/stripe`), og `/alternativer` viser dem alle A–Å. Alle eksisterende alternativsider tillader indeksering og kommer i `/sitemap.xml`, også sider med ét dansk produkt. Google afgør selv, hvilke sider der faktisk indekseres.
-
-Alternativsiderne har en FAQ med produktforklaringer og vejledning, tydeligt deklareret som skrevet med AI. De enkelte forklaringer ligger i `data/product-guides.json`, med produktets URL som nøgle og felterne `explanation`, `consideration` og `sourceHash`. Teksterne bygger kun på oplysningerne i `products.json`; spørgsmål under "Inden du vælger" er afklaringspunkter, ikke påstande om produktets funktioner. Der kaldes ingen AI-tjeneste ved sidevisning.
-
-`sourceHash` er SHA-256 af produktnavn + linjeskift + produktbeskrivelse (`hash('sha256', $product['name'] . "\n" . $product['description'])`). Nye produkter og produkter med ændret navn eller beskrivelse bruger automatisk den aktuelle produktbeskrivelse i FAQ'en, indtil en opdateret AI-forklaring er gennemgået og gemt med en ny hash. Fjernes et produkt fra listen, vises dets forklaring heller ikke længere. Bidragydere skal fortsat kun redigere `products.json`; guides vedligeholdes internt.
-
-Tjek indhold og indeksering lokalt med `php tools/check-alternative-pages.php`. Kontrollen rapporterer også, hvor mange produkter der har en aktuel AI-guide, og advarer om produkter, der bruger deres beskrivelse som fallback. Den tester manglende, ugyldige og forældede guidefiler i isolerede processer.
-
-SEO: Alternativsiderne har sidetitel, meta description, canonical, Open Graph/Twitter og JSON-LD med `CollectionPage`, `BreadcrumbList`, `ItemList`/`SoftwareApplication` og `FAQPage`/`Question`/`Answer`. FAQ-markup bygges fra de samme data som den synlige FAQ, inklusive afklaringspunkter og leverandørhenvisninger. Den fælles `WebSite`-beskrivelse er ens på alle sider. FAQ-schema er en beskrivelse af indholdet, ikke et løfte om særlige Google-visninger; Google viser ikke længere FAQ rich results. Vi tilføjer ikke ukendte priser eller anmeldelser til produkt-schema.
-
-`lastmod` og `dateModified` udelades, fordi filernes ændringstid ved en deployment ikke dokumenterer en reel ændring af indholdet. Felterne er valgfrie og bør først tilføjes igen, når der vedligeholdes pålidelige indholdsdatoer.
-
----
-
-## 🖼️ OG-billede (kun maintainers)
-
-`og-image.jpg` er en mosaik af iværksætterne, GitHub-bidragyderne og produkternes logoer. Generér det igen, når der er kommet nye produkter eller bidragydere, så tallene er opdaterede:
+Gem og push din ændring:
 
 ```bash
-pip install pillow
-python3 scripts/og-image/build.py            # rød variant
-python3 scripts/og-image/build.py --theme dark
+git add products.json
+git commit -m "Tilføj produktnavn"
+git push origin tilfoej-produkt-navn
 ```
 
----
+Opret derefter en pull request fra din fork til `Boligforeningsweb/dansk-tech`.
+
+</details>
+
+## 🌍 Dansk, engelsk og badges
+
+Sitet findes på [dansk](https://dansktechstack.dk/) og [engelsk](https://dansktechstack.dk/en). Du bidrager fortsat med én dansk produktbeskrivelse i `products.json`; vedligeholderne står for den engelske udgave.
+
+På [badgesiden](https://dansktechstack.dk/badge) kan du hente gratis badges på begge sprog, fx **Dansk teknologi** eller **Nordic tech**, samt badges med konkrete alternativnavne. Badges er frivillige.
+
+**English contributions are welcome.** To suggest a product or correction, [open an issue](https://github.com/Boligforeningsweb/dansk-tech/issues/new) with its name, URL, description, connection to Denmark and international alternatives. No coding or Danish translation is required to submit an issue.
+
+## 🛠️ Udvikling og vedligeholdelse
+
+Vil du arbejde på selve sitet? Se [den tekniske vejledning](docs/maintainers.md) for lokal udvikling, CSS, tests, oversættelser, SEO og generering af delingsbilleder. Har du en idé til sitets funktioner, kan du starte med et issue.
 
 ## 📝 Licens
 
-Dette projekt er open source og tilgængeligt under [MIT License](LICENSE) (eller den licens du vælger).
-
----
+Repositoryet indeholder endnu ikke en `LICENSE`-fil. Kontakt projektets vedligeholdere, hvis du har spørgsmål til licensen.
 
 ## 📧 Kontakt
 
-Har du spørgsmål eller forslag? Kontakt os på:
+Har du spørgsmål eller forslag? [Opret et issue](https://github.com/Boligforeningsweb/dansk-tech/issues/new), eller skriv til [kontakt@langsom.com](mailto:kontakt@langsom.com).
 
-- 📧 Email: [kontakt@langsom.com](mailto:kontakt@langsom.com)
-- 🌐 Website: [dansktechstack.dk](https://dansktechstack.dk)
-
----
-
-## 🙏 Tak
-
-Tak til alle der bidrager til at fremme dansk tech! Hver tilføjelse, forbedring eller deling hjælper med at gøre danske tech-systemer mere synlige.
-
----
+Tak til alle, der bidrager til at gøre danske tech-produkter mere synlige.
 
 **Bygget i København af folkene fra langsom.com + venner fra branchen.**

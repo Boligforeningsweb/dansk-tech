@@ -1,0 +1,566 @@
+{
+  "https://dalby.md/projects/okf-todo": {
+    "description": "Free, open-source task management for developers and support teams, with locally stored data. Use your own AI assistant to turn emails, notes and spreadsheets into proposed tasks.",
+    "sourceHash": "325ac307581a00fee1c71e0a6c1b2af2a91de86028ad4826123c0d3816da18f4"
+  },
+  "https://flowagent.nu": {
+    "description": "Project and order management bringing service calls, service agreements and large projects together. Service tasks are created automatically, staff log hours and materials in the app, and invoices go directly to e-conomic, Dinero or Business Central, with payroll integrations for Danløn, Dataløn and Proløn.",
+    "sourceHash": "489159820cecf431c39f47b2451a0bcb322a4f307732aa5ce1141ced44d50cf6"
+  },
+  "https://huuray.com": {
+    "description": "B2B platform and API for digital gift cards and rewards, covering over 170 countries and thousands of brands. Used for employee gifts, customer loyalty, incentives and payouts directly from your own system.",
+    "sourceHash": "7a52effe6462e4cecb7971e7b6892aad1d37447619b65239d7c6198532c991da"
+  },
+  "https://adamatics.com/platform/": {
+    "description": "A Danish platform for data science, analytics and AI, bringing notebooks, data access and deployment into one controlled environment within your company's own network. Deploy on Kubernetes-compatible cloud providers such as Scaleway and UpCloud, or on-premises for critical infrastructure.",
+    "sourceHash": "58445c89f57a7880bfa10d946453a93120c5f895c62bbd7fbc5ef103cb2b3d89"
+  },
+  "https://www.adminbyrequest.com": {
+    "description": "Endpoint Privilege Management with just-in-time administrator access, approval workflows and audit logs for Windows, macOS and Linux.",
+    "sourceHash": "315a5d43960e4bc9e9ad7d740c3d284f7105725d711b989a79a0a9b4bd7698a4"
+  },
+  "https://alunta.com": {
+    "description": "Subscriptions, payments and invoicing.",
+    "sourceHash": "78f9b0bc123b500c530a6787f98c9d0022311a007192b3be76d7dd24f1ad7f87"
+  },
+  "https://alviss.io": {
+    "description": "A Danish marketing science platform helping businesses identify, simulate, predict and optimise the impact of sales-generating activities such as media, communications and pricing.",
+    "sourceHash": "508462f38449fc3f763486ea000225a1188e6206d1628e7eefc6554ed75f1086"
+  },
+  "https://arrigoo.io": {
+    "description": "A European-hosted Customer Data Platform for collecting, consolidating and distributing profile data across systems, with segmentation based on behaviour and attributes.",
+    "sourceHash": "315cfce9e9f3cf3153ce7fb7630f874f856a34a09b170d1eb72568060a16468c"
+  },
+  "https://www.bastio.com": {
+    "description": "A Danish AI security gateway protecting LLM applications with real-time threat detection. A drop-in proxy for OpenAI, Anthropic, Google and others, with prompt injection protection, automatic PII masking, jailbreak detection and observability. Also includes AI agent security and cost optimisation through intelligent caching.",
+    "sourceHash": "be5a71bb886fd07560606a9e827054d408d6045d334b4bdd02f3540e39e52e46"
+  },
+  "https://behandlerdata.dk": {
+    "description": "Agreed fee schedules for healthcare practitioners. Behandlerdata.dk collects, normalises and provides rates for quick lookups or direct API integration.",
+    "sourceHash": "1bb3cb7124b4d80808fc4bd924f40350a884978e3025592168679c960d5f622b"
+  },
+  "https://www.board-office.dk": {
+    "description": "A Danish board management platform with meeting administration, secure document sharing, governance and collaboration tools, and AI integration.",
+    "sourceHash": "eda303b0b97b048258788f30aa82b87c8276c3af600b6fe7bc57f5cc6265e018"
+  },
+  "https://boligforeningsweb.dk": {
+    "description": "Software for managing housing associations.",
+    "sourceHash": "ecca8f1f08d0992c93da229be104928ffacf70f56c9e705e75028507fc829c70"
+  },
+  "https://www.campaignbuilder.io/": {
+    "description": "An all-in-one platform for building, launching and managing cross-channel campaigns with catalogue ads, HTML5 ads, popups, forms, workflows and SMS marketing.",
+    "sourceHash": "76754dc0fd041a39ba5d732f4627386581f1ae39f78e4e649f375e039d94408e"
+  },
+  "https://neuphlo.com": {
+    "description": "Project management with built-in test management, knowledge sharing and chat channels. Neuphlo is accessible through an MCP server and integrates with GitHub, GitLab and Addo Sign.",
+    "sourceHash": "dac4c090f99f6311b22b89dfda6269b9a070d5e4b49b1b874ccf527f65070b3d"
+  },
+  "https://clarefy.ai": {
+    "description": "AI inventory planning for e-commerce. Avoid out-of-stock bestsellers, reduce tied-up capital and automate purchasing.",
+    "sourceHash": "5cbfd5d974bafe3bb47745d1e4565d5eed9e3a5ee78d357f8f61a286180dd335"
+  },
+  "https://clerk.io": {
+    "description": "Personalisation and recommendations.",
+    "sourceHash": "4412840dc64d48707215679306ce600f1b3a7eb8716e9f25b9d3b0f1663a34e2"
+  },
+  "https://clearcontract.dk": {
+    "description": "Contract management with AI agents that receive, review, archive and monitor your contracts. Built for agents from the ground up, so you do not have to operate the system yourself.",
+    "sourceHash": "9d3942d4d5e5b05d703e3ea524d0d0b02f5a8938b2e95fb5a89ac34e7d07eeee"
+  },
+  "https://www.clearhaus.com": {
+    "description": "A Danish payment acquirer offering secure card payments, risk management and compliance for e-commerce.",
+    "sourceHash": "937098b6363c424dfd24984b0c6b4730a85e3c5bb0d545690fc0d17648adcdc7"
+  },
+  "https://danadresse.dk": {
+    "description": "A Danish address API and drop-in replacement for DAWA (Denmark's Address Web API), which closed on 1 October 2026. Provides address search, autocomplete, address cleansing, reverse geocoding and replication compatible with DAWA. Change the base URL and add an API key to keep an existing integration running without code changes. Nationwide address data from Datafordeleren (DAR/BBR).",
+    "sourceHash": "8ad40a9b8928c45f40587c2dba6590cd144c8cbeb779337c11080900c6560952"
+  },
+  "https://dataandmore.com/": {
+    "description": "Identify and delete GDPR-sensitive and security-related information in unstructured data for compliance and risk management.",
+    "sourceHash": "53a4b29721fafe4bc54997427f0c0ea04c93b578dcaff3d6a4613c5b2c00d71f"
+  },
+  "https://dinero.dk": {
+    "description": "Accounting and bookkeeping.",
+    "sourceHash": "6fdaa0687dac281f6075222a07c60547a97f63a59f4b407caf6c0989dcfeaa1f"
+  },
+  "https://dreamdata.io": {
+    "description": "B2B revenue attribution.",
+    "sourceHash": "19e1cd415de2823436a764b0e3373d5bbb0728710bcbf80f8e29ff78094b4d5a"
+  },
+  "https://e-conomic.dk": {
+    "description": "Accounting and bookkeeping.",
+    "sourceHash": "c561c0fe5cd82063059a3eed3465c1019adfd41f516130cd2192220c201bc042"
+  },
+  "https://ethnote.dk": {
+    "description": "A Danish platform for qualitative data analysis and coding.",
+    "sourceHash": "901d8bf2595af6f037dde7eb571e2a2c36583a05d2e897618c79dc33713cbb98"
+  },
+  "https://rilanto.com": {
+    "description": "A Danish customer review platform. Rilanto is developed and hosted in Denmark and complements existing review sites.",
+    "sourceHash": "418966e0e88c46b8515e29c5fc10ab489e9345111edf40126244f1205f46d608"
+  },
+  "https://flare.link": {
+    "description": "Flare brings video recording, editing, sharing and embedding together, with 4K recording, a customisable player, analytics and API access.",
+    "sourceHash": "de4afd178e9e8d2cfb6ddab419e85fbd4058dec80f5df78c05e4b8d173de9c1e"
+  },
+  "https://fenerum.com": {
+    "description": "SaaS finances.",
+    "sourceHash": "3d298b1d110317764ff7026f6e9cc37c154797d243786951451c55d53bf016af"
+  },
+  "https://www.fmcgsolutions.dk": {
+    "description": "A PIM system for master data with syndication to GS1, Tradesolution EPD, Dabas and Matinfo, as well as other internal and external systems.",
+    "sourceHash": "b9d3f6879e591b1006cce0586dc89524bc161fc351c194f39501cfc62723e684"
+  },
+  "https://www.foundbase.dk": {
+    "description": "Foundbase is an all-in-one platform for startups and small businesses.",
+    "sourceHash": "4d2b7d2fca57859cb3ddf64cc2f280b436905a8b63c0e6738a9dfecaf39046b9"
+  },
+  "https://frem.sh": {
+    "description": "EU-sovereign CI/CD with Git included.",
+    "sourceHash": "252bc22d929f4dc1297b3ab28165ef58562b0100b798131117932815751c0539"
+  },
+  "https://growpanel.io": {
+    "description": "Subscription analytics platform.",
+    "sourceHash": "1b1deddabd25f0f7ef8699788b2a742d2980b8464938b2ae78a70e7d2c31889f"
+  },
+  "https://www.henosia.com": {
+    "description": "Build production-ready internal apps with AI, even without coding skills.",
+    "sourceHash": "d74f900b58f8648287f0a5b6e5ee0a009aadd01b4735e98dab946474ac80c194"
+  },
+  "https://herodesk.io": {
+    "description": "Customer support and helpdesk.",
+    "sourceHash": "ec7158b93aeab02abe2da1cbdb982b0b8ddd37bac9aeb5d3258408d84cdb584b"
+  },
+  "https://idguard.dk": {
+    "description": "Age verification and identity checks.",
+    "sourceHash": "6db79aa2f2b55390ea8273bf0d3f13891e70427bdc22d78f038f2909ece62cd1"
+  },
+  "https://www.inmobile.com": {
+    "description": "SMS, RCS and email to deliver your message to the right recipients.",
+    "sourceHash": "3503d6052cd761860acbe7eeab713dfa38a9493b807914384bd0c9db68d5d7f7"
+  },
+  "https://gatewayapi.com": {
+    "description": "Global CPaaS platform for SMS, RCS and email.",
+    "sourceHash": "6b7ba0ae72754e01d1c56f5cb7411be6d75332ffe7e735c8241ea15244a771d0"
+  },
+  "https://iteras.com": {
+    "description": "Subscription management for invoicing, payments and customer subscriptions, with self-service portals and integrations with Nordic payment providers.",
+    "sourceHash": "1283b96485431319e290f8646d185f8a2c3363a836482e34f131100c98ef57d1"
+  },
+  "https://odagroup.dk/pharma": {
+    "description": "An AI companion for frontline pharma teams, extending existing CRM systems with meeting preparation, debriefs, insights, prioritisation and follow-up.",
+    "sourceHash": "f3cff200aaedc750e068d32febc37ebeb939ed382608faf8892b4a0e6d19f5ab"
+  },
+  "https://holdsport.dk": {
+    "description": "Online software for membership fee collection, communications and member administration.",
+    "sourceHash": "86b146f3b7a09b385af2946c499b42ffb549ee26be24694df562bf61af632967"
+  },
+  "https://mercura.io": {
+    "description": "A Configure-Price-Quote platform for configuring, pricing and quoting complex products.",
+    "sourceHash": "f173efc7aaf43eb4c65c9dd437f7de04e5c9a8292385d01458fed576ea26f05f"
+  },
+  "https://kala.app": {
+    "description": "Manage your business with an overview of time, staff and projects, integrated quality assurance, and connections to popular ERP and payroll systems.",
+    "sourceHash": "68e9dad5574f15a1213ec2b1fb50bae5d583236a46eed5dd0d5d1b60ba0fde44"
+  },
+  "https://landingroom.com/": {
+    "description": "A Danish recruitment platform (ATS) focused on the candidate experience. Brings career pages, applications, interviews and offers together with a personal candidate space from first contact to the first day at work.",
+    "sourceHash": "3e3e1a854d6f63c5e1ba00a7a2dd7ec2217d70df472097ce349eccfaf575d758"
+  },
+  "https://mikrobageri.dk": {
+    "description": "A simple ordering system for micro-bakeries, with online orders, a baking calendar and a production overview.",
+    "sourceHash": "91bb9ddf1377ac2f81196eb5ea3ffba8005267f626ffdbb78850bce169c498f1"
+  },
+  "https://midora.dk": {
+    "description": "Job management for tradespeople and construction, bringing quality assurance, photo documentation, time tracking and quotes into one app. Works offline on site.",
+    "sourceHash": "e6ac2a56489c71c86825ba05b3d450c8d97762ff9d6490fd89374b10999a0160"
+  },
+  "https://morningscore.io": {
+    "description": "SEO and GEO tracking.",
+    "sourceHash": "b850d75a1a591e7561c66893019c25f328ba9a5984ffb5857e2b7bd968962408"
+  },
+  "https://www.nextsign.dk/": {
+    "description": "Digital signatures for businesses and organisations.",
+    "sourceHash": "8498705ed30adf6ce6026b621a6bb9f2a265e0c35a01eb44bfbe929b675ea6cd"
+  },
+  "https://www.netsite.dk/": {
+    "description": "Domains, DNS, email and web hosting in Denmark with Danish support.",
+    "sourceHash": "aea7604ff6f28071349f36595af061c371dbb53da6835bd41978d35516bb6a2c"
+  },
+  "https://nordicscreen.com": {
+    "description": "A digital signage platform for managing screens and content through a cloud-based CMS. Schedule, play and distribute visual content across locations.",
+    "sourceHash": "e7a89a81b3c3bc1ad643d53c33392c7eee050848fd2440948dccdf8d2f9773d7"
+  },
+  "https://pagevitals.com": {
+    "description": "Performance monitoring.",
+    "sourceHash": "cfd3d180ef1a00143cca350ad9dde8b73978831acfd8adc88349c61d7ad01e26"
+  },
+  "https://pingpuffin.com": {
+    "description": "Uptime monitoring and alerts.",
+    "sourceHash": "7b5c4a7c88583f150360c345ae9dc410a2f1ac7ac5339bd6e41c3f1710b21ca5"
+  },
+  "https://plecto.com": {
+    "description": "Performance management and dashboards.",
+    "sourceHash": "236cb0ba7142eb5e55c174b719e3535bac3c2e2e7db310733fcc91603555105e"
+  },
+  "https://prowi.io": {
+    "description": "A commission management platform showing salespeople their earnings in real time through a mobile app. Instant feedback when a deal closes, with gamification to help teams engage with their compensation plan.",
+    "sourceHash": "be890cfceb1fdf9c4a6fba54730c3e3404479f87b9df3ed24ee0fde1ca9ed654"
+  },
+  "https://www.proprty.ai": {
+    "description": "Building condition assessments, maintenance plans and CO₂ reduction.",
+    "sourceHash": "1e06bbc8d4f0c2ebb37e201df2371fa285c710f18fb131242f14db7baffea14d"
+  },
+  "https://www.quickpay.net": {
+    "description": "Payment solution.",
+    "sourceHash": "5083603a7211f297862a643c0e8d48c1418493557f302925af0d6950f44f2876"
+  },
+  "https://resos.com": {
+    "description": "Restaurant reservations and booking management.",
+    "sourceHash": "ddf85047447a1a34ee06addfe65988289df64aaa27a03aef1b17ebdadd7f52d6"
+  },
+  "https://soge.dk": {
+    "description": "A Danish search engine and API for vehicle data. Look up cars by registration plate or VIN using the official DMR register, including specifications, inspections and history.",
+    "sourceHash": "27d01ad69ffcfd092e9baf7a41a535d844821e63f9f2b23b81d62c82935f72f9"
+  },
+  "https://seo.ai": {
+    "description": "Automated content production.",
+    "sourceHash": "bf2aade1cb1bc933925ef999b678ecfe2de32296b3838e198787213cc04e1adc"
+  },
+  "https://sleeknote.com": {
+    "description": "Email marketing and popups.",
+    "sourceHash": "addb93406f398bc42ea29278337bb45af63f0f977ba8dc9fc17b30d836455509"
+  },
+  "https://smtp.dk/": {
+    "description": "Secure delivery of transactional emails.",
+    "sourceHash": "1b12109d7b82102ecf75b37e5ffc89e743a37747fe8e1e0f644836e63b9bb1e2"
+  },
+  "https://www.sumoshop.dk": {
+    "description": "An e-commerce platform offering hosted online stores.",
+    "sourceHash": "76fe5cd4f818900f1f577bed5aba1ad760fb08ca93b5ea9bd1aab1e24270c4d6"
+  },
+  "https://thorcommerce.io/": {
+    "description": "A headless e-commerce platform for B2B and direct-to-consumer sales, with product catalogues, customer-specific pricing, inventory, checkout and orders through GraphQL APIs.",
+    "sourceHash": "09d108840cd158b341f4e43116fd9c1bbd0b1ba7b566cf85eca0d81f6063b4b6"
+  },
+  "https://www.tiimoapp.com": {
+    "description": "A visual daily planner with AI for tasks, deadlines and focus at work and in everyday life. Developed around neurodivergent needs, including ADHD and autism, and relevant to anyone seeking planning support. Named Apple's iPhone App of the Year 2025.",
+    "sourceHash": "b46d74272c74900ca77d2c24000e09ea218ad8f24c89f63f28c01f48a4797d70"
+  },
+  "https://timelog.com": {
+    "description": "Time tracking, resource management and invoicing.",
+    "sourceHash": "cf0b5d7fa3412dcc7b28c472f64def84e01d1289e72fce25fbe127bdc10e074f"
+  },
+  "https://hourtick.com": {
+    "description": "Time tracking, tasks and team chat for people and AI agents, without per-seat pricing.",
+    "sourceHash": "23fe6e5a63725c62c4cde3861ee7e1717c701bf465e2b5894eb6e9ac86088cc2"
+  },
+  "https://ubivox.dk/": {
+    "description": "Send newsletters easily and securely.",
+    "sourceHash": "ae1a9430c670f9d511e643b900f42cfba4ffc4bb024714b538bbfaee5f4277a5"
+  },
+  "https://umbraco.com/": {
+    "description": "The world's most widely used open-source .NET CMS, with a large ecosystem of free and paid extensions.",
+    "sourceHash": "8f9e26661e498f5d08654bd84750fdbb7acf3877011c9ed3d44bc0f332126ae0"
+  },
+  "https://updatemate.ai": {
+    "description": "Automation and integrations.",
+    "sourceHash": "6570d890c675ad2cc9a5d63ce4ad22e97b760eb137d29f615b7c19e494468581"
+  },
+  "https://webcontent.app": {
+    "description": "WebContent is a platform for finding, creating and managing UGC ads.",
+    "sourceHash": "386ea0f73afbc7047763aec318356b72e6803b6c1ef682ece330429b5f2135eb"
+  },
+  "https://webhook.site": {
+    "description": "Connect apps and build workflows.",
+    "sourceHash": "5502c5c0963b5579175961195a59a096614f591ab86f393d6946a14d4e8e45d6"
+  },
+  "https://www.weply.chat/da": {
+    "description": "Weply is a 24/7 live chat solution for lead generation.",
+    "sourceHash": "7cb79d964ddf066d0bce426ca5293b1da8fb8d1823fda323cede5dc588e00f8f"
+  },
+  "https://workfeed.io": {
+    "description": "Workforce management and HR software for scheduling, time tracking and employee administration.",
+    "sourceHash": "771a82ede04e4c0350f1ba2c3e67eb68a76f87d6e6de1456565f051286bf6a75"
+  },
+  "https://ziik.io": {
+    "description": "Ziik rethinks the intranet with an all-in-one communication and information-sharing platform for employee engagement.",
+    "sourceHash": "8cfd9a649122c1348be8a8aa5acd8a7e2853fd4f3bf19019f468c441dc83925a"
+  },
+  "https://epay.dk": {
+    "description": "Get started with online payments regardless of business size. Make your first test payment in just a few minutes.",
+    "sourceHash": "97cf3d8571a4b0adf95f292c3340c50779ebac9c6d02d14e3a15220352ef242a"
+  },
+  "https://www.uniqkey.eu/": {
+    "description": "Password and access management for businesses.",
+    "sourceHash": "1d4a2e6fb6c542d5aa2e9c3d563f35870020aa0e1c55c532554e3b4ce2cea48f"
+  },
+  "https://dynamicweb.dk": {
+    "description": "Dynamicweb combines CMS, e-commerce and PIM, focusing on B2B sales processes and product information management.",
+    "sourceHash": "7913a012ab3f35358f79411917c4a051bb613dbe9019f538bf0e4681d287538a"
+  },
+  "https://www.velatir.com": {
+    "description": "A platform for traceability, transparency and control of AI actions on entirely EU-based infrastructure. Approve, log and monitor AI use across your organisation.",
+    "sourceHash": "7d22f0fd4b037d66236fa797aa57e221849a715797fcd6f7fd91fe193e827d77"
+  },
+  "https://www.contractbook.com": {
+    "description": "Manage, track and sign contracts in one accessible workspace.",
+    "sourceHash": "a4b2f34d777229f5ae1b8b245eab7616890c25e75f87f801414195caf1b0c5f3"
+  },
+  "https://www.theroomdisplay.com": {
+    "description": "Digital occupied/available signage for meeting rooms. A one-off purchase without a subscription. Works with iPad.",
+    "sourceHash": "5161b6014bb31016f9e3572087c93626e8fbd4e5ba2633d46df7aab203283ae2"
+  },
+  "https://klubmodul.dk/": {
+    "description": "Membership and club administration for associations, combining fee collection, teams and activities, registrations, communications and a club website.",
+    "sourceHash": "23cbdd789e0ff6ec7b7e9023812d2425c78642ceb6c04d47f1818553e2c30a0e"
+  },
+  "https://effihub.com/": {
+    "description": "PSA software for agencies and consultancies, with time tracking, project and resource planning, prepaid hours and retainers, invoicing and reporting across clients and tasks.",
+    "sourceHash": "ba63566aa151dd2833020daaf1555e0759f7660c102be53420148ddba156f17f"
+  },
+  "https://www.keenpartner.com": {
+    "description": "PRM software for managing and scaling lead-generating B2B partnerships.",
+    "sourceHash": "5c1f6e525f334f3c27fa2c197cba50e2f8f8c2b3ec9e86d35bc8474163b02ff0"
+  },
+  "https://elmah.io": {
+    "description": "elmah.io is a Danish cloud solution that automatically monitors .NET applications for errors and logs them centrally so developers can quickly find and resolve issues.",
+    "sourceHash": "f5483c51d6510b3647ecca6128e3b2675b98aed056f7dc6ff3e978e156d39eae"
+  },
+  "https://www.devcompendium.com/": {
+    "description": "Save prompts, commands and code snippets and share them with your team or publicly.",
+    "sourceHash": "77a9f06bd6101a4a6fe9952f1b6992ae0d64d37e96fb42c8cfb66eab9626c4ed"
+  },
+  "https://wordpress.org/plugins/lynbro-cookie-consent/": {
+    "description": "A free, multilingual cookie consent banner for WordPress with Google Consent Mode v2. GDPR/ePrivacy-compliant without page-view limits, with cookie category controls, automatic scanning and consent logs. Developed in Denmark by Lynbro.",
+    "sourceHash": "7b6a20a7a20a706008ab15ac2492e555c838bdf5c38958cabd7d302ba35ea2c6"
+  },
+  "https://loenradar.dk": {
+    "description": "Salary benchmarking platform and salary calculator.",
+    "sourceHash": "7a644521320037940c2bfdc413fb83d962aceaf51f8e382ba4fd85a005eb2c71"
+  },
+  "https://www.heysender.com": {
+    "description": "Email API and SMTP solution for taking control of transactional emails.",
+    "sourceHash": "b11af3bcc09148aa64ab14a22426929277189114d1dbc3fd397576840fa9521d"
+  },
+  "https://www.heyloyalty.com": {
+    "description": "A marketing automation platform focused on customer loyalty. Heyloyalty brings your data together and personalises communications to encourage repeat visits and purchases.",
+    "sourceHash": "1d4e51561f10ff00242876d419e97a251b7ce80bd0666a0e74217eacec489a20"
+  },
+  "https://www.getconnie.com": {
+    "description": "A document tool for creative professionals. Create, send and sign documents to keep productions and projects running smoothly.",
+    "sourceHash": "66e9af92e13492c6885a40bfe57e4e2ed0bee02bc78c52e8f0c42f57c3521104"
+  },
+  "https://www.returnflows.com": {
+    "description": "A returns management platform for e-commerce. Returnflows helps make returns easier and more efficient.",
+    "sourceHash": "690a4c1e3b495c46a45e2f0d4bceb039b442e0860491d08992ae0bc8899b5a89"
+  },
+  "https://pcrypt.com/": {
+    "description": "Pcrypt is a password manager focused on privacy and encryption. Passwords are encrypted locally on the user's device before being sent or stored. Supports password sharing between users and teams without revealing the password itself. Available as a cloud service or on-premises, with open-source core components.",
+    "sourceHash": "fee44cd5b153b81b44f71c3d62136c7f061874bb7c83cddd94b15a59ac31fd9f"
+  },
+  "https://yulsn.com": {
+    "description": "Yulsn Marketing Cloud provides email marketing, marketing automation and loyalty programmes, particularly for businesses with high email volumes, custom workflows and extensive automation needs.",
+    "sourceHash": "5509bfd2ce0d2a84ecbabde0092f228149b2cfcec1dc9eaa511c1237595a5922"
+  },
+  "https://kontolink.com": {
+    "description": "Kontolink is a Danish platform that automates bookkeeping for small and medium-sized businesses using bank data (PSD2) and sources of receipts and invoices such as email.",
+    "sourceHash": "722bdae8f35323571893ff1d40fd55e385f6544e1ac61703261078314647c8c0"
+  },
+  "https://avallone.com": {
+    "description": "Automate KYC compliance.",
+    "sourceHash": "428d192ac342be852bdb409cefebfc7028e6eb810dc22d362b2baf74e21c0e46"
+  },
+  "https://cvrintel.dk": {
+    "description": "Company data, AI and leads in one place.",
+    "sourceHash": "359132b8c70706169eee7c18912df37c07678438c3c0a3467d9d22c6253dae4d"
+  },
+  "https://zylinc.com": {
+    "description": "Business telephony and contact centre solution.",
+    "sourceHash": "be89296d8e8c59a44746c8c9f182afa336b91265adb0ca63e103916f37327412"
+  },
+  "https://www.dixa.com": {
+    "description": "An agentic AI platform for customer service.",
+    "sourceHash": "5cf588dd31b64b43d403576c7d332ac81a2d594af8601034bff4d31c1c26111d"
+  },
+  "https://www.shup.dk": {
+    "description": "A simple hosted e-commerce platform.",
+    "sourceHash": "2d74539a343de47ffe3c9dc534914f8b5bccf8f83ed1add93fba9e626b1158d6"
+  },
+  "https://www.shoporama.dk": {
+    "description": "A Danish e-commerce platform with a close-knit community, Danish support and tools for SEO, marketing and order management.",
+    "sourceHash": "79c24459c6ece58066b15eac1989e69c135be204904d780d5dc2678233288f05"
+  },
+  "https://github.com/syv-ai/plapre": {
+    "description": "Open-source Danish text-to-speech with voice cloning. Generates 24 kHz audio from Danish text and runs locally or on-premises, keeping data within your infrastructure.",
+    "sourceHash": "8d344457af0b0af7dba2852fadfa9a80a724495f01e327a48c1a0b75a70cc57a"
+  },
+  "https://pawnote.dk": {
+    "description": "A booking system and clinic CRM developed specifically for animal therapists and small veterinary clinics.",
+    "sourceHash": "22ed8622a80368a06dc263e9a7805c3d12d51e4f5d7ac4a9fdd9748f61d4ffee"
+  },
+  "https://www.coherta.com/da": {
+    "description": "Coherta is a B2B company and contact data platform that collects, enriches and deduplicates data for lead generation, segmentation and CRM synchronisation, including outreach, pipeline management and reporting.",
+    "sourceHash": "daf8b6624565091efa2e79a1bb5d2589ca3c5730f7b5b60678b1e8ad7bab0d7d"
+  },
+  "https://meilirobots.com/": {
+    "description": "A universal fleet management system for mobile robots. Orchestrate robots on one platform regardless of type, brand or model, across different industries.",
+    "sourceHash": "7cda42df2c75b3e97b831f88bfc54c1e1e0efbe67c88aacdf0b2cf84a9683bcf"
+  },
+  "https://freelio.dk": {
+    "description": "A Danish alternative to LinkedIn with career, recruitment and branding tools, meetups and events.",
+    "sourceHash": "100aa56eca6656adc636fbe56c4ac4a3474148d5367cd941b42917212bba5a94"
+  },
+  "https://fortesprojectflow.dk": {
+    "description": "Project and portfolio management, resource management and time tracking.",
+    "sourceHash": "70a81bb94cce37eb4ef0b74650319b3b2114aa67bbbadd56b5b5f18ec116cb3d"
+  },
+  "https://one.com": {
+    "description": "Website hosting.",
+    "sourceHash": "dabbee1d4cf2d8dc0eac5b76c6e3b00b08679de9f1a7baf0b1e3cd611d071d67"
+  },
+  "https://minforening.dk": {
+    "description": "MinForening's free app and association management system supports leaders, treasurers, coaches, instructors, coordinators, members, parents, families, households and volunteers.",
+    "sourceHash": "88b74f03e8266e1cac7647c5b54ac2746328defab6ae13cf6f802c200c6c4b00"
+  },
+  "https://deltaplan.dk": {
+    "description": "Shift scheduling, time tracking, HR, communications and payroll exports.",
+    "sourceHash": "49f02cfad69b252b3126a700baf82de87a368324e4638cc6502d3ae4c60fd6ff"
+  },
+  "https://redactpdf.io": {
+    "description": "Anonymisation of PDFs, Office documents and emails.",
+    "sourceHash": "768cab04e3661ccbea2fac8e98402274ab590becef2c6f393b974f4fb1292e47"
+  },
+  "https://regrettable.eu": {
+    "description": "A drop-in withdrawal button for EU webshops. Supports compliance with EU Directive 2023/2673 through a lightweight widget, automatic confirmation emails with delivery tracking and a 10-year audit log.",
+    "sourceHash": "f4814503933cd4b4eb01578d3c932e71ae8c7868a1c0b84dea646f221aecdad5"
+  },
+  "https://companydata.dk": {
+    "description": "Danish company data with a REST API, financial health score (CDS), 13 years of accounts, property data and real-time monitoring of Danish companies.",
+    "sourceHash": "77152d5aeb9fb02183bf161c46843d42cd6f27dd19528b5c9c5a5fc6a13a5583"
+  },
+  "https://cvrapi.dk": {
+    "description": "The original CVR API, launched in 2012, with over 250,000 users each month. Look up Danish and Norwegian companies by company registration number, production unit number, name or phone number and receive JSON or XML.",
+    "sourceHash": "74cb80dc132e9b58256806aee959965d762a544a9e33e7c82f08ff83cad40b63"
+  },
+  "https://chainbox.dk": {
+    "description": "Chainbox supports B2B businesses with tools for product data management, online sales and content management.",
+    "sourceHash": "9c8ae0da9cf503d56f92274faad48bfbb95b4720ef35e65cd780cee0fd8c949e"
+  },
+  "https://easyonline.ai": {
+    "description": "Upload your AI-built website for DKK 9 per month.",
+    "sourceHash": "343cae6cf953cf8d1b058ddaab5ea1f6fe1999192dafa086f14397614a9267f7"
+  },
+  "https://shipmondo.com/dk/": {
+    "description": "Easy and fast shipping management.",
+    "sourceHash": "137de92d85640c6030ec6c67c55c31c116b06db4c36e3b03032dee59e3e17d14"
+  },
+  "https://www.dotlegal.com": {
+    "description": "A Danish GRC platform bringing GDPR, NIS2, AI Act, ISO 27001 and DORA compliance together. Includes data protection, information security, contract and supplier management, framework templates and AI features.",
+    "sourceHash": "07dc73aec1a6d46c992f96a2983cbdbc3ff3d4bff6367fe50dc02f78851e4d39"
+  },
+  "https://verifyid.dk": {
+    "description": "Age verification and ID scanning for physical shops and online stores. Custom MitID flows and integration for e-commerce, login and compliance.",
+    "sourceHash": "16a5aefedebd8a4dce2488ad4741f918fe2a3ccfd023142e15e7ef457e3caf6f"
+  },
+  "https://sendrcs.dk": {
+    "description": "A professional RCS messaging platform for businesses. Send rich messages with images, buttons and carousels through RCS Business Messaging.",
+    "sourceHash": "e35b5cd91a3024f682f9b64787c0593795dcfbf111f405576f77a65394155169"
+  },
+  "https://nummeropslag.dk": {
+    "description": "Danish phone number lookup, caller ID and spam call protection using CVR and Danish telecom provider data. Available as an app and a partner API for identifying unknown numbers and companies and blocking spam and scam calls.",
+    "sourceHash": "e28c167b1e46cd96eeaa1bb91b4f04b18d801605d919adde3c9c90d84a522e6d"
+  },
+  "https://pennapay.com": {
+    "description": "Free invoicing for freelancers and the self-employed. Invoices with VAT and sequential numbering, payment links for cards or MobilePay, a client portal and file sharing. Built in Denmark.",
+    "sourceHash": "6cc79d0f8e5eb8952e978108f5c597bab9d3be4768591b914a2fefc36470cee3"
+  },
+  "https://byggepladsplanen.dk": {
+    "description": "A web-based construction site planning tool with fences, work areas, signs and access routes on a map.",
+    "sourceHash": "9f225a24f16750947f81ea78e3a14e3e0754c4c8a5cc81351c7e7041400dc13a"
+  },
+  "https://kloaktegning.dk": {
+    "description": "A web-based sewer drawing tool with pipes, manholes and Danish sewer symbols.",
+    "sourceHash": "a06c7d4859781855e06c708bf56754e512b6badb04ddb55d6c8a406c48a43b5b"
+  },
+  "https://skilteplanen.dk": {
+    "description": "A web-based tool for roadwork signage and traffic management plans.",
+    "sourceHash": "cd6d51c0870e2cd3d9cba11a8e16da19b928ec916c2686d969284cc921411332"
+  },
+  "https://brandbuddyai.dk": {
+    "description": "Email marketing on autopilot for local businesses. BrandBuddy builds a year's worth of email campaigns from your company website.",
+    "sourceHash": "09f8b885170699ef9b6cc0fc22df8203d68fbe941292b76d2ce74c4f73615728"
+  },
+  "https://qlim8.com/": {
+    "description": "A Danish platform for carbon accounting and ESG reporting. Calculate scope 1–3 emissions, connect internal systems, report under major frameworks (ESRS, VSME, ISSB, CDP and more), review your value chain through a scope 3 portal and invite consultants and auditors directly onto the platform.",
+    "sourceHash": "b82383cca06cb40184edd4a15f9d3a896353e25f66c254af6b2e1c5ef48f1541"
+  },
+  "https://timetrack.dk": {
+    "description": "AI-native Danish time tracking for the self-employed, agencies and businesses. A built-in MCP server and open API let AI agents such as Claude, Cursor and Copilot track time, create invoices and check prepaid hour balances. Track time across web, app, browser extension and desktop, sell prepaid hours and invoice through Billy, Dinero or e-conomic. EU-based database and backups. Free for up to three users.",
+    "sourceHash": "0a5bc4e53615ef36b4ac55430f0e9807d49d4ea9864558384b6854f31d3797fc"
+  },
+  "https://liviate.com": {
+    "description": "Danish cloud and managed hosting with virtual servers, Kubernetes, backups and monitoring.",
+    "sourceHash": "fb4c27f18eb217340befa304e0a0cd92b59aba58af4a3c7d0a9a2176ec6c7e72"
+  },
+  "https://place2book.com": {
+    "description": "A fully Danish-owned ticketing system for small and large events, with optional seating, scanning, attendance tracking and more.",
+    "sourceHash": "da670e39196d485497f841db15b573900e811f66321522d9ed9a726db1353f51"
+  },
+  "https://zalye.dk": {
+    "description": "Danish software for tradespeople with AI that calculates quotes, plans jobs and routes and sends invoices. Log hours, materials and photos from your phone and send invoices directly to your accounting software.",
+    "sourceHash": "1c14eb8684d3ee9b8465cda912ed8fe3978cc4313a904ca0264ab71f105d2ea4"
+  },
+  "https://gitoro.com": {
+    "description": "European Git hosting SaaS with advanced CI/CD using GitLab-style configuration. Includes pull requests, issues, AI-guided review, advanced RBAC, service accounts and MCP access for AI agents. Free for small teams.",
+    "sourceHash": "9c283fa0b2c0798f1313c58055613329dc534d2520a01bb81effdc5aa04e6326"
+  },
+  "https://biosuite.io": {
+    "description": "Procurement and spend management software for biotech companies.",
+    "sourceHash": "82e55187985f8abbff570c0ff58322297413db7a6b40bdaec04cc78a0ebe2d26"
+  },
+  "https://meneo.dk/": {
+    "description": "Danish task management for bookkeepers and accountants. Meneo automatically creates recurring client tasks and brings deadlines, responsibilities and time tracking into one overview.",
+    "sourceHash": "891437079415a71f8a751a0fe98e6bf004bf0fac033e146a8d9565b37b38eb94"
+  },
+  "https://moxso.com/": {
+    "description": "Moxso uses employee behaviour to measure human risk and target training, phishing simulations and follow-up where the risks are.",
+    "sourceHash": "e3c6b91f92e8f827ead962470f12e4424b5d25a68f46c4843df9ccf351f56b14"
+  },
+  "https://naboportalen.dk": {
+    "description": "An operations system for housing associations, bringing fault reports, cases, documents, tasks, bookings and resident communications together with a resident app.",
+    "sourceHash": "d7910e86f09b84750e8fecab509935627521918f2dfc49ca30f3a3e93a7ea651"
+  },
+  "https://txty.dk": {
+    "description": "An SMS gateway based in Aarhus. Send and receive SMS through a REST API or dashboard, with a custom sender name, keywords on short code 1919, virtual numbers, HLR lookups and delivery reports through webhooks.",
+    "sourceHash": "4e0330e5329dbd2d81a80060140d7531c0e77b17fcc1c96b6dd1883b57dd3c42"
+  },
+  "https://lonbaand.tielemans.dev/?ref=dansktechstack": {
+    "description": "A free salary calculator showing gender pay gaps within your company's own pay categories. Salary data stays in the browser. A paid kit adds pay criteria, salary bands and pay information for applicants.",
+    "sourceHash": "60161153a58e4364b7516ca7dd4eddcc53e0c80c341a757b0347b467843b9707"
+  },
+  "https://cpr.tielemans.dev/?ref=dansktechstack": {
+    "description": "Find Danish civil registration numbers in SharePoint and OneDrive files, see who has access and restrict risky sharing. Free checks for individual files run directly in the browser without uploading.",
+    "sourceHash": "cb043085b4512c4b1647367e177b0f4796a0b9f920d6e3156500abf7df553515"
+  },
+  "https://medusajs.com": {
+    "description": "An open-source, headless commerce platform with a backend, admin panel and Next.js frontend. Build and self-host custom online stores with control over code and infrastructure.",
+    "sourceHash": "ef6a2bf5e3bab2451c7c5ff9bafc140b0d688b16bfdeb19f93ee3a8d4555261f"
+  },
+  "https://avoruni.dk": {
+    "description": "Time tracking, jobs and weekly scheduling for small trade businesses. Staff log hours on their phones, including offline. Managers approve hours and export payroll files to Danløn, DataLøn, Proløn or Zenegy. Runs in the browser without installation.",
+    "sourceHash": "8c64839a9a71ee1b0961ead06e842c7f5f82965f313fd91cda3b33e763d99cef"
+  },
+  "https://fashion-planner.com/": {
+    "description": "Demand planning and forecasting for fashion, beauty and interior brands. Syncs with your ERP to show future stock at size level, track never-out-of-stock items and forecast seasons for more accurate purchasing.",
+    "sourceHash": "450ef0e1ad31ec28ec00480181daabe61157ae435aa91c7e546da72ee2e106ff"
+  },
+  "https://www.twentythree.com": {
+    "description": "TwentyThree is a Danish webinar and video platform for marketing teams. Host and measure video, run webinars, record personal video messages and organise videos in one library.",
+    "sourceHash": "ca5e2f7c8bf79ed334b2a8adb6989b18d38cc9527e2238f8ac79ac342f95504c"
+  },
+  "https://lynkig.dk": {
+    "description": "Danish search and product recommendations for online stores, with a WooCommerce plugin. Understands compound words, Danish characters and spelling mistakes, with fixed monthly pricing.",
+    "sourceHash": "95b652ede702c6466c9305c9fa67ce9bc6c89dd1d546bcbd76d4938884a60d20"
+  }
+}
