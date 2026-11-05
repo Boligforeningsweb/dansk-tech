@@ -3,7 +3,7 @@ if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
 $alternatives = load_alternatives();
 $total = count($alternatives);
-$url = SITE_URL . 'alternativer';
+$url = locale_url('/alternativer');
 
 $popular = $alternatives;
 uasort($popular, function($a, $b) {
@@ -21,9 +21,9 @@ uksort($letters, function($a, $b) {
   return [$a === '#', $a] <=> [$b === '#', $b];
 });
 
-$title = 'Danske alternativer til udenlandsk software A–Å | Den danske tech stack';
-$description = "Find danske alternativer til $total udenlandske systemer – fra Stripe og Shopify til Mailchimp og Zendesk. Dansk software, kurateret af danske iværksættere.";
-$breadcrumbs = [['Forside', '/'], ['Alternativer', '/alternativer']];
+$title = t('Danske alternativer til udenlandsk software A–Å | Den danske tech stack');
+$description = t('Find danske alternativer til {count} udenlandske systemer – fra Stripe og Shopify til Mailchimp og Zendesk. Dansk software, kurateret af danske iværksættere.', ['{count}' => $total]);
+$breadcrumbs = [[t('Forside'), locale_path('/')], [t('Alternativer'), locale_path('/alternativer')]];
 
 $schema = schema_json([
   schema_organization(),
@@ -34,7 +34,7 @@ $schema = schema_json([
     'url' => $url,
     'name' => $title,
     'description' => $description,
-    'inLanguage' => 'da-DK',
+    'inLanguage' => language_tag(),
     'isPartOf' => ['@id' => SITE_URL . '#website'],
     'breadcrumb' => ['@id' => $url . '#breadcrumb'],
   ],
@@ -49,23 +49,23 @@ partial('head', [
 ]);
 partial('site-header');
 ?>
-  <main class="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
-    <?php partial('breadcrumbs', ['items' => [['Forside', '/'], ['Alternativer', null]]]); ?>
+  <main id="main-content" tabindex="-1" class="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+    <?php partial('breadcrumbs', ['items' => [[t('Forside'), locale_path('/')], [t('Alternativer'), null]]]); ?>
 
     <div class="mt-10 max-w-3xl">
-      <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">Danske alternativer til udenlandsk software</h1>
-      <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400">Find det system, du bruger i dag, og se hvilke danske produkter der er foreslået som alternativer. Vi har forslag til <?php echo $total; ?> systemer. Undersøg funktioner og integrationer hos leverandøren, før du vælger.</p>
+      <h1 class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white"><?php echo e(t('Danske alternativer til udenlandsk software')); ?></h1>
+      <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-400"><?php echo e(t('Find det system, du bruger i dag, og se hvilke danske produkter der er foreslået som alternativer. Vi har forslag til {count} systemer. Undersøg funktioner og integrationer hos leverandøren, før du vælger.', ['{count}' => $total])); ?></p>
       <?php partial('trust-bar'); ?>
     </div>
 
     <section class="mt-14">
-      <h2 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Flest danske alternativer</h2>
+      <h2 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"><?php echo e(t('Flest danske alternativer')); ?></h2>
       <ul role="list" class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         <?php foreach ($popular as $alternative): ?>
         <li>
           <a href="<?php echo e(alternative_url($alternative['name'])); ?>" class="block rounded-lg border border-gray-200 bg-white p-4 hover:border-gray-300 hover:shadow-md transition-all duration-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:border-gray-600">
             <span class="block truncate text-base font-semibold text-gray-900 dark:text-white"><?php echo e($alternative['name']); ?></span>
-            <span class="mt-1 block text-sm text-gray-600 dark:text-gray-400"><?php echo count($alternative['products']); ?> danske alternativer</span>
+            <span class="mt-1 block text-sm text-gray-600 dark:text-gray-400"><?php echo e(t('{count} danske alternativer', ['{count}' => count($alternative['products'])])); ?></span>
           </a>
         </li>
         <?php endforeach; ?>
@@ -73,8 +73,8 @@ partial('site-header');
     </section>
 
     <section class="mt-16">
-      <h2 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Alle udenlandske systemer A–Å</h2>
-      <nav aria-label="Spring til bogstav" class="mt-6 flex flex-wrap gap-1.5">
+      <h2 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"><?php echo e(t('Alle udenlandske systemer A–Å')); ?></h2>
+      <nav aria-label="<?php echo e(t('Spring til bogstav')); ?>" class="mt-6 flex flex-wrap gap-1.5">
         <?php foreach (array_keys($letters) as $letter): ?>
         <a href="#bogstav-<?php echo e($letter === '#' ? 'tal' : mb_strtolower($letter)); ?>" class="inline-flex size-9 items-center justify-center rounded-md border border-gray-200 text-sm font-semibold text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"><?php echo e($letter); ?></a>
         <?php endforeach; ?>

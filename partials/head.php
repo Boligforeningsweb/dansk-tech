@@ -6,11 +6,11 @@ if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 $canonical = $canonical ?? null;
 $socialDescription = $socialDescription ?? $description;
 $robots = $robots ?? 'index, follow, max-image-preview:large, max-snippet:-1';
-$ogImage = $ogImage ?? SITE_URL . 'og-image.jpg';
+$ogImage = $ogImage ?? SITE_URL . ltrim(asset_url(locale() === 'en' ? 'og-image-en.jpg' : 'og-image.jpg'), '/');
 $ogImageAlt = $ogImageAlt ?? $title;
 ?>
 <!DOCTYPE html>
-<html lang="da" class="scroll-smooth">
+<html lang="<?php echo locale(); ?>" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +22,10 @@ $ogImageAlt = $ogImageAlt ?? $title;
 <?php if ($canonical): ?>
   <!-- Canonical URL -->
   <link rel="canonical" href="<?php echo e($canonical); ?>" />
+<?php foreach (['da', 'en'] as $language): ?>
+  <link rel="alternate" hreflang="<?php echo $language; ?>" href="<?php echo e(locale_url(parse_url($canonical, PHP_URL_PATH) ?: '/', $language)); ?>" />
+<?php endforeach; ?>
+  <link rel="alternate" hreflang="x-default" href="<?php echo e(locale_url(parse_url($canonical, PHP_URL_PATH) ?: '/', 'da')); ?>" />
 <?php endif; ?>
 
   <!-- Favicon -->
@@ -29,7 +33,7 @@ $ogImageAlt = $ogImageAlt ?? $title;
   <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="manifest" href="<?php echo locale() === 'en' ? '/site-en.webmanifest' : '/site.webmanifest'; ?>">
 
   <!-- Open Graph / Facebook / LinkedIn -->
   <meta property="og:type" content="website">
@@ -43,8 +47,9 @@ $ogImageAlt = $ogImageAlt ?? $title;
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="<?php echo e($ogImageAlt); ?>">
-  <meta property="og:locale" content="da_DK">
-  <meta property="og:site_name" content="Den danske tech stack">
+  <meta property="og:locale" content="<?php echo locale() === 'en' ? 'en_GB' : 'da_DK'; ?>">
+  <meta property="og:locale:alternate" content="<?php echo locale() === 'en' ? 'da_DK' : 'en_GB'; ?>">
+  <meta property="og:site_name" content="<?php echo e(t('Den danske tech stack')); ?>">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
@@ -53,7 +58,9 @@ $ogImageAlt = $ogImageAlt ?? $title;
   <meta name="twitter:image" content="<?php echo e($ogImage); ?>">
   <meta name="twitter:image:alt" content="<?php echo e($ogImageAlt); ?>">
 
+  <script src="<?php echo e(asset_url('assets/theme.js')); ?>"></script>
   <link rel="stylesheet" href="<?php echo e(asset_url('assets/app.css')); ?>">
+  <script src="<?php echo e(asset_url('assets/language.js')); ?>" defer></script>
 <?php if (!empty($schema)): ?>
 
   <!-- Schema.org JSON-LD -->
@@ -64,3 +71,4 @@ $ogImageAlt = $ogImageAlt ?? $title;
 <?php endif; ?>
 </head>
 <body class="bg-white dark:bg-gray-900">
+  <a href="#main-content" class="skip-link"><?php echo e(t('Spring til indhold')); ?></a>

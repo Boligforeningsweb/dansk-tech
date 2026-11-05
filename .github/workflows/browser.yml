@@ -1,0 +1,29 @@
+name: Browser regressions
+
+on:
+  pull_request:
+    paths:
+      - 'assets/**'
+      - 'lib/**'
+      - 'pages/**'
+      - 'partials/**'
+      - 'data/**'
+      - 'products.json'
+      - 'index.php'
+      - 'tools/browser/**'
+      - 'tools/dev-router.php'
+      - '.github/workflows/browser.yml'
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tools/browser/package-lock.json
+      - run: npm ci --prefix tools/browser
+      - run: npx --prefix tools/browser playwright install --with-deps chromium
+      - run: npm test --prefix tools/browser

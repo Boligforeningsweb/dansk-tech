@@ -6,7 +6,7 @@ brand
 
 ## Users
 
-Danske iværksættere, udviklere og softwarevirksomheder, der søger danske alternativer til internationale systemer til deres tech stack.
+Danske og internationale iværksættere, udviklere og softwarevirksomheder, der søger danske alternativer til internationale systemer til deres tech stack. Sitet findes på dansk og engelsk; engelske badges fremhæver produkternes europæiske, nordiske rødder.
 
 ## Product Purpose
 

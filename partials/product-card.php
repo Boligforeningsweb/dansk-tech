@@ -5,7 +5,8 @@ if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 $headingTag = $headingTag ?? 'h3';
 $name = $product['name'];
 $url = $product['url'];
-$description = $product['description'];
+$description = product_description($product);
+$descriptionLanguage = product_description_language($product);
 $alternatives = isset($product['alternatives']) && is_array($product['alternatives'])
   ? $product['alternatives']
   : [];
@@ -24,6 +25,8 @@ foreach ($alternatives as $alternative) {
 $hiddenAlternatives = count($alternatives) - count($shownAlternatives);
 
 $faviconUrl = favicon_url($url);
+$imageUrl = product_image_url($product) ?? $faviconUrl;
+$fallbackUrl = $imageUrl !== $faviconUrl ? $faviconUrl : '';
 
 $isOriginal = in_array($url, $originalProducts);
 $productDataAttributes = 'data-product data-name="' . e(mb_strtolower($name)) . '" data-description="' . e(mb_strtolower($description)) . '" data-alternatives="' . e(mb_strtolower(implode(' ', $alternatives))) . '"';
@@ -32,30 +35,33 @@ $productDataAttributes = 'data-product data-name="' . e(mb_strtolower($name)) . 
           <div class="group relative block p-4 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 hover:border-gray-300 dark:hover:border-gray-600 hover:shadow-md transition-all duration-200">
             <div class="flex items-start gap-3">
               <div class="flex-shrink-0 mt-0.5 w-8 h-8 rounded bg-gray-200 dark:bg-gray-700 flex items-center justify-center relative overflow-hidden">
-                <?php if ($faviconUrl): ?>
-                <img src="<?php echo $faviconUrl; ?>" alt="" width="32" height="32" loading="lazy" decoding="async" class="rounded w-full h-full object-contain" onerror="this.style.display='none'; this.parentElement.querySelector('.favicon-fallback').style.display='flex';" />
+                <?php if ($imageUrl): ?>
+                <img src="<?php echo e($imageUrl); ?>" data-fallback-src="<?php echo e($fallbackUrl); ?>" alt="" width="32" height="32" loading="lazy" decoding="async" class="rounded w-full h-full object-contain" onerror="if(this.dataset.fallbackSrc){const fallback=this.dataset.fallbackSrc;delete this.dataset.fallbackSrc;this.src=fallback;}else{this.style.display='none';this.parentElement.querySelector('.favicon-fallback').style.display='flex';}" />
                 <?php endif; ?>
-                <span class="favicon-fallback text-sm font-bold text-gray-500 dark:text-gray-400" style="<?php echo $faviconUrl ? 'display: none;' : 'display: flex;'; ?>"><?php echo e(mb_strtoupper(mb_substr($name, 0, 1))); ?></span>
+                <span class="favicon-fallback text-sm font-bold text-gray-500 dark:text-gray-400" style="<?php echo $imageUrl ? 'display: none;' : 'display: flex;'; ?>"><?php echo e(mb_strtoupper(mb_substr($name, 0, 1))); ?></span>
               </div>
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-1 flex-wrap">
-                  <<?php echo $headingTag; ?> class="text-base font-semibold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors truncate">
+                  <<?php echo $headingTag; ?> class="min-w-0 break-words text-base font-semibold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
                     <?php // Linket dækker hele kortet (after:inset-0); alternativ-linksene ligger ovenpå ?>
-                    <a href="<?php echo e(outbound_url($url)); ?>" target="_blank" rel="noopener" title="<?php echo e($description); ?>" class="after:absolute after:inset-0 after:rounded-lg focus:outline-none focus-visible:after:ring-2 focus-visible:after:ring-gray-900 dark:focus-visible:after:ring-white"><?php echo e($name); ?></a>
+                    <a href="<?php echo e(outbound_url($url)); ?>" target="_blank" rel="noopener" title="<?php echo e($descriptionLanguage === locale() ? $description : t('Se produktets hjemmeside')); ?>" class="after:absolute after:inset-0 after:rounded-lg focus:outline-none focus-visible:after:ring-2 focus-visible:after:ring-gray-900 dark:focus-visible:after:ring-white"><?php echo e($name); ?></a>
                   </<?php echo $headingTag; ?>>
                   <?php if ($isOriginal): ?>
                   <span class="inline-flex items-center rounded-full bg-blue-600 px-2 py-0.5 text-xs font-medium text-white flex-shrink-0">Original</span>
                   <?php endif; ?>
                 </div>
-                <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2">
+                <p lang="<?php echo $descriptionLanguage; ?>" class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mb-2">
                   <?php echo e($description); ?>
                 </p>
+                <?php if (locale() === 'en' && $descriptionLanguage === 'da'): ?>
+                <p class="mb-2 text-xs text-gray-600 dark:text-gray-300"><?php echo e(t('Beskrivelsen er på dansk. Engelsk oversættelse er på vej.')); ?></p>
+                <?php endif; ?>
                 <?php if ($shownAlternatives): ?>
                 <p class="text-xs text-gray-500 dark:text-gray-500">
-                  <span class="font-medium text-gray-600 dark:text-gray-400">Alternativ til:</span>
+                  <span class="font-medium text-gray-600 dark:text-gray-400"><?php echo e(t('Alternativ til:')); ?></span>
                   <span class="text-gray-500 dark:text-gray-400"><?php
                     echo implode(', ', array_map(function($alternative) {
-                      return '<a href="' . e(alternative_url($alternative)) . '" class="relative z-10 hover:text-gray-900 hover:underline dark:hover:text-white">' . e($alternative) . '</a>';
+                      return '<a href="' . e(alternative_url($alternative)) . '" class="relative z-10 underline underline-offset-2 hover:text-gray-900 dark:hover:text-white">' . e($alternative) . '</a>';
                     }, $shownAlternatives));
                     if ($hiddenAlternatives) {
                       echo ' +' . $hiddenAlternatives;

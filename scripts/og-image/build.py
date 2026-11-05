@@ -108,8 +108,10 @@ def at_least(n):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--theme", choices=["red", "dark"], default="red")
-    ap.add_argument("--out", default=str(ROOT / "og-image.jpg"))
+    ap.add_argument("--language", choices=["da", "en"], default="da")
+    ap.add_argument("--out")
     args = ap.parse_args()
+    args.out = args.out or str(ROOT / ("og-image-en.jpg" if args.language == "en" else "og-image.jpg"))
 
     products = json.loads((ROOT / "products.json").read_text())
     backer_faces = backers()
@@ -130,6 +132,15 @@ def main():
     template = (HERE / "template.html").read_text()
     html = (template
             .replace("{{THEME}}", args.theme)
+            .replace("{{LANGUAGE}}", args.language)
+            .replace("{{HEADING}}", "The Danish<br>Tech Stack" if args.language == "en" else "Den danske<br>tech stack")
+            .replace("{{ALTERNATIVES}}", "Danish alternatives" if args.language == "en" else "danske alternativer")
+            .replace("{{TO}}", "to" if args.language == "en" else "til")
+            .replace("{{RECOMMENDED}}", "Recommended by" if args.language == "en" else "Anbefalet af")
+            .replace("{{ENTREPRENEURS}}", "entrepreneurs" if args.language == "en" else "iværksættere")
+            .replace("{{AND}}", "and" if args.language == "en" else "og")
+            .replace("{{CONTRIBUTORS_LABEL}}", "contributors" if args.language == "en" else "bidragydere")
+            .replace("{{ON}}", "on" if args.language == "en" else "på")
             .replace("{{TILES}}", tile_html)
             .replace("{{STACK}}", stack_html)
             .replace("{{PRODUCTS}}", at_least(len(products)))

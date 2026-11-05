@@ -158,7 +158,7 @@ foreach ($guideFixtures as [$contents, $expected]) {
 $sitemap = simplexml_load_string(page_html('sitemap'));
 check($sitemap !== false, 'Sitemap er ikke gyldig XML.');
 $sitemapUrls = array_map(fn($node) => (string) $node->loc, iterator_to_array($sitemap->url, false));
-check(count($sitemapUrls) === count($alternatives) + 3, 'Sitemap mangler sider eller indeholder ekstra sider.');
+check(count($sitemapUrls) === (count($alternatives) + 3) * 2, 'Sitemap mangler sider eller indeholder ekstra sider.');
 check(count(array_unique($sitemapUrls)) === count($sitemapUrls), 'Sitemap indeholder dubletter.');
 check(count($sitemap->xpath('//*[local-name()="lastmod"]')) === 0, 'Sitemap bruger igen upålidelige filændringsdatoer.');
 
@@ -249,7 +249,7 @@ foreach (['home', 'alternatives', 'badge'] as $page) {
 $fixture['description'] = 'Beskrivelse med <script> og & tegn.';
 $escaped = page_html('alternative', ['alternative' => ['name' => 'Test <script>', 'slug' => 'test-script', 'products' => [$fixture]]]);
 check(!str_contains($escaped, 'Test <script>'), 'Produktnavne escapes ikke i FAQ.');
-check(str_contains($escaped, '<p>' . e($fixture['description']) . '</p>'), 'Fallback-beskrivelsen escapes ikke i FAQ.');
+check(str_contains($escaped, '<p lang="da">' . e($fixture['description']) . '</p>'), 'Fallback-beskrivelsen escapes ikke i FAQ.');
 check(str_contains(page_html('404', [], 404), 'noindex, follow'), '404-siden har mistet noindex.');
 check(http_response_code() === 404, '404-siden returnerer ikke HTTP 404.');
 

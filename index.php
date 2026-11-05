@@ -4,6 +4,7 @@ define('APP_ROOT', __DIR__);
 require APP_ROOT . '/lib/bootstrap.php';
 
 $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
+$requestedPath = $path;
 $query = $_SERVER['QUERY_STRING'] ?? '';
 $queryString = $query !== '' ? '?' . $query : '';
 
@@ -13,6 +14,17 @@ if ($path === '/index.php') {
 }
 if ($path !== '/' && str_ends_with($path, '/')) {
   redirect(rtrim($path, '/') . $queryString);
+}
+
+// Route English pages through the same templates and data as Danish pages.
+if (locale() === 'en') {
+  $path = locale_path($path, 'da');
+  if (preg_match('#^/alternativer(?:/|$)#', substr(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), 3))) {
+    redirect(locale_path($path, 'en') . $queryString);
+  }
+  if ($path === '/sitemap.xml') {
+    redirect('/sitemap.xml');
+  }
 }
 
 if (preg_match('#^/badge/([a-z0-9-]+)\.svg$#', $path, $match)) {
@@ -29,6 +41,8 @@ if (preg_match('#^/cache/favicons/([a-z0-9.-]+)\.png$#', $path, $match)) {
   serve_favicon($match[1]);
   exit;
 }
+
+handle_language_preference($requestedPath);
 
 switch ($path) {
   case '/':
@@ -57,7 +71,7 @@ switch ($path) {
       // Fx /alternativer/Stripe eller /alternativer/1Password -> kanonisk slug
       $slug = alternative_slug(rawurldecode($match[1]));
       if (isset($alternatives[$slug])) {
-        redirect('/alternativer/' . $slug . $queryString);
+        redirect(locale_path('/alternativer/' . $slug) . $queryString);
       }
     }
     render('404', [], 404);

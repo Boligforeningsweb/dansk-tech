@@ -4,11 +4,19 @@ on:
   pull_request:
     paths:
       - 'products.json'
+      - 'readme.md'
+      - 'index.php'
+      - '*.webmanifest'
+      - 'og-image*.jpg'
       - 'data/product-guides.json'
+      - 'data/translations/**'
       - 'lib/**.php'
       - 'pages/**.php'
       - 'partials/**.php'
       - 'tools/check-alternative-pages.php'
+      - 'tools/check-localization.php'
+      - 'tools/check-language-preferences.php'
+      - 'tools/check-contribution-links.php'
       - '.github/workflows/alternatives.yml'
 
 jobs:
@@ -17,3 +25,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: php tools/check-alternative-pages.php
+      - run: php tools/check-localization.php
+      - run: php tools/check-language-preferences.php
+      - run: php tools/check-contribution-links.php

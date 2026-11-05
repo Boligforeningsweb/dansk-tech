@@ -2,12 +2,13 @@
 if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
 partial('head', [
-  'title' => '404: Der mangler noget i stacken. · Den danske tech stack',
-  'description' => 'Vi har danske alternativer til næsten alt. Bare ikke til den side, du leder efter. Find resten af den danske tech stack her.',
+  'title' => t('404: Der mangler noget i stacken. · Den danske tech stack'),
+  'description' => t('Vi har danske alternativer til næsten alt. Bare ikke til den side, du leder efter. Find resten af den danske tech stack her.'),
   'robots' => 'noindex, follow',
 ]);
 ?>
-  <main class="not-found" id="main-content">
+  <div class="home-language-switcher"><?php partial('theme-toggle'); partial('language-switcher'); ?></div>
+  <main class="not-found" id="main-content" tabindex="-1">
     <div class="not-found-layout">
       <div class="not-found-scene" aria-hidden="true">
         <svg class="not-found-illustration" viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +31,7 @@ partial('head', [
             <path d="m133 264 120-63 120 63-120 63Z" />
             <path d="M133 264v30l120 63 120-63v-30M253 327v30" />
           </g>
-          <text x="253" y="274" text-anchor="middle" fill="#bb5b6d" font-size="12" font-family="ui-monospace, monospace" transform="rotate(-28 253 274)">siden.findes.ikke</text>
+          <text x="253" y="274" text-anchor="middle" fill="#bb5b6d" font-size="12" font-family="ui-monospace, monospace" transform="rotate(-28 253 274)"><?php echo e(t('siden.findes.ikke')); ?></text>
           <!-- En levende udgave af sitets stack-logo, med Dannebrog på toppen. -->
           <g class="not-found-top" stroke-linejoin="round">
             <path d="m133 171 120-63 120 63-120 63Z" fill="#d7193f" />
@@ -52,23 +53,23 @@ partial('head', [
           <circle cx="106" cy="299" r="3" fill="#df8e9e" />
           <circle cx="393" cy="327" r="2" fill="#c8102e" />
           <g class="not-found-annotation" fill="currentColor">
-            <text x="318" y="394" font-size="17" transform="rotate(-7 318 394)">Den var her lige …</text>
+            <text x="318" y="394" font-size="17" transform="rotate(-7 318 394)"><?php echo e(t('Den var her lige …')); ?></text>
             <path d="M410 367c18-50-3-88-37-95m0 0 10-3m-10 3 5 9" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           </g>
         </svg>
       </div>
       <div class="not-found-copy">
-        <h1>404: Der mangler noget i <span>stacken.</span></h1>
-        <p class="not-found-description">Vi har danske alternativer til næsten alt. Bare ikke til den side, du leder efter.</p>
-        <p class="not-found-description not-found-description-secondary">Den er måske flyttet. Måske slettet. Måske er den bare gået til fredagsbar.</p>
+        <h1><?php echo e(t('404: Der mangler noget i')); ?> <span><?php echo e(t('stacken.')); ?></span></h1>
+        <p class="not-found-description"><?php echo e(t('Vi har danske alternativer til næsten alt. Bare ikke til den side, du leder efter.')); ?></p>
+        <p class="not-found-description not-found-description-secondary"><?php echo e(t('Den er måske flyttet. Måske slettet. Måske er den bare gået til fredagsbar.')); ?></p>
         <div class="not-found-actions">
-          <a class="not-found-home" href="/#produkter">Find en dansk løsning <span aria-hidden="true">→</span></a>
-          <button class="not-found-restart" type="button" data-restart hidden>
+          <a class="not-found-home" href="<?php echo e(locale_path('/#produkter')); ?>"><?php echo e(t('Find en dansk løsning')); ?> <span aria-hidden="true">→</span></a>
+          <button class="not-found-restart" type="button" data-restart data-restarting="<?php echo e(t('Genstarter …')); ?>" data-retry="<?php echo e(t('Prøv igen?')); ?>" hidden>
             <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7v5h-5M20 12a8 8 0 1 0-2.3 5.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" /></svg>
-            <span>Prøv at genstarte</span>
+            <span><?php echo e(t('Prøv at genstarte')); ?></span>
           </button>
         </div>
-        <p class="not-found-site"><a href="/">dansktechstack.dk</a></p>
+        <p class="not-found-site"><a href="<?php echo e(locale_path('/')); ?>">dansktechstack.dk</a></p>
       </div>
     </div>
   </main>
