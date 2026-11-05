@@ -186,6 +186,12 @@ foreach (['da', 'en'] as $language) {
 // Both page/badge language combinations, including HTML copied to another website.
 foreach (['da', 'en'] as $pageLanguage) {
   foreach (['da', 'en'] as $badgeLanguage) {
+    [, $shortXpath] = page_document('badge', locale_path('/badge', $pageLanguage), [], ['sprog' => $badgeLanguage]);
+    $shortLabel = $badgeLanguage === 'en' ? 'Nordic tech' : 'Dansk tech';
+    check($shortXpath->evaluate('string(//h2[@id="tech-heading"])') === $shortLabel,
+      'Det korte badge kan ikke findes uden produktvalg.');
+    check($shortXpath->query('//section[@id="tech"]//button[@data-copy]')->length === 8,
+      'Det korte badge mangler kopierbare HTML-/Markdown-varianter.');
     [, $xpath] = page_document('badge', locale_path('/badge', $pageLanguage), [],
       ['produkt' => 'alunta-com', 'sprog' => $badgeLanguage]);
     foreach ($xpath->query('//div[contains(@class,"badge-preview")]/svg') as $svg) {

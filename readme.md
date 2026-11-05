@@ -128,7 +128,7 @@ Opret derefter en pull request fra din fork til `Boligforeningsweb/dansk-tech`.
 
 Sitet findes på [dansk](https://dansktechstack.dk/) og [engelsk](https://dansktechstack.dk/en). Du bidrager fortsat med én dansk produktbeskrivelse i `products.json`; vedligeholderne står for den engelske udgave.
 
-På [badgesiden](https://dansktechstack.dk/badge) kan du hente gratis badges på begge sprog, fx **Dansk teknologi** eller **Nordic tech**, samt badges med konkrete alternativnavne. Badges er frivillige.
+På [badgesiden](https://dansktechstack.dk/badge) kan du hente gratis badges på begge sprog, fx **Dansk tech** eller **Nordic tech**, samt badges med konkrete alternativnavne. Badges er frivillige.
 
 **English contributions are welcome.** To suggest a product or correction, [open an issue](https://github.com/Boligforeningsweb/dansk-tech/issues/new) with its name, URL, description, connection to Denmark and international alternatives. No coding or Danish translation is required to submit an issue.
 

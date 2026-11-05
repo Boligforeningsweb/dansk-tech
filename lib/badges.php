@@ -2,7 +2,7 @@
 if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 
 // Badges til produkternes egne websites: "Dansk alternativ til Stripe" eller det generelle
-// "Dansk teknologi" / "Nordic tech" - og "Vi støtter dansk tech" til alle andre. Teksten tegnes som vektorer ud fra skriften Inter (data/badge-font.json, lavet af
+// "Dansk tech" / "Nordic tech" - og "Vi støtter dansk tech" til alle andre. Teksten tegnes som vektorer ud fra skriften Inter (data/badge-font.json, lavet af
 // tools/badge/build-font.py), så badget ser ens ud overalt, og bredden altid passer til teksten.
 
 const BADGE_GENERIC = 'listet-paa-dansktechstack';
@@ -44,14 +44,14 @@ function product_badges(array $product, $language = null) {
   return $badges;
 }
 
-// "Dansk teknologi" / "Nordic tech" - til alle produkter på listen.
+// "Dansk tech" / "Nordic tech" - kan også hentes uden produktvalg.
 // Sluggen er bevaret, så eksisterende embedadresser fortsat virker.
 function generic_badge($language = null) {
   $language ??= locale();
   return [
     'slug' => BADGE_GENERIC,
     'label' => '',
-    'name' => $language === 'en' ? 'Nordic tech' : 'Dansk teknologi',
+    'name' => $language === 'en' ? 'Nordic tech' : 'Dansk tech',
     'link' => locale_url('/', $language),
     'language' => $language,
   ];
@@ -74,7 +74,7 @@ function supporter_badges($language = null) {
   ];
 }
 
-// Alle badges der ikke kræver et produkt (inkl. det generelle "Dansk software")
+// Alle badges der ikke kræver et produkt (inkl. "Dansk tech" / "Nordic tech")
 function standalone_badges() {
   return [BADGE_GENERIC => generic_badge()] + supporter_badges();
 }

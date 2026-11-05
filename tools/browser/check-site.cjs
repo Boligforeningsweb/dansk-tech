@@ -113,6 +113,30 @@ async function main() {
         await c.close();
       }
     });
+    await check('short tech badges can be found and copied without selecting a product', async () => {
+      const c = await context(); const p = await c.newPage();
+      for (const pageLanguage of ['da', 'en']) for (const badgeLanguage of ['da', 'en']) {
+        const prefix = pageLanguage === 'en' ? '/en' : '';
+        const label = badgeLanguage === 'en' ? 'Nordic tech' : 'Dansk tech';
+        await p.goto(origin + prefix + '/badge?sprog=' + badgeLanguage);
+        assert.equal(await p.locator('#produkt-valg').inputValue(), '');
+        const card = p.locator('a[href="#tech"]');
+        assert((await card.innerText()).includes(label)); await card.click();
+        assert.equal(new URL(p.url()).hash, '#tech');
+        assert.equal(await p.locator('#tech-heading').innerText(), label);
+        assert.equal(await p.locator('#tech .badge-preview svg').count(), 4);
+        await p.evaluate(() => Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: async text => { window.copied = text; } } }));
+        await p.locator('#tech button.copy').first().click();
+        const html = await p.evaluate(() => window.copied);
+        assert(html.includes(label) && !html.includes('We support') && !html.includes('Vi støtter'));
+        assert(html.includes('/badge/listet-paa-dansktechstack.svg'));
+        const response = await c.request.get(origin + (badgeLanguage === 'en' ? '/en' : '') + '/badge/listet-paa-dansktechstack.svg');
+        assert.equal(response.status(), 200); assert((await response.text()).includes(label));
+        const supporter = await p.locator('#stoette svg title').first().textContent();
+        assert(supporter.includes(badgeLanguage === 'en' ? 'We support Nordic tech' : 'Vi støtter dansk tech'));
+      }
+      await c.close();
+    });
     await check('badge previews, SVG files and embeds keep their own language', async () => {
       const c = await context(); const p = await c.newPage();
       for (const pageLanguage of ['da', 'en']) for (const badgeLanguage of ['da', 'en']) {

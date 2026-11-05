@@ -204,5 +204,8 @@
   "Der blev fundet 1 produkt.": "1 product found.",
   "Der blev fundet {count} produkter.": "{count} products found.",
   "Beskrivelsen er på dansk. Engelsk oversættelse er på vej.": "This description is in Danish. An English translation is pending.",
-  "Se produktets hjemmeside": "Visit the product website"
+  "Se produktets hjemmeside": "Visit the product website",
+  "Et enkelt badge til jeres egen teknologi.": "A simple badge for your own technology.",
+  "Til jeres egen teknologi": "For your own technology",
+  "Et enkelt badge til jeres egen teknologi. Badget linker til listen.": "A simple badge for your own technology. The badge links to the directory."
 }

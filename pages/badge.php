@@ -6,6 +6,7 @@ $product = find_product_by_slug(query_value('produkt'));
 $badgeLanguage = badge_language();
 $badges = $product ? product_badges($product, $badgeLanguage) : [];
 $badge = $badges[query_value('badge')] ?? ($badges ? reset($badges) : null);
+$generic = generic_badge($badgeLanguage);
 $supporter = supporter_badges($badgeLanguage)['vi-stoetter-dansk-tech'];
 
 $url = locale_url('/badge');
@@ -44,7 +45,12 @@ partial('site-header');
       <p class="mt-3 max-w-2xl text-sm/6 text-gray-700 dark:text-gray-300"><?php echo e(t('Den engelske udgave fremhæver jeres nordiske rødder: “Nordic tech” eller “European alternative to …”.')); ?></p>
     </section>
 
-    <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <div class="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <a href="#tech" class="group rounded-2xl border border-gray-200 p-6 hover:border-gray-300 hover:shadow-md transition-all duration-200 dark:border-gray-700">
+        <p lang="<?php echo $badgeLanguage; ?>" class="text-base font-semibold text-gray-900 dark:text-white"><?php echo e($generic['name']); ?></p>
+        <p class="mt-1 text-sm/6 text-gray-700 dark:text-gray-300"><?php echo e(t('Et enkelt badge til jeres egen teknologi.')); ?></p>
+        <div class="badge-preview mt-5" aria-hidden="true"><?php echo badge_svg($generic, 'lys', 'kompakt'); ?></div>
+      </a>
       <a href="#produkt" class="group rounded-2xl border border-gray-200 p-6 hover:border-gray-300 hover:shadow-md transition-all duration-200 dark:border-gray-700">
         <p class="text-base font-semibold text-gray-900 dark:text-white"><?php echo e(t('Er jeres produkt på listen?')); ?></p>
         <p class="mt-1 text-sm/6 text-gray-700 dark:text-gray-300"><?php echo e(t('Vis kunderne, at I er et dansk alternativ.')); ?></p>
@@ -56,6 +62,13 @@ partial('site-header');
         <div class="badge-preview mt-5" aria-hidden="true"><?php echo badge_svg($supporter, 'lys', 'kompakt'); ?></div>
       </a>
     </div>
+
+    <section id="tech" class="mt-20 scroll-mt-6 border-t border-gray-200 pt-16 dark:border-white/10" aria-labelledby="tech-heading">
+      <p class="text-sm font-semibold text-gray-700 dark:text-gray-300"><?php echo e(t('Til jeres egen teknologi')); ?></p>
+      <h2 id="tech-heading" lang="<?php echo $badgeLanguage; ?>" class="mt-2 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white"><?php echo e($generic['name']); ?></h2>
+      <p class="mt-4 max-w-2xl text-base/7 text-gray-700 dark:text-gray-300"><?php echo e(t('Et enkelt badge til jeres egen teknologi. Badget linker til listen.')); ?></p>
+      <?php partial('badge-variants', ['product' => null, 'badge' => $generic]); ?>
+    </section>
 
     <section id="produkt" class="mt-20 scroll-mt-6 border-t border-gray-200 pt-16 dark:border-white/10">
       <p class="text-sm font-semibold text-gray-700 dark:text-gray-300"><?php echo e(t('Til produkterne på listen')); ?></p>
@@ -81,7 +94,7 @@ partial('site-header');
       <p class="mt-2 text-sm/6 text-gray-700 dark:text-gray-300"><?php echo e(t('Anbefalet: Badges med et alternativ linker til den relevante side på listen.')); ?></p>
       <div class="mt-5 flex flex-wrap gap-2">
         <?php foreach ($badges as $item): $active = $item['slug'] === $badge['slug']; ?>
-        <a href="<?php echo e(locale_path('/badge')); ?>?<?php echo e(http_build_query(['produkt' => product_slug($product), 'badge' => $item['slug'], 'sprog' => $badgeLanguage])); ?>#udseende"<?php echo $active ? ' aria-current="true"' : ''; ?> class="rounded-full px-3.5 py-1.5 text-sm font-medium <?php echo $active ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900' : 'border border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'; ?>"><?php echo e($item['slug'] === BADGE_GENERIC ? t('Generelt badge') : $item['name']); ?></a>
+        <a href="<?php echo e(locale_path('/badge')); ?>?<?php echo e(http_build_query(['produkt' => product_slug($product), 'badge' => $item['slug'], 'sprog' => $badgeLanguage])); ?>#udseende"<?php echo $active ? ' aria-current="true"' : ''; ?><?php echo $item['slug'] === BADGE_GENERIC ? ' lang="' . $badgeLanguage . '"' : ''; ?> class="rounded-full px-3.5 py-1.5 text-sm font-medium <?php echo $active ? 'bg-gray-900 text-white dark:bg-white dark:text-gray-900' : 'border border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-800'; ?>"><?php echo e($item['name']); ?></a>
         <?php endforeach; ?>
       </div>
     </section>
