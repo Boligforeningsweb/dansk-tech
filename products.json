@@ -516,11 +516,10 @@
     ]
   },
   {
-    "name": "Netsite",
-    "url": "https://www.netsite.dk/",
-    "description": "Domæne, DNS, email- og webhotel-hosting i Danmark med dansk support.",
+    "name": "Simply.com",
+    "url": "https://www.simply.com/",
+    "description": "Domæner, DNS, email- og webhotel-hosting fra dansk udbyder (team.blue).",
     "alternatives": [
-      "Simply.com",
       "one.com",
       "GoDaddy",
       "Namecheap",
@@ -1178,16 +1177,6 @@
       "Planview",
       "Wrike",
       "PPM Express"
-    ]
-  },
-  {
-    "name": "One.com",
-    "url": "https://one.com",
-    "description": "Hjemmeside-hosting",
-    "alternatives": [
-      "Simply.com",
-      "1&1",
-      "GoDaddy"
     ]
   },
   {
