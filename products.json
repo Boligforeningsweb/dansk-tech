@@ -1,5 +1,11 @@
 [
   {
+    "name": "Colibo",
+    "url": "https://colibo.com",
+    "description": "Dansk intranet og medarbejderapp, der samler kontor- og frontlinjemedarbejdere ét sted. Udviklet i Aarhus, ISO 27001-certificeret, med dansk hosting eller on-premises og integration til Microsoft 365.",
+    "alternatives": ["Sharepoint", "Microsoft Viva", "Staffbase", "Workvivo", "Simpplr", "Unily", "LumApps"]
+  },
+  {
     "name": "OKF Todo",
     "url": "https://dalby.md/projects/okf-todo",
     "description": "Gratis open source-opgavestyring til udviklere og supportmedarbejdere med data gemt lokalt. Brug din egen AI-assistent til at omsætte mails, noter og regneark til opgaveforslag",
