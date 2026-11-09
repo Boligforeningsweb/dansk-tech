@@ -7,6 +7,7 @@ if (!defined('APP_ROOT')) { http_response_code(404); exit; }
 const CONTRIBUTORS_CACHE = CACHE_DIR . '/contributors.json';
 const CONTRIBUTORS_TTL = 21600;
 const CONTRIBUTORS_API = 'https://api.github.com/repos/Boligforeningsweb/dansk-tech/contributors?per_page=100';
+const CONTRIBUTORS_API_PAGE2 = 'https://api.github.com/repos/Boligforeningsweb/dansk-tech/contributors?per_page=100&page=2';
 
 function load_contributors() {
   $cached = is_file(CONTRIBUTORS_CACHE) ? json_decode(file_get_contents(CONTRIBUTORS_CACHE), true) : null;
@@ -32,6 +33,11 @@ function refresh_contributors() {
   }
   $response = http_get(CONTRIBUTORS_API, $headers);
   $data = $response && $response[0] === 200 ? json_decode($response[1], true) : null;
+  $response2 = http_get(CONTRIBUTORS_API_PAGE2, $headers);
+  $data2 = $response2 && $response2[0] === 200 ? json_decode($response2[1], true) : [];
+  if (is_array($data2)) {
+    $data = array_merge($data ?? [], $data2);
+  }
   if (!is_array($data)) {
     // Behold den gamle cache, men prøv først igen om en time
     if (is_file(CONTRIBUTORS_CACHE)) {

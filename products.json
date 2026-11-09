@@ -10,6 +10,12 @@
     ]
   },
   {
+    "name": "Colibo",
+    "url": "https://colibo.com",
+    "description": "Dansk intranet og medarbejderapp, der samler kontor- og frontlinjemedarbejdere ét sted. Udviklet i Aarhus, ISO 27001-certificeret, med dansk hosting eller on-premises og integration til Microsoft 365.",
+    "alternatives": ["Sharepoint", "Microsoft Viva", "Staffbase", "Workvivo", "Simpplr", "Unily", "LumApps"]
+  },
+  {
     "name": "OKF Todo",
     "url": "https://dalby.md/projects/okf-todo",
     "description": "Gratis open source-opgavestyring til udviklere og supportmedarbejdere med data gemt lokalt. Brug din egen AI-assistent til at omsætte mails, noter og regneark til opgaveforslag",
@@ -529,7 +535,17 @@
     "url": "https://www.netsite.dk/",
     "description": "Domæne, DNS, email- og webhotel-hosting i Danmark med dansk support.",
     "alternatives": [
-      "Simply.com",
+      "one.com",
+      "GoDaddy",
+      "Namecheap",
+      "Cloudflare"
+    ]
+  },
+  {
+    "name": "Simply.com",
+    "url": "https://www.simply.com/",
+    "description": "Domæner, DNS, email- og webhotel-hosting fra dansk udbyder (team.blue).",
+    "alternatives": [
       "one.com",
       "GoDaddy",
       "Namecheap",
@@ -1194,7 +1210,6 @@
     "url": "https://one.com",
     "description": "Hjemmeside-hosting",
     "alternatives": [
-      "Simply.com",
       "1&1",
       "GoDaddy"
     ]
@@ -1582,5 +1597,12 @@
     "url": "https://lynkig.dk",
     "description": "Dansk søgning og produktanbefalinger til webshops, med plugin til WooCommerce. Forstår sammensatte ord, æ/ø/å og stavefejl, og har faste priser måned til måned.",
     "alternatives": ["Doofinder", "Searchanise", "Algolia"]
+  },
+  {
+    "name": "Rivaler.io",
+    "url": "https://rivaler.io",
+    "description": "Konkurrentovervågning, der samler konkurrenters annoncer, nyhedsbreve og ændringer på deres websites på tværs af kanaler i ét fælles overblik. Aktiviteten grupperes automatisk i kampagner og temaer, så marketing- og e-commerce-teams kan følge, hvordan konkurrenternes udspil udvikler sig over tid.",
+    "alternatives": ["Crayon", "Klue", "Kompyte", "Foreplay", "AdClarity", "Brandwatch", "SEMrush"],
+    "image": "images/rivaler.png"
   }
 ]
