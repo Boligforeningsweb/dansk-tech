@@ -1,11 +1,20 @@
 [
   {
+    "name": "Seculyze.com",
+    "url": "https://seculyze.com",
+    "description": "AI-drevet cybersikkerhed, der optimerer SOC’en: Færre falske positiver med maskinlæring, bedre detektionsdækning og lavere SIEM-omkostninger. AI-agenter foreslår og udfører handlinger.",
+    "alternatives": [
+      "Torq",
+      "StrikeReady",
+      "Prophet AI"
+    ]
+  },
+  {
     "name": "OKF Todo",
     "url": "https://dalby.md/projects/okf-todo",
     "description": "Gratis open source-opgavestyring til udviklere og supportmedarbejdere med data gemt lokalt. Brug din egen AI-assistent til at omsætte mails, noter og regneark til opgaveforslag",
     "alternatives": ["Todoist", "Microsoft To Do"]
   },
-
   {
     "name": "FlowAgent.nu",
     "url": "https://flowagent.nu",
