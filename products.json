@@ -1619,6 +1619,7 @@
   "name": "workswith.ai",
   "url": "https://workswith.ai",
   "description": "AI integrations- og produktivitetsplatform. Få alle dine medarbejder med på AI rejsen med en sikker platform, som giver rammerne for at alle kan lave løsninger med AI uden at din virksomhed mister overblik eller kontrol.",
+  "image": "images/workswith-ai.svg",
   "alternatives": [
       "Wonderful AI",
       "Salesforce Agentforce",
