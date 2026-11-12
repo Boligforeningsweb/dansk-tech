@@ -1614,5 +1614,11 @@
     "description": "Konkurrentovervågning, der samler konkurrenters annoncer, nyhedsbreve og ændringer på deres websites på tværs af kanaler i ét fælles overblik. Aktiviteten grupperes automatisk i kampagner og temaer, så marketing- og e-commerce-teams kan følge, hvordan konkurrenternes udspil udvikler sig over tid.",
     "alternatives": ["Crayon", "Klue", "Kompyte", "Foreplay", "AdClarity", "Brandwatch", "SEMrush"],
     "image": "images/rivaler.png"
+  },
+  {
+    "name": "Koral.nu",
+    "url": "https://koral.nu",
+    "description": "Visuel AI til webshops og ejendomsmæglere: billedsøgning, lignende produkter, shop the look, matchende sæt, bundles og virtual try-on. Integreres med ét script-tag eller via API.",
+    "alternatives": ["Syte", "Stylitics", "Vue.ai", "Algolia", "Bloomreach", "Dynamic Yield"]
   }
 ]
