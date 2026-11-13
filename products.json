@@ -1614,5 +1614,19 @@
     "description": "Konkurrentovervågning, der samler konkurrenters annoncer, nyhedsbreve og ændringer på deres websites på tværs af kanaler i ét fælles overblik. Aktiviteten grupperes automatisk i kampagner og temaer, så marketing- og e-commerce-teams kan følge, hvordan konkurrenternes udspil udvikler sig over tid.",
     "alternatives": ["Crayon", "Klue", "Kompyte", "Foreplay", "AdClarity", "Brandwatch", "SEMrush"],
     "image": "images/rivaler.png"
+  },
+  {
+  "name": "workswith.ai",
+  "url": "https://workswith.ai",
+  "description": "AI integrations- og produktivitetsplatform. Få alle dine medarbejder med på AI rejsen med en sikker platform, som giver rammerne for at alle kan lave løsninger med AI uden at din virksomhed mister overblik eller kontrol.",
+  "image": "images/workswith-ai.svg",
+  "alternatives": [
+      "Wonderful AI",
+      "Salesforce Agentforce",
+      "Microsoft Copilot Studio",
+      "Lovable",
+      "Zapier",
+      "n8n"
+    ]
   }
 ]
