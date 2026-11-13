@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 40" width="640" height="400">
+<defs>
+<mask id="khL" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="40"><rect width="64" height="40" fill="#fff"/><path d="M4 6 C9.1 6 12.9 34 18 34 C23.1 34 26.9 6 32 6 C37.1 6 40.9 34 46 34 C51.1 34 54.9 6 60 6" fill="none" stroke="#000" stroke-width="12" stroke-linecap="round"/><path d="M16 20 H34 M44 20 H62" stroke="#fff" stroke-width="5"/></mask>
+<mask id="khT" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="40"><rect width="64" height="40" fill="#fff"/><path d="M16 20 H34 M44 20 H62" stroke="#000" stroke-width="9"/></mask>
+</defs>
+<path d="M0 20 H64" stroke="#0F1D18" stroke-width="5" stroke-linecap="round" mask="url(#khL)"/>
+<path d="M4 6 C9.1 6 12.9 34 18 34 C23.1 34 26.9 6 32 6 C37.1 6 40.9 34 46 34 C51.1 34 54.9 6 60 6" fill="none" stroke="#F26B2A" stroke-width="7" stroke-linecap="round" mask="url(#khT)"/>
+</svg>
