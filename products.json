@@ -1,5 +1,16 @@
 [
   {
+    "name": "Moralab.ai",
+    "url": "https://moralab.ai",
+    "description": "AI-drevet SEO- og contentplatform, der hjælper webshops med at optimere produktbeskrivelser, forbedre produktsider og øge den organiske synlighed. Kombinerer AI-genereret indhold med SEO-analyse og løbende optimering for at tiltrække mere relevant trafik og skabe bedre resultater.",
+    "alternatives": [
+      "Jasper",
+      "Semrush",
+      "Outrank"
+    ],
+    "image": "images/moralab.png"
+  },
+  {
     "name": "Domænehajen",
     "url": "https://www.domaenehajen.dk",
     "description": "Dansk forhandler af domæner, der har fokus på cybersikkerhed og billige domæner. Her kan du købe domæner uden at skulle tilkøbe webhotel eller andre services. Vi udvikler løsningen selv og anvender kun europæiske underleverandører.",
