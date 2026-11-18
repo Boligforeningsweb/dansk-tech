@@ -1645,5 +1645,16 @@
       "Zapier",
       "n8n"
     ]
+  },
+  {
+    "name": "DocZoid.io",
+    "url": "https://doczoid.io",
+    "description": "Bare et rigtig godt diagrammerings- og dokumentationsværktøj med genbrug af figurer i dokumenter og præsentationer, så ét diagram kan bruges mange steder og altid er opdateret. Forbind et repository med skrivebeskyttet adgang, og DocZoid skriver dokumentet og tegner diagrammet ud fra koden og opdaterer begge dele ved hvert push. AI-værktøjer som Claude Code og Cursor kan læse og opdatere dokumentationen via MCP. Samarbejd med live cursors, kommentarer og versionshistorik.",
+    "alternatives": [
+      "Eraser",
+      "IcePanel",
+      "Confluence",
+      "Miro"
+    ]
   }
 ]
