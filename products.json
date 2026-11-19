@@ -1656,5 +1656,17 @@
       "Confluence",
       "Miro"
     ]
+  },
+  {
+    "name": "Nobly Insight",
+    "url": "https://www.nobly.dk/produkter/insight",
+    "description": "Dansk platform til dokumenthåndtering, sagsbehandling og automatisering af arbejdsgange, udviklet til regulerede brancher. Med AI-søgning, resuméer og chat med arkivet, anonymisering af persondata og et REST API til integrationer.",
+    "alternatives": [
+      "Hyland OnBase",
+      "OpenText",
+      "M-Files",
+      "DocuWare",
+      "Sharepoint"
+    ]
   }
 ]
