@@ -4,6 +4,8 @@
 
 Denne vejledning handler om at udvikle og vedligeholde sitet. For at foreslå eller rette et produkt behøver du kun at ændre `products.json`; du skal ikke bygge CSS, vedligeholde oversættelser eller køre browsertests.
 
+Cookievalg, lageroversigt, trackingafgrænsning og tests er beskrevet i [cookie-consent.md](cookie-consent.md).
+
 ## 🛠️ Kør sitet lokalt (kun maintainers)
 
 ```bash

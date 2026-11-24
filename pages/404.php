@@ -74,5 +74,6 @@ partial('head', [
     </div>
   </main>
   <script src="<?php echo e(asset_url('assets/404.js')); ?>" defer></script>
+<?php partial('footer'); ?>
 </body>
 </html>

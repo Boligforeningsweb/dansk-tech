@@ -57,6 +57,10 @@ switch ($path) {
     render('badge');
     break;
 
+  case '/privatliv':
+    render('privacy');
+    break;
+
   case '/sitemap.xml':
     render('sitemap');
     break;

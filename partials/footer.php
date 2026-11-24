@@ -8,6 +8,8 @@
         <a href="mailto:kontakt@langsom.com" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white">
           <?php echo e(t('Kontakt os på kontakt@langsom.com')); ?>
         </a>
+        <a href="<?php echo e(locale_path('/privatliv')); ?>" class="text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white"><?php echo e(t('Privatliv og cookies')); ?></a>
+        <button class="cookie-text-button text-gray-600 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white" type="button" data-cookie-open aria-haspopup="dialog" aria-controls="cookie-settings" hidden><?php echo e(t('Cookievalg')); ?></button>
       </div>
       <div class="mt-8 flex flex-col items-center gap-4 md:order-1 md:mt-0 md:flex-row md:gap-6">
         <?php $footerBadge = supporter_badges()['vi-stoetter-dansk-tech']; [$badgeWidth, $badgeHeight] = badge_size($footerBadge, 'kompakt'); ?>
@@ -16,3 +18,4 @@
       </div>
     </div>
   </footer>
+<?php partial('cookie-consent'); ?>

@@ -25,8 +25,15 @@ async function main() {
   });
   let browser;
   let passed = 0;
-  async function context(options = {}) {
+  async function context({ freshConsent = false, ...options } = {}) {
     const result = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce', ...options });
+    // Existing site regressions exercise the UI after an explicit rejection.
+    // Consent-specific regressions below use fresh contexts instead.
+    if (!freshConsent) await result.addInitScript(() => {
+      try {
+        if (!localStorage.getItem('dansk-tech.cookie-consent.v1')) localStorage.setItem('dansk-tech.cookie-consent.v1', JSON.stringify({version:1, analytics:false, marketing:false, at:Date.now()}));
+      } catch (_) { /* Storage failure is exercised separately. */ }
+    });
     // Test only our UI: portrait/favicons must not depend on remote availability.
     await result.route('**/*', route => {
       const url = new URL(route.request().url());
@@ -49,6 +56,8 @@ async function main() {
     const engine = process.env.DTS_BROWSER || 'chromium';
     assert(engines[engine], 'Unsupported DTS_BROWSER.');
     browser = await engines[engine].launch({ headless: true, ...(process.env.DTS_CHROME_PATH ? { executablePath: process.env.DTS_CHROME_PATH } : {}) });
+
+    await require('./check-consent.cjs')({ context, check, origin, root });
 
     for (const [locale, expected] of [['en-US', 'en'], ['da-DK', 'da'], ['de-DE', 'da']]) {
       await check(`fresh ${locale} visitor selects ${expected}`, async () => {
@@ -219,9 +228,9 @@ async function main() {
       await p.locator('li[data-name=ethnote] .favicon-fallback').waitFor({ state: 'visible' });
       assert.equal(await p.locator('li[data-name=ethnote] .favicon-fallback').innerText(), 'E'); await c.close();
     });
-    const paths = ['/', '/alternativer', '/alternativer/stripe', '/alternativer/adobe-acrobat', '/alternativer/microsoft-dynamics-365-field-service', '/badge', '/badge?produkt=alunta-com', '/badge?produkt=alunta-com&badge=listet-paa-dansktechstack', '/missing-browser-check'];
+    const paths = ['/', '/alternativer', '/alternativer/stripe', '/alternativer/adobe-acrobat', '/alternativer/microsoft-dynamics-365-field-service', '/badge', '/badge?produkt=alunta-com', '/badge?produkt=alunta-com&badge=listet-paa-dansktechstack', '/missing-browser-check', '/privatliv'];
     for (const lang of ['da', 'en']) for (const theme of ['light', 'dark']) {
-      await check(`${lang}/${theme}: 9 templates, text resize and accessibility`, async () => {
+      await check(`${lang}/${theme}: 10 templates, text resize and accessibility`, async () => {
         const c = await context({ colorScheme: theme }); await c.addCookies([{ name: 'dts_language', value: lang, url: origin }]);
         const p = await c.newPage(); const errors = []; p.on('pageerror', e => errors.push(e.message));
         for (const pathname of paths) {
