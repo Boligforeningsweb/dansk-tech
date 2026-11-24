@@ -4,8 +4,6 @@
 
 Denne vejledning handler om at udvikle og vedligeholde sitet. For at foreslå eller rette et produkt behøver du kun at ændre `products.json`; du skal ikke bygge CSS, vedligeholde oversættelser eller køre browsertests.
 
-Cookievalg, lageroversigt, trackingafgrænsning og tests er beskrevet i [cookie-consent.md](cookie-consent.md).
-
 ## 🛠️ Kør sitet lokalt (kun maintainers)
 
 ```bash
@@ -24,7 +22,7 @@ Produkterne kan hente et badge på `/badge` (fx "Dansk alternativ til Stripe"), 
 
 Sitet findes på dansk på de eksisterende adresser og på engelsk under `/en`, `/en/alternatives` og `/en/badge`. Sprogvælgeren bevarer den aktuelle side, query-parametre og sektion. Begge sprog bruger de samme PHP-skabeloner og kildedata. Canonical, hreflang, sociale metadata, JSON-LD og sitemap omfatter begge sprog. Hvert sprog har sit eget delingsbillede og app-manifest (`site.webmanifest` / `site-en.webmanifest`), så en gemt webapp åbner forsiden på det valgte sprog.
 
-På `/` vælges sprog i rækkefølgen: gyldig `dts_language`-cookie → browserens prioriterede dansk/engelsk i `Accept-Language` → dansk. Cookien gemmer sproget på senest besøgte side i ét år (HttpOnly, SameSite=Lax og Secure ved HTTPS). Sprogvælgeren markerer et udtrykkeligt valg med `site_language`, så dansk også kan vælges fra en engelsk browser uden redirect-loop, hvis cookies er blokeret. JavaScript fjerner markøren fra adresselinjen; valget virker også uden JavaScript. Direkte links til danske og engelske undersider respekteres og opdaterer præferencen. Kendte crawlere omdirigeres ikke ud fra browsersprog og får ingen præferencecookie. HTML er `private, no-store`, og den forhandlede forside har `Vary: Cookie, Accept-Language`; SVG'er og sitemap ændrer ikke sprogpræferencen.
+På `/` vælges sprog i rækkefølgen: gyldig `dts_language`-cookie → browserens prioriterede dansk/engelsk i `Accept-Language` → dansk. Cookien gemmes kun ved et udtrykkeligt valg i sprogvælgeren og gælder i op til ét år (HttpOnly, SameSite=Lax og Secure ved HTTPS). Sprogvælgeren markerer et udtrykkeligt valg med `site_language`, så dansk også kan vælges fra en engelsk browser uden redirect-loop, hvis cookies er blokeret. JavaScript fjerner markøren fra adresselinjen; valget virker også uden JavaScript. Direkte links til danske og engelske undersider respekteres uden at ændre den gemte præference. Automatisk sprogvalg og almindelige sidebesøg sætter ingen sprogcookie. Kendte crawlere omdirigeres ikke ud fra browsersprog og får ingen præferencecookie. Privatlivs- og cookieoplysninger findes på `/privatliv` og `/en/privatliv`, med link i footeren. Sitet har ingen statistikværktøjer, marketingpixels eller samtykkebanner. HTML er `private, no-store`, og den forhandlede forside har `Vary: Cookie, Accept-Language`; SVG'er og sitemap ændrer ikke sprogpræferencen.
 
 Søgning bevares ved sprogskift som `q` i URL'en. Systemets lyse/mørke tema følges automatisk; temaknappen gemmer et manuelt valg i `localStorage` under `dts-theme`. Uden adgang til storage fungerer systemtemaet og knappen stadig. Produktkort bruger et eksisterende billede fra `images/`, derefter favicon og til sidst produktets initial, hvis billederne fejler.
 

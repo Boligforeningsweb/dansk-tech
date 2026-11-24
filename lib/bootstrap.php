@@ -63,12 +63,9 @@ function redirect($location, $status = 301) {
 function render($page, array $vars = [], $status = 200) {
   http_response_code($status);
   if ($page !== 'sitemap') {
-    // HTML visits update a preference cookie; shared caches must not swallow that update.
+    // HTML language and content may depend on a saved preference.
     header('Cache-Control: private, no-store');
     header('Content-Language: ' . language_tag());
-    if ($status === 200) {
-      remember_language(locale());
-    }
   }
   extract($vars);
   require APP_ROOT . '/pages/' . $page . '.php';

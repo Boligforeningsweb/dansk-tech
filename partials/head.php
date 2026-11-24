@@ -14,8 +14,6 @@ $ogImageAlt = $ogImageAlt ?? $title;
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});window.gtag('set','ads_data_redaction',true);</script>
-  <link rel="stylesheet" href="<?php echo e(asset_url('assets/cookie-consent.css')); ?>">
   <title><?php echo e($title); ?></title>
   <meta name="description" content="<?php echo e($description); ?>">
   <meta name="robots" content="<?php echo e($robots); ?>">

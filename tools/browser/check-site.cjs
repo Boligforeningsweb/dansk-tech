@@ -25,15 +25,8 @@ async function main() {
   });
   let browser;
   let passed = 0;
-  async function context({ freshConsent = false, ...options } = {}) {
+  async function context(options = {}) {
     const result = await browser.newContext({ viewport: { width: 390, height: 844 }, reducedMotion: 'reduce', ...options });
-    // Existing site regressions exercise the UI after an explicit rejection.
-    // Consent-specific regressions below use fresh contexts instead.
-    if (!freshConsent) await result.addInitScript(() => {
-      try {
-        if (!localStorage.getItem('dansk-tech.cookie-consent.v1')) localStorage.setItem('dansk-tech.cookie-consent.v1', JSON.stringify({version:1, analytics:false, marketing:false, at:Date.now()}));
-      } catch (_) { /* Storage failure is exercised separately. */ }
-    });
     // Test only our UI: portrait/favicons must not depend on remote availability.
     await result.route('**/*', route => {
       const url = new URL(route.request().url());
@@ -57,15 +50,13 @@ async function main() {
     assert(engines[engine], 'Unsupported DTS_BROWSER.');
     browser = await engines[engine].launch({ headless: true, ...(process.env.DTS_CHROME_PATH ? { executablePath: process.env.DTS_CHROME_PATH } : {}) });
 
-    await require('./check-consent.cjs')({ context, check, origin, root });
-
     for (const [locale, expected] of [['en-US', 'en'], ['da-DK', 'da'], ['de-DE', 'da']]) {
       await check(`fresh ${locale} visitor selects ${expected}`, async () => {
         const c = await context({ locale }); const p = await c.newPage();
         await p.goto(origin + '/'); assert.equal(await p.locator('html').getAttribute('lang'), expected);
         const cookie = (await c.cookies()).find(x => x.name === 'dts_language');
-        assert.equal(cookie.value, expected); assert(cookie.httpOnly); assert.equal(cookie.sameSite, 'Lax');
-        assert(cookie.expires > Date.now() / 1000 + 300 * 86400);
+        assert.equal(cookie, undefined, 'Automatic language selection must not store a preference.');
+        assert.equal(await p.evaluate(() => localStorage.length), 0);
         await c.close();
       });
     }
@@ -77,9 +68,13 @@ async function main() {
       await p.waitForURL(url => url.pathname === '/' && !url.searchParams.has('site_language'));
       assert.equal(new URL(p.url()).hash, '#produkter'); assert.equal(new URL(p.url()).searchParams.get('q'), 'Stripe');
       assert.equal(await p.locator('[data-product]:visible').count(), count);
+      const cookie = (await c.cookies()).find(x => x.name === 'dts_language');
+      assert.equal(cookie.value, 'da'); assert(cookie.httpOnly); assert.equal(cookie.sameSite, 'Lax');
+      assert(cookie.expires > Date.now() / 1000 + 300 * 86400);
       await p.goto(origin + '/'); assert.equal(await p.locator('html').getAttribute('lang'), 'da');
       await p.goto(origin + '/en/alternatives/stripe'); assert.equal(await p.locator('html').getAttribute('lang'), 'en');
-      await p.goto(origin + '/'); assert.equal(new URL(p.url()).pathname, '/en');
+      await p.goto(origin + '/'); assert.equal(new URL(p.url()).pathname, '/');
+      assert.equal((await c.cookies()).find(x => x.name === 'dts_language').value, 'da');
       await p.goto(origin + '/alternativer/stripe'); assert.equal(await p.locator('html').getAttribute('lang'), 'da');
       await c.close();
     });

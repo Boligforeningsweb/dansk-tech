@@ -82,6 +82,12 @@ try {
     ['/', 'en-US', 'en', 200, null, 'da', 'Googlebot'],
     ['/', 'en-US', '', 200, null, 'da', 'facebookexternalhit/1.1'],
     ['/en', 'da-DK', '', 200, null, 'en', 'Googlebot'],
+    ['/en?site_language=invalid', 'da-DK', '', 200, null, 'en'],
+    ['/en?site_language%5B%5D=en', 'da-DK', '', 200, null, 'en'],
+    ['/en?site_language=en', 'da-DK', 'en', 200, null, 'en'],
+    ['/en?site_language=en', 'da-DK', '', 200, null, 'en', 'Googlebot'],
+    ['/privatliv', 'en-US', '', 200, null, 'da'],
+    ['/en/privatliv', 'da-DK', 'da', 200, null, 'en'],
   ];
   foreach ($cases as $case) {
     [$path, $accept, $cookie, $status, $location, $language] = $case;
@@ -95,9 +101,14 @@ try {
     if ($path === '/') {
       check(str_contains($response['vary'] ?? '', 'Cookie') && str_contains($response['vary'] ?? '', 'Accept-Language'), 'Forsiden mangler Vary.');
     }
+    parse_str(parse_url($path, PHP_URL_QUERY) ?? '', $parameters);
+    $selected = $parameters['site_language'] ?? null;
+    $shouldSetCookie = in_array($selected, ['da', 'en'], true) && $selected !== $cookie
+      && !preg_match('/bot|crawler|spider|slurp|facebookexternalhit|whatsapp/i', $case[6] ?? 'DTS-Preference-Review');
+    check(isset($response['set-cookie']) === $shouldSetCookie, 'Kun et udtrykkeligt sprogvalg må gemme en cookie: ' . $path);
     check(str_contains($response['cache-control'] ?? '', 'no-store'), 'Sprogvalg kan caches på tværs af brugere.');
   }
-  [$response] = $request('/en', 'da-DK');
+  [$response] = $request('/en?site_language=en', 'da-DK');
   foreach (['dts_language=en', 'Max-Age=31536000', 'HttpOnly', 'SameSite=Lax', 'path=/'] as $attribute) {
     check(str_contains($response['set-cookie'] ?? '', $attribute), 'Sprog-cookien mangler ' . $attribute);
   }
