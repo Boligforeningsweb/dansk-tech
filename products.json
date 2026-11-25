@@ -1669,5 +1669,12 @@
       "Sharepoint"
     ],
     "image": "images/nobly.png"
+  },
+  {
+    "name": "ID-Truster",
+    "url": "https://idtruster.com",
+    "description": "Som MitID-tjekket, bare for Teams-møder, telefon og tekstbeskeder. Digital signatur og kryptering i stedet for AI-gæt.",
+    "alternatives": ["Truecaller for Business", "Hiya Branded Call", "Numeracle"],
+    "image": "images/idtruster.png"
   }
 ]
