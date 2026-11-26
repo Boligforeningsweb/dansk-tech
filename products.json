@@ -1,5 +1,11 @@
 [
   {
+    "name": "Oplema",
+    "url": "https://oplema.com",
+    "description": "AI-native data workflows og dashboards. Forbered data, byg dashboards og del dem i browseren, gratis lokalt.",
+    "alternatives": ["Tableau", "Power BI", "Alteryx", "KNIME", "Prophecy", "Metabase", "Sigma", "Hex"]
+  },
+  {
     "name": "Moralab.ai",
     "url": "https://moralab.ai",
     "description": "AI-drevet SEO- og contentplatform, der hjælper webshops med at optimere produktbeskrivelser, forbedre produktsider og øge den organiske synlighed. Kombinerer AI-genereret indhold med SEO-analyse og løbende optimering for at tiltrække mere relevant trafik og skabe bedre resultater.",
