@@ -1,5 +1,86 @@
 [
   {
+    "name": "LexBot.dk",
+    "url": "https://lexbot.dk",
+    "description": "Dansk juridisk AI-chat, der besvarer spørgsmål om dansk ret med henvisning til gældende lovtekst fra Retsinformation. Har også et gratis juridisk leksikon og kan bruges fra Claude og ChatGPT via MCP.",
+    "alternatives": [
+      "Harvey",
+      "ChatGPT"
+    ]
+  },
+  {
+    "name": "TedBid.com",
+    "url": "https://tedbid.com",
+    "description": "AI til tilbudsskrivning til offentlige udbud og RFP'er. Finder kravene i udbudsmaterialet med kildehenvisning, hjælper med go/no-go, skriver udkast til svar, genbruger tidligere svar og tjekker tilbuddet før aflevering.",
+    "alternatives": [
+      "Loopio",
+      "Responsive"
+    ]
+  },
+  {
+    "name": "meetnotes.io",
+    "url": "https://meetnotes.io",
+    "description": "Dansk AI-mødereferat til Teams, Zoom og Google Meet, der optager fra browseren uden mødebot. Efter mødet får du resumé, beslutninger og opgaver med ansvarlig og deadline; database og lydfiler ligger i EU.",
+    "alternatives": [
+      "Otter.ai",
+      "Fireflies.ai",
+      "Fathom"
+    ]
+  },
+  {
+    "name": "QWorker.ai",
+    "url": "https://qworker.ai",
+    "description": "AI-assistent til konsulenter og små teams, der samler mails, møder og opgaver i en klar plan for dagen med AI-modeller og data i EU. Kan kobles til Claude og ChatGPT via MCP.",
+    "alternatives": [
+      "ChatGPT",
+      "Microsoft Copilot"
+    ]
+  },
+  {
+    "name": "MemoryRaven.com",
+    "url": "https://memoryraven.com",
+    "description": "Hukommelseslag til AI-assistenter: en lille Windows-app opsamler din seneste arbejdskontekst, så ChatGPT, Claude og andre MCP-klienter kan svare på, hvad du arbejdede med.",
+    "alternatives": [
+      "Limitless",
+      "Microsoft Recall"
+    ]
+  },
+  {
+    "name": "AIWriterCheck.com",
+    "url": "https://aiwritercheck.com",
+    "description": "AI-tekstdetektor, der vurderer, om en tekst sandsynligvis er skrevet med AI, og viser de sproglige tegn bag vurderingen. Har en humanizer, kører på 10 sprog og sælges som klippekort uden abonnement.",
+    "alternatives": [
+      "GPTZero",
+      "Originality.ai"
+    ]
+  },
+  {
+    "name": "Auto-SEO.org",
+    "url": "https://auto-seo.org",
+    "description": "SEO- og AI-synlighedstjeneste til WordPress-sider, der scanner siden dagligt, prioriterer fejlene og kun udfører de rettelser, du selv godkender. Kan også bruges fra Claude, ChatGPT og QWorker via MCP.",
+    "alternatives": [
+      "Ahrefs",
+      "Yoast SEO"
+    ]
+  },
+  {
+    "name": "DocLex.org",
+    "url": "https://doclex.org",
+    "description": "Dansk skabelonservice, der laver juridiske dokumenter som ansættelseskontrakter, NDA'er, databehandleraftaler og lejekontrakter ud fra guidede spørgsmål og leverer dem som Word og PDF.",
+    "alternatives": [
+      "LegalZoom",
+      "Rocket Lawyer"
+    ]
+  },
+  {
+    "name": "BiasCleaner.com",
+    "url": "https://biascleaner.com",
+    "description": "Fjerner skjult bias fra jobannoncer og skjuler personoplysninger i CV'er med forslag til neutrale formuleringer og en forklaring på hver ændring. Til HR, rekrutterere og bureauer.",
+    "alternatives": [
+      "Textio"
+    ]
+  },
+  {
     "name": "Moralab.ai",
     "url": "https://moralab.ai",
     "description": "AI-drevet SEO- og contentplatform, der hjælper webshops med at optimere produktbeskrivelser, forbedre produktsider og øge den organiske synlighed. Kombinerer AI-genereret indhold med SEO-analyse og løbende optimering for at tiltrække mere relevant trafik og skabe bedre resultater.",
