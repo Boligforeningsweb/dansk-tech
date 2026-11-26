@@ -1669,5 +1669,15 @@
       "Sharepoint"
     ],
     "image": "images/nobly.png"
+  },
+  {
+    "name": "Tjekr.dk",
+    "url": "https://tjekr.dk",
+    "description": "Tjekr måler oppetid og svartider for hjemmesider, API’er og servere. Teams får besked ved nedbrud eller udeblevne cronjobs og kan dele driftsstatus på en offentlig statusside.",
+    "alternatives": [
+      "UptimeRobot",
+      "Pingdom",
+      "Oh Dear"
+    ]
   }
 ]
