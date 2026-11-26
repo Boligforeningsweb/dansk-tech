@@ -2,7 +2,7 @@
   {
     "name": "Oplema",
     "url": "https://oplema.com",
-    "description": "AI-native data workflows og dashboards.",
+    "description": "AI-native data workflows og dashboards. Forbered data, byg dashboards og del dem i browseren, gratis lokalt.",
     "alternatives": ["Tableau", "Power BI", "Alteryx", "KNIME", "Prophecy", "Metabase", "Sigma", "Hex"]
   },
   {
